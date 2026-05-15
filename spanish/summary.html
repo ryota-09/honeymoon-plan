@@ -826,6 +826,22 @@
     .two-col { grid-template-columns: 1fr; }
   }
 
+  /* ========== MD Link ========== */
+  .md-link {
+    color: var(--color-accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-accent-light);
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+  .md-link:hover {
+    border-bottom-color: var(--color-accent);
+    color: var(--color-accent-dark);
+  }
+  .md-link code {
+    font-family: var(--font-mono);
+    font-size: 0.92em;
+  }
+
   /* ========== Footer ========== */
   .footer {
     background-color: var(--color-surface);
@@ -1483,7 +1499,7 @@
       <div class="section__number">SECTION 07</div>
       <h2 class="section__title">バルセロナ徹底ガイド</h2>
       <div class="section__divider"></div>
-      <p class="section__subtitle">01_barcelona.md / 1,226行 — バルセロナ市内 + 日帰り圏</p>
+      <p class="section__subtitle"><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/spanish/01_barcelona.md" target="_blank" rel="noopener">01_barcelona.md</a> / 1,226行 — バルセロナ市内 + 日帰り圏</p>
     </div>
 
     <div class="subsection">
@@ -1609,7 +1625,7 @@
       <div class="section__number">SECTION 08</div>
       <h2 class="section__title">マドリード徹底ガイド</h2>
       <div class="section__divider"></div>
-      <p class="section__subtitle">02_madrid.md / 1,326行 — マドリード市内 + トレド・セゴビア他</p>
+      <p class="section__subtitle"><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/spanish/02_madrid.md" target="_blank" rel="noopener">02_madrid.md</a> / 1,326行 — マドリード市内 + トレド・セゴビア他</p>
     </div>
 
     <div class="subsection">
@@ -1709,7 +1725,7 @@
       <div class="section__number">SECTION 09</div>
       <h2 class="section__title">アンダルシア(該当パターンのみ)</h2>
       <div class="section__divider"></div>
-      <p class="section__subtitle">03_andalusia.md / 904行 — グラナダ・セビリア・コルドバ・ロンダ・白い村</p>
+      <p class="section__subtitle"><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/spanish/03_andalusia.md" target="_blank" rel="noopener">03_andalusia.md</a> / 904行 — グラナダ・セビリア・コルドバ・ロンダ・白い村</p>
     </div>
 
     <div class="subsection">
@@ -1748,7 +1764,7 @@
       <div class="section__number">SECTION 10</div>
       <h2 class="section__title">その他地方都市(該当パターンのみ)</h2>
       <div class="section__divider"></div>
-      <p class="section__subtitle">04_other_regions.md / 864行 — サン・セバスチャン・ビルバオ・バレンシア・サラマンカ他</p>
+      <p class="section__subtitle"><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/spanish/04_other_regions.md" target="_blank" rel="noopener">04_other_regions.md</a> / 864行 — サン・セバスチャン・ビルバオ・バレンシア・サラマンカ他</p>
     </div>
 
     <div class="subsection">
@@ -2455,12 +2471,12 @@ Many thanks,
           <tr><th>#</th><th>ファイル</th><th>行数</th><th>サイズ</th><th>カバー範囲</th></tr>
         </thead>
         <tbody>
-          <tr><td>01</td><td><code>01_barcelona.md</code></td><td>1,226</td><td>77 KB</td><td>バルセロナ市内+モンセラート/ジローナ/フィゲラス他</td></tr>
-          <tr><td>02</td><td><code>02_madrid.md</code></td><td>1,326</td><td>88 KB</td><td>マドリード市内+トレド/セゴビア/エル・エスコリアル他</td></tr>
-          <tr><td>03</td><td><code>03_andalusia.md</code></td><td>904</td><td>58 KB</td><td>グラナダ/セビリア/コルドバ/ロンダ/白い村</td></tr>
-          <tr><td>04</td><td><code>04_other_regions.md</code></td><td>864</td><td>64 KB</td><td>サン・セバスチャン/ビルバオ/バレンシア/サラマンカ他</td></tr>
-          <tr><td>05</td><td><code>05_honeymoon_insights.md</code></td><td>1,109</td><td>67 KB</td><td>SNS / YouTube 実体験ノウハウ</td></tr>
-          <tr><td>—</td><td><code>summary.md</code> · <code>summary.html</code></td><td>—</td><td>—</td><td>横断サマリー(プロ仕様)</td></tr>
+          <tr><td>01</td><td><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/spanish/01_barcelona.md" target="_blank" rel="noopener"><code>01_barcelona.md</code></a></td><td>1,226</td><td>77 KB</td><td>バルセロナ市内+モンセラート/ジローナ/フィゲラス他</td></tr>
+          <tr><td>02</td><td><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/spanish/02_madrid.md" target="_blank" rel="noopener"><code>02_madrid.md</code></a></td><td>1,326</td><td>88 KB</td><td>マドリード市内+トレド/セゴビア/エル・エスコリアル他</td></tr>
+          <tr><td>03</td><td><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/spanish/03_andalusia.md" target="_blank" rel="noopener"><code>03_andalusia.md</code></a></td><td>904</td><td>58 KB</td><td>グラナダ/セビリア/コルドバ/ロンダ/白い村</td></tr>
+          <tr><td>04</td><td><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/spanish/04_other_regions.md" target="_blank" rel="noopener"><code>04_other_regions.md</code></a></td><td>864</td><td>64 KB</td><td>サン・セバスチャン/ビルバオ/バレンシア/サラマンカ他</td></tr>
+          <tr><td>05</td><td><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/spanish/05_honeymoon_insights.md" target="_blank" rel="noopener"><code>05_honeymoon_insights.md</code></a></td><td>1,109</td><td>67 KB</td><td>SNS / YouTube 実体験ノウハウ</td></tr>
+          <tr><td>—</td><td><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/spanish/summary.md" target="_blank" rel="noopener"><code>summary.md</code></a> · <a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/spanish/summary.html" target="_blank" rel="noopener"><code>summary.html</code></a></td><td>—</td><td>—</td><td>横断サマリー(プロ仕様)</td></tr>
         </tbody>
       </table>
     </div>

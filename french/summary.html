@@ -750,6 +750,22 @@
     .two-col { grid-template-columns: 1fr; }
   }
 
+  /* ========== MD Link ========== */
+  .md-link {
+    color: var(--color-accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-accent-light);
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+  .md-link:hover {
+    border-bottom-color: var(--color-accent);
+    color: var(--color-accent-dark);
+  }
+  .md-link code {
+    font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+    font-size: 0.92em;
+  }
+
   /* ========== Footer ========== */
   .footer {
     background-color: var(--color-surface);
@@ -1354,7 +1370,7 @@
       <div class="section__number">SECTION 07</div>
       <h2 class="section__title">パリ徹底ガイド</h2>
       <div class="section__divider"></div>
-      <p class="section__subtitle">01_paris.md / 790行 — パリ市内 + ヴェルサイユ・ジヴェルニー</p>
+      <p class="section__subtitle"><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/french/01_paris.md" target="_blank" rel="noopener">01_paris.md</a> / 790行 — パリ市内 + ヴェルサイユ・ジヴェルニー</p>
     </div>
 
     <div class="subsection">
@@ -1437,7 +1453,7 @@
       <div class="section__number">SECTION 08</div>
       <h2 class="section__title">モン・サン・ミシェル</h2>
       <div class="section__divider"></div>
-      <p class="section__subtitle">02_mont_saint_michel_normandy_loire.md / 1017行 — 島内予約戦略 + プランB付き</p>
+      <p class="section__subtitle"><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/french/02_mont_saint_michel_normandy_loire.md" target="_blank" rel="noopener">02_mont_saint_michel_normandy_loire.md</a> / 1017行 — 島内予約戦略 + プランB付き</p>
     </div>
 
     <div class="keypoints">
@@ -1564,7 +1580,7 @@
       <div class="section__number">SECTION 09</div>
       <h2 class="section__title">南仏 & その他地方都市</h2>
       <div class="section__divider"></div>
-      <p class="section__subtitle">03_south_france.md / 04_other_regions.md — 都市別おすすめ度とアルザス推奨理由</p>
+      <p class="section__subtitle"><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/french/03_south_france.md" target="_blank" rel="noopener">03_south_france.md</a> / <a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/french/04_other_regions.md" target="_blank" rel="noopener">04_other_regions.md</a> — 都市別おすすめ度とアルザス推奨理由</p>
     </div>
 
     <div class="subsection">
@@ -2002,12 +2018,12 @@
           <tr><th>#</th><th>ファイル</th><th>行数</th><th>サイズ</th><th>カバー範囲</th></tr>
         </thead>
         <tbody>
-          <tr><td>01</td><td><code>01_paris.md</code></td><td>790</td><td>56 KB</td><td>パリ市内 + ヴェルサイユ・ジヴェルニー</td></tr>
-          <tr><td>02</td><td><code>02_mont_saint_michel_normandy_loire.md</code></td><td>1,017</td><td>68 KB</td><td>モン・サン・ミシェル + ノルマンディー + ロワール</td></tr>
-          <tr><td>03</td><td><code>03_south_france.md</code></td><td>795</td><td>46 KB</td><td>コートダジュール + プロヴァンス</td></tr>
-          <tr><td>04</td><td><code>04_other_regions.md</code></td><td>686</td><td>45 KB</td><td>リヨン・ボルドー・アルザス・ランス・シャモニー他</td></tr>
-          <tr><td>05</td><td><code>05_honeymoon_insights.md</code></td><td>761</td><td>55 KB</td><td>SNS / YouTube 実体験ノウハウ</td></tr>
-          <tr><td>—</td><td><code>summary.md</code> · <code>summary.html</code></td><td>—</td><td>—</td><td>横断サマリー(プロ仕様)</td></tr>
+          <tr><td>01</td><td><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/french/01_paris.md" target="_blank" rel="noopener"><code>01_paris.md</code></a></td><td>790</td><td>56 KB</td><td>パリ市内 + ヴェルサイユ・ジヴェルニー</td></tr>
+          <tr><td>02</td><td><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/french/02_mont_saint_michel_normandy_loire.md" target="_blank" rel="noopener"><code>02_mont_saint_michel_normandy_loire.md</code></a></td><td>1,017</td><td>68 KB</td><td>モン・サン・ミシェル + ノルマンディー + ロワール</td></tr>
+          <tr><td>03</td><td><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/french/03_south_france.md" target="_blank" rel="noopener"><code>03_south_france.md</code></a></td><td>795</td><td>46 KB</td><td>コートダジュール + プロヴァンス</td></tr>
+          <tr><td>04</td><td><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/french/04_other_regions.md" target="_blank" rel="noopener"><code>04_other_regions.md</code></a></td><td>686</td><td>45 KB</td><td>リヨン・ボルドー・アルザス・ランス・シャモニー他</td></tr>
+          <tr><td>05</td><td><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/french/05_honeymoon_insights.md" target="_blank" rel="noopener"><code>05_honeymoon_insights.md</code></a></td><td>761</td><td>55 KB</td><td>SNS / YouTube 実体験ノウハウ</td></tr>
+          <tr><td>—</td><td><a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/french/summary.md" target="_blank" rel="noopener"><code>summary.md</code></a> · <a class="md-link" href="https://github.com/ryota-09/honeymoon-plan/blob/main/french/summary.html" target="_blank" rel="noopener"><code>summary.html</code></a></td><td>—</td><td>—</td><td>横断サマリー(プロ仕様)</td></tr>
         </tbody>
       </table>
     </div>
