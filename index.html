@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Honeymoon 2026 — Travel Research Index</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --color-bg: #FAFAF8;
+    --color-surface: #FFFFFF;
+    --color-text: #1C1C1C;
+    --color-text-muted: #5C5C5C;
+    --color-text-subtle: #8A8A8A;
+    --color-border: #E8E6E1;
+    --color-france: #7C2D3F;      /* フランス: ワインレッド */
+    --color-spain: #B0432A;       /* スペイン: テラコッタ */
+    --font-serif: 'Cormorant Garamond', 'Hiragino Mincho ProN', serif;
+    --font-sans: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.7;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    width: 100%;
+  }
+
+  .hero {
+    padding: 5rem 0 3rem;
+    text-align: center;
+  }
+
+  .hero__eyebrow {
+    font-family: var(--font-serif);
+    font-size: 0.85rem;
+    letter-spacing: 0.3em;
+    color: var(--color-text-subtle);
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+    font-weight: 500;
+  }
+
+  .hero__title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 500;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .hero__subtitle {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+  }
+
+  .hero__meta {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+  }
+
+  .hero__meta span strong {
+    color: var(--color-text);
+    font-family: var(--font-serif);
+    font-weight: 600;
+  }
+
+  .reports {
+    padding: 2rem 0 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 720px) {
+    .reports { grid-template-columns: 1fr; }
+  }
+
+  .report-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 2rem;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .report-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--card-color, var(--color-text));
+  }
+
+  .report-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -8px rgba(0,0,0,0.08);
+    border-color: var(--card-color);
+  }
+
+  .report-card--france { --card-color: var(--color-france); }
+  .report-card--spain { --card-color: var(--color-spain); }
+
+  .report-card__label {
+    font-family: var(--font-serif);
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    color: var(--card-color);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .report-card__title {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--color-text);
+    letter-spacing: -0.01em;
+  }
+
+  .report-card__title-sub {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    display: block;
+    margin-top: 4px;
+    font-weight: 400;
+  }
+
+  .report-card__description {
+    color: var(--color-text-muted);
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  .report-card__stats {
+    display: flex;
+    gap: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--color-border);
+    font-size: 0.78rem;
+    color: var(--color-text-subtle);
+  }
+
+  .report-card__stats strong {
+    color: var(--color-text);
+    font-family: var(--font-serif);
+    font-weight: 600;
+  }
+
+  .report-card__cta {
+    margin-top: auto;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: var(--card-color);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  .report-card__cta::after {
+    content: "→";
+    transition: transform 0.2s ease;
+  }
+
+  .report-card:hover .report-card__cta::after {
+    transform: translateX(4px);
+  }
+
+  .footer {
+    margin-top: auto;
+    padding: 2rem 0;
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--color-text-subtle);
+  }
+
+  .footer__rule {
+    width: 40px;
+    height: 1px;
+    background-color: var(--color-text-subtle);
+    margin: 0 auto 1rem;
+    opacity: 0.4;
+  }
+
+  @media (max-width: 600px) {
+    .hero { padding: 3rem 0 2rem; }
+    .hero__meta { gap: 1rem; padding: 0.75rem 1.25rem; }
+    .reports { padding: 1.5rem 0 3rem; }
+    .report-card { padding: 1.5rem; }
+    .report-card__title { font-size: 1.65rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <div class="hero__eyebrow">Travel Research Index</div>
+    <h1 class="hero__title">Honeymoon 2026</h1>
+    <p class="hero__subtitle">Spain &amp; France — A nine-day journey</p>
+    <div class="hero__meta">
+      <span><strong>2026.09.26 – 10.04</strong></span>
+      <span>9 Days</span>
+      <span>2 Countries</span>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="reports">
+    <a href="./spanish/summary.html" class="report-card report-card--spain">
+      <div class="report-card__label">Section · 01</div>
+      <h2 class="report-card__title">
+        スペイン
+        <span class="report-card__title-sub">Spain · España</span>
+      </h2>
+      <p class="report-card__description">
+        バルセロナ・マドリード・アンダルシア・サン・セバスチャン他、5領域の徹底調査を横断サマリーに整理。
+        サグラダ・ファミリア完成イヤー、メルセ祭、観光税倍増など2026年特有のポイントを網羅。
+      </p>
+      <div class="report-card__stats">
+        <span><strong>16</strong> セクション</span>
+        <span><strong>5,429</strong> 行(原資料)</span>
+        <span>テラコッタ</span>
+      </div>
+      <div class="report-card__cta">View Report</div>
+    </a>
+
+    <a href="./french/summary.html" class="report-card report-card--france">
+      <div class="report-card__label">Section · 02</div>
+      <h2 class="report-card__title">
+        フランス
+        <span class="report-card__title-sub">France</span>
+      </h2>
+      <p class="report-card__description">
+        パリ・モン・サン・ミシェル・南仏・地方都市・SNS実体験、5領域の徹底調査を横断サマリーに整理。
+        大潮ピーク、モネ100周年、アルザス収穫祭など2026年特有の好機を整理。
+      </p>
+      <div class="report-card__stats">
+        <span><strong>15</strong> セクション</span>
+        <span><strong>4,049</strong> 行(原資料)</span>
+        <span>ワインレッド</span>
+      </div>
+      <div class="report-card__cta">View Report</div>
+    </a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__rule"></div>
+    <p>Honeymoon 2026 · Cross-section research digest</p>
+    <p style="margin-top: 4px;">Private travel planning document · Not indexed</p>
+  </div>
+</footer>
+
+</body>
+</html>

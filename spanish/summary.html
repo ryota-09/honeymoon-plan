@@ -1,0 +1,2482 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>スペイン調査 横断サマリー(プロ仕様) | Honeymoon 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ========== Reset & Base ========== */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --color-bg: #FAFAF8;
+    --color-surface: #FFFFFF;
+    --color-text: #1C1C1C;
+    --color-text-muted: #5C5C5C;
+    --color-text-subtle: #8A8A8A;
+    --color-border: #E8E6E1;
+    --color-border-strong: #C9C5BC;
+    --color-accent: #B0432A;        /* テラコッタ・レッド(スペインのアクセント) */
+    --color-accent-light: #FAEFE9;
+    --color-accent-dark: #8A3220;
+    --color-highlight: #FFF8E7;
+    --color-highlight-border: #E8D9A8;
+    --color-positive: #2D5A3D;
+    --color-positive-bg: #EEF5EF;
+    --color-warning: #8B5A20;
+    --color-warning-bg: #FBF4E6;
+
+    --font-serif: 'Cormorant Garamond', 'Noto Serif JP', 'Hiragino Mincho ProN', serif;
+    --font-sans: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', sans-serif;
+    --font-mono: 'SF Mono', 'Menlo', 'Consolas', monospace;
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.75;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+  }
+
+  /* ========== Hero ========== */
+  .hero {
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-xl) 0 var(--space-lg);
+    text-align: center;
+  }
+
+  .hero__eyebrow {
+    font-family: var(--font-serif);
+    font-size: 0.875rem;
+    letter-spacing: 0.3em;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    margin-bottom: var(--space-sm);
+    font-weight: 500;
+  }
+
+  .hero__title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.25rem, 5vw, 3.5rem);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: var(--space-sm);
+    letter-spacing: -0.01em;
+  }
+
+  .hero__subtitle {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-lg);
+    font-weight: 400;
+  }
+
+  .hero__meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__meta-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 140px;
+  }
+
+  .hero__meta-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    color: var(--color-text-subtle);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+
+  .hero__meta-value {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-text);
+  }
+
+  /* ========== TOC ========== */
+  .toc {
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-md) 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1px 0 var(--color-border);
+  }
+
+  .toc__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm) var(--space-md);
+    justify-content: center;
+    font-size: 0.82rem;
+  }
+
+  .toc a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    white-space: nowrap;
+  }
+
+  .toc a:hover {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+  }
+
+  /* ========== Reading Guide ========== */
+  .reading-guide {
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-md) 0;
+  }
+
+  .reading-guide__title {
+    font-family: var(--font-serif);
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: var(--space-sm);
+    text-align: center;
+  }
+
+  .reading-guide__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-sm);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .reading-guide__item {
+    padding: var(--space-xs) var(--space-sm);
+    border-left: 2px solid var(--color-border);
+    font-size: 0.85rem;
+  }
+
+  .reading-guide__item strong {
+    color: var(--color-accent);
+    font-weight: 600;
+  }
+
+  /* ========== Section ========== */
+  .section {
+    padding: var(--space-xl) 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .section:last-of-type { border-bottom: none; }
+
+  .section__header { margin-bottom: var(--space-lg); }
+
+  .section__number {
+    font-family: var(--font-serif);
+    font-size: 0.95rem;
+    color: var(--color-accent);
+    letter-spacing: 0.25em;
+    font-weight: 500;
+    margin-bottom: var(--space-xs);
+  }
+
+  .section__title {
+    font-family: var(--font-serif);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+    letter-spacing: -0.01em;
+  }
+
+  .section__subtitle {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .section__divider {
+    width: 48px;
+    height: 1px;
+    background-color: var(--color-accent);
+    margin: var(--space-sm) 0 var(--space-md);
+  }
+
+  /* ========== Subsection ========== */
+  .subsection { margin-bottom: var(--space-lg); }
+
+  .subsection__title {
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+    padding-bottom: var(--space-xs);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .subsection__lede {
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-sm);
+    font-size: 0.95rem;
+  }
+
+  /* ========== Tables ========== */
+  .table-wrap {
+    overflow-x: auto;
+    margin: var(--space-sm) 0;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+  }
+
+  thead th {
+    background-color: #F5F3EE;
+    color: var(--color-text);
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--color-border-strong);
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  tbody td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    vertical-align: top;
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background-color: #FAFAF5; }
+
+  td strong, th strong { color: var(--color-text); font-weight: 600; }
+  .price { font-family: var(--font-serif); font-weight: 500; font-feature-settings: "tnum"; white-space: nowrap; }
+
+  /* ========== Hero Summary ========== */
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+  }
+
+  .summary-tile {
+    padding: var(--space-md);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    transition: border-color 0.2s ease;
+  }
+
+  .summary-tile--primary {
+    border-color: var(--color-accent);
+    background: linear-gradient(180deg, #FFFFFF, #FCF7F8);
+  }
+
+  .summary-tile__label {
+    font-family: var(--font-serif);
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: var(--color-accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: var(--space-xs);
+  }
+
+  .summary-tile__title {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+    color: var(--color-text);
+  }
+
+  .summary-tile__body {
+    font-size: 0.92rem;
+    color: var(--color-text-muted);
+    line-height: 1.65;
+  }
+
+  /* ========== Itinerary Block ========== */
+  .itinerary {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    margin: var(--space-sm) 0 var(--space-md);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    line-height: 1.9;
+    overflow-x: auto;
+  }
+
+  .itinerary__line {
+    color: var(--color-text);
+    white-space: pre;
+  }
+
+  .itinerary__day {
+    color: var(--color-accent);
+    font-weight: 700;
+  }
+
+  /* ========== Email Template ========== */
+  .email-block {
+    background-color: #FBFAF7;
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-accent);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    margin: var(--space-sm) 0;
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    line-height: 1.7;
+    overflow-x: auto;
+    white-space: pre;
+    color: var(--color-text);
+  }
+
+  /* ========== Callout / Keypoints ========== */
+  .keypoints {
+    background-color: var(--color-surface);
+    border-left: 3px solid var(--color-accent);
+    padding: var(--space-md);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    margin-bottom: var(--space-md);
+  }
+
+  .keypoints__title {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    color: var(--color-accent);
+    margin-bottom: var(--space-xs);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  .callout {
+    background-color: var(--color-highlight);
+    border: 1px solid var(--color-highlight-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    margin: var(--space-md) 0;
+  }
+
+  .callout__label {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: var(--space-xs);
+  }
+
+  .callout p, .callout ol, .callout ul { margin: 0; color: var(--color-text); font-size: 0.95rem; }
+  .callout ol, .callout ul { margin-left: 1.25rem; margin-top: 4px; }
+
+  .callout--warning {
+    background-color: var(--color-warning-bg);
+    border-color: #D9C28C;
+  }
+  .callout--warning .callout__label { color: var(--color-warning); }
+
+  .callout--positive {
+    background-color: var(--color-positive-bg);
+    border-color: #B8D0BD;
+  }
+  .callout--positive .callout__label { color: var(--color-positive); }
+
+  .impact-high { color: var(--color-accent); font-weight: 600; }
+
+  /* ========== Badges ========== */
+  .badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 12px;
+    background-color: var(--color-accent-light);
+    color: var(--color-accent);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+
+  .badge--neutral { background-color: #F0EFEA; color: var(--color-text-muted); }
+  .badge--positive { background-color: var(--color-positive-bg); color: var(--color-positive); }
+  .badge--warning { background-color: var(--color-warning-bg); color: var(--color-warning); }
+
+  .priority-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+  .priority-dot--critical { background: var(--color-accent); }
+  .priority-dot--high { background: #D9A847; }
+  .priority-dot--medium { background: var(--color-border-strong); }
+
+  .star { color: var(--color-accent); font-weight: 700; letter-spacing: -0.02em; }
+  .star--muted { color: var(--color-border-strong); }
+
+  /* ========== Patterns ========== */
+  .patterns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-sm);
+    margin: var(--space-md) 0;
+  }
+
+  .pattern-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .pattern-card:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-2px);
+  }
+
+  .pattern-card__label {
+    font-family: var(--font-serif);
+    font-size: 0.78rem;
+    color: var(--color-accent);
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .pattern-card__title {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+    color: var(--color-text);
+  }
+
+  .pattern-card__route {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-xs);
+    line-height: 1.6;
+  }
+
+  .pattern-card__note {
+    font-size: 0.82rem;
+    color: var(--color-text-subtle);
+    padding-top: var(--space-xs);
+    border-top: 1px dashed var(--color-border);
+    font-style: italic;
+  }
+
+  .pattern-card--recommended {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 1px var(--color-accent);
+  }
+
+  /* ========== Timeline ========== */
+  .timeline {
+    position: relative;
+    margin-left: 18px;
+    padding-left: var(--space-md);
+    border-left: 2px solid var(--color-border);
+  }
+
+  .timeline-item {
+    position: relative;
+    padding: var(--space-sm) 0 var(--space-md);
+  }
+
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: var(--color-accent);
+    border: 2px solid var(--color-surface);
+    border-radius: 50%;
+    left: calc(-1 * var(--space-md) - 7px);
+    top: var(--space-sm);
+    z-index: 1;
+  }
+
+  .timeline-item__phase {
+    font-family: var(--font-serif);
+    font-size: 0.85rem;
+    color: var(--color-accent);
+    letter-spacing: 0.15em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+
+  .timeline-item__date {
+    font-size: 0.78rem;
+    color: var(--color-text-subtle);
+    margin-bottom: var(--space-xs);
+  }
+
+  .timeline-item__title {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+    color: var(--color-text);
+  }
+
+  .timeline-item__list {
+    margin: var(--space-xs) 0 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .timeline-item__list li {
+    padding: 3px 0 3px 22px;
+    position: relative;
+    font-size: 0.92rem;
+    color: var(--color-text);
+    line-height: 1.65;
+  }
+
+  .timeline-item__list li::before {
+    content: "□";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: var(--color-border-strong);
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  /* ========== Lists ========== */
+  ul.clean-list, ol.clean-list {
+    margin: var(--space-xs) 0 var(--space-sm) 1.25rem;
+    color: var(--color-text);
+  }
+
+  ul.clean-list li, ol.clean-list li { margin-bottom: 0.4rem; }
+  ul.clean-list li::marker { color: var(--color-accent); }
+  ol.clean-list li::marker { color: var(--color-accent); font-weight: 600; }
+
+  ul.numbered-list {
+    margin: var(--space-xs) 0 var(--space-sm) 0;
+    list-style: none;
+    counter-reset: num-counter;
+  }
+
+  ul.numbered-list li {
+    counter-increment: num-counter;
+    padding: 6px 0 6px 38px;
+    position: relative;
+    font-size: 0.93rem;
+    line-height: 1.7;
+  }
+
+  ul.numbered-list li::before {
+    content: counter(num-counter, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 6px;
+    font-family: var(--font-serif);
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    width: 28px;
+  }
+
+  ul.no-do-list {
+    margin: var(--space-xs) 0;
+    list-style: none;
+  }
+  ul.no-do-list li {
+    padding: 6px 0 6px 28px;
+    position: relative;
+    font-size: 0.93rem;
+    line-height: 1.65;
+  }
+  ul.no-do-list li::before {
+    content: "✕";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    color: var(--color-accent);
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+
+  /* ========== Phrase Card ========== */
+  .phrase-table { font-size: 0.85rem; }
+  .phrase-table td:nth-child(1) { color: var(--color-text-muted); width: 36%; }
+  .phrase-table td:nth-child(2) { font-style: italic; color: var(--color-text); }
+  .phrase-table td:nth-child(3) { color: var(--color-text-subtle); font-size: 0.78rem; }
+
+  /* ========== Emergency Card ========== */
+  .emergency-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: var(--space-sm);
+    margin: var(--space-sm) 0;
+  }
+
+  .emergency-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-sm) var(--space-md);
+    text-align: center;
+  }
+
+  .emergency-card__label {
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+    margin-bottom: 4px;
+  }
+
+  .emergency-card__number {
+    font-family: var(--font-serif);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    letter-spacing: 0.05em;
+  }
+
+  /* ========== Action Items ========== */
+  .action-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  .action-row {
+    display: grid;
+    grid-template-columns: 60px 1fr 180px;
+    gap: var(--space-sm);
+    align-items: center;
+    padding: var(--space-sm);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
+  }
+
+  .action-row__num {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .action-row__task { color: var(--color-text); line-height: 1.55; }
+  .action-row__due { color: var(--color-text-muted); font-size: 0.85rem; text-align: right; }
+
+  @media (max-width: 600px) {
+    .action-row { grid-template-columns: 40px 1fr; }
+    .action-row__due { grid-column: 1 / -1; padding-left: 50px; text-align: left; }
+  }
+
+  /* Priority group divider */
+  .priority-group {
+    margin-bottom: var(--space-md);
+  }
+
+  .priority-group__heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+    padding-bottom: 4px;
+    border-bottom: 1px dashed var(--color-border);
+  }
+
+  /* ========== Route List ========== */
+  .route-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-sm);
+    margin: var(--space-sm) 0;
+  }
+
+  .route-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+  }
+
+  .route-card__title {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--color-accent-light);
+  }
+
+  .route-card__step {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: var(--space-xs);
+    padding: 4px 0;
+    font-size: 0.85rem;
+    align-items: baseline;
+  }
+
+  .route-card__time {
+    font-family: var(--font-serif);
+    color: var(--color-text-muted);
+    font-weight: 600;
+  }
+
+  .route-card__place strong { color: var(--color-text); font-weight: 600; }
+
+  /* ========== Tag Group ========== */
+  .tag-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: var(--space-sm) 0;
+  }
+
+  .tag {
+    font-size: 0.78rem;
+    padding: 4px 10px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    color: var(--color-text-muted);
+  }
+
+  /* ========== Two-column ========== */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+    margin: var(--space-md) 0;
+  }
+
+  @media (max-width: 720px) {
+    .two-col { grid-template-columns: 1fr; }
+  }
+
+  /* ========== Footer ========== */
+  .footer {
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    padding: var(--space-lg) 0;
+    text-align: center;
+    color: var(--color-text-subtle);
+    font-size: 0.85rem;
+  }
+
+  .footer__rule {
+    width: 40px;
+    height: 1px;
+    background-color: var(--color-accent);
+    margin: 0 auto var(--space-sm);
+  }
+
+  /* ========== Utility ========== */
+  .text-muted { color: var(--color-text-muted); }
+  .text-subtle { color: var(--color-text-subtle); }
+  .text-center { text-align: center; }
+
+  /* ========== Responsive ========== */
+  @media (max-width: 600px) {
+    .hero { padding: var(--space-lg) 0 var(--space-md); }
+    .section { padding: var(--space-lg) 0; }
+    .toc__inner { gap: var(--space-sm); font-size: 0.76rem; }
+    .hero__meta-item { min-width: 110px; }
+    table { font-size: 0.8rem; }
+    thead th, tbody td { padding: 0.55rem 0.6rem; }
+    .itinerary, .email-block { font-size: 0.78rem; padding: var(--space-sm); }
+  }
+
+  /* ========== Print ========== */
+  @media print {
+    body { background: white; font-size: 11pt; }
+    .toc { position: static; box-shadow: none; }
+    .section { page-break-inside: avoid; padding: var(--space-md) 0; }
+    .pattern-card:hover { transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="container">
+    <div class="hero__eyebrow">Spain · Cross-Section Summary · Pro Edition</div>
+    <h1 class="hero__title">スペイン調査 横断サマリー</h1>
+    <p class="hero__subtitle">Honeymoon 2026 — Professional travel planning digest</p>
+    <div class="hero__meta">
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Date</span>
+        <span class="hero__meta-value">2026.09.26 – 10.04</span>
+      </div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Duration</span>
+        <span class="hero__meta-value">9 Days</span>
+      </div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Budget</span>
+        <span class="hero__meta-value">¥2.0M – 3.0M</span>
+      </div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Hotels</span>
+        <span class="hero__meta-value">★4 中心</span>
+      </div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">FX(参考)</span>
+        <span class="hero__meta-value">€1 = ¥170</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ TOC ============ -->
+<nav class="toc">
+  <div class="container">
+    <div class="toc__inner">
+      <a href="#executive">エグゼクティブ</a>
+      <a href="#keypoints">機会・脅威</a>
+      <a href="#patterns">旅程パターン</a>
+      <a href="#timeline">予約タイムライン</a>
+      <a href="#budget">予算配分</a>
+      <a href="#flights">航空券</a>
+      <a href="#barcelona">バルセロナ</a>
+      <a href="#madrid">マドリード</a>
+      <a href="#andalusia">アンダルシア</a>
+      <a href="#regions">その他地方</a>
+      <a href="#romance">演出</a>
+      <a href="#risks">失敗回避</a>
+      <a href="#phrases">フレーズ</a>
+      <a href="#emergency">緊急・実用</a>
+      <a href="#actions">アクション</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ Reading Guide ============ -->
+<section class="reading-guide">
+  <div class="container">
+    <div class="reading-guide__title">How To Read</div>
+    <div class="reading-guide__grid">
+      <div class="reading-guide__item"><strong>5分で全体把握:</strong> §1 + §2</div>
+      <div class="reading-guide__item"><strong>旅程を決めたい:</strong> §3 + §11</div>
+      <div class="reading-guide__item"><strong>航空券を考えたい:</strong> §6</div>
+      <div class="reading-guide__item"><strong>いつ何を予約するか:</strong> §4 + §15</div>
+      <div class="reading-guide__item"><strong>予算を組みたい:</strong> §5</div>
+      <div class="reading-guide__item"><strong>詳細を深堀り:</strong> §7 / §8 / §9 / §10</div>
+      <div class="reading-guide__item"><strong>リスクを潰す:</strong> §12 + §13 + §14</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §1 Executive Summary ============ -->
+<section class="section" id="executive">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 01</div>
+      <h2 class="section__title">エグゼクティブサマリー</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">これだけ読めば全体像と最初の5アクションが分かる。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">この旅程の核心 — 3つの幸運な一致</h3>
+      <div class="summary-grid">
+        <div class="summary-tile summary-tile--primary">
+          <div class="summary-tile__label">Opportunity 01</div>
+          <h4 class="summary-tile__title">サグラダ・ファミリア 完成イヤー</h4>
+          <p class="summary-tile__body">2026/2/20 中央タワー172.5m完成、世界一高い教会へ。ガウディ没後100年でもあり、「未完の教会が完成する瞬間」に立ち会える歴史的1年。</p>
+        </div>
+        <div class="summary-tile summary-tile--primary">
+          <div class="summary-tile__label">Opportunity 02</div>
+          <h4 class="summary-tile__title">メルセ祭 フィナーレ</h4>
+          <p class="summary-tile__body">9/23 – 27 開催、600以上の無料イベント。<strong>9/27 夜21:30モンジュイック側で音楽連動の大規模花火</strong>(旅程2日目夜の最大ハイライト候補)。</p>
+        </div>
+        <div class="summary-tile summary-tile--primary">
+          <div class="summary-tile__label">Opportunity 03</div>
+          <h4 class="summary-tile__title">アルハンブラ 夏期夜間入場</h4>
+          <p class="summary-tile__body">4/1 – 10/14、火 – 土 22:00開始。10/1夜の旅程に組み込めば、ライトアップされたナスル朝宮殿を競争率低めで体験可能。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">最大の警告</h3>
+      <div class="callout callout--warning">
+        <div class="callout__label">Critical Warnings</div>
+        <ul style="margin-top: 4px;">
+          <li><strong>観光税倍増(2026/4から)</strong>: 4★ ¥1,428/泊、5★ ¥2,040/泊。2人4泊4★で <strong>¥11,400 追加</strong></li>
+          <li><strong>完成イヤーで観光客集中</strong>: サグラダ・ファミリアもバルセロナホテルも需要超過 → <strong>2026/3-4月までに予約完了</strong></li>
+          <li><strong>メトロ詐欺新手口</strong>: 「偽警察」「ケチャップ」「日本円見せて」 → バッグは体の前、無視</li>
+          <li><strong>円安+物価高</strong>: 2023年比でホテル20-30%上昇、食費10-15%上昇</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">プロが推奨する旅程(スペイン側)</h3>
+      <p class="subsection__lede">関空-パリ直行便があるため、<strong>バルセロナ in / パリ out</strong> が動線最効率。</p>
+      <div class="itinerary"><span class="itinerary__line"><span class="itinerary__day">Day 1 (9/26 土)</span>  東京 → バルセロナ(機内、夕方着)、メルセ祭フィナーレ前夜
+<span class="itinerary__day">Day 2 (9/27 日)</span>  バルセロナ:サグラダ・ファミリア朝一(Quiet Hour) + ガウディ建築
+                  ※夜:メルセ祭フィナーレ花火 21:30(モンジュイックMNAC前)
+<span class="itinerary__day">Day 3 (9/28 月)</span>  バルセロナ:グエル公園朝一 + ピカソ美術館 + パラウ・ダ・ラ・ムジカ + フラメンコ
+<span class="itinerary__day">Day 4 (9/29 火)</span>  バルセロナ → パリ(空路 約2h)、午後パリ着
+              ...... (以降フランス側)</span></div>
+      <p class="text-muted" style="font-size:0.9rem;"><strong>Why:</strong> 9/26着なら9/27夜のメルセ祭フィナーレ花火に偶然遭遇できる「奇跡」のタイミング。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">緊急予約事項 TOP 5</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>優先度</th><th>項目</th><th>締切目安</th><th>理由</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="priority-dot priority-dot--critical"></span><strong>1</strong></td>
+                <td><strong>Disfrutar(バルセロナ★★★)</strong></td>
+                <td><strong>2026/3 – 4月</strong>(6ヶ月前)</td>
+                <td>世界Best 1位の超人気店、12ヶ月前から予約可</td></tr>
+            <tr><td><span class="priority-dot priority-dot--critical"></span><strong>2</strong></td>
+                <td><strong>バルセロナ ★4ホテル</strong>(エイサンプル)</td>
+                <td><strong>2026/5月まで</strong></td>
+                <td>メルセ祭重複+完成イヤーで高騰</td></tr>
+            <tr><td><span class="priority-dot priority-dot--critical"></span><strong>3</strong></td>
+                <td><strong>アルハンブラ宮殿</strong>(該当パターン)</td>
+                <td><strong>2026/6 – 7月まで</strong></td>
+                <td>ナスル朝宮殿30分ごと300人制限、午前枠瞬殺</td></tr>
+            <tr><td><span class="priority-dot priority-dot--high"></span><strong>4</strong></td>
+                <td><strong>サン・セバスチャン ★★★</strong>(美食特化なら)</td>
+                <td><strong>2026/3月</strong>(6-12ヶ月前)</td>
+                <td>Arzak/Akelarre/Berasategui、48h以内キャンセル €150/人</td></tr>
+            <tr><td><span class="priority-dot priority-dot--high"></span><strong>5</strong></td>
+                <td><strong>DiverXO(マドリード★★★)</strong></td>
+                <td><strong>2026/3 – 6月</strong></td>
+                <td>チケット制、完売多発</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §2 機会・脅威マトリクス ============ -->
+<section class="section" id="keypoints">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 02</div>
+      <h2 class="section__title">機会・脅威マトリクス</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">時期固有18項目を機会(Opportunity)と脅威(Threat)に分類。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">機会 — 積極的に活かすべき</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>項目</th><th>内容</th><th>活かし方</th></tr></thead>
+          <tbody>
+            <tr><td><span class="badge badge--positive">O1</span></td><td><strong>サグラダ・ファミリア完成イヤー</strong></td><td>2026/2/20 中央タワー172.5m完成</td><td>朝一9:00 Quiet Hourで貸切体験、塔登頂</td></tr>
+            <tr><td><span class="badge badge--positive">O2</span></td><td><strong>ガウディ没後100年</strong></td><td>6/10ローマ教皇ミサ、各所で特別展示</td><td>「World Capital of Architecture 2026」企画展</td></tr>
+            <tr><td><span class="badge badge--positive">O3</span></td><td><strong>メルセ祭 La Mercè 2026</strong></td><td>9/23 – 27 開催、600以上の無料イベント</td><td><strong>9/27夜21:30の花火</strong>、人間タワー、コレフォック</td></tr>
+            <tr><td><span class="badge badge--positive">O4</span></td><td><strong>アルハンブラ夏期夜間入場</strong></td><td>4/1 – 10/14、火 – 土 22:00開始</td><td><strong>10/1夜に該当</strong>、競争率低い</td></tr>
+            <tr><td><span class="badge badge--positive">O5</span></td><td><strong>Hola Barcelona 96時間券</strong></td><td><span class="price">¥6,052</span>/人で空港・全交通乗り放題</td><td>9/28 – 10/2の4日間にフィット</td></tr>
+            <tr><td><span class="badge badge--positive">O6</span></td><td><strong>サン・セバスチャン国際映画祭</strong></td><td>9/19 – 27/2026 予定</td><td>美食+映画祭で華やか(該当パターン)</td></tr>
+            <tr><td><span class="badge badge--positive">O7</span></td><td><strong>ぶどう収穫期</strong></td><td>ヘレスのシェリー、ロンダ周辺ワイン</td><td>テイスティング最盛期</td></tr>
+            <tr><td><span class="badge badge--positive">O8</span></td><td><strong>8月ピーク後の閑散シーズン</strong></td><td>観光客減、宿泊費下落</td><td>主要観光地で予約取りやすい</td></tr>
+            <tr><td><span class="badge badge--positive">O9</span></td><td><strong>9月末ベスト気候</strong></td><td>バルセロナ23.5℃、マドリード20.6℃</td><td>観光・散策に最適</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">脅威 — 早めの対策必須</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>項目</th><th>内容</th><th>対策</th></tr></thead>
+          <tbody>
+            <tr><td><span class="badge badge--warning">T1</span></td><td><strong>観光税倍増(2026/4から)</strong></td><td>4★ <span class="price">¥1,428</span>/泊、5★ <span class="price">¥2,040</span>/泊</td><td>2人4泊4★で +<span class="price">¥11,400</span> を予算計上</td></tr>
+            <tr><td><span class="badge badge--warning">T2</span></td><td><strong>サグラダ センテナリオ加算</strong></td><td>2026/6 – 12月、<span class="price">¥340 – 850</span>上乗せ</td><td>予算考慮</td></tr>
+            <tr><td><span class="badge badge--warning">T3</span></td><td><strong>Uber/Cabify 2026年末廃止</strong></td><td>バルセロナで段階廃止</td><td>Free Now / 正規タクシー前提に</td></tr>
+            <tr><td><span class="badge badge--warning">T4</span></td><td><strong>2028年民泊全廃計画</strong></td><td>バルセロナ短期賃貸完全廃止</td><td>ホテル予約早期</td></tr>
+            <tr><td><span class="badge badge--warning">T5</span></td><td><strong>メルセ祭ホテル高騰</strong></td><td>通常の1.5 – 2倍</td><td>7月までに予約 or 9/28(月)着に調整</td></tr>
+            <tr><td><span class="badge badge--warning">T6</span></td><td><strong>スリ被害49%バルセロナ集中</strong></td><td>2023年日本人被害153人</td><td>バッグ前掛け、メトロ奥に立つ</td></tr>
+            <tr><td><span class="badge badge--warning">T7</span></td><td><strong>Renfeチケット決済エラー多発</strong></td><td>公式サイトでクレカエラー頻発</td><td>Omio / Trip.com / PayPal経由</td></tr>
+            <tr><td><span class="badge badge--warning">T8</span></td><td><strong>スペイン式食事時間</strong></td><td>昼14 – 16時、夕食21 – 23時</td><td>早めディナーは20:30開始で予約</td></tr>
+            <tr><td><span class="badge badge--warning">T9</span></td><td><strong>シエスタ問題</strong></td><td>中小都市で14 – 17時店閉店</td><td>バルセロナ・マドリードは通し営業多</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §3 旅程パターン詳細 ============ -->
+<section class="section" id="patterns">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 03</div>
+      <h2 class="section__title">旅程パターン詳細(スペイン側)</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">5パターンの比較表 + 推奨パターンの判断ポイント。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">5パターン横並び比較</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>観点</th><th>A. BCN集中(★推奨)</th><th>B. BCN+MAD</th><th>C. MAD集中</th><th>D. 美食特化</th><th>E. アンダルシア</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>スペイン側構成</strong></td><td>バルセロナ3泊</td><td>BCN2+MAD2</td><td>MAD3+トレド1</td><td>BCN2+サン・セバ2-3</td><td>MAD1+SVQ2+GRX2</td></tr>
+            <tr><td>東京 in / out</td><td>BCN in / CDG out</td><td>BCN or MAD in</td><td>MAD in / CDG out</td><td>BCN in / CDG out</td><td>MAD in / CDG out</td></tr>
+            <tr><td>AVE乗換</td><td>なし</td><td>1回</td><td>なし</td><td>BCN→MAD or 仏</td><td>2 – 3回</td></tr>
+            <tr><td>9月末〜10月活用</td><td>◎</td><td>◎</td><td>○</td><td>◎</td><td>◎</td></tr>
+            <tr style="background-color: #FAF7F2;"><td><strong>総合推奨度</strong></td><td><span class="impact-high">★★★★★</span></td><td><span class="star">★★★★</span></td><td><span class="star">★★★</span></td><td><span class="star">★★★★</span></td><td><span class="star">★★★</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">5パターンカード</h3>
+      <div class="patterns">
+        <div class="pattern-card pattern-card--recommended">
+          <div class="pattern-card__label">PATTERN A · RECOMMENDED</div>
+          <h3 class="pattern-card__title">バルセロナ集中</h3>
+          <p class="pattern-card__route">バルセロナ 3泊 + パリ・MSM・他</p>
+          <p class="pattern-card__note">関空-パリ直行便活用、移動最少、サグラダ完成イヤーを最大満喫。</p>
+        </div>
+        <div class="pattern-card">
+          <div class="pattern-card__label">PATTERN B</div>
+          <h3 class="pattern-card__title">バルセロナ+マドリード</h3>
+          <p class="pattern-card__route">BCN 2泊 + MAD 2泊</p>
+          <p class="pattern-card__note">両都市の魅力を抑えるが時間配分タイト、AVE 2.5h移動あり。</p>
+        </div>
+        <div class="pattern-card">
+          <div class="pattern-card__label">PATTERN C</div>
+          <h3 class="pattern-card__title">マドリード集中</h3>
+          <p class="pattern-card__route">MAD 3泊 + トレド 1泊</p>
+          <p class="pattern-card__note">プラド美術館深掘り+トレド/セゴビア日帰り。バルセロナ犠牲。</p>
+        </div>
+        <div class="pattern-card">
+          <div class="pattern-card__label">PATTERN D</div>
+          <h3 class="pattern-card__title">美食特化</h3>
+          <p class="pattern-card__route">BCN 2泊 + サン・セバスチャン 2-3泊</p>
+          <p class="pattern-card__note">ミシュラン3★体験、フランス側ボルドー経由可能。</p>
+        </div>
+        <div class="pattern-card">
+          <div class="pattern-card__label">PATTERN E</div>
+          <h3 class="pattern-card__title">アンダルシア組込</h3>
+          <p class="pattern-card__route">MAD 1泊 + セビリア 2泊 + グラナダ 2泊</p>
+          <p class="pattern-card__note">3大世界遺産制覇可能だが移動日多く強行軍。バルセロナ犠牲。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">パターン選択フロー</h3>
+      <div class="callout">
+        <div class="callout__label">Decision Flow</div>
+        <ol style="margin: 4px 0 0 1.5rem;">
+          <li>ガウディ建築を見たいか? → YES なら A or B(バルセロナ必須)</li>
+          <li>美食最優先か? → YES なら D(サン・セバスチャン)</li>
+          <li>美術館重視か? → YES なら B or C(マドリード)</li>
+          <li>アルハンブラ宮殿は譲れないか? → YES なら E</li>
+          <li>9日間で移動を最少化したいか? → YES なら A</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §4 予約タイムライン ============ -->
+<section class="section" id="timeline">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 04</div>
+      <h2 class="section__title">予約タイムライン</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">T-6ヶ月から出発前日まで、いつ何を予約するか時系列で整理(公式URL付き)。</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-item__phase">T-6 Months</div>
+        <div class="timeline-item__date">2026年 4月</div>
+        <h4 class="timeline-item__title">最重要予約</h4>
+        <ul class="timeline-item__list">
+          <li>航空券確保(§6 航空券戦略を参照)</li>
+          <li><strong>バルセロナ ★4ホテル</strong>(Sercotel Rosellón、Casa Mimosa等) — Booking.com / 公式</li>
+          <li><strong>Disfrutar(★★★)</strong> — disfrutarbarcelona.com/bookings、12ヶ月前から可</li>
+          <li><strong>サン・セバスチャン ★★★</strong>(該当パターン): Arzak(reservas@arzak.es)/ Akelarre / Berasategui</li>
+          <li><strong>パラドール・デ・グラナダ</strong>(該当パターン、半年以上前完売): paradores.es</li>
+          <li>海外旅行保険検討開始</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-item__phase">T-4 Months</div>
+        <div class="timeline-item__date">2026年 6月</div>
+        <h4 class="timeline-item__title">ミシュラン2-3★ + アルハンブラ</h4>
+        <ul class="timeline-item__list">
+          <li>DiverXO(マドリード★★★)チケット予約: diverxo.com</li>
+          <li>ABaC / Lasarte(バルセロナ★★★)3-6ヶ月前</li>
+          <li>Coque / Ramón Freixa(マドリード★★)</li>
+          <li>アルハンブラ宮殿チケット: tickets.alhambra-patronato.es</li>
+          <li>レンタカー検討(該当パターン)</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-item__phase">T-3 Months</div>
+        <div class="timeline-item__date">2026年 7月</div>
+        <h4 class="timeline-item__title">主要観光地のタイムスロット</h4>
+        <ul class="timeline-item__list">
+          <li>サグラダ・ファミリア タワー付き: sagradafamilia.org(2ヶ月前から販売開始)</li>
+          <li>AVE Promo+ 早割(2-3ヶ月前、最大65%OFF)— Omio / Trip.com 経由が安定</li>
+          <li>カサ・バトリョ Magic Nights: casabatllo.es/en/online-tickets/visit-magic-nights/</li>
+          <li>カサ・ミラ Night Experience</li>
+          <li>パラウ・ダ・ラ・ムジカ 夜コンサート: palaumusica.cat</li>
+          <li>Cinc Sentits / Mont Bar(★★)4週間前で取れる</li>
+          <li>Teatro Real(マドリード): teatroreal.es</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-item__phase">T-2 Months</div>
+        <div class="timeline-item__date">2026年 7月末 – 8月</div>
+        <h4 class="timeline-item__title">観光地・体験予約</h4>
+        <ul class="timeline-item__list">
+          <li>グエル公園(72時間前まで): parkguell.barcelona</li>
+          <li>プラド / レイナ・ソフィア / ティッセン 時間指定(Paseo del Arte Pass €32.80)</li>
+          <li>王宮(Palacio Real)ガイド付き: tickets.patrimonionacional.es</li>
+          <li>サン・パウ病院 ガイドツアー(月・水・土 11:15)</li>
+          <li>シャンパン体験: Codorníu / Freixenet ペネデス</li>
+          <li>フラメンコ Tablao Cordobés / Corral de la Morería</li>
+          <li>eSIM Holafly 購入</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-item__phase">T-1 Month</div>
+        <div class="timeline-item__date">2026年 8月末 – 9月</div>
+        <h4 class="timeline-item__title">国内移動・現地ツアー</h4>
+        <ul class="timeline-item__list">
+          <li>モンセラート Trans Montserrat 共通券 €38</li>
+          <li>国際運転免許証 取得(レンタカー時)</li>
+          <li>Renfeチケット(Omio / Trip.com 経由が安定、PayPal推奨)</li>
+          <li>空港送迎タクシー 検討</li>
+          <li>スリ対策グッズ準備</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-item__phase">T-2 Weeks</div>
+        <div class="timeline-item__date">2026年 9月中旬</div>
+        <h4 class="timeline-item__title">最終予約と保険</h4>
+        <ul class="timeline-item__list">
+          <li>ホテル予約再確認(複数二重チェック、観光税明記)</li>
+          <li>ハネムーン伝達メール送信(§11 例文参照)</li>
+          <li>海外旅行保険 加入</li>
+          <li>AirTag 設置(預け荷物)</li>
+          <li>天気予報チェック開始</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-item__phase">T-1 Week</div>
+        <div class="timeline-item__date">2026年 9月20日頃</div>
+        <h4 class="timeline-item__title">ストライキ・最終仕上げ</h4>
+        <ul class="timeline-item__list">
+          <li>メルセ祭2026プログラム(barcelona.cat/lamerce/en で公式PDFダウンロード)</li>
+          <li>外務省 領事メール 確認(ストライキ・治安)</li>
+          <li>AVEストライキ情報(Twitter/X "huelga Renfe")</li>
+          <li>服装最終調整(9月末は10-25℃の温度差)</li>
+          <li>預け荷物の写真撮影(ロストバゲージ対策)</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-item__phase">Day Before</div>
+        <div class="timeline-item__date">出発前日</div>
+        <h4 class="timeline-item__title">最終確認</h4>
+        <ul class="timeline-item__list">
+          <li>全予約QRコード/PDFをオフラインでスマホに保存</li>
+          <li>パスポート・国際運転免許証・現金(€100-150程度)</li>
+          <li>スペイン語フレーズ口慣らし(§13参照)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §5 予算試算 + 配分マトリクス ============ -->
+<section class="section" id="budget">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 05</div>
+      <h2 class="section__title">予算試算 + 配分マトリクス</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">都市別予算サマリ + 投資 vs 節約の意思決定マトリクス。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">都市別予算サマリ(2人合計)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>区分</th><th>バルセロナ3-4泊</th><th>マドリード3泊</th><th>アンダルシア3泊</th><th>サン・セバスチャン3泊</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>宿泊</td><td class="price">¥190,000</td><td class="price">¥127,500</td><td class="price">¥130,000</td><td class="price">¥150,000</td></tr>
+            <tr><td>観光税</td><td class="price">¥11,400</td><td class="price">¥6,800</td><td class="price">¥6,800</td><td class="price">¥7,000</td></tr>
+            <tr><td>観光・入場</td><td class="price">¥80,000</td><td class="price">¥60,000</td><td class="price">¥40,000</td><td class="price">¥30,000</td></tr>
+            <tr><td>食事</td><td class="price">¥140,000</td><td class="price">¥130,000</td><td class="price">¥130,000</td><td class="price"><strong>¥250,000</strong></td></tr>
+            <tr><td>市内交通</td><td class="price">¥12,100</td><td class="price">¥7,650</td><td class="price">¥10,000</td><td class="price">¥10,000</td></tr>
+            <tr><td>都市間移動</td><td>—</td><td>—</td><td class="price">AVE ¥30,000</td><td class="price">¥40,000</td></tr>
+            <tr><td>ハイライト体験</td><td class="price">¥40,000</td><td class="price">¥25,000</td><td class="price">¥17,000</td><td class="price">¥30,000</td></tr>
+            <tr style="background-color: #FAF7F2;"><td><strong>小計</strong></td><td class="price"><strong>約 ¥520,000</strong></td><td class="price"><strong>約 ¥376,000</strong></td><td class="price"><strong>約 ¥380,000</strong></td><td class="price"><strong>約 ¥520,000</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">9日間スペイン+フランス全体予算(推奨パターンA)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>項目</th><th>金額</th><th>内訳</th></tr></thead>
+          <tbody>
+            <tr><td>航空券(プレエコ往復2人)</td><td class="price">¥800,000</td><td>エールフランス羽田-CDG-BCN等</td></tr>
+            <tr><td>バルセロナ3-4泊</td><td class="price">¥520,000</td><td>Aパターン</td></tr>
+            <tr><td>パリ3-4泊 + MSM 1泊</td><td class="price">¥647,000 + ¥100,000</td><td>フランス側資料参照</td></tr>
+            <tr><td>都市間移動(BCN-CDG空路)</td><td class="price">¥30,000</td><td>—</td></tr>
+            <tr><td>海外旅行保険・eSIM</td><td class="price">¥30,000</td><td>—</td></tr>
+            <tr><td>予備費</td><td class="price">¥150,000</td><td>—</td></tr>
+            <tr style="background-color: #FAF7F2;"><td><strong>合計</strong></td><td class="price"><strong>約 ¥2,280,000</strong></td><td><strong>(2人合計、予算内)</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">予算配分マトリクス(投資 vs 節約の意思決定)</h3>
+      <p class="subsection__lede">「何にお金を使い、何を節約するか」のプロの判断:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>項目</th><th>投資すべき</th><th>節約していい</th><th>理由</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>航空券クラス</td><td><span class="impact-high">プレエコ以上</span></td><td>エコノミー</td><td>14時間フライトでハネムーン初日からの体力消耗を避ける</td></tr>
+            <tr><td>ホテル(バルセロナ)</td><td><span class="impact-high">4★中心地 + 1泊5★</span></td><td>中心外3★</td><td>ガウディ建築至近の立地、ハネムーン特典</td></tr>
+            <tr><td>ホテル(マドリード)</td><td><span class="impact-high">4★ Barrio de las Letras</span></td><td>駅前ビジネス</td><td>プラド徒歩圏で美術館巡りが楽</td></tr>
+            <tr><td>ミシュラン体験</td><td><span class="impact-high">旅程中1回は★★★</span></td><td>全部高級店</td><td>1回の感動を最大化、他はビストロやタパス</td></tr>
+            <tr><td>観光地入場料</td><td><span class="impact-high">サグラダ・タワー、ミュージアムパス</span></td><td>美術館全制覇</td><td>お得な共通券+優先入場</td></tr>
+            <tr><td>市内交通</td><td><span class="impact-high">Hola Barcelona 96h</span></td><td>1回券毎回</td><td>空港往復含むトータルでお得</td></tr>
+            <tr><td>AVE座席クラス</td><td><span class="impact-high">Promo+(変更可)</span></td><td>当日購入</td><td>1-2ヶ月前 Iryo or AVE 早割</td></tr>
+            <tr><td>フォトグラファー</td><td><span class="impact-high">プロ1セッション</span></td><td>スマホ自撮りのみ</td><td>一生残るハネムーン写真への投資</td></tr>
+            <tr><td>お土産</td><td><span class="impact-high">真空生ハム+カバ</span></td><td>量を絞る</td><td>食品系は税関OK、量より質</td></tr>
+            <tr><td>食事(昼)</td><td>—</td><td><span class="impact-high">カジュアル¥3-5K</span></td><td>スペイン式昼食は軽めが文化的にも合う</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">3パターン別 総予算</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>パターン</th><th>総予算(2人)</th><th>内容</th></tr></thead>
+          <tbody>
+            <tr><td>節約</td><td class="price">約 ¥1,800,000</td><td>エコノミー直行+★3-4ホテル+ミシュラン1回</td></tr>
+            <tr style="background-color: #FAF7F2;"><td><strong>標準(推奨)</strong></td><td class="price"><strong>約 ¥2,280,000</strong></td><td>プレエコ+★4中心+ミシュラン1-2回</td></tr>
+            <tr><td>贅沢</td><td class="price">約 ¥3,000,000+</td><td>ビジネスクラス+★4-5+ミシュラン3回</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §6 航空券戦略 ============ -->
+<section class="section" id="flights">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 06</div>
+      <h2 class="section__title">航空券戦略</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">ハネムーン最大のコスト要素 — ルート選定、直行 vs 経由、クラス選択、マイル特典。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">ルート選定 — 関空/羽田 in/out 戦略</h3>
+      <p class="subsection__lede"><strong>前提</strong>: スペイン+フランス9日間 / モン・サン・ミシェル必須 / バルセロナ in / パリ out 推奨</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>ルート</th><th>所要時間</th><th>価格目安(2人プレエコ)</th><th>推奨度</th></tr>
+          </thead>
+          <tbody>
+            <tr style="background-color: var(--color-highlight);"><td><strong>羽田→CDG(エールフランス直行)→BCN(エールフランス)→ 〜 →CDG→羽田</strong></td><td>行14h+乗継2h+1.5h / 帰14h</td><td class="price">¥800,000 – 1,000,000</td><td><span class="star">★★★★★</span></td></tr>
+            <tr><td>羽田→BCN(乗継1回、ルフトハンザ等)→ 〜 →CDG→羽田</td><td>行16-18h / 帰14h</td><td class="price">¥700,000 – 900,000</td><td><span class="star">★★★</span></td></tr>
+            <tr><td>羽田→マドリード(直行・Iberia)→BCN→ 〜 →CDG→羽田</td><td>行14h+AVE 2.5h / 帰14h</td><td class="price">¥850,000 – 1,100,000</td><td><span class="star">★★★★</span></td></tr>
+            <tr><td>関空→CDG(エールフランス直行)→BCN(Vueling)→ 〜 →CDG→関空</td><td>行13.5h+乗継+2h / 帰13.5h</td><td class="price">¥750,000 – 950,000</td><td><span class="star">★★★★★</span>(関西在住なら)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">直行便 vs 経由便</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th></th><th>羽田-CDG直行(AF)</th><th>経由便(LH/KLM等)</th></tr></thead>
+          <tbody>
+            <tr><td>所要時間</td><td>約14時間</td><td>16 – 19時間(乗継 1 – 3時間)</td></tr>
+            <tr><td>エコノミー差額</td><td>—</td><td>直行比 -<span class="price">¥100,000</span>/人</td></tr>
+            <tr><td>体力負荷</td><td>低</td><td>高</td></tr>
+            <tr><td>ロストバゲージリスク</td><td>低</td><td>やや高(乗継時、特にCDG)</td></tr>
+            <tr><td>ハネムーンの推奨</td><td>◎(疲労蓄積NG)</td><td>△</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted" style="font-size:0.9rem;">→ <strong>新婚旅行は直行便が定石</strong>。差額の <span class="price">¥200,000</span>/2人 は体力・思い出への投資。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">クラス別比較(羽田 – CDG 往復、2人)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>クラス</th><th>価格目安</th><th>座席</th><th>おすすめ層</th></tr></thead>
+          <tbody>
+            <tr><td>エコノミー</td><td class="price">¥500,000</td><td>84 – 86cm ピッチ</td><td>体力に自信、節約重視</td></tr>
+            <tr style="background-color: #FAF7F2;"><td><strong>プレミアムエコノミー</strong></td><td class="price"><strong>¥800,000</strong></td><td>97cm + 簡易ベッド機構</td><td><strong>新婚旅行の最適バランス</strong></td></tr>
+            <tr><td>ビジネス</td><td class="price">¥1,400,000</td><td>フラットベッド</td><td>体力温存最優先</td></tr>
+            <tr><td>ファースト</td><td class="price">¥2,400,000+</td><td>個室・専用シャワー</td><td>究極の贅沢</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">ヨーロッパ内移動(バルセロナ → パリ)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>手段</th><th>所要</th><th>価格(2人)</th><th>推奨度</th></tr></thead>
+          <tbody>
+            <tr style="background-color: var(--color-highlight);"><td><strong>Vueling 航空</strong></td><td>1h40m+空港時間</td><td class="price">¥30,000 – 60,000</td><td><span class="star">★★★★★</span></td></tr>
+            <tr><td>Iberia / エールフランス</td><td>同上</td><td class="price">¥40,000 – 90,000</td><td><span class="star">★★★★</span></td></tr>
+            <tr><td>TGV/AVE 直通</td><td>6h40m</td><td class="price">¥14,000 – 40,000</td><td><span class="star">★★</span>(時間効率悪)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted" style="font-size:0.9rem;"><strong>結論:</strong> BCN → CDG は <strong>Vueling 直行が時間&コストの最適解</strong>。9/29(火)午前便で乗れば午後パリ着。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">マイル特典航空券のコツ</h3>
+      <ul class="clean-list">
+        <li>ANA ハイシーズン 東京⇔パリ ビジネス: <strong>往復 180,000マイル/人</strong>(2人で36万マイル)</li>
+        <li>「Multi-City + Mixed Class」テクで <strong>121,000マイル/人</strong> まで圧縮可能</li>
+        <li>予約取り方: <strong>355日前の朝9時ジャストにオープン</strong>、人気路線は秒で消える</li>
+        <li>直前狙い: 30日前にエアラインが追加枠を開放することあり</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">機内体験比較</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th></th><th>JAL / ANA</th><th>エールフランス</th></tr></thead>
+          <tbody>
+            <tr><td>日本語対応</td><td>全面対応</td><td>アナウンス仏英中心</td></tr>
+            <tr><td>機内食</td><td>和食含む2食</td><td>フランスパン・チーズ・シャンパン</td></tr>
+            <tr><td>エコノミーの飲料</td><td>ソフトドリンク+ワイン</td><td><strong>エコノミーでもシャンパン提供</strong></td></tr>
+            <tr><td>価格傾向</td><td>高め</td><td>日系より安め</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted" style="font-size:0.9rem;">→ <strong>行き=エールフランス(シャンパンで新婚気分)/ 帰り=日系(日本語+和食で安心)</strong> の組み合わせも◎</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §7 バルセロナ ============ -->
+<section class="section" id="barcelona">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 07</div>
+      <h2 class="section__title">バルセロナ徹底ガイド</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">01_barcelona.md / 1,226行 — バルセロナ市内 + 日帰り圏</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">主要観光スポット(2026年最新)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>スポット</th><th>2026 料金(1人)</th><th>予約</th><th>備考</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>サグラダ・ファミリア</strong></td><td class="price impact-high">¥4,420(+塔 ¥1,700)</td><td>2-3ヶ月前必須</td><td>中央タワー完成+センテナリオ加算</td></tr>
+            <tr><td>グエル公園</td><td class="price">¥3,060</td><td>72h前必須</td><td>朝一9:30推奨</td></tr>
+            <tr><td>カサ・バトリョ</td><td class="price">¥5,950 – 7,650</td><td>推奨</td><td>Magic Nights ¥10,030 で屋上ライブ</td></tr>
+            <tr><td>カサ・ミラ(ラ・ペドレラ)</td><td class="price">¥4,760(夜 ¥6,630)</td><td>推奨</td><td>Night Experience の屋上プロジェクションマッピング</td></tr>
+            <tr><td>カサ・ビセンス</td><td class="price">¥2,890 – 3,400</td><td>推奨</td><td>比較的空いている穴場</td></tr>
+            <tr><td>パラウ・ダ・ラ・ムジカ</td><td class="price">¥4,080</td><td>ガイドツアー or 夜コンサート</td><td>世界遺産、夜コンサート★</td></tr>
+            <tr><td>サン・パウ病院</td><td class="price">¥2,890(ガイド ¥5,780)</td><td>月・水・土 11:15</td><td>世界最大のアールヌーヴォー建築群</td></tr>
+            <tr><td>ピカソ美術館</td><td class="price">¥2,380(企画+¥850)</td><td>推奨</td><td>ボルン地区、月休</td></tr>
+            <tr><td>MNAC</td><td class="price">¥2,040</td><td>不要</td><td>夏 20:00まで、屋上テラス絶景</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted" style="font-size:0.9rem; margin-top:var(--space-xs);"><strong>Articket BCN ¥6,460</strong> で6館共通(個別 ¥12,410 → 約半額)。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">サグラダ・ファミリア「Quiet Hour」攻略</h3>
+      <div class="keypoints">
+        <div class="keypoints__title">新婚旅行で最も貴重な体験</div>
+        <p>朝一の Quiet Hour(私語禁止枠)で、ガウディの「自然光が祈り」と語った神聖な空間を貸切に近い状態で体験。</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>項目</th><th>内容</th></tr></thead>
+          <tbody>
+            <tr><td>時間</td><td><strong>9:00 入場枠</strong>(最初のスロット)</td></tr>
+            <tr><td>入場前</td><td>8:45 までに東門前に並ぶ</td></tr>
+            <tr><td>体験</td><td>私語禁止・イヤホン必須で神聖な雰囲気</td></tr>
+            <tr><td>光のタイミング</td><td>朝の光が東面(生誕の塔)ステンドグラスから差す</td></tr>
+            <tr><td>推奨予約</td><td>サグラダ公式 → 朝一9:00枠 + 生誕の塔登頂 <span class="price">¥6,120</span>/人</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">メルセ祭 La Mercè 2026 — 観覧戦略</h3>
+      <div class="callout">
+        <div class="callout__label">9/23 – 27 開催 · 旅程冒頭と重複</div>
+        <p>600以上の無料イベント、人間タワー、コレフォック、花火。<strong>旅程2日目夜(9/27)の最大ハイライト候補</strong>。</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>日時</th><th>イベント</th><th>場所</th><th>旅程との関係</th></tr></thead>
+          <tbody>
+            <tr><td>9/24 11-13時</td><td>人間の塔(カステリェース)</td><td>サンジャウマ広場</td><td>旅程外</td></tr>
+            <tr><td>9/24-25 夜</td><td>コレフォック(火吹き)</td><td>レイアル広場〜ライエタナ</td><td>旅程外、火傷リスク</td></tr>
+            <tr><td>9/26 終日</td><td>コンサート、巨人パレード</td><td>市内各所</td><td>到着日夕方〜夜に体験可</td></tr>
+            <tr style="background-color: var(--color-highlight);"><td><strong>9/27 21:30</strong></td><td><strong>クライマックス花火</strong>(MNAC前モンジュイック側)</td><td>スペイン広場周辺</td><td><strong>2日目夜の最大ハイライト</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="subsection__lede" style="margin-top: var(--space-sm);">9/27花火 観覧ベストスポット:</p>
+      <ul class="numbered-list">
+        <li><strong>MNAC前の階段</strong> — 花火真正面、混雑必至(19:00から場所取り)</li>
+        <li><strong>モンジュイック魔法の噴水と連動エリア</strong> — 音楽噴水と花火のダブル(20:00開始)</li>
+        <li><strong>Hotel Miramar 屋上</strong>(モンジュイック上) — 高台から、有料 €50-80</li>
+        <li><strong>MNAC 屋上テラス</strong> — チケット入場 <span class="price">¥2,040</span>、空いていれば最高</li>
+      </ul>
+      <p class="text-muted" style="font-size:0.9rem; margin-top:var(--space-xs);"><strong>注意:</strong> 混雑で帰路のメトロが大混雑。徒歩で旧市街ホテルへ戻れる体力を残す or Free Now 配車予約。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">ミシュラン主要店(レバーNG配慮)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>店</th><th>星</th><th>ディナー(1人)</th><th>特徴</th></tr></thead>
+          <tbody>
+            <tr style="background-color: var(--color-highlight);"><td><strong>Disfrutar</strong></td><td><span class="star">★★★</span></td><td class="price">¥50,150 – 56,100</td><td><strong>世界Best 1位2024、6-9ヶ月前予約必須</strong></td></tr>
+            <tr><td>ABaC</td><td><span class="star">★★★</span></td><td class="price">¥50,150 – 57,800</td><td>ホテル併設、宿泊+ディナー可</td></tr>
+            <tr><td>Lasarte</td><td><span class="star">★★★</span></td><td class="price">¥49,300 – 66,300</td><td>Monument Hotel内、2026年20周年</td></tr>
+            <tr><td>Cocina Hermanos Torres</td><td><span class="star">★★★</span></td><td class="price">¥41,650</td><td>キッチンを囲む円形ダイニング</td></tr>
+            <tr><td>Cinc Sentits</td><td><span class="star">★★</span></td><td class="price">¥29,750 – 38,250</td><td>4週間前で取れる、コスパ◎</td></tr>
+            <tr><td>Mont Bar</td><td><span class="star">★★</span></td><td class="price">¥20,400 – 25,500</td><td>2026年新2★、ビストロ風、予約容易</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted" style="font-size:0.85rem; margin-top:var(--space-xs);">予約時に <em>"Sin cilantro, sin hígado, alergias alimentarias"</em> を必ず明記。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">宿泊エリア + ★4ホテル(1泊2人)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>エリア</th><th>推奨</th><th>価格</th><th>おすすめホテル</th></tr></thead>
+          <tbody>
+            <tr><td><strong>エシャンプラ(ガウディ中心)</strong></td><td><span class="star">★★★</span></td><td class="price">¥34,000 – 93,500</td><td>H10 Casa Mimosa(ラ・ペドレラ隣)、Olivia Balmes</td></tr>
+            <tr style="background-color: var(--color-highlight);"><td><strong>サグラダ徒歩圏</strong></td><td><span class="star">★★★</span></td><td class="price">¥30,600 – 47,600</td><td><strong>Sercotel Rosellón ★4</strong>(客室から大聖堂、屋上テラス)</td></tr>
+            <tr><td>ゴシック地区/ボルン</td><td><span class="star">★★</span></td><td class="price">¥47,600 – 93,500</td><td>Hotel Neri(修道院改装)</td></tr>
+            <tr><td>バルセロネータ</td><td><span class="star">★★</span></td><td class="price">¥34,000 – 54,400</td><td>H10 Marina Barcelona</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">日帰り圏</h3>
+      <ul class="clean-list">
+        <li><strong>モンセラート修道院</strong>(★★★ 必訪) — Pl. d'Espanya 駅から1.5h、Trans Montserrat 共通券 ¥6,460</li>
+        <li><strong>ジローナ</strong>(★★ Game of Thrones ロケ地、AVE 38分)</li>
+        <li><strong>フィゲラス</strong>(★ ダリ劇場美術館)</li>
+        <li><strong>シッチェス</strong>(★ 地中海リゾート、列車35分)</li>
+        <li><strong>ペネデス カバワイナリー</strong>(Codorníu + Freixenet、半日プラン)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §8 マドリード ============ -->
+<section class="section" id="madrid">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 08</div>
+      <h2 class="section__title">マドリード徹底ガイド</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">02_madrid.md / 1,326行 — マドリード市内 + トレド・セゴビア他</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">主要観光スポット</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>スポット</th><th>2026 料金(1人)</th><th>備考</th></tr></thead>
+          <tbody>
+            <tr><td>王宮(Palacio Real)</td><td class="price">¥2,720(ガイド付き ¥4,930)</td><td>2026年値上げ、衛兵交代式 水・土 11:00</td></tr>
+            <tr><td>プラド美術館</td><td class="price">¥2,550</td><td>ベラスケス、ゴヤ、ボス「快楽の園」</td></tr>
+            <tr><td>ティッセン=ボルネミッサ</td><td class="price">¥2,210</td><td><strong>2026/4-10月 ハマスホイ展、土23時まで</strong></td></tr>
+            <tr><td>レイナ・ソフィア</td><td class="price">¥2,040</td><td>ピカソ「ゲルニカ」、火休</td></tr>
+            <tr><td>Paseo del Arte Pass(3館共通)</td><td class="price">¥5,576</td><td>個別より20%お得、1年有効</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">ミシュラン主要店(レバーNG配慮)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>店</th><th>星</th><th>ディナー(1人)</th><th>特徴</th></tr></thead>
+          <tbody>
+            <tr style="background-color: var(--color-highlight);"><td><strong>DiverXO</strong></td><td><span class="star">★★★</span></td><td class="price">¥76,500</td><td><strong>スペイン唯一の3つ星、チケット制、超予約困難</strong></td></tr>
+            <tr><td>Coque</td><td><span class="star">★★</span></td><td class="price">¥39,100 – 44,200</td><td>旧邸宅、ワインセラー~キッチンの移動型</td></tr>
+            <tr><td>Ramón Freixa Atelier</td><td><span class="star">★★</span></td><td class="price">¥41,650</td><td>2026年新2★、10席限定</td></tr>
+            <tr><td>DSTAgE</td><td><span class="star">★★</span></td><td class="price">¥31,450 – 38,250</td><td>ストーリーテリング型</td></tr>
+            <tr><td>Corral de la Morería Gastronómico</td><td><span class="star">★</span></td><td class="price">¥16,150 – 25,500</td><td><strong>フラメンコ+ミシュラン一晩で完結</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">ロマンチック体験 + グルメ</h3>
+      <ul class="clean-list">
+        <li><strong>テンプロ・デ・デボー</strong> — マドリード随一のロマンチック夕陽スポット、プロポーズ場所として有名(無料)</li>
+        <li><strong>Riu Plaza España 360° Rooftop Bar</strong> — 26-27階、ガラス床+ブランコ</li>
+        <li><strong>Teatro Real 2025/26シーズン</strong> — ヴェルディ『オテロ』、ビゼー『カルメン』、グノー『ロミオとジュリエット』、マシュー・ボーン『白鳥の湖』</li>
+        <li><strong>Corral de la Morería</strong>(世界最古フラメンコタブラオ1956年〜、ミシュラン1★レストラン併設)</li>
+        <li><strong>Sobrino de Botín</strong>(1725年、世界最古のレストラン)— コチニーリョ・アサド <span class="price">¥5,100 – 5,440</span></li>
+        <li><strong>チョコラテリア San Ginés</strong>(1894年、24時間営業)</li>
+      </ul>
+      <div class="callout callout--warning" style="margin-top: var(--space-sm);">
+        <div class="callout__label">Food Warning</div>
+        <p><strong>コシード・マドリレーニョ</strong>には<strong>モルシージャ(血腸)・モツ</strong>含むため、注文時に <em>"sin hígado, sin morcilla"</em> を事前依頼必須。</p>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">宿泊エリア + ★4ホテル(1泊2人)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>エリア</th><th>推奨</th><th>価格</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Barrio de las Letras(文人街)</strong></td><td><span class="star">★★★</span></td><td class="price">¥30,000 – 47,000</td></tr>
+            <tr><td>Sol/Gran Vía</td><td><span class="star">★★★</span></td><td class="price">¥30,000 – 68,000</td></tr>
+            <tr><td>Salamanca(高級住宅街)</td><td><span class="star">★★</span></td><td class="price">¥34,000 – 68,000</td></tr>
+            <tr><td>Chueca/Malasaña</td><td><span class="star">★★</span></td><td>おしゃれ系</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">日帰り圏(★★★★★)</h3>
+      <ul class="clean-list">
+        <li><strong>トレド</strong>(AVE 32分、世界遺産、エル・グレコ「オルガス伯爵の埋葬」、三宗教共存) — <strong>1泊推奨で夜景体験</strong></li>
+        <li><strong>セゴビア</strong>(AVE 27分、ローマ水道橋、アルカサル、Mesón de Cándido のコチニーリョ <span class="price">¥5,100</span>)</li>
+        <li>エル・エスコリアル(60分、フェリペ2世修道院)</li>
+        <li>アランフェス(50分、<strong>イチゴ列車は2026年9-11/9 毎週末運行</strong>)</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">マドリード ⇔ バルセロナ AVE</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>運営</th><th>所要</th><th>価格(片道)</th><th>特徴</th></tr></thead>
+          <tbody>
+            <tr><td>Renfe AVE</td><td>2.5 – 3h</td><td class="price">¥10,200 – 30,600</td><td>スペイン国鉄、座席広め</td></tr>
+            <tr><td>Iryo</td><td>2.5 – 3h</td><td class="price">¥5,100 – 20,400</td><td>2022年運行開始、Wi-Fi+USB、Bistro</td></tr>
+            <tr><td>Ouigo</td><td>2.5 – 3h</td><td class="price">¥3,230 – 15,300</td><td>LCC、最安</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted" style="font-size:0.9rem;">2-3ヶ月前 Promo 早割で最大70%OFF。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §9 アンダルシア ============ -->
+<section class="section" id="andalusia">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 09</div>
+      <h2 class="section__title">アンダルシア(該当パターンのみ)</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">03_andalusia.md / 904行 — グラナダ・セビリア・コルドバ・ロンダ・白い村</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">グラナダ:アルハンブラ宮殿</h3>
+      <ul class="clean-list">
+        <li><strong>一般入場(アルカサバ+ナスル朝+ヘネラリーフェ)</strong>: <span class="price">¥3,570 – 3,790</span></li>
+        <li><strong>夜間ナスル朝</strong>: <span class="price">¥2,164</span> — <strong>2026/9/26 – 10/14は夏期ダイヤ(火-土 22:00開始)、10/1夜可能</strong></li>
+        <li><strong>予約</strong>: スペイン現地時間 0:00(日本時間 8:00頃)にキャンセル放出</li>
+        <li><strong>ナスル朝30分以内ルール</strong>: チケット時間から30分以内に到着しないと入場不可</li>
+        <li><strong>パラドール・デ・グラナダ</strong>(アルハンブラ城内の修道院改装、★4)— <span class="price">¥37,000 – 71,000</span>、半年以上前完売</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">セビリア・コルドバ・ロンダ</h3>
+      <ul class="clean-list">
+        <li><strong>セビリア</strong>: 大聖堂+ヒラルダの塔 <span class="price">¥2,210</span>、アルカサル <span class="price">¥2,635</span>(GoT「ドーン」ロケ地)、スペイン広場(無料)、<strong>Tablao Flamenco El Arenal</strong>(<span class="price">¥7,310 – 15,300</span>)</li>
+        <li><strong>コルドバ</strong>: メスキータ=カテドラル <span class="price">¥2,210</span>(月-土 8:30-9:30無料)</li>
+        <li><strong>ロンダ</strong>: ヌエボ橋(無料)+ <strong>Parador de Ronda</strong>(<span class="price">¥30,000 – 51,000</span>、峡谷絶景)+ <strong>Bardal ★★</strong>(<span class="price">¥30,600 – 42,500</span>)</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <div class="callout callout--warning">
+        <div class="callout__label">9日間旅程組込結論</div>
+        <p><strong>現実的にバルセロナを諦める覚悟が必要</strong>。シナリオC(セビリア2泊+グラナダ2泊+コルドバ日帰り)が落としどころ。バルセロナのガウディ建築は次回に温存する判断もアリ。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §10 その他地方 ============ -->
+<section class="section" id="regions">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 10</div>
+      <h2 class="section__title">その他地方都市(該当パターンのみ)</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">04_other_regions.md / 864行 — サン・セバスチャン・ビルバオ・バレンシア・サラマンカ他</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">サン・セバスチャン — 美食ハネムーン最高峰</h3>
+      <div class="keypoints">
+        <div class="keypoints__title">ミシュラン3★密度世界一</div>
+        <p>美食重視なら9日間旅程の<strong>主役級候補</strong>。フランス側ボルドー・モンサンミシェル方面との接続も◎</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>店</th><th>星</th><th>コース(1人)</th><th>予約</th></tr></thead>
+          <tbody>
+            <tr><td>Arzak</td><td><span class="star">★★★</span></td><td class="price">¥47,600 – 67,150</td><td>6-12ヶ月前、48h以内キャンセル €150</td></tr>
+            <tr><td>Akelarre</td><td><span class="star">★★★</span></td><td class="price">¥49,300 – 62,900</td><td>6-12ヶ月前、海絶景ホテル併設</td></tr>
+            <tr><td>Martín Berasategui</td><td><span class="star">★★★</span></td><td class="price">¥32,300 – 60,350</td><td>6-12ヶ月前、12★最多シェフ</td></tr>
+            <tr><td>Mugaritz</td><td><span class="star">★★</span>(3★クラス)</td><td class="price">¥41,140〜</td><td>感覚実験的20皿コース</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">サン・セバスチャン ピンチョス・ハシゴ 3ルート</h3>
+      <p class="subsection__lede">旧市街(Parte Vieja)に300軒以上密集。1軒で2-3品+ワイン1杯、5-6軒で <span class="price">¥10,200-13,600</span>/人。</p>
+      <div class="route-list">
+        <div class="route-card">
+          <div class="route-card__title">A. 王道3軒ハシゴ(初心者向け、2-3h)</div>
+          <div class="route-card__step"><span class="route-card__time">19:30</span><span class="route-card__place"><strong>Bar Néstor</strong> — トルティーリャ(1日2回各16食限定、19:30か20:00)</span></div>
+          <div class="route-card__step"><span class="route-card__time">20:30</span><span class="route-card__place"><strong>Goiz Argi</strong> — 海老の串焼き(ブロチェタ・デ・ガンバス)</span></div>
+          <div class="route-card__step"><span class="route-card__time">21:30</span><span class="route-card__place"><strong>Bar Txepetxa</strong> — アンチョビ12種類のバリエーション</span></div>
+        </div>
+        <div class="route-card">
+          <div class="route-card__title">B. モダン革新派(美食家向け、3-4h)</div>
+          <div class="route-card__step"><span class="route-card__time">19:30</span><span class="route-card__place"><strong>La Cuchara de San Telmo</strong> — 仔牛のほほ肉(⚠️ フォアグラ系はNG確認)</span></div>
+          <div class="route-card__step"><span class="route-card__time">20:30</span><span class="route-card__place"><strong>A Fuego Negro</strong> — 和牛バーガー、創作ピンチョス</span></div>
+          <div class="route-card__step"><span class="route-card__time">21:30</span><span class="route-card__place"><strong>Borda Berri</strong> — リゾット、煮込み系</span></div>
+          <div class="route-card__step"><span class="route-card__time">22:30</span><span class="route-card__place"><strong>La Viña</strong> — バスクチーズケーキ(発祥バル)</span></div>
+        </div>
+        <div class="route-card">
+          <div class="route-card__title">C. 地元定番派(雰囲気重視、2-3h)</div>
+          <div class="route-card__step"><span class="route-card__time">19:30</span><span class="route-card__place"><strong>Gandarias</strong> — 観光客にも入りやすい老舗</span></div>
+          <div class="route-card__step"><span class="route-card__time">20:30</span><span class="route-card__place"><strong>Atari Gastroteka</strong> — タコ(プルポ)、サンタ・マリア教会真横</span></div>
+          <div class="route-card__step"><span class="route-card__time">21:30</span><span class="route-card__place"><strong>Bar Zazpi</strong> — バスクチーズケーキ</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">都市別おすすめ度</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>都市</th><th>動線</th><th>おすすめ度</th><th>9日間組込</th></tr></thead>
+          <tbody>
+            <tr style="background-color: var(--color-highlight);"><td><strong>サン・セバスチャン</strong></td><td>バスク経由仏可</td><td><span class="star">★★★★★</span>(美食)</td><td>美食特化なら主役級</td></tr>
+            <tr><td>ビルバオ</td><td>サン・セバスチャン1h</td><td><span class="star">★★★★</span><span class="star--muted">★</span>(美術館)</td><td>サン・セバスチャンとセット</td></tr>
+            <tr><td>バレンシア</td><td>バルセロナ AVE 3h</td><td><span class="star">★★★★</span><span class="star--muted">★</span>(建築+パエリア)</td><td>2-3泊で組込可</td></tr>
+            <tr><td><strong>トレド</strong></td><td>マドリード AVE 32分</td><td><span class="star">★★★★★</span></td><td>マドリード滞在ならマスト</td></tr>
+            <tr><td>セゴビア</td><td>マドリード AVE 27分</td><td><span class="star">★★★★</span><span class="star--muted">★</span></td><td>マドリード滞在なら推奨</td></tr>
+            <tr><td>サラマンカ</td><td>マドリード AVE 1h35m</td><td><span class="star">★★★</span><span class="star--muted">★★</span></td><td>時間あれば</td></tr>
+            <tr><td>サンティアゴ</td><td>マドリード AVE 3h</td><td><span class="star">★★</span><span class="star--muted">★★★</span></td><td><span class="impact-high">今回スキップ推奨</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §11 ハネムーン演出 ============ -->
+<section class="section" id="romance">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 11</div>
+      <h2 class="section__title">ハネムーン演出ベスト</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">ロマンチック体験 + メール例文 + 撮影ベストショット</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">ロマンチック体験 TOP 10</h3>
+      <ul class="numbered-list">
+        <li><strong>サグラダ・ファミリア朝一9:00 Quiet Hour</strong> — 私語禁止の神聖な空間</li>
+        <li><strong>メルセ祭フィナーレ花火</strong>(9/27夜21:30、モンジュイック)</li>
+        <li><strong>カサ・バトリョ Magic Nights</strong> — 屋上ライブ+カバ+夜景 <span class="price">¥10,030</span></li>
+        <li><strong>カサ・ミラ Night Experience</strong> — 屋上プロジェクションマッピング</li>
+        <li><strong>アルハンブラ宮殿 夜間入場(10/1夜)</strong> — ライトアップされたナスル朝宮殿</li>
+        <li><strong>テンプロ・デ・デボー夕陽</strong>(マドリード) — プロポーズスポット、無料</li>
+        <li><strong>パラウ・ダ・ラ・ムジカ 夜コンサート</strong> — モデルニスモ装飾の劇場で</li>
+        <li><strong>Sercotel Rosellónの屋上テラス</strong> — サグラダ朝焼け〜夜ライトアップ独占</li>
+        <li><strong>Riu Plaza España 360° Rooftop</strong>(マドリード) — ガラス床+ブランコ</li>
+        <li><strong>ピンチョス巡り</strong>(サン・セバスチャン or グラナダ無料タパス文化)</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">ホテル向け リクエストメール例文(英語)</h3>
+      <p class="subsection__lede">予約後にホテルへ送信。ハネムーン特典+食事制限を一括で伝える。</p>
+      <div class="email-block">Subject: Honeymoon stay request — Reservation #XXXXXXXX
+
+Dear [Hotel Name] team,
+
+I am writing regarding our upcoming reservation:
+- Reservation #: XXXXXXXX
+- Check-in: 26 September 2026
+- Check-out: 29 September 2026
+- Guests: 2 (couple on honeymoon)
+
+We are celebrating our honeymoon and would be grateful for any
+special arrangements you could make, such as:
+- Room upgrade if available
+- A higher floor with a view
+- Sparkling wine or roses upon arrival
+- Late check-out on the final day
+
+Also, both of us have food allergies. Please note:
+- No cilantro (coriander)
+- No liver (foie gras, hígado, morcilla)
+
+We very much look forward to staying with you.
+Muchas gracias y saludos cordiales,
+
+[Your Name]</div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">ミシュラン店向け リクエストメール例文</h3>
+      <div class="email-block">Subject: Reservation request — [Restaurant Name]
+
+Dear Reservations team,
+
+We would like to request a dinner reservation for two on
+[date] at around 20:30. We are on our honeymoon
+(estamos en luna de miel) and would love to celebrate this
+special trip at [Restaurant Name].
+
+Please note both guests have allergies:
+- Sin cilantro / no coriander
+- Sin hígado, sin foie gras, sin morcilla / no liver products
+
+Could you confirm if the tasting menu can be adapted accordingly?
+
+Many thanks,
+[Your Name]</div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">ハネムーン特典をもらうコツ</h3>
+      <div class="callout callout--positive">
+        <div class="callout__label">Magic Phrase</div>
+        <p>予約時&チェックイン時に伝える: <strong>"Estamos en luna de miel"</strong>(エスタモス エン ルナ デ ミエル)</p>
+      </div>
+      <p class="subsection__lede">期待できる特典:</p>
+      <ul class="clean-list">
+        <li>ベッドの花びら装飾、ウェルカムシャンパン、デザートプレート</li>
+        <li>無料アップグレード(スイートへ)、レイトチェックアウト</li>
+        <li>結婚証明書の英訳コピーを持参すると確実性UP</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">写真撮影ベストショットリスト</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>スポット</th><th>構図</th><th>ベストタイム</th></tr></thead>
+          <tbody>
+            <tr><td><strong>サグラダ・ファミリア 鏡池リフレクション</strong></td><td>Plaça de Gaudí の池に映る大聖堂</td><td>朝7:30-8:00</td></tr>
+            <tr><td>グエル公園 モザイクベンチ</td><td>大蜥蜴の前で2人</td><td>9:30開門直後</td></tr>
+            <tr><td>カサ・バトリョ ファサード</td><td>グラシア通り側</td><td>朝の自然光</td></tr>
+            <tr><td><strong>Sercotel Rosellón 屋上テラス</strong></td><td>サグラダ・ファミリアと2人</td><td>日没30分前</td></tr>
+            <tr><td>モンジュイック魔法の噴水</td><td>噴水+MNAC背景</td><td>水・木・金・土20-21時</td></tr>
+            <tr><td>ボケリア市場の果物山</td><td>カラフルなフルーツと</td><td>開店直後8時</td></tr>
+            <tr><td>ゴシック地区 Pont del Bisbe</td><td>石橋アーチをくぐる構図</td><td>早朝7-8時(無人)</td></tr>
+            <tr><td><strong>ミラドール・サン・ニコラス</strong>(グラナダ)</td><td>夕陽のアルハンブラと</td><td>日没15分前</td></tr>
+            <tr><td><strong>テンプロ・デ・デボー</strong>(マドリード)</td><td>水鏡に映る神殿</td><td>日没10分前</td></tr>
+            <tr><td>スペイン広場(セビリア)</td><td>ボートに乗る2人</td><td>朝9-10時</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">サプライズ・記念品アイデア</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>演出</th><th>概要</th><th>価格目安</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Totte フォトウェディング</strong>(サグラダ前等)</td><td>スペイン発、ELLE監修、日本語サポート</td><td>要問合せ</td></tr>
+            <tr><td><strong>カタルーニャ音楽堂コンサート</strong></td><td>クラシック・フラメンコ・室内楽</td><td class="price">¥5,100 – 13,600</td></tr>
+            <tr><td><strong>Codorníu Iconic Tour</strong>(カバワイナリー)</td><td>500年の歴史、地下20m、試飲</td><td class="price">¥5,100</td></tr>
+            <tr><td><strong>モンセラート修道院 結婚祝福ツアー</strong></td><td>個別予約可</td><td>要問合せ</td></tr>
+            <tr><td><strong>ハモン・イベリコ・デ・ベジョータ</strong></td><td>真空パック お土産用</td><td class="price">¥2,550 – 4,250 / 100g</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §12 失敗回避 ============ -->
+<section class="section" id="risks">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 12</div>
+      <h2 class="section__title">失敗回避リスト</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">プロが教える「絶対やってはいけない」 + 料理リスト + スリ対策 + 移動疲れ対策</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">「絶対やってはいけない」TOP 10</h3>
+      <ul class="no-do-list">
+        <li><strong>メルセ祭期間ホテルを6月以降に予約</strong> — 1.5-2倍に高騰</li>
+        <li><strong>3カ国周遊</strong>(2025年noteライター明言「無謀」) — 9日間ではフランス+スペイン2カ国が限界</li>
+        <li><strong>アルハンブラ予約を出発1ヶ月前に開始</strong> — 完売、ナスル朝時間枠失う</li>
+        <li><strong>メトロのドア付近に立つ</strong> — スリ被害No.1ポジション(L3/L4/L5)</li>
+        <li><strong>ランブラス通りで地図を広げる</strong> — 1秒で財布が消える</li>
+        <li><strong>「日本円を見せて」と言う偽警察に応じる</strong> — 「警察署で対応」と立ち去る</li>
+        <li><strong>Renfeチケットを公式サイトで日本円決済</strong> — 決済エラー多発、Omio / Trip.com / PayPal経由</li>
+        <li><strong>シエスタ時間(14-17時)に地方都市の店を期待</strong> — 大都市以外は閉まる</li>
+        <li><strong>19時にレストランで夕食を期待</strong> — 21時開店が標準</li>
+        <li><strong>コシード・モルシージャ・チャンファイナ等を確認なしで注文</strong> — レバーNG該当</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">⚠️ レバー含有スペイン料理 完全回避リスト</h3>
+      <p class="subsection__lede">注文時必ず確認・回避:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>料理(スペイン語)</th><th>内容</th><th>含有部位</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Cocido madrileño</strong></td><td>マドリッド風煮込み</td><td>モルシージャ(血腸)含む場合あり</td></tr>
+            <tr><td><strong>Callos a la madrileña</strong></td><td>牛モツ煮込み</td><td>内臓全般</td></tr>
+            <tr><td><strong>Morcilla</strong></td><td>血のソーセージ</td><td>レバー含むタイプあり</td></tr>
+            <tr><td><strong>Foie / Foie gras</strong></td><td>フォアグラ</td><td>直接NG</td></tr>
+            <tr><td><strong>Higaditos de pollo / encebollados</strong></td><td>鶏レバー煮込み</td><td>直接NG</td></tr>
+            <tr><td><strong>Hígado encebollado</strong></td><td>牛/豚レバーの玉ねぎ煮</td><td>直接NG</td></tr>
+            <tr><td>Mollejas</td><td>胸腺(内臓系)</td><td>内臓系</td></tr>
+            <tr><td>Patés ibéricos / pâté</td><td>イベリコ豚等のパテ</td><td>レバーペースト</td></tr>
+            <tr><td>Micuit</td><td>セミクック・フォアグラ</td><td>直接NG</td></tr>
+            <tr><td>Chanfaina(サラマンカ)</td><td>羊の臓物煮込み</td><td>内臓系</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">⚠️ パクチー(Cilantro)が出やすい料理</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>カテゴリー</th><th>例</th><th>注意レベル</th></tr></thead>
+          <tbody>
+            <tr><td>モロッコ系・北アフリカ系</td><td>クスクス、タジン、ハリラ</td><td><strong>高</strong></td></tr>
+            <tr><td>メキシコ系</td><td>タコス、新解釈ガスパチョ</td><td><strong>高</strong></td></tr>
+            <tr><td>南米系(コロンビア、ペルー)</td><td>セビーチェ系</td><td><strong>高</strong></td></tr>
+            <tr><td>新スパニッシュ・モダン創作</td><td>フュージョン創作タパス</td><td>中</td></tr>
+            <tr><td>アジア系融合タパス</td><td>バンミ風、タイ料理風</td><td>中</td></tr>
+            <tr><td>伝統的スペイン料理</td><td>パエリア、トルティーヤ、生ハム</td><td>低</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="subsection__lede" style="margin-top: var(--space-sm);"><strong>安心して食べられる定番</strong>:</p>
+      <div class="tag-group">
+        <span class="tag">Tortilla Española</span>
+        <span class="tag">Pan con Tomate</span>
+        <span class="tag">Jamón Ibérico/Serrano</span>
+        <span class="tag">Patatas Bravas</span>
+        <span class="tag">Gambas al Ajillo</span>
+        <span class="tag">Arroz Negro</span>
+        <span class="tag">Crema Catalana</span>
+        <span class="tag">Tarta de Queso Vasca</span>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">スリ・詐欺対策(2025年最新手口)</h3>
+      <div class="callout callout--warning">
+        <div class="callout__label">Hotspots</div>
+        <p>ランブラス通り、メトロ全般(L3/L4/L5)、サンツ駅、ゴシック地区夜、グエル公園入口、ボケリア市場入口、バルセロネータビーチ、プエルタ・デル・ソル(マドリード)</p>
+      </div>
+      <ul class="clean-list">
+        <li><strong>ケチャップスリ</strong>: 服にかけられたら<strong>距離を取る</strong>、絶対に拭かせない</li>
+        <li><strong>偽警察詐欺</strong>: 「警察署で対応します」と言って立ち去る</li>
+        <li><strong>目隠しスリ</strong>(新聞・地図): 触らせない、毅然と立ち去る</li>
+        <li><strong>メトロドア閉まる瞬間ひったくり</strong>: ドア付近に立たない、奥に進む</li>
+        <li><strong>慈善団体署名詐欺</strong>: 完全無視</li>
+        <li><strong>カフェ・テラステーブル上スマホ盗難</strong>: 5秒で消える、必ず手元</li>
+      </ul>
+      <p class="subsection__lede" style="margin-top: var(--space-sm);"><strong>鉄則</strong>:</p>
+      <ul class="clean-list">
+        <li>バッグは<strong>体の前</strong>(リュック背負いNG)</li>
+        <li>スマホは<strong>手に握る</strong>、ポケット・テーブル放置NG</li>
+        <li>現金は分散(財布+靴下/インナー、€50以下)</li>
+        <li>パスポートはホテルセーフ、コピーのみ携帯</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">観光税の追加発生(2026/4 改定以降)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>施設タイプ</th><th>1人1泊</th><th>2人4泊合計</th></tr></thead>
+          <tbody>
+            <tr><td>5★ホテル</td><td class="price">¥2,040</td><td class="price">¥16,320</td></tr>
+            <tr style="background-color: var(--color-highlight);"><td><strong>4★ホテル</strong></td><td class="price">¥1,428</td><td class="price"><strong>¥11,424</strong></td></tr>
+            <tr><td>Airbnb</td><td class="price">¥1,615</td><td class="price">¥12,920</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted" style="font-size:0.9rem;">→ ホテル代+5-10%を別途見積もる</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">移動疲れ対策(9日間のペース配分)</h3>
+      <p class="subsection__lede">新婚旅行の落とし穴は「詰め込みすぎ」。プロの推奨ペース:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>パターン</th><th>推奨ペース</th></tr></thead>
+          <tbody>
+            <tr><td><strong>到着初日</strong></td><td>軽い夕食+早めの就寝(21時)、観光なし or 短時間</td></tr>
+            <tr><td>2-3日目</td><td>フル観光OK、ただし1日2大スポットまで</td></tr>
+            <tr><td>4日目</td><td>軽め(ホテル朝食ゆっくり、午後から観光)</td></tr>
+            <tr><td>後半</td><td>1日1-2スポット+カフェ休息時間を必ず確保</td></tr>
+            <tr><td><strong>最終日</strong></td><td>観光なし、ホテルでブランチ→空港</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted" style="font-size:0.9rem;"><strong>疲労蓄積のサイン</strong>: 胃疲れ、足の痛み、写真を撮らなくなる、会話が減る → <strong>半日休息日</strong>を入れる勇気が大事</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §13 フレーズ集 ============ -->
+<section class="section" id="phrases">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 13</div>
+      <h2 class="section__title">スペイン語フレーズ集</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">食事制限 / ハネムーン特典 / レストラン / タクシー / 緊急時</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">食事制限(パクチー・レバー)を伝える</h3>
+      <div class="table-wrap">
+        <table class="phrase-table">
+          <thead><tr><th>意味</th><th>スペイン語</th><th>発音目安</th></tr></thead>
+          <tbody>
+            <tr><td>パクチーが食べられません</td><td>No puedo comer cilantro.</td><td>ノ プエド コメル シラントロ</td></tr>
+            <tr><td>レバー(肝臓)が食べられません</td><td>No puedo comer hígado.</td><td>ノ プエド コメル イガド</td></tr>
+            <tr><td>パクチーとレバーのアレルギーです</td><td>Tengo alergia al cilantro y al hígado.</td><td>テンゴ アレルヒア アル シラントロ イ アル イガド</td></tr>
+            <tr><td>パクチー抜きでお願いします</td><td>Sin cilantro, por favor.</td><td>シン シラントロ、ポルファボル</td></tr>
+            <tr><td>フォアグラ抜きでお願いします</td><td>Sin foie gras, por favor.</td><td>シン フォアグラ、ポルファボル</td></tr>
+            <tr><td>この料理にレバーは入っていますか?</td><td>¿Este plato contiene hígado?</td><td>エステ プラート コンティエネ イガド?</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">ホテルでハネムーン特典をリクエスト</h3>
+      <div class="table-wrap">
+        <table class="phrase-table">
+          <thead><tr><th>意味</th><th>スペイン語</th></tr></thead>
+          <tbody>
+            <tr><td>私たちは新婚旅行中です</td><td>Estamos en luna de miel.</td></tr>
+            <tr><td>眺めの良いお部屋にできますか?</td><td>¿Podríamos tener una habitación con bonitas vistas, por favor?</td></tr>
+            <tr><td>シャンパンを用意してもらえますか?</td><td>¿Podrían prepararnos champán, por favor?</td></tr>
+            <tr><td>レイトチェックアウトは可能ですか?</td><td>¿Es posible un check-out tarde?</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">レストラン・予約・会計</h3>
+      <div class="table-wrap">
+        <table class="phrase-table">
+          <thead><tr><th>意味</th><th>スペイン語</th></tr></thead>
+          <tbody>
+            <tr><td>お会計お願いします</td><td>La cuenta, por favor.</td></tr>
+            <tr><td>21時に2名で予約したいです</td><td>Quisiera reservar para dos personas a las nueve.</td></tr>
+            <tr><td>おすすめの料理は何ですか?</td><td>¿Qué nos recomienda?</td></tr>
+            <tr><td>メニューをいただけますか?</td><td>¿Me trae la carta, por favor?</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">タクシー・移動</h3>
+      <div class="table-wrap">
+        <table class="phrase-table">
+          <thead><tr><th>意味</th><th>スペイン語</th></tr></thead>
+          <tbody>
+            <tr><td>この住所までお願いします</td><td>A esta dirección, por favor.</td></tr>
+            <tr><td>空港までいくらですか?</td><td>¿Cuánto cuesta al aeropuerto?</td></tr>
+            <tr><td>トレドまで何時間かかりますか?</td><td>¿Cuántas horas se tarda a Toledo?</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">緊急時</h3>
+      <div class="table-wrap">
+        <table class="phrase-table">
+          <thead><tr><th>意味</th><th>スペイン語</th></tr></thead>
+          <tbody>
+            <tr><td>助けて!</td><td>¡Socorro! / ¡Ayuda!</td></tr>
+            <tr><td>警察を呼んでください</td><td>Llame a la policía, por favor.</td></tr>
+            <tr><td>救急車を呼んでください</td><td>¡Llame a una ambulancia!</td></tr>
+            <tr><td>財布を盗まれました</td><td>Me han robado la cartera.</td></tr>
+            <tr><td>日本大使館はどこですか?</td><td>¿Dónde está la embajada de Japón?</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">基本の3語 + カタルーニャ語</h3>
+      <div class="table-wrap">
+        <table class="phrase-table">
+          <thead><tr><th>意味</th><th>スペイン語</th><th>カタルーニャ語(BCN)</th></tr></thead>
+          <tbody>
+            <tr><td>こんにちは</td><td>Hola</td><td>Bon dia</td></tr>
+            <tr><td>ありがとう</td><td>Gracias</td><td>Gràcies</td></tr>
+            <tr><td>お願いします</td><td>Por favor</td><td>Si us plau</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout callout--positive" style="margin-top: var(--space-sm);">
+        <div class="callout__label">Local Touch</div>
+        <p>カタルーニャ語の挨拶を使うと地元民が大喜び。「Bon dia / Gràcies」を1日1回試してみる。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §14 緊急連絡先 + お土産 ============ -->
+<section class="section" id="emergency">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 14</div>
+      <h2 class="section__title">緊急連絡先・実用情報</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">緊急番号 / 大使館 / 必須アプリ / お土産戦略 + IVA還付</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">緊急番号(スペイン)</h3>
+      <div class="emergency-grid">
+        <div class="emergency-card">
+          <div class="emergency-card__label">EU共通緊急</div>
+          <div class="emergency-card__number">112</div>
+        </div>
+        <div class="emergency-card">
+          <div class="emergency-card__label">国家警察</div>
+          <div class="emergency-card__number">091</div>
+        </div>
+        <div class="emergency-card">
+          <div class="emergency-card__label">救急(Ambulancia)</div>
+          <div class="emergency-card__number">061</div>
+        </div>
+        <div class="emergency-card">
+          <div class="emergency-card__label">Mossos (カタルーニャ)</div>
+          <div class="emergency-card__number">088</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">在西日本大使館・領事館</h3>
+      <div class="two-col">
+        <div class="callout">
+          <div class="callout__label">Embassy Madrid</div>
+          <p>
+            <strong>電話:</strong> +34-91-590-7614<br>
+            <strong>住所:</strong> Calle de Serrano, 109<br>
+            28006 Madrid
+          </p>
+        </div>
+        <div class="callout">
+          <div class="callout__label">Consulate Barcelona</div>
+          <p>
+            <strong>電話:</strong> +34-93-280-3433<br>
+            <strong>住所:</strong> Av. Diagonal 640, 2階D<br>
+            Barcelona
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">必須アプリ・サービス</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>用途</th><th>推奨</th></tr></thead>
+          <tbody>
+            <tr><td>eSIM</td><td><strong>Holafly</strong>(複数国EUプラン、無制限、€6/日 ≒ ¥1,020/日)</td></tr>
+            <tr><td>地図・経路</td><td>Google Maps、Citymapper(BCN・MAD対応)</td></tr>
+            <tr><td>翻訳</td><td>DeepL、Google翻訳(オフライン西語・カタルーニャ語DL必須)</td></tr>
+            <tr><td>鉄道予約</td><td><strong>Omio</strong>(日本語、決済安定)、Trip.com、Renfe公式</td></tr>
+            <tr><td>レストラン予約</td><td>TheFork(アプリ日本語)</td></tr>
+            <tr><td>タクシー配車</td><td><strong>Free Now</strong>(Uber/Cabify廃止後の主流)</td></tr>
+            <tr><td>ストライキ情報</td><td>Twitter/X "huelga Renfe" / Renfe公式 / 領事メール</td></tr>
+            <tr><td>治安情報</td><td>外務省海外安全ホームページ</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">クレジットカード戦略</h3>
+      <ul class="clean-list">
+        <li><strong>VISA + Master を1枚ずつ</strong>(JCBは欧州で使えない店多数)</li>
+        <li><strong>タッチ決済対応カード必須</strong>(2025年からバルセロナメトロもタッチ決済可)</li>
+        <li><strong>PayPal設定</strong>(Renfe等の決済エラー回避)</li>
+        <li>紛失時連絡先を別の場所に控える</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">お土産戦略 + IVA還付(免税手続き)</h3>
+      <div class="callout callout--positive">
+        <div class="callout__label">Tax Free Spain</div>
+        <p><strong>対象</strong>: EU圏外居住者、1店舗で <strong>€100超</strong> の購入 / <strong>還付率</strong>: 商品により10-21% / <strong>手続き</strong>: 出国時に空港 DIVA電子認証端末で認証→還付</p>
+      </div>
+      <ul class="numbered-list">
+        <li>店舗で「Tax Free Form」を申請(パスポート提示)</li>
+        <li>出国時に空港(BCN El Prat / MAD Barajas)DIVA電子認証端末でフォーム認証</li>
+        <li>同じ端末で還付(クレジットカードへ返金)</li>
+        <li><strong>出発2-3時間前に着いて手続き時間を確保</strong></li>
+      </ul>
+
+      <p class="subsection__lede" style="margin-top: var(--space-sm);"><strong>おすすめお土産リスト</strong>:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>品</th><th>価格</th><th>購入場所</th></tr></thead>
+          <tbody>
+            <tr><td>ハモン・イベリコ・デ・ベジョータ(真空パック)</td><td class="price">€15-25/100g</td><td>Mercado Jamón Ibérico、ボケリア市場</td></tr>
+            <tr><td>カバ(スパークリングワイン)</td><td class="price">€10-30/本</td><td>Codorníu、Freixenet、スーパー</td></tr>
+            <tr><td>オリーブオイル(エクストラバージン)</td><td class="price">€15-40/瓶</td><td>スーパー、デリ</td></tr>
+            <tr><td>サフラン(Azafrán)</td><td class="price">€5-20/g</td><td>市場、スーパー</td></tr>
+            <tr><td>マンチェゴチーズ(真空パック)</td><td class="price">€10-30/250g</td><td>チーズ専門店</td></tr>
+            <tr><td>トゥロン(アーモンド菓子)</td><td class="price">€5-15/箱</td><td>老舗菓子店</td></tr>
+            <tr><td>マサパン(トレド名物)</td><td class="price">€5-15/箱</td><td>Santo Tomé(トレド)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted" style="font-size:0.85rem; margin-top:var(--space-xs);"><strong>税関注意</strong>(日本帰国時): 生ハム真空パック・チーズ → 持込OK(個人消費分) / カバ・ワイン → 1人 760ml × 3本まで免税 / 合計20万円超は別途関税</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §15 アクションアイテム ============ -->
+<section class="section" id="actions">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 15</div>
+      <h2 class="section__title">アクションアイテム(優先度別)</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">最優先 → 高優先 → 中優先 → 出発準備の4段階で整理。</p>
+    </div>
+
+    <div class="priority-group">
+      <div class="priority-group__heading"><span class="priority-dot priority-dot--critical"></span>最優先(今すぐ着手 / 2026/3-5月)</div>
+      <div class="action-list">
+        <div class="action-row" style="border-color: var(--color-accent);">
+          <div class="action-row__num">01</div>
+          <div class="action-row__task">航空券確保(エールフランス羽田-CDG-BCN、プレエコ以上推奨)</div>
+          <div class="action-row__due">2026/4</div>
+        </div>
+        <div class="action-row" style="border-color: var(--color-accent);">
+          <div class="action-row__num">02</div>
+          <div class="action-row__task"><strong>バルセロナ ★4ホテル予約</strong>(Sercotel Rosellón 第一候補)</div>
+          <div class="action-row__due"><strong>2026/5月まで</strong></div>
+        </div>
+        <div class="action-row" style="border-color: var(--color-accent);">
+          <div class="action-row__num">03</div>
+          <div class="action-row__task"><strong>Disfrutar(★★★)予約</strong>(12ヶ月前から可、6-9ヶ月前推奨)</div>
+          <div class="action-row__due"><strong>2026/3 – 4月</strong></div>
+        </div>
+        <div class="action-row" style="border-color: var(--color-accent);">
+          <div class="action-row__num">04</div>
+          <div class="action-row__task">サン・セバスチャン ★★★(該当パターン): Arzak / Akelarre / Berasategui</div>
+          <div class="action-row__due"><strong>2026/3月</strong></div>
+        </div>
+        <div class="action-row" style="border-color: var(--color-accent);">
+          <div class="action-row__num">05</div>
+          <div class="action-row__task">フランス側との動線確定(BCN→CDG空路、Vueling直行が最適)</div>
+          <div class="action-row__due">早急</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="priority-group">
+      <div class="priority-group__heading"><span class="priority-dot priority-dot--high"></span>高優先(2026/6-7月)</div>
+      <div class="action-list">
+        <div class="action-row">
+          <div class="action-row__num">06</div>
+          <div class="action-row__task">旅程パターン確定(A〜E から選定)</div>
+          <div class="action-row__due">4月末まで</div>
+        </div>
+        <div class="action-row">
+          <div class="action-row__num">07</div>
+          <div class="action-row__task">アルハンブラ宮殿チケット(該当パターン、ナスル朝時間指定+夜間枠)</div>
+          <div class="action-row__due">T-4ヶ月(6月)</div>
+        </div>
+        <div class="action-row">
+          <div class="action-row__num">08</div>
+          <div class="action-row__task">DiverXO / ABaC / Lasarte / Cinc Sentits(★★以上)予約</div>
+          <div class="action-row__due">T-4ヶ月(6月)</div>
+        </div>
+        <div class="action-row">
+          <div class="action-row__num">09</div>
+          <div class="action-row__task">パラドール・デ・グラナダ(該当パターン、半年以上前完売)</div>
+          <div class="action-row__due"><strong>2026/5月中</strong></div>
+        </div>
+        <div class="action-row">
+          <div class="action-row__num">10</div>
+          <div class="action-row__task">サグラダ・ファミリア タワー付き(2ヶ月前から販売開始時)</div>
+          <div class="action-row__due">T-2ヶ月(7月)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="priority-group">
+      <div class="priority-group__heading"><span class="priority-dot priority-dot--medium"></span>中優先(2026/7-8月)</div>
+      <div class="action-list">
+        <div class="action-row">
+          <div class="action-row__num">11</div>
+          <div class="action-row__task">カサ・バトリョ Magic Nights、カサ・ミラ Night Experience</div>
+          <div class="action-row__due">T-3ヶ月</div>
+        </div>
+        <div class="action-row">
+          <div class="action-row__num">12</div>
+          <div class="action-row__task">プラド/レイナ・ソフィア/ティッセン 時間指定(Paseo del Arte Pass)</div>
+          <div class="action-row__due">T-2ヶ月</div>
+        </div>
+        <div class="action-row">
+          <div class="action-row__num">13</div>
+          <div class="action-row__task">グエル公園(72h前まで、朝一枠)</div>
+          <div class="action-row__due">T-2ヶ月</div>
+        </div>
+        <div class="action-row">
+          <div class="action-row__num">14</div>
+          <div class="action-row__task">Tablao Cordobés(バルセロナ)/ Corral de la Morería(マドリード)</div>
+          <div class="action-row__due">T-2ヶ月</div>
+        </div>
+        <div class="action-row">
+          <div class="action-row__num">15</div>
+          <div class="action-row__task">AVE Promo+ 早割(Omio / Trip.com 経由)</div>
+          <div class="action-row__due">T-2-3ヶ月</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="priority-group">
+      <div class="priority-group__heading"><span class="priority-dot priority-dot--medium" style="background:#7BA399;"></span>出発準備(2026/8-9月)</div>
+      <div class="action-list">
+        <div class="action-row">
+          <div class="action-row__num">16</div>
+          <div class="action-row__task">モンセラート Trans Montserrat、ペネデス カバ体験</div>
+          <div class="action-row__due">T-1ヶ月</div>
+        </div>
+        <div class="action-row">
+          <div class="action-row__num">17</div>
+          <div class="action-row__task">海外旅行保険・eSIM Holafly・スリ対策グッズ準備</div>
+          <div class="action-row__due">T-2週</div>
+        </div>
+        <div class="action-row">
+          <div class="action-row__num">18</div>
+          <div class="action-row__task">ハネムーン伝達メール(ホテル・レストラン)送信</div>
+          <div class="action-row__due">T-2週</div>
+        </div>
+        <div class="action-row">
+          <div class="action-row__num">19</div>
+          <div class="action-row__task">メルセ祭2026プログラム公式PDFダウンロード</div>
+          <div class="action-row__due">T-1週</div>
+        </div>
+        <div class="action-row">
+          <div class="action-row__num">20</div>
+          <div class="action-row__task">全予約QRコード/PDFオフライン保存、現地語フレーズ口慣らし</div>
+          <div class="action-row__due">出発前日</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Files ============ -->
+<section class="section" id="files">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 16</div>
+      <h2 class="section__title">原資料 ファイル一覧</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">本サマリーの元になった5ファイル(計 約5,429行 / 約355KB)</p>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>#</th><th>ファイル</th><th>行数</th><th>サイズ</th><th>カバー範囲</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>01</td><td><code>01_barcelona.md</code></td><td>1,226</td><td>77 KB</td><td>バルセロナ市内+モンセラート/ジローナ/フィゲラス他</td></tr>
+          <tr><td>02</td><td><code>02_madrid.md</code></td><td>1,326</td><td>88 KB</td><td>マドリード市内+トレド/セゴビア/エル・エスコリアル他</td></tr>
+          <tr><td>03</td><td><code>03_andalusia.md</code></td><td>904</td><td>58 KB</td><td>グラナダ/セビリア/コルドバ/ロンダ/白い村</td></tr>
+          <tr><td>04</td><td><code>04_other_regions.md</code></td><td>864</td><td>64 KB</td><td>サン・セバスチャン/ビルバオ/バレンシア/サラマンカ他</td></tr>
+          <tr><td>05</td><td><code>05_honeymoon_insights.md</code></td><td>1,109</td><td>67 KB</td><td>SNS / YouTube 実体験ノウハウ</td></tr>
+          <tr><td>—</td><td><code>summary.md</code> · <code>summary.html</code></td><td>—</td><td>—</td><td>横断サマリー(プロ仕様)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-subtle text-center" style="font-size:0.82rem; margin-top:var(--space-sm);">価格は €1 = ¥170 で円換算(2026年5月時点目安)。実勢レートで変動あり。</p>
+  </div>
+</section>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__rule"></div>
+    <p>Pro Edition · Last updated 2026.05.16</p>
+    <p style="margin-top: 4px;">Compiled from 5 research files / cross-section digest for Honeymoon 2026.</p>
+  </div>
+</footer>
+
+</body>
+</html>
