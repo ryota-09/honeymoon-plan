@@ -1,0 +1,3368 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>9日間旅程プラン(Pro Edition) | Honeymoon 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ========== Reset & Base ========== */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --color-bg: #FAFAF8;
+    --color-surface: #FFFFFF;
+    --color-text: #1C1C1C;
+    --color-text-muted: #5C5C5C;
+    --color-text-subtle: #8A8A8A;
+    --color-border: #E8E6E1;
+    --color-border-strong: #C9C5BC;
+
+    /* メインアクセント: ディープゴールド(旅程全体を統括) */
+    --color-accent: #8B6F3A;
+    --color-accent-light: #F7F1E5;
+    --color-accent-dark: #6B5429;
+
+    /* 国別サブアクセント */
+    --color-spain: #B0432A;
+    --color-spain-light: #FAEFE9;
+    --color-france: #7C2D3F;
+    --color-france-light: #F7EEF0;
+
+    --color-highlight: #FFF8E7;
+    --color-highlight-border: #E8D9A8;
+    --color-positive: #2D5A3D;
+    --color-positive-bg: #EEF5EF;
+    --color-warning: #8B5A20;
+    --color-warning-bg: #FBF4E6;
+
+    --font-serif: 'Cormorant Garamond', 'Noto Serif JP', 'Hiragino Mincho ProN', serif;
+    --font-sans: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', sans-serif;
+    --font-mono: 'SF Mono', 'Menlo', 'Consolas', monospace;
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.75;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+  }
+
+  /* ========== Hero ========== */
+  .hero {
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-xl) 0 var(--space-lg);
+    text-align: center;
+    position: relative;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--color-spain) 0%, var(--color-spain) 35%, var(--color-accent) 50%, var(--color-france) 65%, var(--color-france) 100%);
+  }
+
+  .hero__eyebrow {
+    font-family: var(--font-serif);
+    font-size: 0.875rem;
+    letter-spacing: 0.3em;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    margin-bottom: var(--space-sm);
+    font-weight: 500;
+  }
+
+  .hero__title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.25rem, 5vw, 3.75rem);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: var(--space-sm);
+    letter-spacing: -0.01em;
+  }
+
+  .hero__subtitle {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-lg);
+    font-weight: 400;
+  }
+
+  .hero__meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__meta-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 130px;
+  }
+
+  .hero__meta-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    color: var(--color-text-subtle);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+
+  .hero__meta-value {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-text);
+  }
+
+  .hero__highlights {
+    margin-top: var(--space-md);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__highlight {
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    background: var(--color-accent-light);
+    color: var(--color-accent-dark);
+    border-radius: 20px;
+    font-weight: 500;
+    border: 1px solid #DDC899;
+  }
+
+  /* ========== TOC ========== */
+  .toc {
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-md) 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1px 0 var(--color-border);
+  }
+
+  .toc__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm) var(--space-md);
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+
+  .toc a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    white-space: nowrap;
+  }
+
+  .toc a:hover {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+  }
+
+  /* ========== Section ========== */
+  .section {
+    padding: var(--space-xl) 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .section:last-of-type { border-bottom: none; }
+
+  .section__header { margin-bottom: var(--space-lg); }
+
+  .section__number {
+    font-family: var(--font-serif);
+    font-size: 0.95rem;
+    color: var(--color-accent);
+    letter-spacing: 0.25em;
+    font-weight: 500;
+    margin-bottom: var(--space-xs);
+  }
+
+  .section__title {
+    font-family: var(--font-serif);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+    letter-spacing: -0.01em;
+  }
+
+  .section__subtitle {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .section__divider {
+    width: 48px;
+    height: 1px;
+    background-color: var(--color-accent);
+    margin: var(--space-sm) 0 var(--space-md);
+  }
+
+  /* ========== Subsection ========== */
+  .subsection { margin-bottom: var(--space-lg); }
+
+  .subsection__title {
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+    padding-bottom: var(--space-xs);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .subsection__lede {
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-sm);
+    font-size: 0.95rem;
+  }
+
+  /* ========== Tables ========== */
+  .table-wrap {
+    overflow-x: auto;
+    margin: var(--space-sm) 0;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+  }
+
+  thead th {
+    background-color: #F5F3EE;
+    color: var(--color-text);
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--color-border-strong);
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  tbody td {
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    vertical-align: top;
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background-color: #FAFAF5; }
+
+  td strong, th strong { color: var(--color-text); font-weight: 600; }
+  .price { font-family: var(--font-serif); font-weight: 500; font-feature-settings: "tnum"; white-space: nowrap; }
+
+  /* ========== Country Tags ========== */
+  .country {
+    display: inline-block;
+    font-size: 0.72rem;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .country--spain { background-color: var(--color-spain-light); color: var(--color-spain); }
+  .country--france { background-color: var(--color-france-light); color: var(--color-france); }
+  .country--travel { background-color: #F0EFEA; color: var(--color-text-muted); }
+
+  /* ========== Day Cards (Timeline) ========== */
+  .day-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .day-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .day-card--spain { border-left: 4px solid var(--color-spain); }
+  .day-card--france { border-left: 4px solid var(--color-france); }
+  .day-card--travel { border-left: 4px solid var(--color-accent); }
+
+  .day-card__header {
+    padding: var(--space-md) var(--space-md) var(--space-sm);
+    background: linear-gradient(180deg, #FBFAF6 0%, #FFFFFF 100%);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .day-card__day {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+  }
+
+  .day-card__number {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  .day-card__date {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    color: var(--color-text);
+    font-weight: 500;
+  }
+
+  .day-card__theme {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    color: var(--color-text);
+    font-style: italic;
+    margin-top: 2px;
+  }
+
+  .day-card__body {
+    padding: var(--space-md);
+  }
+
+  .day-card__timeline {
+    margin: var(--space-sm) 0;
+  }
+
+  .timeline-row {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: var(--space-sm);
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--color-border);
+    align-items: baseline;
+  }
+
+  .timeline-row:last-child { border-bottom: none; }
+
+  .timeline-row--highlight {
+    background-color: var(--color-highlight);
+    margin: 0 -12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: var(--radius-sm);
+    border-bottom-color: transparent;
+  }
+
+  .timeline-time {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    color: var(--color-accent);
+    font-size: 0.95rem;
+    font-feature-settings: "tnum";
+    white-space: nowrap;
+  }
+
+  .timeline-action {
+    font-size: 0.92rem;
+    color: var(--color-text);
+    line-height: 1.65;
+  }
+
+  .timeline-action strong { color: var(--color-text); font-weight: 600; }
+
+  .timeline-note {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--color-text-subtle);
+    margin-top: 2px;
+  }
+
+  .day-card__footer {
+    padding: var(--space-sm) var(--space-md);
+    background-color: #FAF9F4;
+    border-top: 1px solid var(--color-border);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-md);
+    font-size: 0.85rem;
+  }
+
+  .day-card__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .day-card__meta-label {
+    font-family: var(--font-serif);
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .day-card__meta-value {
+    color: var(--color-text-muted);
+    line-height: 1.55;
+    font-size: 0.85rem;
+  }
+
+  .day-card__meta-value ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .day-card__meta-value li {
+    padding-left: 12px;
+    position: relative;
+    margin-bottom: 2px;
+  }
+
+  .day-card__meta-value li::before {
+    content: "·";
+    position: absolute;
+    left: 4px;
+    color: var(--color-accent);
+    font-weight: 700;
+  }
+
+  /* ========== Callouts ========== */
+  .callout {
+    background-color: var(--color-highlight);
+    border: 1px solid var(--color-highlight-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    margin: var(--space-md) 0;
+  }
+
+  .callout__label {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: var(--space-xs);
+  }
+
+  .callout p, .callout ol, .callout ul { margin: 0; color: var(--color-text); font-size: 0.95rem; }
+  .callout ol, .callout ul { margin-left: 1.25rem; margin-top: 4px; }
+
+  .callout--warning {
+    background-color: var(--color-warning-bg);
+    border-color: #D9C28C;
+  }
+  .callout--warning .callout__label { color: var(--color-warning); }
+
+  .callout--positive {
+    background-color: var(--color-positive-bg);
+    border-color: #B8D0BD;
+  }
+  .callout--positive .callout__label { color: var(--color-positive); }
+
+  .impact-high { color: var(--color-accent); font-weight: 600; }
+
+  /* ========== Badges & Priority Dots ========== */
+  .badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 12px;
+    background-color: var(--color-accent-light);
+    color: var(--color-accent);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+
+  .badge--neutral { background-color: #F0EFEA; color: var(--color-text-muted); }
+  .badge--positive { background-color: var(--color-positive-bg); color: var(--color-positive); }
+  .badge--warning { background-color: var(--color-warning-bg); color: var(--color-warning); }
+
+  .priority-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+  .priority-dot--critical { background: var(--color-accent); }
+  .priority-dot--high { background: #D9A847; }
+  .priority-dot--medium { background: var(--color-border-strong); }
+  .priority-dot--soft { background: #7BA399; }
+
+  /* ========== Lists ========== */
+  ul.clean-list, ol.clean-list {
+    margin: var(--space-xs) 0 var(--space-sm) 1.25rem;
+    color: var(--color-text);
+  }
+
+  ul.clean-list li, ol.clean-list li { margin-bottom: 0.4rem; }
+  ul.clean-list li::marker { color: var(--color-accent); }
+  ol.clean-list li::marker { color: var(--color-accent); font-weight: 600; }
+
+  ul.numbered-list {
+    margin: var(--space-xs) 0 var(--space-sm) 0;
+    list-style: none;
+    counter-reset: num-counter;
+  }
+
+  ul.numbered-list li {
+    counter-increment: num-counter;
+    padding: 6px 0 6px 38px;
+    position: relative;
+    font-size: 0.93rem;
+    line-height: 1.7;
+  }
+
+  ul.numbered-list li::before {
+    content: counter(num-counter, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 6px;
+    font-family: var(--font-serif);
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    width: 28px;
+  }
+
+  ul.no-do-list {
+    margin: var(--space-xs) 0;
+    list-style: none;
+  }
+  ul.no-do-list li {
+    padding: 6px 0 6px 28px;
+    position: relative;
+    font-size: 0.93rem;
+    line-height: 1.65;
+  }
+  ul.no-do-list li::before {
+    content: "✕";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    color: var(--color-accent);
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+
+  /* ========== Email Template ========== */
+  .email-block {
+    background-color: #FBFAF7;
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-accent);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    margin: var(--space-sm) 0;
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    line-height: 1.7;
+    overflow-x: auto;
+    white-space: pre;
+    color: var(--color-text);
+  }
+
+  /* ========== Allergy Card (print-ready) ========== */
+  .allergy-card {
+    background: linear-gradient(180deg, #FFFFFF 0%, #FBFAF6 100%);
+    border: 2px solid var(--color-accent);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    margin: var(--space-md) 0;
+    max-width: 600px;
+  }
+
+  .allergy-card__heading {
+    text-align: center;
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed var(--color-border);
+    margin-bottom: var(--space-sm);
+  }
+
+  .allergy-card__row {
+    margin-bottom: var(--space-xs);
+    padding: 6px 0;
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+
+  .allergy-card__lang {
+    display: inline-block;
+    width: 28px;
+    font-family: var(--font-serif);
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-right: 8px;
+    vertical-align: top;
+    font-size: 0.95rem;
+  }
+
+  .allergy-card__text {
+    display: inline-block;
+    width: calc(100% - 44px);
+    vertical-align: top;
+  }
+
+  .allergy-card__footer {
+    text-align: center;
+    font-family: var(--font-serif);
+    font-style: italic;
+    color: var(--color-text-muted);
+    padding-top: 8px;
+    border-top: 1px dashed var(--color-border);
+    margin-top: var(--space-xs);
+    font-size: 0.88rem;
+  }
+
+  /* ========== Emergency Cards ========== */
+  .emergency-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--space-sm);
+    margin: var(--space-sm) 0;
+  }
+
+  .emergency-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-sm) var(--space-md);
+    text-align: center;
+  }
+
+  .emergency-card__label {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin-bottom: 4px;
+  }
+
+  .emergency-card__number {
+    font-family: var(--font-serif);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    letter-spacing: 0.05em;
+  }
+
+  /* ========== Action Items ========== */
+  .priority-group {
+    margin-bottom: var(--space-md);
+  }
+
+  .priority-group__heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+    padding-bottom: 4px;
+    border-bottom: 1px dashed var(--color-border);
+  }
+
+  .action-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  .action-row {
+    display: grid;
+    grid-template-columns: 60px 1fr 200px;
+    gap: var(--space-sm);
+    align-items: center;
+    padding: var(--space-sm);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
+  }
+
+  .action-row__num {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .action-row__task { color: var(--color-text); line-height: 1.55; }
+  .action-row__due { color: var(--color-text-muted); font-size: 0.85rem; text-align: right; }
+
+  @media (max-width: 600px) {
+    .action-row { grid-template-columns: 40px 1fr; }
+    .action-row__due { grid-column: 1 / -1; padding-left: 50px; text-align: left; }
+  }
+
+  /* ========== Tag Group ========== */
+  .tag-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: var(--space-sm) 0;
+  }
+
+  .tag {
+    font-size: 0.78rem;
+    padding: 4px 10px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    color: var(--color-text-muted);
+  }
+
+  /* ========== Two-column ========== */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+    margin: var(--space-md) 0;
+  }
+
+  @media (max-width: 720px) {
+    .two-col { grid-template-columns: 1fr; }
+  }
+
+  /* ========== Part Divider (Plan A / Plan B) ========== */
+  .part-divider {
+    background: linear-gradient(135deg, var(--color-accent-light) 0%, var(--color-bg) 100%);
+    padding: var(--space-xl) 0;
+    text-align: center;
+    border-top: 4px solid var(--color-accent);
+    border-bottom: 1px solid var(--color-border);
+    margin: 0;
+    position: relative;
+  }
+
+  .part-divider__eyebrow {
+    font-family: var(--font-serif);
+    font-size: 0.85rem;
+    letter-spacing: 0.3em;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    margin-bottom: var(--space-xs);
+    font-weight: 500;
+  }
+
+  .part-divider__title {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 500;
+    margin-bottom: var(--space-xs);
+    letter-spacing: -0.01em;
+  }
+
+  .part-divider__subtitle {
+    font-family: var(--font-serif);
+    font-style: italic;
+    color: var(--color-text-muted);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin-bottom: var(--space-sm);
+  }
+
+  .part-divider__route {
+    display: inline-block;
+    padding: 8px 24px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-accent);
+    border-radius: 24px;
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+    color: var(--color-text);
+    margin-top: var(--space-sm);
+  }
+
+  .part-divider__highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: var(--space-md);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .part-divider__highlight {
+    font-size: 0.78rem;
+    padding: 4px 12px;
+    background: var(--color-surface);
+    color: var(--color-accent-dark);
+    border: 1px solid var(--color-accent);
+    border-radius: 20px;
+    font-weight: 500;
+  }
+
+  /* TOC Group Headers */
+  .toc__group {
+    display: inline-block;
+    font-family: var(--font-serif);
+    font-size: 0.78rem;
+    letter-spacing: 0.2em;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 6px;
+    padding: 0 4px;
+    border-left: 2px solid var(--color-accent);
+    border-right: 2px solid var(--color-accent);
+  }
+
+  /* ========== Closing Quote ========== */
+  .closing {
+    text-align: center;
+    padding: var(--space-lg) var(--space-md);
+    margin: var(--space-lg) 0;
+    background: linear-gradient(180deg, var(--color-accent-light) 0%, var(--color-surface) 100%);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-highlight-border);
+  }
+
+  .closing__quote {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--color-text);
+    line-height: 1.65;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  /* ========== Footer ========== */
+  .footer {
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    padding: var(--space-lg) 0;
+    text-align: center;
+    color: var(--color-text-subtle);
+    font-size: 0.85rem;
+  }
+
+  .footer__rule {
+    width: 40px;
+    height: 1px;
+    background-color: var(--color-accent);
+    margin: 0 auto var(--space-sm);
+  }
+
+  /* ========== Utility ========== */
+  .text-muted { color: var(--color-text-muted); }
+  .text-subtle { color: var(--color-text-subtle); }
+  .text-center { text-align: center; }
+  .text-small { font-size: 0.85rem; }
+
+  /* ========== Responsive ========== */
+  @media (max-width: 600px) {
+    .hero { padding: var(--space-lg) 0 var(--space-md); }
+    .section { padding: var(--space-lg) 0; }
+    .toc__inner { gap: var(--space-sm); font-size: 0.74rem; }
+    .hero__meta-item { min-width: 100px; }
+    table { font-size: 0.8rem; }
+    thead th, tbody td { padding: 0.55rem 0.6rem; }
+    .timeline-row { grid-template-columns: 60px 1fr; }
+    .day-card__number { font-size: 1.65rem; }
+    .day-card__date { font-size: 1rem; }
+    .day-card__theme { font-size: 0.95rem; }
+    .email-block, .itinerary { font-size: 0.78rem; padding: var(--space-sm); }
+  }
+
+  /* ========== Print ========== */
+  @media print {
+    body { background: white; font-size: 11pt; }
+    .toc { position: static; box-shadow: none; }
+    .section { page-break-inside: avoid; padding: var(--space-md) 0; }
+    .day-card { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="container">
+    <div class="hero__eyebrow">Honeymoon 2026 · Final Itinerary · Pro Edition</div>
+    <h1 class="hero__title">9日間旅程プラン</h1>
+    <p class="hero__subtitle">Spain &amp; France — A nine-day journey from Tokyo</p>
+    <div class="hero__meta">
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Date</span>
+        <span class="hero__meta-value">2026.09.26 – 10.04</span>
+      </div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Pattern</span>
+        <span class="hero__meta-value">A. BCN + Paris + MSM</span>
+      </div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Budget</span>
+        <span class="hero__meta-value">¥1.98M / 2人</span>
+      </div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Class</span>
+        <span class="hero__meta-value">プレエコ</span>
+      </div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Revision</span>
+        <span class="hero__meta-value">1.1 (2026.05.16)</span>
+      </div>
+    </div>
+    <div class="hero__highlights">
+      <span class="hero__highlight">メルセ祭フィナーレ花火</span>
+      <span class="hero__highlight">サグラダ完成イヤー</span>
+      <span class="hero__highlight">ジヴェルニー × モネ100周年展</span>
+      <span class="hero__highlight">MSM 島内泊</span>
+      <span class="hero__highlight">🍴 Disfrutar ★★★</span>
+      <span class="hero__highlight">エッフェル塔 シャンパン</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ TOC ============ -->
+<nav class="toc">
+  <div class="container">
+    <div class="toc__inner">
+      <span class="toc__group">Plan A</span>
+      <a href="#executive">概要</a>
+      <a href="#thinking">設計思想</a>
+      <a href="#itinerary">9日間 行程</a>
+      <a href="#transport">移動・時間</a>
+      <a href="#hotels">宿泊</a>
+      <a href="#meals">食事</a>
+      <a href="#romance">演出</a>
+      <a href="#budget">予算</a>
+      <a href="#bookings">予約</a>
+      <a href="#risks">リスク</a>
+      <a href="#packing">持ち物</a>
+      <a href="#emails">メール例文</a>
+      <a href="#allergy">食事カード</a>
+      <a href="#emergency">緊急連絡</a>
+      <a href="#actions">アクション</a>
+      <span class="toc__group">Plan B</span>
+      <a href="#planb">概要</a>
+      <a href="#planb-thinking">設計思想</a>
+      <a href="#planb-itinerary">9日間 行程</a>
+      <a href="#planb-diff">宿泊・食事・予算</a>
+      <a href="#planb-compare">A vs B 比較</a>
+      <a href="#planb-bookings">B予約</a>
+      <a href="#planb-conclusion">結論</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ §0 Executive Summary ============ -->
+<section class="section" id="executive">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 00</div>
+      <h2 class="section__title">エグゼクティブサマリー</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">9日間の核心を1行ずつ。</p>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Day</th><th>日付</th><th>場所</th><th>核心の1日</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>9/26 土</td><td>東京 → BCN <span class="country country--travel">移動</span></td><td>到着、軽い夕食、早寝(時差ボケ対策)</td></tr>
+          <tr><td>2</td><td>9/27 日</td><td>バルセロナ <span class="country country--spain">🇪🇸</span></td><td>サグラダ朝一 → カサ・バトリョ → <strong>ピカソ美術館</strong> → <strong>メルセ祭花火 21:30</strong></td></tr>
+          <tr style="background-color: var(--color-highlight);"><td><strong>3</strong></td><td>9/28 月</td><td>バルセロナ <span class="country country--spain">🇪🇸</span></td><td>グエル朝一 → カサ・ミラ → パラウ・ダ・ラ・ムジカ → 🍴 <strong>Disfrutar(★★★)</strong></td></tr>
+          <tr><td>4</td><td>9/29 火</td><td>BCN → パリ <span class="country country--travel">移動</span></td><td>Vueling 2h、6区チェックイン、ソフトランディング夕食</td></tr>
+          <tr><td>5</td><td>9/30 水</td><td>パリ + ジヴェルニー <span class="country country--france">🇫🇷</span></td><td><strong>ジヴェルニー終日</strong> → <strong>オランジュリー モネ100周年展開幕日</strong></td></tr>
+          <tr style="background-color: var(--color-highlight);"><td><strong>6</strong></td><td>10/1 木</td><td>パリ → MSM 島内泊 <span class="country country--france">🇫🇷</span></td><td>修道院(料金値下げ初日)→ 夕暮れ → ライトアップ → 朝もや</td></tr>
+          <tr><td>7</td><td>10/2 金</td><td>MSM → パリ <span class="country country--france">🇫🇷</span></td><td>朝の干潟 → 移動 → ビストロでパリらしい夜</td></tr>
+          <tr><td>8</td><td>10/3 土</td><td>パリ + ヴェルサイユ <span class="country country--france">🇫🇷</span></td><td>ヴェルサイユ午前 → 午後休息 → 夜エッフェル塔頂上シャンパン</td></tr>
+          <tr><td>9</td><td>10/4 日</td><td>パリ → 東京 <span class="country country--travel">移動</span></td><td>朝食ゆっくり → お土産+Tax Free → 帰国</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <div class="callout__label">ジレンマの解決</div>
+      <ul>
+        <li><strong>メルセ祭花火(9/27) vs MSM大潮ピーク(9/27-29)</strong> → メルセ祭を優先、MSM入りは10/1(係数82、大潮後半判定で十分体験可)</li>
+        <li><strong>Day 3(9/28 月)はピカソ美術館・MNAC が定休</strong> → ピカソは Day 2(日)に組込</li>
+        <li><strong>ジヴェルニー(9/30)とモネ100周年展(オランジュリー 9/30開幕)を同日に体験</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §1 Design Thinking ============ -->
+<section class="section" id="thinking">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 01</div>
+      <h2 class="section__title">プラン設計の思想</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">プロが何を優先し、何を諦めたか。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">設計の核心 6 原則</h3>
+      <ul class="numbered-list">
+        <li><strong>動線最効率</strong>: 関空-パリ直行便 + Vueling BCN→CDG で大移動を3回(東京→BCN、BCN→CDG、CDG→東京)に限定</li>
+        <li><strong>休館日を考慮した日割り</strong>: 月曜・火曜定休の美術館を回避し、各日の機会損失をゼロに</li>
+        <li><strong>時差ボケ対策</strong>: Day 1-2 は早朝活動を最小化、Day 1 夜は21時就寝</li>
+        <li><strong>疲労ペース配分</strong>: 1日2大スポットまで、移動日は軽め、最終日は観光なし</li>
+        <li><strong>食事制限の徹底対応</strong>: 全レストランに事前メール、安全な定番中心、ハイライト1回(Disfrutar)に集中投資</li>
+        <li><strong>3つの希少な好機を全活用</strong>: メルセ祭・サグラダ完成イヤー・モネ100周年</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">採用しなかった案と理由</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>案</th><th>理由</th></tr></thead>
+          <tbody>
+            <tr><td>MSM 大潮ピーク(9/28-29)優先</td><td>バルセロナを2泊以下に圧縮する必要、メルセ祭フィナーレ+ガウディ建築の機会損失が大きい</td></tr>
+            <tr><td>サン・セバスチャン3★(パターンD)</td><td>9日間にBCN+SSE+パリ+MSMは詰込過剰。次回専用旅向き</td></tr>
+            <tr><td>マドリード+トレド(B/C)</td><td>プラド/ティッセン/レイナ・ソフィアに最低3日必要、フランス側を圧迫</td></tr>
+            <tr><td>アンダルシア(E)</td><td>バルセロナを諦める前提。完成イヤーを逃す機会損失</td></tr>
+            <tr><td>ロワール城ホテル(Château de Pray)</td><td>MSMから移動で追加1日、9日間枠から外れる</td></tr>
+            <tr><td>シャンパーニュ日帰り(ランス)</td><td>パリ余裕日に組み込み可能だが、MSM+ヴェルサイユ優先で割愛</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">月曜・火曜定休の主要施設</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>施設</th><th>定休</th><th>旅程上の影響</th></tr></thead>
+          <tbody>
+            <tr style="background-color: var(--color-highlight);"><td><strong>ピカソ美術館(BCN)</strong></td><td>月</td><td>Day 3(9/28 月)NG → <strong>Day 2(日)に振替</strong></td></tr>
+            <tr style="background-color: var(--color-highlight);"><td><strong>MNAC(BCN)</strong></td><td>月</td><td>Day 3 NG → 時間不足で割愛</td></tr>
+            <tr><td>ルーヴル</td><td>火</td><td>Day 4(9/29 火)は移動日でNG影響なし</td></tr>
+            <tr><td>ポンピドゥー</td><td>火</td><td>同上</td></tr>
+            <tr><td>オルセー</td><td>月</td><td>パリ滞在の日付に影響なし</td></tr>
+            <tr><td>ロダン美術館</td><td>月</td><td>同上</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §2 9-Day Itinerary ============ -->
+<section class="section" id="itinerary">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 02</div>
+      <h2 class="section__title">9日間 日割り行程</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">時刻・店名・服装・フォトスポットを各日に明記。</p>
+    </div>
+
+    <div class="day-cards">
+
+      <!-- Day 1 -->
+      <article class="day-card day-card--travel">
+        <header class="day-card__header">
+          <div class="day-card__day">
+            <span class="day-card__number">Day 1</span>
+            <span class="day-card__date">9/26(土)</span>
+            <span class="country country--travel">移動日</span>
+          </div>
+          <p class="day-card__theme">東京 → バルセロナ:到着、軽い夕食、早寝(時差ボケ対策)</p>
+        </header>
+        <div class="day-card__body">
+          <div class="day-card__timeline">
+            <div class="timeline-row"><span class="timeline-time">10:00頃</span><span class="timeline-action">空港チェックイン(関空 KIX or 羽田 HND)<span class="timeline-note">AF または ANA・JAL 直行 CDG 経由便</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">14h flight</span><span class="timeline-action">機内泊(現地時間に体内時計を合わせる)<span class="timeline-note">機内では BCN時間で寝る・食べる努力</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">19:00頃</span><span class="timeline-action">バルセロナ El Prat 空港(BCN)着<span class="timeline-note">Schengen 1回目入国でやや時間かかる</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">20:00</span><span class="timeline-action">空港 → ホテル(タクシー €35-40、25-35分)<span class="timeline-note">大荷物+疲労+夜なのでタクシー確実</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">20:45</span><span class="timeline-action"><strong>🏨 Sercotel Rosellón ★4 チェックイン</strong><span class="timeline-note">サグラダ・ファミリア徒歩3分</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">21:00</span><span class="timeline-action">🍴 軽い夕食(Cervecería Catalana 等、王道タパス40種、€30-40/2人)<span class="timeline-note">重い料理は避ける</span></span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">22:30</span><span class="timeline-action"><strong>就寝</strong>(時差ボケ対策で早寝)<span class="timeline-note">翌朝のサグラダ朝一に備える</span></span></div>
+          </div>
+        </div>
+        <footer class="day-card__footer">
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">服装</span>
+            <span class="day-card__meta-value">機内:ゆったり長袖+カーディガン / 到着夜:薄手の長袖+ジャケット(BCN 18-20℃)</span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">注意</span>
+            <span class="day-card__meta-value">
+              <ul>
+                <li>初日は深入りしない、観光なし</li>
+                <li>ホテル予約QRコードをスマホに保存</li>
+                <li>メルセ祭は2日後、街は既に祭ムード</li>
+              </ul>
+            </span>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Day 2 -->
+      <article class="day-card day-card--spain">
+        <header class="day-card__header">
+          <div class="day-card__day">
+            <span class="day-card__number">Day 2</span>
+            <span class="day-card__date">9/27(日)</span>
+            <span class="country country--spain">🇪🇸 Barcelona</span>
+          </div>
+          <p class="day-card__theme">ガウディ建築 + ピカソ + 🎆 メルセ祭花火フィナーレ</p>
+        </header>
+        <div class="day-card__body">
+          <div class="day-card__timeline">
+            <div class="timeline-row"><span class="timeline-time">07:30</span><span class="timeline-action">ホテル朝食(時差ボケ対応で軽め、コーヒー多め)</span></div>
+            <div class="timeline-row"><span class="timeline-time">08:00</span><span class="timeline-action">ホテル徒歩でサグラダへ(3分)</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">09:00</span><span class="timeline-action"><strong>🏛️ サグラダ・ファミリア 入場(Quiet Hour最初の枠)</strong><span class="timeline-note">私語禁止、東面ステンドグラスから朝光</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">11:00</span><span class="timeline-action">🏛️ 生誕の塔登頂(エレベーター登り、螺旋階段降り)<span class="timeline-note">約20分、高所恐怖症注意</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">12:00</span><span class="timeline-action">サグラダ周辺カフェで休憩</span></div>
+            <div class="timeline-row"><span class="timeline-time">12:30</span><span class="timeline-action">🏛️ <strong>カサ・バトリョ(Gold Ticket €45/人)</strong><span class="timeline-note">グラシア通り、海の家コンセプト</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">14:30</span><span class="timeline-action">🍴 ランチ:Bar del Pli or Cervecería Catalana<span class="timeline-note">タパス、休憩</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">16:00</span><span class="timeline-action">メトロでボルン地区へ(L4、約10分)</span></div>
+            <div class="timeline-row"><span class="timeline-time">16:30</span><span class="timeline-action"><strong>🏛️ ピカソ美術館(日曜は10-19時開館)</strong><span class="timeline-note">約1.5時間 ※月曜定休のため日曜に組込</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">18:00</span><span class="timeline-action">ホテル戻り、休憩・着替え</span></div>
+            <div class="timeline-row"><span class="timeline-time">19:30</span><span class="timeline-action">🍴 軽い夕食(ホテル周辺タパスバル)<span class="timeline-note">花火前で席を立ちやすい店</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">20:30</span><span class="timeline-action">🚆 メトロでスペイン広場へ(L1/L3)<span class="timeline-note">混雑覚悟</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">20:45</span><span class="timeline-action">MNAC前(モンジュイック側)階段で場所取り<span class="timeline-note">19:00から場所取りも検討</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">21:00</span><span class="timeline-action">💧 魔法の噴水ショー(音楽+水)</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">21:30</span><span class="timeline-action"><strong>🎆 メルセ祭クライマックス花火(モンジュイック)</strong><span class="timeline-note">音楽連動、約20分</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">22:00</span><span class="timeline-action">徒歩 or Free Now で帰路<span class="timeline-note">メトロ大混雑回避</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">23:00</span><span class="timeline-action">ホテル戻り、就寝</span></div>
+          </div>
+        </div>
+        <footer class="day-card__footer">
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">📷 Photo Spots</span>
+            <span class="day-card__meta-value">
+              <ul>
+                <li>朝7:30-8:00 サグラダ <strong>鏡池リフレクション</strong></li>
+                <li>カサ・バトリョ ファサード(グラシア通り側)</li>
+                <li>夕 Sercotel Rosellón 屋上 サグラダ夕景</li>
+                <li>夜21:30 メルセ祭花火(動画推奨)</li>
+              </ul>
+            </span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">服装</span>
+            <span class="day-card__meta-value">日中:長袖+薄手カーディガン(20-25℃)/ 夜:ジャケット必須(15-18℃)/ 靴:スニーカー(石畳、1日2万歩)</span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">予約</span>
+            <span class="day-card__meta-value">サグラダ(2026/7月までに 9:00枠+生誕の塔)/ カサ・バトリョ Gold Ticket / ピカソ美術館</span>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Day 3 -->
+      <article class="day-card day-card--spain">
+        <header class="day-card__header">
+          <div class="day-card__day">
+            <span class="day-card__number">Day 3</span>
+            <span class="day-card__date">9/28(月)</span>
+            <span class="country country--spain">🇪🇸 Barcelona</span>
+          </div>
+          <p class="day-card__theme">グエル + モデルニスモ + 🍴 Disfrutar(★★★)世界Best 1位</p>
+        </header>
+        <div class="day-card__body">
+          <div class="callout callout--warning" style="margin-bottom: var(--space-sm);">
+            <div class="callout__label">月曜定休に注意</div>
+            <p>ピカソ美術館・MNAC は月曜定休。本旅程では Day 2(日)にピカソを組込済み。Day 3 は月曜開館施設のみで構成。</p>
+          </div>
+          <div class="day-card__timeline">
+            <div class="timeline-row"><span class="timeline-time">08:30</span><span class="timeline-action">ホテル朝食(ゆっくり、9時の出発に備える)</span></div>
+            <div class="timeline-row"><span class="timeline-time">09:00</span><span class="timeline-action">メトロでグエル公園へ(L3 Lesseps、徒歩15分坂)<span class="timeline-note">Vallcarca 駅経由はエスカレーター付きで楽</span></span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">09:30</span><span class="timeline-action"><strong>🏛️ グエル公園(朝一の入場枠)</strong><span class="timeline-note">大蜥蜴前の写真は朝が無人</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">11:30</span><span class="timeline-action">グエル → カサ・ミラ(メトロ L3、10分)</span></div>
+            <div class="timeline-row"><span class="timeline-time">12:00</span><span class="timeline-action">🏛️ <strong>カサ・ミラ(ラ・ペドレラ)</strong><span class="timeline-note">屋上の「兵士と煙突」、約2時間</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">14:00</span><span class="timeline-action">🍴 ランチ:Quimet & Quimet(サン・アントニ、1914年立ち飲み)<span class="timeline-note">缶詰タパス・モンタディート €30-40/2人</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">15:30</span><span class="timeline-action">メトロでパラウ・ダ・ラ・ムジカへ(L4 Urquinaona、徒歩5分)</span></div>
+            <div class="timeline-row"><span class="timeline-time">16:00</span><span class="timeline-action"><strong>🏛️ パラウ・ダ・ラ・ムジカ・カタラナ ガイドツアー</strong><span class="timeline-note">世界遺産、ステンドグラス天井、約50分</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">17:00</span><span class="timeline-action">ゴシック地区 - ボルン地区散策<span class="timeline-note">Pont del Bisbe、Santa Maria del Mar</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">18:30</span><span class="timeline-action">ホテル戻り、休憩・着替え(ジャケット&ワンピース)</span></div>
+            <div class="timeline-row"><span class="timeline-time">20:00</span><span class="timeline-action">タクシーで Disfrutar へ(20分、約€15)</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">20:30</span><span class="timeline-action"><strong>🍴🌟 Disfrutar(★★★、世界Best 1位 2024)ディナー</strong><span class="timeline-note">2026/3-4月までに予約必須</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">23:30</span><span class="timeline-action">タクシーでホテル戻り</span></div>
+          </div>
+        </div>
+        <footer class="day-card__footer">
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">📷 Photo Spots</span>
+            <span class="day-card__meta-value">
+              <ul>
+                <li>朝9:30 グエル公園 大蜥蜴(El Drac)</li>
+                <li>朝10:00 グエル公園 大テラス + バルセロナ全景</li>
+                <li>カサ・ミラ 屋上の煙突</li>
+                <li>夜 Disfrutar 入口・店内(撮影可確認)</li>
+              </ul>
+            </span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">服装</span>
+            <span class="day-card__meta-value">日中:同 Day 2 / 夜(Disfrutar):男性はジャケット+シャツ、女性はワンピース or きれいめパンツ、革靴</span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">Disfrutar 予約時メール</span>
+            <span class="day-card__meta-value"><em>"Sin cilantro, sin hígado, alergias alimentarias"</em> と <em>"Estamos en luna de miel"</em> を明記</span>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Day 4 -->
+      <article class="day-card day-card--travel">
+        <header class="day-card__header">
+          <div class="day-card__day">
+            <span class="day-card__number">Day 4</span>
+            <span class="day-card__date">9/29(火)</span>
+            <span class="country country--travel">移動日</span>
+            <span class="country country--france">🇫🇷 Paris</span>
+          </div>
+          <p class="day-card__theme">バルセロナ → パリ(Vueling 直行 ~2h):ソフトランディング</p>
+        </header>
+        <div class="day-card__body">
+          <div class="day-card__timeline">
+            <div class="timeline-row"><span class="timeline-time">08:30</span><span class="timeline-action">ホテル朝食、ゆっくりチェックアウト</span></div>
+            <div class="timeline-row"><span class="timeline-time">09:30</span><span class="timeline-action">サグラダ周辺で名残散歩 / ボケリア市場で生ハム・果物購入</span></div>
+            <div class="timeline-row"><span class="timeline-time">11:00</span><span class="timeline-action">🚌 El Prat 空港へ(Aerobús €5.90 or タクシー €35)</span></div>
+            <div class="timeline-row"><span class="timeline-time">12:00</span><span class="timeline-action">空港、Vueling チェックイン、IVA還付対象品があれば DIVA端末手続き</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">13:00</span><span class="timeline-action"><strong>✈️ Vueling BCN → CDG(目安:約2h)</strong><span class="timeline-note">EU 内便</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">15:30</span><span class="timeline-action">CDG 着、入国(Schengen 内移動扱いで早い)</span></div>
+            <div class="timeline-row"><span class="timeline-time">16:30</span><span class="timeline-action">CDG → パリ市内(タクシー €56定額 or RER B €11.80)<span class="timeline-note">大荷物+疲労+夕方なのでタクシー推奨</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">17:30</span><span class="timeline-action"><strong>🏨 Hôtel de l'Abbaye ★4(6区サン・ジェルマン)チェックイン</strong></span></div>
+            <div class="timeline-row"><span class="timeline-time">18:30</span><span class="timeline-action">サン・ジェルマン地区散歩、Café de Flore でアペリティフ</span></div>
+            <div class="timeline-row"><span class="timeline-time">20:00</span><span class="timeline-action">🍴 ディナー:Brasserie Lipp(6区、1880年〜)<span class="timeline-note">サン・ジェルマン老舗、€60-80/2人</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">22:30</span><span class="timeline-action">ホテル戻り、就寝</span></div>
+          </div>
+        </div>
+        <footer class="day-card__footer">
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">📷 Photo Spots</span>
+            <span class="day-card__meta-value">
+              <ul>
+                <li>朝 サグラダ・ファミリアと最後の別れ</li>
+                <li>夕 Café de Flore のテラス</li>
+                <li>夜 Brasserie Lipp の歴史的店内</li>
+              </ul>
+            </span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">服装</span>
+            <span class="day-card__meta-value">移動日:動きやすい服+ジャケット / 夕食:スマートカジュアル</span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">注意</span>
+            <span class="day-card__meta-value">移動日は大きな観光なし / ハネムーン旨を到着時に伝える:<em>Nous sommes en voyage de noces</em></span>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Day 5 -->
+      <article class="day-card day-card--france">
+        <header class="day-card__header">
+          <div class="day-card__day">
+            <span class="day-card__number">Day 5</span>
+            <span class="day-card__date">9/30(水)</span>
+            <span class="country country--france">🇫🇷 Paris + Giverny</span>
+          </div>
+          <p class="day-card__theme">ジヴェルニー終日 + オランジュリー <strong>モネ100周年展開幕日</strong> + セーヌクルーズ</p>
+        </header>
+        <div class="day-card__body">
+          <div class="day-card__timeline">
+            <div class="timeline-row"><span class="timeline-time">07:30</span><span class="timeline-action">ホテル朝食</span></div>
+            <div class="timeline-row"><span class="timeline-time">08:30</span><span class="timeline-action">サン・ラザール駅へ</span></div>
+            <div class="timeline-row"><span class="timeline-time">08:45</span><span class="timeline-action">🚆 サン・ラザール駅 → Vernon-Giverny 駅(Transilien、45-50分、€10/人)</span></div>
+            <div class="timeline-row"><span class="timeline-time">09:45</span><span class="timeline-action">Vernon 駅着、シャトルバス(€10往復) or タクシー €25 でジヴェルニーへ</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">10:15</span><span class="timeline-action"><strong>🏛️ ジヴェルニー モネの家・庭園</strong><span class="timeline-note">9月下旬は秋バラ・ダリア満開、睡蓮も残る</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">12:00</span><span class="timeline-action">🍴 ランチ:Hôtel Baudy(印象派画家ゆかり、テラス)<span class="timeline-note">€40-60/2人</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">13:30</span><span class="timeline-action">ジヴェルニー印象派美術館(モネ100周年企画展あれば)</span></div>
+            <div class="timeline-row"><span class="timeline-time">14:30</span><span class="timeline-action">Vernon 戻り、パリ行きの電車</span></div>
+            <div class="timeline-row"><span class="timeline-time">16:00</span><span class="timeline-action">パリ・サン・ラザール駅 着、メトロでチュイルリーへ</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">17:00</span><span class="timeline-action"><strong>🏛️ オランジュリー美術館「モネと時間」展(9/30 開幕日)</strong><span class="timeline-note">必訪、約2時間</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">19:00</span><span class="timeline-action">チュイルリー公園散策、Angelina でホットチョコレート</span></div>
+            <div class="timeline-row"><span class="timeline-time">19:45</span><span class="timeline-action">ホテル休憩、シャワー、着替え</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">20:30</span><span class="timeline-action"><strong>🚢 Bateaux Parisiens ディナークルーズ Premier席</strong><span class="timeline-note">Pont de l'Alma 発、22時頃エッフェル塔フラッシュを船上から</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">22:45</span><span class="timeline-action">ホテル戻り</span></div>
+          </div>
+        </div>
+        <footer class="day-card__footer">
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">📷 Photo Spots</span>
+            <span class="day-card__meta-value">
+              <ul>
+                <li>10-12時 ジヴェルニー <strong>日本風太鼓橋</strong>(モネ作品の現場)</li>
+                <li>10-12時 睡蓮の池</li>
+                <li>午後 モネの家のピンクの壁・グリーンの窓</li>
+                <li>22:00 セーヌクルーズ船上から エッフェル塔シャンパンフラッシュ</li>
+              </ul>
+            </span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">服装</span>
+            <span class="day-card__meta-value">日中:長袖+カーディガン(17-22℃)/ ジヴェルニー:歩きやすい靴 / クルーズ:スマートカジュアル(船内冷房強)</span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">予約</span>
+            <span class="day-card__meta-value">ジヴェルニー入場 / オランジュリー(9/30開幕日)/ Bateaux Parisiens Premier席</span>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Day 6 -->
+      <article class="day-card day-card--france">
+        <header class="day-card__header">
+          <div class="day-card__day">
+            <span class="day-card__number">Day 6</span>
+            <span class="day-card__date">10/1(木)</span>
+            <span class="country country--france">🇫🇷 Paris → MSM</span>
+          </div>
+          <p class="day-card__theme">パリ → モン・サン・ミシェル(島内泊):夕暮れ + ライトアップ + 朝もや</p>
+        </header>
+        <div class="day-card__body">
+          <div class="callout callout--positive" style="margin-bottom: var(--space-sm);">
+            <div class="callout__label">10/1 の追い風</div>
+            <p>修道院は <strong>10/1から料金値下げ €13/人</strong>(9月までは €16)。係数82で「海に浮かぶ」を体験できる中潮上限。ノクターン夜間入場は7-8月限定で対象外だが、外観ライトアップは年中。</p>
+          </div>
+          <div class="day-card__timeline">
+            <div class="timeline-row"><span class="timeline-time">07:00</span><span class="timeline-action">ホテル朝食、軽装でチェックアウト<span class="timeline-note">大荷物はパリのホテルに預ける(続泊予約のため)</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">08:00</span><span class="timeline-action">サブバッグ+1泊分着替え+カメラだけ持参</span></div>
+            <div class="timeline-row"><span class="timeline-time">08:30</span><span class="timeline-action">🚆 パリ・モンパルナス駅発 TGV(目安、約1.5h)</span></div>
+            <div class="timeline-row"><span class="timeline-time">10:00</span><span class="timeline-action">Rennes 着、Keolisバス乗換</span></div>
+            <div class="timeline-row"><span class="timeline-time">11:00</span><span class="timeline-action">🚌 Keolisバス Rennes → MSM(約1h15、€15/人)</span></div>
+            <div class="timeline-row"><span class="timeline-time">12:30</span><span class="timeline-action">MSM 対岸インフォメーションセンター着</span></div>
+            <div class="timeline-row"><span class="timeline-time">12:45</span><span class="timeline-action">シャトルバスで島へ(無料)</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">13:00</span><span class="timeline-action"><strong>🏨 Auberge Saint-Pierre チェックイン</strong><span class="timeline-note">14世紀木組み、海側部屋指定推奨</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">13:30</span><span class="timeline-action">🍴 ランチ:La Sirène(島内、ガレット)<span class="timeline-note">€30-50/2人、コスパ&ローカル感</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">15:00</span><span class="timeline-action"><strong>🏛️ 修道院見学(時間指定、料金値下げ初日 €13/人)</strong><span class="timeline-note">約1.5-2時間、日本語オーディオガイドあり</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">17:00</span><span class="timeline-action">西のテラスから湾景色</span></div>
+            <div class="timeline-row"><span class="timeline-time">17:30</span><span class="timeline-action">城壁・グランド・リュ散策、土産物店</span></div>
+            <div class="timeline-row"><span class="timeline-time">19:00</span><span class="timeline-action">🍴 ディナー:Auberge Saint-Pierre レストラン<span class="timeline-note">プレ・サレ仔羊(湾の塩牧草を食べた仔羊)、€60-80/2人</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">20:00</span><span class="timeline-action">日没(10/1は約19:50頃)→ ブルーアワー</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">20:30</span><span class="timeline-action"><strong>連絡橋へ徒歩</strong>(対岸まで往復30分)</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">20:45-21:30</span><span class="timeline-action"><strong>🌅 ブルーアワー + ライトアップ撮影</strong><span class="timeline-note">「青と金」の至福の瞬間 ★ 旅程No.1の写真</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">22:00</span><span class="timeline-action">ホテル戻り、夜の島内散歩(日帰り客は既にいない)</span></div>
+          </div>
+        </div>
+        <footer class="day-card__footer">
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">📷 Photo Spots</span>
+            <span class="day-card__meta-value">
+              <ul>
+                <li>13:00 対岸からの島全景</li>
+                <li>17:00 西のテラス、湾の引き潮</li>
+                <li>20:00 城壁から夕焼け</li>
+                <li>20:45-21:30 連絡橋中央 <strong>ブルーアワー+ライトアップ全景 ★</strong></li>
+              </ul>
+            </span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">服装</span>
+            <span class="day-card__meta-value">日中:長袖+ジャケット / 夜:薄手ダウン or 防寒ジャケット必須(10℃近く)/ 靴:歩きやすいスニーカー / 折り畳み傘</span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">💍 新婚特典</span>
+            <span class="day-card__meta-value"><strong>リーヴル・ドー</strong> — MSM 教会で結婚証明書を島内に永久保管できるプラン。事前に教会に英語メールで連絡、戸籍抄本英訳持参</span>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Day 7 -->
+      <article class="day-card day-card--france">
+        <header class="day-card__header">
+          <div class="day-card__day">
+            <span class="day-card__number">Day 7</span>
+            <span class="day-card__date">10/2(金)</span>
+            <span class="country country--france">🇫🇷 MSM → Paris</span>
+          </div>
+          <p class="day-card__theme">朝の干潟 → 移動 → パリらしいビストロ夜</p>
+        </header>
+        <div class="day-card__body">
+          <div class="day-card__timeline">
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">07:00</span><span class="timeline-action"><strong>🌅 朝の干潟散歩 + 朝もや撮影</strong><span class="timeline-note">日の出後、誰もいない島</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">08:30</span><span class="timeline-action">ホテル朝食</span></div>
+            <div class="timeline-row"><span class="timeline-time">09:30</span><span class="timeline-action">🍴 Mère Poulardでオムレツ体験(€38/人)<span class="timeline-note">1888年〜の名物、賛否あるが文化体験として</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">11:00</span><span class="timeline-action">チェックアウト、最後のグランド・リュ散策</span></div>
+            <div class="timeline-row"><span class="timeline-time">12:00</span><span class="timeline-action">🚌 MSM 対岸発 Keolisバス</span></div>
+            <div class="timeline-row"><span class="timeline-time">13:15</span><span class="timeline-action">Rennes 着、駅構内サンドイッチ等で軽食</span></div>
+            <div class="timeline-row"><span class="timeline-time">14:00</span><span class="timeline-action">🚆 Rennes 発 TGV</span></div>
+            <div class="timeline-row"><span class="timeline-time">15:30</span><span class="timeline-action">パリ・モンパルナス駅 着</span></div>
+            <div class="timeline-row"><span class="timeline-time">16:00</span><span class="timeline-action">ホテル戻り、預けた大荷物受領、休憩<span class="timeline-note">移動疲れで深い観光は避ける</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">17:30</span><span class="timeline-action">ホテル屋上テラス or 近所のカフェで休憩</span></div>
+            <div class="timeline-row"><span class="timeline-time">20:00</span><span class="timeline-action">🍴 ディナー:Bistrot Paul Bert(11区)<span class="timeline-note">ステーク・フリット、タルト・タタン、€60-90/2人</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">22:30</span><span class="timeline-action">ホテル戻り、就寝</span></div>
+          </div>
+        </div>
+        <footer class="day-card__footer">
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">📷 Photo Spots</span>
+            <span class="day-card__meta-value">
+              <ul>
+                <li>07:00-08:00 MSM 朝もや+干潟、対岸からの全景</li>
+                <li>08:00頃 朝の島内グランド・リュ(無人)</li>
+              </ul>
+            </span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">服装</span>
+            <span class="day-card__meta-value">朝:防寒(朝もやで気温低い、5-10℃)/ 日中の移動:軽快に / 夕食:カジュアル</span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">注意</span>
+            <span class="day-card__meta-value">Day 7 は移動疲れ配慮、ハードな観光なし。プロの判断で「敢えて休む」</span>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Day 8 -->
+      <article class="day-card day-card--france">
+        <header class="day-card__header">
+          <div class="day-card__day">
+            <span class="day-card__number">Day 8</span>
+            <span class="day-card__date">10/3(土)</span>
+            <span class="country country--france">🇫🇷 Paris + Versailles</span>
+          </div>
+          <p class="day-card__theme">ヴェルサイユ午前 → 午後休息 → 🥂 エッフェル塔頂上シャンパン</p>
+        </header>
+        <div class="day-card__body">
+          <div class="day-card__timeline">
+            <div class="timeline-row"><span class="timeline-time">07:30</span><span class="timeline-action">ホテル朝食</span></div>
+            <div class="timeline-row"><span class="timeline-time">08:30</span><span class="timeline-action">サン・ミシェル-ノートルダム駅 → RER C ヴェルサイユ・シャトー(40分)</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">09:15</span><span class="timeline-action"><strong>🏛️ ヴェルサイユ宮殿 開門到着</strong><span class="timeline-note">タイムスロット予約必須</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">09:30</span><span class="timeline-action">庭園(ル・ノートル設計、9-10月音楽噴水あり)</span></div>
+            <div class="timeline-row"><span class="timeline-time">11:00</span><span class="timeline-action">本宮殿、鏡の間、マリー・アントワネット寝室</span></div>
+            <div class="timeline-row"><span class="timeline-time">13:00</span><span class="timeline-action">🍴 ランチ:La Petite Venise(庭園内)<span class="timeline-note">€40-60/2人</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">14:30</span><span class="timeline-action">プチ・トリアノン、王妃の村里<span class="timeline-note">マリー・アントワネットの離宮、観光客減</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">16:00</span><span class="timeline-action">パリ戻り(RER 40分)</span></div>
+            <div class="timeline-row"><span class="timeline-time">17:00</span><span class="timeline-action">🛏 ホテルでゆっくり休憩(2時間)<span class="timeline-note">旅最終夜に備える</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">19:00</span><span class="timeline-action">🚖 Free Now でエッフェル塔へ(20-30分、€20)</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">19:30</span><span class="timeline-action"><strong>🥂 エッフェル塔 頂上+シャンパン体験 €60.70/人</strong><span class="timeline-note">旅の締めくくり、276mから夜景</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">21:00</span><span class="timeline-action">エッフェル塔降りる、トロカデロ広場へ</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">22:00</span><span class="timeline-action"><strong>🎆 エッフェル塔フラッシュ(毎正時5分間、20,000 LED)</strong><span class="timeline-note">トロカデロから撮影</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">22:30</span><span class="timeline-action">Free Now でホテル戻り</span></div>
+            <div class="timeline-row"><span class="timeline-time">23:00</span><span class="timeline-action">ホテル、就寝</span></div>
+          </div>
+        </div>
+        <footer class="day-card__footer">
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">📷 Photo Spots</span>
+            <span class="day-card__meta-value">
+              <ul>
+                <li>09:30 ヴェルサイユ庭園、ル・ノートルの噴水</li>
+                <li>11:30 鏡の間</li>
+                <li>15:00 王妃の村里(田舎風コテージ)</li>
+                <li>19:30 エッフェル塔頂上からのパリ夜景</li>
+                <li>22:00 トロカデロから <strong>エッフェル塔シャンパンフラッシュ</strong> ★最終夜の象徴</li>
+              </ul>
+            </span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">服装</span>
+            <span class="day-card__meta-value">日中:動きやすい服+カーディガン / 夜(エッフェル塔頂上):<strong>防寒必須</strong>(風が冷たく10℃以下の可能性)、ジャケット必須</span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">注意</span>
+            <span class="day-card__meta-value">エッフェル塔頂上+シャンパン枠は60日前から販売、21時頃に開放 / トロカデロは土曜混雑、20:30 着で場所取り推奨</span>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Day 9 -->
+      <article class="day-card day-card--travel">
+        <header class="day-card__header">
+          <div class="day-card__day">
+            <span class="day-card__number">Day 9</span>
+            <span class="day-card__date">10/4(日)</span>
+            <span class="country country--travel">移動日</span>
+          </div>
+          <p class="day-card__theme">パリ → 東京:朝食ゆっくり、お土産、Tax Free還付</p>
+        </header>
+        <div class="day-card__body">
+          <div class="day-card__timeline">
+            <div class="timeline-row"><span class="timeline-time">08:30</span><span class="timeline-action">ホテル朝食、ゆっくり</span></div>
+            <div class="timeline-row"><span class="timeline-time">10:00</span><span class="timeline-action">🛍 お土産ラウンド(6区サン・ジェルマン徒歩圏)<span class="timeline-note">Pierre Hermé本店、Angelina 等</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">12:00</span><span class="timeline-action">ホテル チェックアウト</span></div>
+            <div class="timeline-row"><span class="timeline-time">12:30</span><span class="timeline-action">🍴 軽いランチ(空港行き前、6区のカフェ)</span></div>
+            <div class="timeline-row"><span class="timeline-time">14:00</span><span class="timeline-action">タクシーで CDG 空港(€56定額、約45-60分)</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">15:00</span><span class="timeline-action"><strong>CDG 着、Tax Free 還付手続き(DIVA端末)</strong><span class="timeline-note">出発2-3時間前必須</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">16:00</span><span class="timeline-action">出国手続き、ラウンジで休憩</span></div>
+            <div class="timeline-row"><span class="timeline-time">18:00</span><span class="timeline-action">✈️ AF CDG → 羽田/関空 出発(目安、約14時間)</span></div>
+            <div class="timeline-row"><span class="timeline-time">翌日 14:00頃</span><span class="timeline-action">帰国</span></div>
+          </div>
+
+          <div class="callout" style="margin-top: var(--space-md);">
+            <div class="callout__label">Tax Free / IVA還付 手順</div>
+            <ol>
+              <li>購入時、店舗で「Tax Free Form」を申請(パスポート提示)</li>
+              <li>空港でフォームと購入品を持参</li>
+              <li><strong>CDG ターミナル2E/2F の DIVA端末</strong>でフォームのバーコードスキャン → 認証</li>
+              <li>認証OKなら自動還付(クレジットカードに3-4週間で返金)</li>
+              <li>認証NGの場合は税関窓口でスタンプ必須</li>
+              <li>EU圏外居住者、1店舗で <strong>€100超</strong>(仏)/<strong>€100.01超</strong>(西)が対象</li>
+            </ol>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ §3 Transport ============ -->
+<section class="section" id="transport">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 03</div>
+      <h2 class="section__title">移動距離・所要時間サマリ</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">大移動3回 + 市内パス活用で効率最大化。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">大移動(国際線・国内線)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>区間</th><th>手段</th><th>所要時間</th><th>価格(2人)</th></tr></thead>
+          <tbody>
+            <tr><td>東京 → BCN</td><td>エールフランス CDG経由 直行</td><td>約16-18h(乗継含)</td><td class="price">プレエコ ¥800,000 往復</td></tr>
+            <tr><td>BCN → CDG(パリ)</td><td>Vueling 直行</td><td>約2h</td><td class="price">¥30,000 – 60,000</td></tr>
+            <tr><td>パリ → MSM 往復</td><td>TGV 1.5h + Keolisバス 1.25h</td><td>計約3.5h(片道)</td><td class="price">¥34,000 – 54,400</td></tr>
+            <tr><td>パリ → 東京</td><td>エールフランス直行</td><td>約14h</td><td>(往復に含む)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">市内移動</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>都市</th><th>推奨パス</th><th>価格(2人)</th><th>カバー範囲</th></tr></thead>
+          <tbody>
+            <tr><td>バルセロナ</td><td><strong>Hola Barcelona Travel Card 96h</strong></td><td class="price">¥12,100</td><td>メトロ・バス・空港L9 含む</td></tr>
+            <tr><td>パリ</td><td><strong>Navigo Easy + 10回券 ×2 + 追加単発</strong></td><td class="price">¥40,000</td><td>必要分都度買い足し、ヴェルサイユ往復含む</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted text-small" style="margin-top: var(--space-xs);">※ Navigo Découverte 週券は月曜0時開始ルールのため 9/29(火)着には使えず、Navigo Easy + 単発が現実的。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">日帰り圏</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>区間</th><th>手段</th><th>所要時間(片道)</th></tr></thead>
+          <tbody>
+            <tr><td>パリ → ジヴェルニー</td><td>Transilien + シャトルバス</td><td>1h15</td></tr>
+            <tr><td>パリ → ヴェルサイユ</td><td>RER C</td><td>40分</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §4 Hotels ============ -->
+<section class="section" id="hotels">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 04</div>
+      <h2 class="section__title">宿泊計画</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">パリ5泊続泊予約で MSM行きの大荷物問題を解決。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">全日程ホテル</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Day</th><th>日付</th><th>場所</th><th>ホテル</th><th>グレード</th><th>1泊2人</th></tr></thead>
+          <tbody>
+            <tr><td>1-3</td><td>9/26-29</td><td>バルセロナ <span class="country country--spain">🇪🇸</span></td><td><strong>Sercotel Rosellón</strong></td><td>★4</td><td class="price">¥30,600 – 47,600</td></tr>
+            <tr><td>4-5</td><td>9/29-10/1</td><td>パリ(6区) <span class="country country--france">🇫🇷</span></td><td><strong>Hôtel de l'Abbaye</strong></td><td>★4</td><td class="price">¥47,600 – 93,500</td></tr>
+            <tr style="background-color: var(--color-highlight);"><td><strong>6</strong></td><td>10/1-10/2</td><td>MSM 島内 <span class="country country--france">🇫🇷</span></td><td><strong>Auberge Saint-Pierre</strong></td><td>★3</td><td class="price">¥32,300 – 54,400</td></tr>
+            <tr><td>7-8</td><td>10/2-10/4</td><td>パリ(6区)</td><td>Hôtel de l'Abbaye(続泊)</td><td>★4</td><td>同上</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">続泊 vs 別予約の判断</h3>
+      <div class="callout callout--positive">
+        <div class="callout__label">推奨: パリ 9/29-10/4(5泊連続)で予約</div>
+        <ul>
+          <li>MSM 滞在中(10/1夜)もパリの部屋を <strong>そのまま確保</strong></li>
+          <li>大荷物・カメラ・お土産はパリのホテルに置いていける</li>
+          <li>チェックアウト/イン手続き不要で MSM 行きが楽</li>
+          <li>追加コスト: 5泊予約のうち 1泊分は MSM 滞在で「使わないベッド代」</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">宿泊費合計(2人)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>項目</th><th>金額</th></tr></thead>
+          <tbody>
+            <tr><td>BCN 3泊 × ¥40,000</td><td class="price">¥120,000</td></tr>
+            <tr><td>パリ 5泊 × ¥55,000(MSM中も部屋確保)</td><td class="price">¥275,000</td></tr>
+            <tr><td>MSM 島内 1泊</td><td class="price">¥40,000</td></tr>
+            <tr><td>観光税(BCN €8.4×3泊×2人 + パリ €5×5泊×2人 + MSM €2×2人)</td><td class="price">¥17,756</td></tr>
+            <tr style="background-color: #FAF7F2;"><td><strong>総宿泊費</strong></td><td class="price"><strong>約 ¥452,756</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §5 Meals ============ -->
+<section class="section" id="meals">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 05</div>
+      <h2 class="section__title">食事計画</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">パクチー・レバー回避を徹底、Disfrutar(★★★)1回に集中投資。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">ディナー計画(8日分)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Day</th><th>場所</th><th>店</th><th>2人金額</th><th>備考</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>BCN</td><td>Cervecería Catalana(軽め)</td><td class="price">¥6,000</td><td>王道タパス40種、初日の体力配慮</td></tr>
+            <tr><td>2</td><td>BCN</td><td>ホテル周辺タパスバル(花火前の軽い夕食)</td><td class="price">¥6,000</td><td>花火に向けて軽めに</td></tr>
+            <tr style="background-color: var(--color-highlight);"><td><strong>3</strong></td><td>BCN</td><td><strong>🌟 Disfrutar(★★★)</strong></td><td class="price"><strong>¥100,300</strong></td><td>2026/3-4月までに予約必須</td></tr>
+            <tr><td>4</td><td>パリ</td><td>Brasserie Lipp(6区)</td><td class="price">¥18,000</td><td>サン・ジェルマン老舗</td></tr>
+            <tr><td>5</td><td>パリ</td><td>Bateaux Parisiens ディナークルーズ Premier</td><td class="price">¥44,200</td><td>22時頃エッフェル塔フラッシュ</td></tr>
+            <tr><td>6</td><td>MSM</td><td>Auberge Saint-Pierre レストラン</td><td class="price">¥18,000</td><td>プレ・サレ仔羊</td></tr>
+            <tr><td>7</td><td>パリ</td><td>Bistrot Paul Bert(11区)</td><td class="price">¥22,000</td><td>ステーク・フリット、スフレ</td></tr>
+            <tr><td>8</td><td>パリ</td><td>Madame Brasserie(エッフェル塔1階)</td><td class="price">¥28,000</td><td>旅の締め、要予約</td></tr>
+            <tr style="background-color: #FAF7F2;"><td><strong>小計</strong></td><td>-</td><td>-</td><td class="price"><strong>¥242,500</strong></td><td>-</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">⚠️ 食事制限対応</h3>
+      <div class="two-col">
+        <div>
+          <h4 style="font-family:var(--font-serif); font-weight:600; margin-bottom:var(--space-xs); font-size:1.05rem;">回避料理(スペイン)</h4>
+          <div class="tag-group">
+            <span class="tag">Cocido madrileño</span>
+            <span class="tag">Callos a la madrileña</span>
+            <span class="tag">Foie gras</span>
+            <span class="tag">Higaditos / Patés</span>
+            <span class="tag">Chanfaina</span>
+            <span class="tag">Morcilla 単体</span>
+            <span class="tag">Mollejas</span>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-family:var(--font-serif); font-weight:600; margin-bottom:var(--space-xs); font-size:1.05rem;">回避料理(フランス)</h4>
+          <div class="tag-group">
+            <span class="tag">Foie gras 全般</span>
+            <span class="tag">Pâté / Terrine</span>
+            <span class="tag">Andouillette</span>
+            <span class="tag">Foie de veau</span>
+            <span class="tag">Tripes</span>
+            <span class="tag">Boudin noir</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="subsection__lede" style="margin-top: var(--space-md);">安心して食べられる定番:</p>
+      <div class="two-col">
+        <div>
+          <h4 style="font-family:var(--font-serif); font-weight:600; margin-bottom:var(--space-xs); font-size:1.05rem;">スペイン</h4>
+          <div class="tag-group">
+            <span class="tag">Tortilla Española</span>
+            <span class="tag">Pan con Tomate</span>
+            <span class="tag">Jamón Ibérico</span>
+            <span class="tag">Patatas Bravas</span>
+            <span class="tag">Gambas al Ajillo</span>
+            <span class="tag">Arroz Negro</span>
+            <span class="tag">Crema Catalana</span>
+            <span class="tag">Tarta de Queso Vasca</span>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-family:var(--font-serif); font-weight:600; margin-bottom:var(--space-xs); font-size:1.05rem;">フランス</h4>
+          <div class="tag-group">
+            <span class="tag">Sole meunière</span>
+            <span class="tag">Coq au vin</span>
+            <span class="tag">Bouillabaisse</span>
+            <span class="tag">Soufflé</span>
+            <span class="tag">Quiche</span>
+            <span class="tag">Tarte tatin</span>
+            <span class="tag">Crème brûlée</span>
+            <span class="tag">Pot au feu</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §6 Romance ============ -->
+<section class="section" id="romance">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 06</div>
+      <h2 class="section__title">ハネムーン演出</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">旅を「特別な思い出」にする要素。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">計画済みハイライト(7つの記憶ポイント)</h3>
+      <ul class="numbered-list">
+        <li><strong>9/27 メルセ祭フィナーレ花火</strong>(モンジュイック、21:30) — 偶然の運命的タイミング</li>
+        <li><strong>9/28 Disfrutar(★★★)世界Best 1位</strong> — 旅程最高峰の美食体験</li>
+        <li><strong>9/27 サグラダ・ファミリア Quiet Hour 9:00</strong>(完成イヤー)— 私語禁止の神聖な空間</li>
+        <li><strong>9/30 ジヴェルニー → オランジュリー モネ100周年セット</strong> — 「現地→絵画」感動倍増</li>
+        <li><strong>10/1 MSM 島内泊・夕暮れ + ライトアップ + 朝もや</strong> — 日帰り客のいない静謐</li>
+        <li><strong>10/3 エッフェル塔頂上 シャンパン乾杯</strong> — 旅の締めくくり</li>
+        <li><strong>Sercotel Rosellón 屋上テラス</strong> — サグラダ・ファミリアを朝焼け〜夜ライトアップまで独占</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">💍 新婚特典・サプライズ(オプション)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>演出</th><th>詳細</th><th>価格目安</th></tr></thead>
+          <tbody>
+            <tr style="background-color: var(--color-highlight);"><td>1</td><td><strong>MSM 教会「リーヴル・ドー」</strong></td><td>結婚証明書を島内に永久保管。事前メール、戸籍抄本英訳持参</td><td>教会に問合せ(寄付制?)</td></tr>
+            <tr style="background-color: var(--color-highlight);"><td>2</td><td><strong>パリ日本人フォトグラファー</strong></td><td>エッフェル塔早朝撮影、サクレ・クール等。Totte または La Vie Couleur</td><td class="price">¥51,000 – 119,000</td></tr>
+            <tr><td>3</td><td>Codorníu Iconic Tour(バルセロナ郊外、半日)</td><td>500年の歴史、地下20m、カバ試飲</td><td class="price">¥5,100/人</td></tr>
+            <tr><td>4</td><td>モンセラート修道院 結婚祝福ツアー</td><td>バルセロナから2時間、黒い聖母前で祝福</td><td>教会に問合せ</td></tr>
+            <tr><td>5</td><td>カタルーニャ音楽堂 夜コンサート</td><td>クラシック、フラメンコ、室内楽。世界遺産の劇場で</td><td class="price">¥5,100 – 13,600</td></tr>
+            <tr><td>6</td><td>カルティエ本店(ヴァンドーム広場)</td><td>日本語スタッフ対応、本店限定箱(住所入り)</td><td>商品次第</td></tr>
+            <tr><td>7</td><td>Fragonard オリジナル香水</td><td>2人だけのオリジナルブレンド</td><td class="price">¥17,000 前後</td></tr>
+            <tr><td>8</td><td>オペラ・ガルニエ バレエ鑑賞</td><td>シャガールの天井画下で</td><td class="price">¥5,000 – 34,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted text-small" style="margin-top: var(--space-xs);">→ <strong>本プランで最も推奨</strong>:#1 リーヴル・ドー(無料 or 寄付制で記念性大)、#2 フォトグラファー(Day 8 朝にエッフェル塔早朝撮影)</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">📷 フォトスポット マスターリスト(日割り別)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Day</th><th>時刻</th><th>スポット</th><th>構図</th></tr></thead>
+          <tbody>
+            <tr><td>2</td><td>07:30-08:00</td><td>サグラダ前 Plaça de Gaudí</td><td>鏡池リフレクション</td></tr>
+            <tr><td>2</td><td>09:00-11:00</td><td>サグラダ内部</td><td>東面ステンドグラスの色光</td></tr>
+            <tr><td>2</td><td>12:30</td><td>カサ・バトリョ ファサード</td><td>グラシア通り側、外観</td></tr>
+            <tr><td>2</td><td>16:30-17:30</td><td>ピカソ美術館 中庭</td><td>中世邸宅の中庭</td></tr>
+            <tr><td>2</td><td>18:30</td><td>Sercotel Rosellón 屋上</td><td>サグラダ夕景</td></tr>
+            <tr style="background-color: var(--color-highlight);"><td>2</td><td>21:30</td><td>モンジュイック</td><td><strong>メルセ祭花火</strong></td></tr>
+            <tr><td>3</td><td>09:30</td><td>グエル公園</td><td>大蜥蜴前で2人</td></tr>
+            <tr><td>3</td><td>10:00</td><td>グエル公園 大テラス</td><td>バルセロナ全景+波打つベンチ</td></tr>
+            <tr><td>3</td><td>12:30</td><td>カサ・ミラ 屋上</td><td>兵士と煙突</td></tr>
+            <tr><td>3</td><td>17:00</td><td>ゴシック地区</td><td>Pont del Bisbe アーチ</td></tr>
+            <tr><td>5</td><td>10-12時</td><td>ジヴェルニー</td><td>日本風太鼓橋</td></tr>
+            <tr><td>5</td><td>22:00</td><td>セーヌ川クルーズ船上</td><td>エッフェル塔シャンパンフラッシュ</td></tr>
+            <tr style="background-color: var(--color-highlight);"><td>6</td><td>20:45</td><td>MSM 連絡橋中央</td><td><strong>ブルーアワー+ライトアップ全景 ★</strong></td></tr>
+            <tr><td>7</td><td>07:00</td><td>MSM 対岸</td><td>朝もや+干潟</td></tr>
+            <tr><td>8</td><td>09:30</td><td>ヴェルサイユ庭園</td><td>ル・ノートルの噴水</td></tr>
+            <tr><td>8</td><td>19:30</td><td>エッフェル塔頂上</td><td>パリ夜景全景</td></tr>
+            <tr style="background-color: var(--color-highlight);"><td>8</td><td>22:00</td><td>トロカデロ広場</td><td><strong>エッフェル塔シャンパンフラッシュ</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §7 Budget ============ -->
+<section class="section" id="budget">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 07</div>
+      <h2 class="section__title">総予算試算</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">2人合計、プレミアムエコノミー前提。</p>
+    </div>
+
+    <div class="subsection">
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>項目</th><th>金額</th><th>備考</th></tr></thead>
+          <tbody>
+            <tr><td>航空券(プレエコ往復2人)</td><td class="price">¥800,000</td><td>エールフランス、羽田 or 関空発</td></tr>
+            <tr><td>国際移動(BCN→CDG Vueling)</td><td class="price">¥45,000</td><td>2人</td></tr>
+            <tr><td>宿泊(BCN3+パリ5+MSM1)+ 観光税</td><td class="price">¥452,756</td><td>続泊予約推奨</td></tr>
+            <tr><td>食事(ディナー+昼食+朝食)</td><td class="price">¥324,500</td><td>Disfrutar(★★★)1回含む</td></tr>
+            <tr><td>観光・入場(主要施設一通り)</td><td class="price">¥101,660</td><td>サグラダ、ヴェルサイユ、ジヴェルニー等</td></tr>
+            <tr><td>都市内移動</td><td class="price">¥97,100</td><td>パス+TGV+バス</td></tr>
+            <tr><td>海外旅行保険 + eSIM</td><td class="price">¥30,000</td><td>Holafly EUプラン</td></tr>
+            <tr><td>お土産・予備費</td><td class="price">¥150,000</td><td>Tax Free対象品想定</td></tr>
+            <tr style="background-color: #FAF7F2;"><td><strong>小計</strong></td><td class="price"><strong>¥2,001,016</strong></td><td></td></tr>
+            <tr><td>緊急バッファ・追加体験</td><td class="price">¥300,000(余裕分)</td><td>フォトグラファー、サプライズ等で活用可</td></tr>
+            <tr style="background-color: var(--color-highlight);"><td><strong>総合計(上限)</strong></td><td class="price"><strong>約 ¥2,300,000</strong></td><td><strong>予算 200-300万円 内</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §8 Bookings ============ -->
+<section class="section" id="bookings">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 08</div>
+      <h2 class="section__title">予約タイムライン</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">最優先5件は今すぐ。優先度別に順次。</p>
+    </div>
+
+    <div class="priority-group">
+      <div class="priority-group__heading"><span class="priority-dot priority-dot--critical"></span>🔴 最優先(2026/5月-6月)</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>項目</th><th>締切</th><th>URL</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td><strong>航空券</strong>(AF プレエコ 羽田/関空-CDG-BCN往復)</td><td>2026/6月</td><td>airfrance.co.jp</td></tr>
+            <tr><td>2</td><td><strong>Sercotel Rosellón ★4(BCN、3泊)</strong></td><td><strong>2026/5月まで</strong></td><td>Booking.com or 公式</td></tr>
+            <tr><td>3</td><td><strong>Disfrutar(★★★)</strong></td><td><strong>2026/3-4月</strong></td><td>disfrutarbarcelona.com/bookings</td></tr>
+            <tr><td>4</td><td><strong>Auberge Saint-Pierre(MSM 島内、1泊)</strong></td><td><strong>2026/5月中</strong></td><td>auberge-saint-pierre.fr</td></tr>
+            <tr><td>5</td><td><strong>Hôtel de l'Abbaye(パリ 6区、5泊続泊予約)</strong></td><td>2026/5-6月</td><td>hotel-abbaye-paris.com</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="priority-group">
+      <div class="priority-group__heading"><span class="priority-dot priority-dot--high"></span>🟡 高優先(2026/6-7月)</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>項目</th><th>締切</th></tr></thead>
+          <tbody>
+            <tr><td>6</td><td>サグラダ・ファミリア(9:00 Quiet Hour + 生誕の塔)</td><td>2026/7月</td></tr>
+            <tr><td>7</td><td>カサ・バトリョ(Gold Ticket)</td><td>2026/7月</td></tr>
+            <tr><td>8</td><td>カサ・ミラ</td><td>2026/7月</td></tr>
+            <tr><td>9</td><td>ヴェルサイユ宮殿 タイムスロット</td><td>2026/7月</td></tr>
+            <tr><td>10</td><td>MSM 修道院チケット(15:00枠)</td><td>2026/8月</td></tr>
+            <tr><td>11</td><td>パラウ・ダ・ラ・ムジカ・カタラナ</td><td>2026/7月</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="priority-group">
+      <div class="priority-group__heading"><span class="priority-dot priority-dot--medium"></span>🟢 中優先(2026/7-8月)</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>項目</th><th>締切</th></tr></thead>
+          <tbody>
+            <tr><td>12</td><td>グエル公園(9:30 朝一枠)</td><td>2026/8月</td></tr>
+            <tr><td>13</td><td>ピカソ美術館(日曜枠)</td><td>2026/8月</td></tr>
+            <tr><td>14</td><td>オランジュリー「モネと時間」展(9/30開幕日)</td><td>2026/8月</td></tr>
+            <tr><td>15</td><td>ジヴェルニー モネの家</td><td>2026/8月</td></tr>
+            <tr><td>16</td><td>エッフェル塔頂上+シャンパン(60日前枠開放)</td><td>2026/7月末-8月</td></tr>
+            <tr><td>17</td><td>Bateaux Parisiens ディナークルーズ Premier 席</td><td>2026/8月</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="priority-group">
+      <div class="priority-group__heading"><span class="priority-dot priority-dot--soft"></span>🔵 出発準備(2026/8-9月)</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>項目</th><th>締切</th></tr></thead>
+          <tbody>
+            <tr><td>18</td><td>Keolisバス(Rennes-MSM 往復)</td><td>2026/9月</td></tr>
+            <tr><td>19</td><td>TGV パリ-Rennes 往復(Prem's早割)</td><td>2026/8月</td></tr>
+            <tr><td>20</td><td>Vueling(BCN-CDG)</td><td>2026/8月</td></tr>
+            <tr><td>21</td><td>海外旅行保険、eSIM Holafly</td><td>2026/9月</td></tr>
+            <tr><td>22</td><td><strong>ハネムーン伝達メール送信(§11 例文)</strong></td><td>出発2週間前</td></tr>
+            <tr><td>23</td><td>メルセ祭2026 公式PDF確認</td><td>出発1週間前</td></tr>
+            <tr><td>24</td><td>リーヴル・ドー(MSM教会)へ事前連絡</td><td>出発1ヶ月前</td></tr>
+            <tr><td>25</td><td>パリ日本人フォトグラファー手配(Day 8 朝)</td><td>出発1ヶ月前</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §9 Risks ============ -->
+<section class="section" id="risks">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 09</div>
+      <h2 class="section__title">リスク・代替プラン</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">天候・予約・ストライキ・急病への備え。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">天候別代替</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>パターン</th><th>対応</th></tr></thead>
+          <tbody>
+            <tr><td>1. 晴天(理想)</td><td>そのまま実行</td></tr>
+            <tr><td>2. 9/27 メルセ祭花火 雨天中止</td><td>9/26-27 屋台・パレード・無料コンサート(雨天決行)、ホテル屋上から街のライトアップ、翌朝モンジュイック噴水翌日プログラム</td></tr>
+            <tr><td>3. 10/1 MSM 雨天</td><td>修道院内ガイドツアー、ホテルレストランでゆっくりディナー(朝もやはむしろ雨上がりに発生しやすい)</td></tr>
+            <tr><td>4. 10/3 ヴェルサイユ大雨</td><td>庭園短縮、本宮殿+プチ・トリアノン中心、夜エッフェル塔頂上に体力温存</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">予約取れない場合の代替</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>取れない場合</th><th>代替</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Disfrutar(★★★)</strong></td><td>ABaC(★★★)、Lasarte(★★★)、または Cinc Sentits(★★、4週間前で取れる)</td></tr>
+            <tr><td><strong>MSM 島内ホテル</strong></td><td>Le Relais Saint Michel ★4 対岸(全室テラス+MSM正面ビュー)、夕方〜夜の島滞在で代替</td></tr>
+            <tr><td><strong>Sercotel Rosellón</strong></td><td>H10 Casa Mimosa(ラ・ペドレラ隣)、Olivia Balmes、Catalonia Passeig de Gràcia</td></tr>
+            <tr><td><strong>Hôtel de l'Abbaye</strong></td><td>Hôtel Artus(6区)、Hôtel Pas de Calais(6区)、Hôtel La Comtesse(7区)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">その他リスク</h3>
+      <ul class="clean-list">
+        <li><strong>ストライキ・運休</strong>: パリ-MSM TGV 運休 → 翌日にズラす or レンタカー / メトロスト → Free Now / Bolt / 徒歩</li>
+        <li><strong>ロストバゲージ</strong>(CDG世界一多い): AirTag 必ず預け荷物に、貴重品+1日分着替えは機内持込</li>
+        <li><strong>急病・体調不良</strong>: 海外旅行保険のキャッシュレス対応病院を事前確認、24時間ホットラインをスマホに登録</li>
+        <li><strong>家族の緊急事態</strong>: 滞在ホテルの直通番号+チェックイン日を事前共有、WhatsApp/Line で常時連絡可能</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §10 Packing ============ -->
+<section class="section" id="packing">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 10</div>
+      <h2 class="section__title">持ち物リスト</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">9月末-10月の温度差10-25℃、重ね着前提。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">衣類</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>アイテム</th><th>数量</th><th>注意</th></tr></thead>
+          <tbody>
+            <tr><td>薄手の長袖シャツ・ブラウス</td><td>3</td><td>重ね着の基本</td></tr>
+            <tr><td>カーディガン or 薄手セーター</td><td>2</td><td>朝晩冷え対策</td></tr>
+            <tr><td><strong>トレンチコート or 薄手ジャケット</strong></td><td>1</td><td>必須、9月末-10月の温度差</td></tr>
+            <tr><td><strong>防寒ダウン</strong>(MSM・エッフェル塔頂上)</td><td>1</td><td>コンパクトに折りたためるもの</td></tr>
+            <tr><td>ワンピース or きれいめパンツ</td><td>1-2</td><td>Disfrutar、Madame Brasserie、ディナークルーズ</td></tr>
+            <tr><td>男性ジャケット+シャツ</td><td>1セット</td><td>Disfrutar、ディナークルーズ、エッフェル塔</td></tr>
+            <tr><td>歩きやすい靴(防水推奨)</td><td>メイン1足</td><td>石畳対応</td></tr>
+            <tr><td>ヒール・革靴(夜用)</td><td>1足</td><td>ミシュラン店、ディナークルーズ</td></tr>
+            <tr><td>ストール・薄手スカーフ</td><td>1-2</td><td>冷房対策、教会・美術館</td></tr>
+            <tr><td>折り畳み傘</td><td>1</td><td>必須</td></tr>
+            <tr><td>下着・靴下</td><td>8-9日分</td><td>連泊で洗濯不要</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">必須・実用</h3>
+      <ul class="clean-list">
+        <li>パスポート(残存期間6ヶ月以上)</li>
+        <li><strong>VISA + Master 各1枚</strong>(JCB不可、タッチ決済対応)</li>
+        <li><strong>AirTag × 2</strong>(預け荷物)</li>
+        <li><strong>eSIM Holafly</strong>(複数国EUプラン、出発前にQR保存)</li>
+        <li>海外旅行保険証書(印刷+スマホ保存)</li>
+        <li><strong>スリ対策ポーチ</strong>(セキュリティバッグ、首掛け式)</li>
+        <li>モバイルバッテリー(20,000mAh 推奨)</li>
+        <li>折り畳みエコバッグ(お土産用)</li>
+        <li>変換プラグ(C/E型、220V対応)</li>
+        <li>常備薬(整腸剤、酔い止め、痛み止め、絆創膏)</li>
+        <li>機内快適グッズ(ネックピロー、アイマスク、耳栓)</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">💍 結婚関連書類(リーヴル・ドー用)</h3>
+      <ul class="clean-list">
+        <li>戸籍抄本の英訳(日本の役所で取得、または翻訳サービス)</li>
+        <li>結婚証明書(住民票や婚姻届の控え)</li>
+        <li>結婚指輪・記念写真(教会で祝福を受ける場合)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §11 Email Templates ============ -->
+<section class="section" id="emails">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 11</div>
+      <h2 class="section__title">ハネムーン伝達メール例文</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">予約完了後、出発2週間前までに送信。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">ホテル向け(英語)</h3>
+      <div class="email-block">Subject: Honeymoon stay request — Reservation #XXXXXXXX
+
+Dear [Hotel Name] team,
+
+I am writing regarding our upcoming reservation:
+- Reservation #: XXXXXXXX
+- Check-in: [Date] / Check-out: [Date]
+- Guests: 2 (couple on honeymoon)
+
+We are celebrating our honeymoon and would be grateful for
+any special arrangements you could make, such as:
+- Room upgrade if available
+- A higher floor with a view
+- Sparkling wine or roses upon arrival
+- Late check-out on the final day
+
+Also, both of us have food allergies. Please note:
+- No cilantro (coriander)
+- No liver (foie gras, hígado, morcilla)
+
+We very much look forward to staying with you.
+Many thanks and warm regards,
+
+[Your Name]</div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">ミシュラン店向け(英語+西語/仏語混在)</h3>
+      <div class="email-block">Subject: Reservation request — [Restaurant Name]
+
+Dear Reservations team,
+
+We would like to request a dinner reservation for two on
+[date] at around 20:30. We are on our honeymoon
+(estamos en luna de miel / nous sommes en voyage de noces)
+and would love to celebrate this special trip at
+[Restaurant Name].
+
+Please note both guests have allergies:
+- No cilantro (Sin cilantro / pas de coriandre)
+- No liver products (Sin hígado, sin foie gras, sin morcilla
+  / pas de foie gras, pas d'abats)
+
+Could you confirm if the tasting menu can be adapted accordingly?
+
+Many thanks,
+[Your Name]</div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">MSM 教会(リーヴル・ドー)向け(英語)</h3>
+      <div class="email-block">Subject: Request for Livre d'Or — Newlywed couple from Japan
+
+Dear Abbey team,
+
+We are a newlywed Japanese couple visiting Mont-Saint-Michel
+on October 1-2, 2026, as part of our honeymoon.
+
+We have heard about the "Livre d'Or" tradition at the
+abbey where newly-married couples can have their marriage
+certificate preserved on the island.
+
+Could you kindly let us know:
+- Is this still available?
+- What documents do we need to bring?
+  (we will bring an official English translation of our
+  marriage record from Japan)
+- Is there a fee or donation?
+
+We would be honored to leave our mark of marriage at this
+sacred site.
+
+Thank you very much for your kindness.
+
+Warm regards,
+[Your Name]</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §12 Allergy Card ============ -->
+<section class="section" id="allergy">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 12</div>
+      <h2 class="section__title">食事制限カード(印刷用)</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">名刺サイズに印刷+スマホ画像で保存、注文時に渡す。</p>
+    </div>
+
+    <div class="allergy-card">
+      <div class="allergy-card__heading">🍴 食事制限 / Food Allergies</div>
+
+      <div class="allergy-card__row">
+        <span class="allergy-card__lang">🇯🇵</span>
+        <span class="allergy-card__text">私たちはパクチー(コリアンダー)とレバー(肝臓)が食べられません。フォアグラ、モルシージャ、内臓料理(モツ・パテ含む)も避けてください。</span>
+      </div>
+
+      <div class="allergy-card__row">
+        <span class="allergy-card__lang">🇪🇸</span>
+        <span class="allergy-card__text"><em>No podemos comer cilantro ni hígado. Evitamos también foie gras, morcilla y vísceras (callos, patés). Tenemos alergia.</em></span>
+      </div>
+
+      <div class="allergy-card__row">
+        <span class="allergy-card__lang">🇫🇷</span>
+        <span class="allergy-card__text"><em>Nous ne pouvons pas manger de coriandre ni de foie. Évitez aussi le foie gras, le boudin noir, et tous les abats (tripes, pâtés). Nous avons des allergies.</em></span>
+      </div>
+
+      <div class="allergy-card__row">
+        <span class="allergy-card__lang">🇬🇧</span>
+        <span class="allergy-card__text"><em>We are allergic to cilantro (coriander) and liver. Please also avoid foie gras, blood sausage, and any organ meats (tripe, paté).</em></span>
+      </div>
+
+      <div class="allergy-card__footer">Muchas gracias / Merci beaucoup / Thank you very much</div>
+    </div>
+
+    <p class="text-muted text-small" style="text-align: center;">「アレルギー」と伝えることで、店側が厳密に対応してくれる確率が上がります。</p>
+  </div>
+</section>
+
+<!-- ============ §13 Emergency ============ -->
+<section class="section" id="emergency">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 13</div>
+      <h2 class="section__title">緊急連絡先まとめ</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">出発前にスマホに登録。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">緊急番号(EU共通 112)</h3>
+      <div class="two-col">
+        <div>
+          <h4 style="font-family:var(--font-serif); font-weight:600; margin-bottom:var(--space-xs); font-size:1.05rem;">🇪🇸 スペイン</h4>
+          <div class="emergency-grid">
+            <div class="emergency-card"><div class="emergency-card__label">EU共通</div><div class="emergency-card__number">112</div></div>
+            <div class="emergency-card"><div class="emergency-card__label">国家警察</div><div class="emergency-card__number">091</div></div>
+            <div class="emergency-card"><div class="emergency-card__label">救急</div><div class="emergency-card__number">061</div></div>
+            <div class="emergency-card"><div class="emergency-card__label">Mossos (CAT)</div><div class="emergency-card__number">088</div></div>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-family:var(--font-serif); font-weight:600; margin-bottom:var(--space-xs); font-size:1.05rem;">🇫🇷 フランス</h4>
+          <div class="emergency-grid">
+            <div class="emergency-card"><div class="emergency-card__label">EU共通</div><div class="emergency-card__number">112</div></div>
+            <div class="emergency-card"><div class="emergency-card__label">警察</div><div class="emergency-card__number">17</div></div>
+            <div class="emergency-card"><div class="emergency-card__label">救急(SAMU)</div><div class="emergency-card__number">15</div></div>
+            <div class="emergency-card"><div class="emergency-card__label">消防</div><div class="emergency-card__number">18</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">在外公館</h3>
+      <div class="two-col">
+        <div class="callout">
+          <div class="callout__label">在バルセロナ日本総領事館</div>
+          <p>
+            <strong>電話:</strong> +34-93-280-3433<br>
+            <strong>住所:</strong> Av. Diagonal 640, 2階D<br>
+            Barcelona
+          </p>
+        </div>
+        <div class="callout">
+          <div class="callout__label">在フランス日本大使館</div>
+          <p>
+            <strong>電話:</strong> +33-1-48-88-62-00<br>
+            <strong>住所:</strong> 7 Avenue Hoche<br>
+            75008 Paris
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">スマホに登録すべき連絡先</h3>
+      <ul class="clean-list">
+        <li>海外旅行保険会社の24時間ホットライン</li>
+        <li>カード紛失時連絡先(VISA / Master、両方)</li>
+        <li>航空会社のサポート番号(AF、Vueling)</li>
+        <li>ホテルの直通番号(Sercotel Rosellón、Hôtel de l'Abbaye、Auberge Saint-Pierre)</li>
+        <li>家族の連絡先(日本側)</li>
+        <li>パリ在住日本人フォトグラファー(該当時)</li>
+        <li>リーヴル・ドー担当連絡先(該当時)</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">必須アプリ・サービス</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>用途</th><th>推奨</th></tr></thead>
+          <tbody>
+            <tr><td>eSIM</td><td><strong>Holafly</strong>(複数国EUプラン、無制限、€6/日)</td></tr>
+            <tr><td>地図・経路</td><td>Google Maps、Citymapper</td></tr>
+            <tr><td>翻訳</td><td>DeepL、Google翻訳(オフライン西語・仏語DL必須)</td></tr>
+            <tr><td>鉄道予約</td><td><strong>Omio</strong>(日本語、決済安定)、Trip.com</td></tr>
+            <tr><td>レストラン予約</td><td>TheFork(日本語)</td></tr>
+            <tr><td>タクシー配車</td><td><strong>Free Now</strong>(Uber/Cabify廃止後の主流)</td></tr>
+            <tr><td>ストライキ情報</td><td>Twitter/X "huelga Renfe"、Renfe公式、領事メール</td></tr>
+            <tr><td>治安情報</td><td>外務省海外安全ホームページ</td></tr>
+            <tr><td>為替</td><td>XE Currency</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §14 Actions ============ -->
+<section class="section" id="actions">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 14</div>
+      <h2 class="section__title">次のステップ — 今日からやること</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">時間順、優先度順。</p>
+    </div>
+
+    <div class="priority-group">
+      <div class="priority-group__heading"><span class="priority-dot priority-dot--critical"></span>今すぐ(今週中)</div>
+      <div class="action-list">
+        <div class="action-row" style="border-color: var(--color-accent);">
+          <div class="action-row__num">01</div>
+          <div class="action-row__task">このプランをレビュー(スケジュール感、食事店、宿泊先の違和感確認)</div>
+          <div class="action-row__due">今日</div>
+        </div>
+        <div class="action-row" style="border-color: var(--color-accent);">
+          <div class="action-row__num">02</div>
+          <div class="action-row__task">「最優先5件」予約に着手 — 航空券、Sercotel、Disfrutar、Auberge、Hôtel de l'Abbaye</div>
+          <div class="action-row__due">今週中</div>
+        </div>
+        <div class="action-row" style="border-color: var(--color-accent);">
+          <div class="action-row__num">03</div>
+          <div class="action-row__task">パスポート残存期間チェック(2027/4以降まで有効か)</div>
+          <div class="action-row__due">今日</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="priority-group">
+      <div class="priority-group__heading"><span class="priority-dot priority-dot--high"></span>今月中(2026/5月末まで)</div>
+      <div class="action-list">
+        <div class="action-row">
+          <div class="action-row__num">04</div>
+          <div class="action-row__task">MSM 教会へリーヴル・ドー の事前メール送信</div>
+          <div class="action-row__due">5月末まで</div>
+        </div>
+        <div class="action-row">
+          <div class="action-row__num">05</div>
+          <div class="action-row__task">海外旅行保険のプラン比較・選定</div>
+          <div class="action-row__due">5月末まで</div>
+        </div>
+        <div class="action-row">
+          <div class="action-row__num">06</div>
+          <div class="action-row__task">Tax Free / IVA還付の使い方を理解</div>
+          <div class="action-row__due">5月末まで</div>
+        </div>
+        <div class="action-row">
+          <div class="action-row__num">07</div>
+          <div class="action-row__task">ハネムーン伝達メールを各ホテル・レストランへ送信(予約完了後)</div>
+          <div class="action-row__due">予約後</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="priority-group">
+      <div class="priority-group__heading"><span class="priority-dot priority-dot--medium"></span>2026/6-7月</div>
+      <div class="action-list">
+        <div class="action-row">
+          <div class="action-row__num">08</div>
+          <div class="action-row__task">主要観光地のチケット予約(優先度🟡:サグラダ、カサ・バトリョ、カサ・ミラ、ヴェルサイユ等)</div>
+          <div class="action-row__due">6-7月</div>
+        </div>
+        <div class="action-row">
+          <div class="action-row__num">09</div>
+          <div class="action-row__task">戸籍抄本英訳の取得(リーヴル・ドー用)</div>
+          <div class="action-row__due">6月中</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PART II Divider ============ -->
+<section class="part-divider">
+  <div class="container">
+    <div class="part-divider__eyebrow">Part II · Alternative Plan</div>
+    <h2 class="part-divider__title">Plan B:パリ中心案</h2>
+    <p class="part-divider__subtitle">東京 → パリ着 動線で、フランス美術深掘り + MSM大潮ピーク係数98を狙う設計</p>
+    <div class="part-divider__route">東京 → CDG → MSM → CDG → BCN → CDG → 東京</div>
+    <div class="part-divider__highlights">
+      <span class="part-divider__highlight">MSM 大潮ピーク 係数98</span>
+      <span class="part-divider__highlight">ルーヴル木曜夜 + オルセー</span>
+      <span class="part-divider__highlight">🍴 Arpège ★★★(野菜中心)</span>
+      <span class="part-divider__highlight">ノートルダム再開後</span>
+      <span class="part-divider__highlight">モンマルトル + サクレ・クール</span>
+      <span class="part-divider__highlight">時差ボケ初日にエッフェル塔シャンパン</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §15 Plan B 概要 ============ -->
+<section class="section" id="planb">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 15</div>
+      <h2 class="section__title">Plan B 概要 — 動線の根本的な違い</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">東京 → パリ着 で「フランス深掘り → スペイン陽気なフィナーレ」の設計。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">なぜ「東京 → パリ着」なのか</h3>
+      <p class="subsection__lede">Plan A はメルセ祭フィナーレ(9/27)を冒頭で活かす設計でしたが、Plan B は以下を活かします:</p>
+      <ul class="numbered-list">
+        <li><strong>MSM 大潮ピーク(9/29-30、係数92-98)を完全活用</strong> — 年間20日級の希少日にMSM入り</li>
+        <li><strong>パリの主要美術館をフル網羅</strong> — ルーヴル木曜夜+オルセー+オランジュリー+ロダン+ジヴェルニー</li>
+        <li><strong>時差ボケ初日のパリ着</strong> — 街並みが落ち着いていて、シテ島散策など軽めの観光に最適</li>
+        <li><strong>「フランスで深く満喫 → スペインで陽気にフィナーレ」</strong> という感情のグラデーション</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">Plan A との比較サマリ</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>観点</th><th>Plan A(BCN集中)</th><th>Plan B(パリ中心)</th></tr></thead>
+          <tbody>
+            <tr><td><strong>動線</strong></td><td>東京 → BCN → パリ → MSM → パリ → 東京</td><td><strong>東京 → パリ → MSM → パリ → BCN → 東京</strong></td></tr>
+            <tr><td>航空券</td><td>関空-CDG-BCN(in)+ CDG-関空(out)</td><td>関空-CDG 往復 + 別途 CDG-BCN-CDG(Vueling)</td></tr>
+            <tr><td>BCN 滞在</td><td>3泊(冒頭、メルセ祭フィナーレ活用)</td><td><strong>2泊(末尾、ガウディ凝縮版)</strong></td></tr>
+            <tr><td>パリ 滞在</td><td>4泊</td><td><strong>5泊(うち MSM 1泊間の続泊)</strong></td></tr>
+            <tr style="background-color: var(--color-highlight);"><td>MSM 入り</td><td>10/1(係数82、中潮上限)</td><td><strong>9/29(係数98、年間ピーク)</strong></td></tr>
+            <tr><td>メルセ祭フィナーレ花火</td><td><strong>◎ 体験可</strong></td><td>× 体験不可</td></tr>
+            <tr><td>ルーヴル</td><td>×</td><td><strong>◎ 木曜夜セッション(21:45)</strong></td></tr>
+            <tr><td>オルセー</td><td>×</td><td><strong>◎ 終日+木曜夜</strong></td></tr>
+            <tr><td>ロダン美術館</td><td>×</td><td><strong>◎</strong></td></tr>
+            <tr><td>ノートルダム+サント・シャペル</td><td>×</td><td><strong>◎</strong></td></tr>
+            <tr><td>モンマルトル</td><td>×</td><td><strong>◎</strong></td></tr>
+            <tr><td>ヴェルサイユ</td><td>◎</td><td><strong>× スキップ</strong></td></tr>
+            <tr><td>ミシュラン 3★</td><td>Disfrutar(BCN、世界Best 1位)</td><td><strong>Arpège(パリ、野菜中心 — レバーNGに最適)</strong></td></tr>
+            <tr><td>サグラダ完成イヤー</td><td>フル体験(朝一+塔+夕景)</td><td>短縮版(Day 7 午後の暖色光)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">Plan B が向いている人</h3>
+      <ul class="clean-list">
+        <li><strong>MSM の大潮ピーク(係数98)を絶対に逃したくない</strong></li>
+        <li><strong>パリの古典・印象派美術館を全制覇したい</strong>(ルーヴル+オルセー+オランジュリー+ロダン)</li>
+        <li><strong>2024年12月再開のノートルダム本堂を体験したい</strong></li>
+        <li><strong>モンマルトル(サクレ・クール、テルトル広場、Le Consulat)が外せない</strong></li>
+        <li><strong>Arpège(野菜中心★★★)でレバーNGに完璧対応した美食を</strong></li>
+        <li><strong>フランス文化を深掘りし、スペインは「象徴的な体験」だけで満足できる</strong></li>
+        <li><strong>メルセ祭フィナーレ花火を「諦める」覚悟がある</strong></li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">Plan A から Plan B に変えるトレードオフ</h3>
+      <div class="two-col">
+        <div class="callout callout--positive">
+          <div class="callout__label">得るもの</div>
+          <ul>
+            <li><strong>MSM 大潮ピーク(9/29 係数98)の年間屈指の体験</strong></li>
+            <li>ルーヴル + オルセー + ロダン</li>
+            <li>ノートルダム本堂 + サント・シャペル + コンシェルジュリー</li>
+            <li>モンマルトル + サクレ・クール + Le Consulat</li>
+            <li>Arpège(★★★、野菜中心、レバーNGに最適)</li>
+          </ul>
+        </div>
+        <div class="callout callout--warning">
+          <div class="callout__label">諦めるもの</div>
+          <ul>
+            <li><strong>メルセ祭フィナーレ花火(9/27 21:30)</strong></li>
+            <li><strong>ヴェルサイユ宮殿</strong></li>
+            <li>カサ・ミラ + パラウ・ダ・ラ・ムジカ + サン・パウ病院</li>
+            <li>Disfrutar(★★★、世界Best 1位)</li>
+            <li>BCN 滞在の余裕</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §16 Plan B 設計の思想 ============ -->
+<section class="section" id="planb-thinking">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 16</div>
+      <h2 class="section__title">Plan B 設計の思想</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">パリ美術館の曜日別開館 + MSM大潮ピーク日程の活用。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">6つの設計原則</h3>
+      <ul class="numbered-list">
+        <li><strong>MSM大潮ピーク(9/29-30)を狙う日程設計</strong> — Day 4(火、係数98)に MSM 入り、Day 5(水、係数92)朝もや</li>
+        <li><strong>パリの曜日別美術館定休を全回避</strong> — Day 2(日)・Day 3(月)・Day 5(水)・Day 6(木)で全主要館を網羅</li>
+        <li><strong>時差ボケ初日のソフトランディング</strong> — Day 2(時差ボケ翌日)はシテ島+サン・ジェルマンの軽め</li>
+        <li><strong>BCN は「凝縮版」</strong> — サグラダ完成イヤー + ガウディ核心(グエル+カサ・バトリョ+カサ・ミラ)に絞る</li>
+        <li><strong>食事ハイライトを Arpège(パリ)に集中</strong> — 野菜中心★★★、レバーNGに完璧対応</li>
+        <li><strong>MSM 島内泊は維持</strong> — Plan A と同じ核心体験(ただし大潮ピーク日)</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">パリの美術館 — 曜日別開館一覧</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>美術館</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日</th></tr></thead>
+          <tbody>
+            <tr><td>ルーヴル</td><td>○</td><td><strong>休</strong></td><td>○</td><td>○(夜21:45)</td><td>○</td><td>○</td><td>○</td></tr>
+            <tr><td>オルセー</td><td><strong>休</strong></td><td>○</td><td>○</td><td>○(夜21:45)</td><td>○</td><td>○</td><td>○</td></tr>
+            <tr><td>オランジュリー</td><td>○</td><td><strong>休</strong></td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr>
+            <tr><td>ロダン美術館</td><td><strong>休</strong></td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr>
+            <tr><td>ポンピドゥー</td><td>○</td><td><strong>休</strong></td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr>
+            <tr><td>ジヴェルニー</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○(4月-11/1)</td></tr>
+            <tr><td>ヴェルサイユ宮殿</td><td><strong>休</strong></td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted text-small" style="margin-top: var(--space-xs);">→ 9/29(火):ルーヴル定休 → <strong>MSM 入り</strong> / 9/30(水):全館開館 → <strong>オランジュリー モネ展開幕</strong> / 10/1(木):<strong>ルーヴル+オルセー 夜21:45 + Arpège</strong></p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">MSM 潮汐表(Plan B 該当日)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>日付</th><th>朝の満潮</th><th>係数</th><th>夕方の満潮</th><th>係数</th><th>Plan B での意味</th></tr></thead>
+          <tbody>
+            <tr><td>9/27(日)</td><td>08:20</td><td>97</td><td>20:56</td><td>97</td><td>パリ滞在中</td></tr>
+            <tr><td>9/28(月)</td><td>08:54</td><td>99</td><td>21:34</td><td>99</td><td>パリ・ジヴェルニー(惜しい)</td></tr>
+            <tr style="background-color: var(--color-highlight);"><td><strong>9/29(火)</strong></td><td><strong>09:28</strong></td><td><strong>98</strong></td><td><strong>22:10</strong></td><td><strong>98</strong></td><td><strong>MSM 到着日、夕方の係数98満潮を体験</strong></td></tr>
+            <tr style="background-color: var(--color-highlight);"><td><strong>9/30(水)</strong></td><td><strong>10:01</strong></td><td><strong>92</strong></td><td><strong>22:44</strong></td><td><strong>92</strong></td><td><strong>MSM 朝もや、年間ピーク後半</strong></td></tr>
+            <tr><td>10/1(木)</td><td>10:36</td><td>82</td><td>23:16</td><td>82</td><td>パリ戻り後</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted text-small">→ Plan A(10/1 係数82)に対して、Plan B は <strong>9/29-30 で係数92-98</strong>。9/29 夕方MSM到着 → 22:10満潮で、夜の連絡橋ライトアップと満潮が重なる神秘的なタイミング。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §17 Plan B 9日間 日割り ============ -->
+<section class="section" id="planb-itinerary">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 17</div>
+      <h2 class="section__title">Plan B 9日間 日割り行程</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">東京 → パリ着 動線、MSM大潮ピーク日程。</p>
+    </div>
+
+    <div class="day-cards">
+
+      <!-- Plan B Day 1 -->
+      <article class="day-card day-card--travel">
+        <header class="day-card__header">
+          <div class="day-card__day">
+            <span class="day-card__number">Day 1</span>
+            <span class="day-card__date">9/26(土)</span>
+            <span class="country country--travel">移動日</span>
+            <span class="country country--france">🇫🇷 Paris</span>
+          </div>
+          <p class="day-card__theme">東京 → パリ(エールフランス直行):夕方着、軽い夕食、早寝</p>
+        </header>
+        <div class="day-card__body">
+          <div class="day-card__timeline">
+            <div class="timeline-row"><span class="timeline-time">09:30</span><span class="timeline-action">関空 KIX or 羽田 HND 着<span class="timeline-note">AF 直行(関空 AF291 or 羽田 AF275 等、目安便)</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">11:00</span><span class="timeline-action">出発<span class="timeline-note">エールフランス 約14時間</span></span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">17:30頃</span><span class="timeline-action"><strong>CDG 着</strong>(時差7時間、現地時間 16-18時)<span class="timeline-note">Schengen 1回目入国でやや時間かかる</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">18:30</span><span class="timeline-action">CDG → パリ市内(タクシー €56定額、約45-60分)<span class="timeline-note">大荷物+疲労+夜なのでタクシー確実</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">19:30</span><span class="timeline-action"><strong>🏨 Hôtel de l'Abbaye ★4(6区サン・ジェルマン)チェックイン</strong><span class="timeline-note">元修道院、ハネムーン推奨多数</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">20:00</span><span class="timeline-action">🍴 軽い夕食(ホテル周辺ビストロ)<span class="timeline-note">重い料理は避ける</span></span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">22:00</span><span class="timeline-action"><strong>就寝</strong>(時差ボケ対策で早寝)</span></div>
+          </div>
+        </div>
+        <footer class="day-card__footer">
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">服装</span>
+            <span class="day-card__meta-value">機内:ゆったり長袖 / 到着夜:薄手の長袖+ジャケット(パリ夜 12-15℃)</span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">注意</span>
+            <span class="day-card__meta-value">
+              <ul>
+                <li>初日は深入りしない、観光なし</li>
+                <li>ハネムーン旨を到着時に: <em>Nous sommes en voyage de noces.</em></li>
+                <li>ホテル予約 QR コードをスマホに保存</li>
+              </ul>
+            </span>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Plan B Day 2 -->
+      <article class="day-card day-card--france">
+        <header class="day-card__header">
+          <div class="day-card__day">
+            <span class="day-card__number">Day 2</span>
+            <span class="day-card__date">9/27(日)</span>
+            <span class="country country--france">🇫🇷 Paris</span>
+          </div>
+          <p class="day-card__theme">シテ島(ノートルダム+サント・シャペル)+ 🥂 エッフェル塔頂上シャンパン</p>
+        </header>
+        <div class="day-card__body">
+          <div class="callout" style="margin-bottom: var(--space-sm);">
+            <div class="callout__label">設計意図</div>
+            <p>時差ボケ初日は <strong>軽め+ロマンチック</strong>。シテ島の教会群と夕方のエッフェル塔頂上で「パリ着いた」感を演出。</p>
+          </div>
+          <div class="day-card__timeline">
+            <div class="timeline-row"><span class="timeline-time">08:30</span><span class="timeline-action">ホテル朝食(ゆっくり、コーヒー多め)</span></div>
+            <div class="timeline-row"><span class="timeline-time">10:00</span><span class="timeline-action">サン・ジェルマン地区散歩、Café de Flore でアペリティフ<span class="timeline-note">サルトル・ボーヴォワール・ピカソの聖地</span></span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">11:30</span><span class="timeline-action"><strong>🏛️ ノートルダム大聖堂 本堂(2024/12再開後、無料)</strong><span class="timeline-note">公式アプリで2日前予約、専用レーン優先入場</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">12:30</span><span class="timeline-action">🏛️ サント・シャペル(13世紀ゴシック、1113枚のステンドグラス)<span class="timeline-note">正午の太陽光がベスト</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">13:30</span><span class="timeline-action">🍴 ランチ:Les Deux Magots or Brasserie Lipp<span class="timeline-note">サルトル・ヘミングウェイの店</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">15:00</span><span class="timeline-action">コンシェルジュリー(マリー・アントワネット監禁の独房)</span></div>
+            <div class="timeline-row"><span class="timeline-time">16:30</span><span class="timeline-action">チュイルリー公園散策、サン・ジェルマン散歩</span></div>
+            <div class="timeline-row"><span class="timeline-time">17:30</span><span class="timeline-action">ホテル戻り、シャワー、着替え(防寒準備)</span></div>
+            <div class="timeline-row"><span class="timeline-time">19:00</span><span class="timeline-action">Free Now でエッフェル塔へ(20分、€20)</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">19:30</span><span class="timeline-action"><strong>🥂 エッフェル塔 頂上+シャンパン体験 €60.70/人</strong><span class="timeline-note">「パリ着きました」の象徴的乾杯</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">21:00</span><span class="timeline-action">🍴 ディナー:エッフェル塔1階 Madame Brasserie<span class="timeline-note">ティエリー・マルクス監修、要予約</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">23:00</span><span class="timeline-action">ホテル戻り、就寝</span></div>
+          </div>
+        </div>
+        <footer class="day-card__footer">
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">📷 Photo Spots</span>
+            <span class="day-card__meta-value">
+              <ul>
+                <li>11:30 ノートルダム正面ファサード(火災から復活)</li>
+                <li>12:30 サント・シャペル ステンドグラス(正午の光)</li>
+                <li>16:00 Café de Flore のテラス</li>
+                <li>19:30 エッフェル塔頂上 パリ夜景 ★旅の始まり</li>
+              </ul>
+            </span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">服装</span>
+            <span class="day-card__meta-value">日中:長袖+カーディガン / 夜エッフェル塔頂上:<strong>防寒ダウン必須</strong>(風強く10℃以下)、ジャケット+きれいめパンツ</span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">予約</span>
+            <span class="day-card__meta-value">エッフェル塔頂上+シャンパン(60日前)、Madame Brasserie、ノートルダム(公式アプリ2日前)</span>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Plan B Day 3 -->
+      <article class="day-card day-card--france">
+        <header class="day-card__header">
+          <div class="day-card__day">
+            <span class="day-card__number">Day 3</span>
+            <span class="day-card__date">9/28(月)</span>
+            <span class="country country--france">🇫🇷 Paris + Giverny</span>
+          </div>
+          <p class="day-card__theme">ジヴェルニー終日(月曜年中無休)+ モンマルトル夕方</p>
+        </header>
+        <div class="day-card__body">
+          <div class="callout callout--warning" style="margin-bottom: var(--space-sm);">
+            <div class="callout__label">月曜定休に注意</div>
+            <p>オルセー・ロダン・オランジュリー・ポンピドゥーが月曜定休。<strong>月曜年中無休のジヴェルニー</strong>と<strong>月曜開館のモンマルトル(サクレ・クール)</strong>で組み立て。</p>
+          </div>
+          <div class="day-card__timeline">
+            <div class="timeline-row"><span class="timeline-time">07:30</span><span class="timeline-action">ホテル朝食</span></div>
+            <div class="timeline-row"><span class="timeline-time">08:45</span><span class="timeline-action">🚆 サン・ラザール駅 → Vernon-Giverny(Transilien、45-50分、€10/人)</span></div>
+            <div class="timeline-row"><span class="timeline-time">09:45</span><span class="timeline-action">Vernon 駅着、シャトルバス(€10往復)or タクシー €25</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">10:15</span><span class="timeline-action"><strong>🏛️ ジヴェルニー モネの家・庭園</strong><span class="timeline-note">9月下旬は秋バラ・ダリア満開、睡蓮も残る</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">12:00</span><span class="timeline-action">🍴 ランチ:Hôtel Baudy(印象派画家ゆかり、テラス)<span class="timeline-note">€40-60/2人</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">13:30</span><span class="timeline-action">ジヴェルニー印象派美術館</span></div>
+            <div class="timeline-row"><span class="timeline-time">14:30</span><span class="timeline-action">Vernon 戻り、パリ行き電車</span></div>
+            <div class="timeline-row"><span class="timeline-time">16:00</span><span class="timeline-action">パリ着、メトロでアンヴェールへ(L2)</span></div>
+            <div class="timeline-row"><span class="timeline-time">16:30</span><span class="timeline-action">🏛️ モンマルトル散策開始<span class="timeline-note">テルトル広場、Le Consulat、La Maison Rose</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">17:30</span><span class="timeline-action"><strong>🏛️ サクレ・クール寺院</strong><span class="timeline-note">ドーム展望(€8)からパリ全景</span></span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">18:00</span><span class="timeline-action"><strong>🌅 サクレ・クール正面階段で夕焼け鑑賞</strong><span class="timeline-note">街灯がともる瞬間</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">19:00</span><span class="timeline-action">🍴 ディナー:Le Consulat or La Maison Rose<span class="timeline-note">ピカソ・ゴッホが通った</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">21:30</span><span class="timeline-action">Free Now でホテル戻り<span class="timeline-note">モンマルトル夜の単独歩行は避ける</span></span></div>
+          </div>
+        </div>
+        <footer class="day-card__footer">
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">📷 Photo Spots</span>
+            <span class="day-card__meta-value">
+              <ul>
+                <li>10:30 モネの家のピンクの壁・グリーンの窓</li>
+                <li>10:45 <strong>日本風太鼓橋</strong>(モネ作品の現場)</li>
+                <li>11:00 睡蓮の池</li>
+                <li>17:30 サクレ・クール正面階段からパリ全景</li>
+                <li>18:00 夕焼けのサクレ・クール</li>
+                <li>19:00 Le Consulat の花輪付き外観</li>
+              </ul>
+            </span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">服装</span>
+            <span class="day-card__meta-value">日中:長袖+カーディガン / モンマルトル:歩きやすい靴(急な石畳+階段)/ 夜:防寒</span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">注意</span>
+            <span class="day-card__meta-value">ジヴェルニーは月曜年中無休 / モンマルトルのスリ多発、「ミサンガ詐欺」「署名募金詐欺」に注意 → 完全無視</span>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Plan B Day 4 -->
+      <article class="day-card day-card--france">
+        <header class="day-card__header">
+          <div class="day-card__day">
+            <span class="day-card__number">Day 4</span>
+            <span class="day-card__date">9/29(火)</span>
+            <span class="country country--france">🇫🇷 Paris → MSM</span>
+          </div>
+          <p class="day-card__theme">パリ → モン・サン・ミシェル(島内泊)<strong>★ 大潮ピーク係数98</strong></p>
+        </header>
+        <div class="day-card__body">
+          <div class="callout callout--positive" style="margin-bottom: var(--space-sm);">
+            <div class="callout__label">Plan B の核心</div>
+            <p>9/28(99)・9/29(98)の連日大潮ピーク。MSM入りが9/29(火)で、<strong>夕方の係数98満潮(22:10)+ 連絡橋ライトアップ</strong>を同時体験。Plan A(10/1 係数82)を超える年間ピーク級。</p>
+          </div>
+          <div class="day-card__timeline">
+            <div class="timeline-row"><span class="timeline-time">07:00</span><span class="timeline-action">ホテル朝食(軽め)</span></div>
+            <div class="timeline-row"><span class="timeline-time">07:30</span><span class="timeline-action">サブバッグ+1泊分着替え+カメラだけ持参<span class="timeline-note">大荷物はホテルに預ける(続泊予約)</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">08:30</span><span class="timeline-action">🚆 パリ・モンパルナス駅発 TGV(目安、約1.5h)</span></div>
+            <div class="timeline-row"><span class="timeline-time">10:00</span><span class="timeline-action">Rennes 着、Keolisバス乗換</span></div>
+            <div class="timeline-row"><span class="timeline-time">11:00</span><span class="timeline-action">🚌 Keolisバス Rennes → MSM(約1h15、€15/人)</span></div>
+            <div class="timeline-row"><span class="timeline-time">12:30</span><span class="timeline-action">MSM 対岸インフォメーションセンター着、シャトル乗継</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">13:00</span><span class="timeline-action"><strong>🏨 Auberge Saint-Pierre チェックイン</strong><span class="timeline-note">海側部屋指定推奨</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">13:30</span><span class="timeline-action">🍴 ランチ:La Sirène(ガレット)<span class="timeline-note">€30-50/2人</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">15:00</span><span class="timeline-action"><strong>🏛️ 修道院見学</strong>(9月料金 €16/人)</span></div>
+            <div class="timeline-row"><span class="timeline-time">17:00</span><span class="timeline-action">西のテラスから湾景色</span></div>
+            <div class="timeline-row"><span class="timeline-time">17:30</span><span class="timeline-action">城壁・グランド・リュ散策</span></div>
+            <div class="timeline-row"><span class="timeline-time">19:00</span><span class="timeline-action">🍴 ディナー:Auberge Saint-Pierre(プレ・サレ仔羊)<span class="timeline-note">€60-80/2人</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">20:00</span><span class="timeline-action">日没(9/29は19:55頃)→ ブルーアワー</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">20:30</span><span class="timeline-action"><strong>連絡橋へ徒歩</strong>(対岸まで往復30分)</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">20:45-21:30</span><span class="timeline-action"><strong>🌅 ブルーアワー + ライトアップ撮影</strong></span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">22:10</span><span class="timeline-action"><strong>🌊 夕方の満潮(係数98、年間ピーク級)</strong><span class="timeline-note">連絡橋から「海に浮かぶ MSM」</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">22:45</span><span class="timeline-action">ホテル戻り、夜の島内散歩</span></div>
+          </div>
+        </div>
+        <footer class="day-card__footer">
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">📷 Photo Spots</span>
+            <span class="day-card__meta-value">
+              <ul>
+                <li>13:00 対岸からの島全景</li>
+                <li>17:00 西のテラスから湾の引き潮</li>
+                <li>20:00 城壁から夕焼け</li>
+                <li><strong>20:45-21:30 連絡橋:ブルーアワー+ライトアップ ★</strong></li>
+                <li><strong>22:10 連絡橋:係数98の満潮(年間屈指)</strong></li>
+              </ul>
+            </span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">服装</span>
+            <span class="day-card__meta-value">日中:長袖+ジャケット / 夜:<strong>防寒必須</strong>(夜は10℃近く、海風)/ 折り畳み傘</span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">💍 新婚特典</span>
+            <span class="day-card__meta-value"><strong>リーヴル・ドー</strong> — 教会で結婚証明書を島内永久保管、事前メール、戸籍抄本英訳持参</span>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Plan B Day 5 -->
+      <article class="day-card day-card--france">
+        <header class="day-card__header">
+          <div class="day-card__day">
+            <span class="day-card__number">Day 5</span>
+            <span class="day-card__date">9/30(水)</span>
+            <span class="country country--france">🇫🇷 MSM → Paris</span>
+          </div>
+          <p class="day-card__theme">朝もや → パリ戻り → <strong>オランジュリー モネ100周年展開幕日</strong> + セーヌクルーズ</p>
+        </header>
+        <div class="day-card__body">
+          <div class="day-card__timeline">
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">07:00</span><span class="timeline-action"><strong>🌅 朝の干潟散歩 + 朝もや撮影(係数92、大潮後半)</strong><span class="timeline-note">日の出後、誰もいない島</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">08:30</span><span class="timeline-action">ホテル朝食</span></div>
+            <div class="timeline-row"><span class="timeline-time">09:30</span><span class="timeline-action">🍴 Mère Poulardでオムレツ体験(€38/人)<span class="timeline-note">文化体験として</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">11:00</span><span class="timeline-action">チェックアウト</span></div>
+            <div class="timeline-row"><span class="timeline-time">12:00</span><span class="timeline-action">🚌 MSM 対岸発 Keolisバス</span></div>
+            <div class="timeline-row"><span class="timeline-time">13:15</span><span class="timeline-action">Rennes 着、駅構内軽食</span></div>
+            <div class="timeline-row"><span class="timeline-time">14:00</span><span class="timeline-action">🚆 Rennes 発 TGV</span></div>
+            <div class="timeline-row"><span class="timeline-time">15:30</span><span class="timeline-action">パリ・モンパルナス駅 着</span></div>
+            <div class="timeline-row"><span class="timeline-time">16:00</span><span class="timeline-action">ホテル戻り、大荷物受領、休憩</span></div>
+            <div class="timeline-row"><span class="timeline-time">16:45</span><span class="timeline-action">メトロでチュイルリーへ</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">17:00</span><span class="timeline-action"><strong>🏛️ オランジュリー美術館「モネと時間」展(9/30 開幕日)</strong><span class="timeline-note">必訪、19:00閉館前に2時間</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">19:00</span><span class="timeline-action">チュイルリー公園散策</span></div>
+            <div class="timeline-row"><span class="timeline-time">19:30</span><span class="timeline-action">ホテル休憩、シャワー、着替え</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">20:30</span><span class="timeline-action"><strong>🚢 Bateaux Parisiens ディナークルーズ Premier席</strong><span class="timeline-note">Pont de l'Alma 発</span></span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">22:00</span><span class="timeline-action"><strong>🎆 エッフェル塔シャンパンフラッシュを船上から</strong></span></div>
+            <div class="timeline-row"><span class="timeline-time">22:45</span><span class="timeline-action">ホテル戻り</span></div>
+          </div>
+        </div>
+        <footer class="day-card__footer">
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">📷 Photo Spots</span>
+            <span class="day-card__meta-value">
+              <ul>
+                <li>07:00-08:00 MSM 朝もや+干潟</li>
+                <li>17:00 オランジュリー「睡蓮」大装飾画</li>
+                <li>22:00 セーヌクルーズ船上からエッフェル塔フラッシュ</li>
+              </ul>
+            </span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">服装</span>
+            <span class="day-card__meta-value">朝:防寒(MSM 朝もや 5-10℃)/ 日中:カジュアル / クルーズ:スマートカジュアル(船内冷房強)</span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">注意</span>
+            <span class="day-card__meta-value">モネ100周年展は9/30開幕日、混雑予想 / TGV早割 Prem's は2-3ヶ月前 / Bateaux Parisiens Premier席は1-2ヶ月前予約</span>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Plan B Day 6 -->
+      <article class="day-card day-card--france">
+        <header class="day-card__header">
+          <div class="day-card__day">
+            <span class="day-card__number">Day 6</span>
+            <span class="day-card__date">10/1(木)</span>
+            <span class="country country--france">🇫🇷 Paris</span>
+          </div>
+          <p class="day-card__theme">ルーヴル + オルセー(木曜夜21:45)+ 🍴 <strong>Arpège(★★★、野菜中心)</strong></p>
+        </header>
+        <div class="day-card__body">
+          <div class="callout callout--positive" style="margin-bottom: var(--space-sm);">
+            <div class="callout__label">Plan B 美食ピーク</div>
+            <p>木曜は <strong>ルーヴル・オルセーが両方21:45まで開館</strong>する唯一の曜日。1日で美術館制覇 → 夜はミシュラン3★ Arpège で旅程の美食ピーク。</p>
+          </div>
+          <div class="day-card__timeline">
+            <div class="timeline-row"><span class="timeline-time">08:30</span><span class="timeline-action">ホテル朝食</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">09:00</span><span class="timeline-action"><strong>🏛️ ルーヴル美術館 開館直後</strong><span class="timeline-note">タイムスロット予約必須</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">-</span><span class="timeline-action">モナリザ、サモトラケのニケ、ミロのヴィーナス、ナポレオン3世の居室<span class="timeline-note">約3-4時間で主要作品</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">13:00</span><span class="timeline-action">🍴 ランチ:Café Marly(ルーヴル前、ピラミッド見える)or サン・ジェルマン<span class="timeline-note">€40-60/2人</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">15:00</span><span class="timeline-action">メトロでロダン美術館へ(L13、徒歩5分)</span></div>
+            <div class="timeline-row"><span class="timeline-time">15:30</span><span class="timeline-action"><strong>🏛️ ロダン美術館</strong><span class="timeline-note">「考える人」「地獄の門」、バラ園</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">17:00</span><span class="timeline-action">徒歩で <strong>🏛️ オルセー美術館</strong>(15分、セーヌ川沿い)</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">17:30</span><span class="timeline-action"><strong>🏛️ オルセー美術館(木曜夜21:45まで)</strong><span class="timeline-note">印象派、ホッパー</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">19:30</span><span class="timeline-action">オルセー退出、ホテル戻り、シャワー、着替え</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">20:30</span><span class="timeline-action"><strong>🍴🌟 Arpège(★★★、Alain Passard、野菜中心 — レバーNGに完璧対応)</strong><span class="timeline-note">2026/3-4月までに予約必須</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">23:30</span><span class="timeline-action">タクシーでホテル戻り</span></div>
+          </div>
+        </div>
+        <footer class="day-card__footer">
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">📷 Photo Spots</span>
+            <span class="day-card__meta-value">
+              <ul>
+                <li>09:00 ルーヴル ピラミッド(朝の入口)</li>
+                <li>10:00 モナリザ(混雑回避は朝一)</li>
+                <li>11:00 ナポレオン3世の居室(豪華絢爛)</li>
+                <li>15:30 ロダン美術館 バラ園(秋バラ)</li>
+                <li>17:30 オルセー 5階大時計越しのパリ</li>
+              </ul>
+            </span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">服装</span>
+            <span class="day-card__meta-value">日中:長袖+カーディガン / 夜(Arpège):<strong>男性ジャケット必須</strong>、女性ワンピース、革靴</span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">🍴 Arpège について</span>
+            <span class="day-card__meta-value">アラン・パッサール、★★★、野菜中心、ロダン美術館徒歩3分。コース約 <span class="price">¥83,300〜</span>/人、2人 <span class="price">¥166,600</span>。<strong>3-6ヶ月前予約必須</strong></span>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Plan B Day 7 -->
+      <article class="day-card day-card--spain">
+        <header class="day-card__header">
+          <div class="day-card__day">
+            <span class="day-card__number">Day 7</span>
+            <span class="day-card__date">10/2(金)</span>
+            <span class="country country--travel">移動日</span>
+            <span class="country country--spain">🇪🇸 Barcelona</span>
+          </div>
+          <p class="day-card__theme">パリ → バルセロナ(Vueling 午前)+ サグラダ・ファミリア完成イヤー午後</p>
+        </header>
+        <div class="day-card__body">
+          <div class="day-card__timeline">
+            <div class="timeline-row"><span class="timeline-time">07:30</span><span class="timeline-action">ホテル朝食</span></div>
+            <div class="timeline-row"><span class="timeline-time">08:30</span><span class="timeline-action">ホテル チェックアウト、タクシーで CDG</span></div>
+            <div class="timeline-row"><span class="timeline-time">09:30</span><span class="timeline-action">CDG 着、Vueling チェックイン</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">10:30</span><span class="timeline-action"><strong>✈️ Vueling CDG → BCN(目安、約2h)</strong></span></div>
+            <div class="timeline-row"><span class="timeline-time">12:30</span><span class="timeline-action">バルセロナ El Prat 空港着</span></div>
+            <div class="timeline-row"><span class="timeline-time">13:00</span><span class="timeline-action">タクシーで市内へ(€35-40)</span></div>
+            <div class="timeline-row"><span class="timeline-time">13:30</span><span class="timeline-action"><strong>🏨 Sercotel Rosellón ★4 チェックイン</strong><span class="timeline-note">サグラダ徒歩3分</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">14:00</span><span class="timeline-action">🍴 ランチ:Cervecería Catalana<span class="timeline-note">€30-40/2人</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">15:30</span><span class="timeline-action">サグラダ周辺で休憩、Sercotel 屋上からサグラダ確認</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">16:30</span><span class="timeline-action"><strong>🏛️ サグラダ・ファミリア(午後の光、塔登頂セット)</strong><span class="timeline-note">西面(受難の塔)に夕方の光、ステンドグラスの暖色</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">19:00</span><span class="timeline-action">サン・パウ病院外観(夕方の暖色)</span></div>
+            <div class="timeline-row"><span class="timeline-time">20:00</span><span class="timeline-action">ホテル戻り、休憩</span></div>
+            <div class="timeline-row"><span class="timeline-time">20:30</span><span class="timeline-action">🍴 軽い夕食:タパスバル(Quimet & Quimet 等)</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">22:00</span><span class="timeline-action"><strong>Sercotel Rosellón 屋上テラスで夜のサグラダ独占</strong><span class="timeline-note">★ Plan B の隠れたハイライト</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">23:00</span><span class="timeline-action">ホテル戻り、就寝</span></div>
+          </div>
+        </div>
+        <footer class="day-card__footer">
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">📷 Photo Spots</span>
+            <span class="day-card__meta-value">
+              <ul>
+                <li>15:30 ホテル屋上からサグラダ午後光</li>
+                <li>16:30-18:30 サグラダ内部:西面ステンドグラスの暖色</li>
+                <li>19:00 サン・パウ病院ファサード</li>
+                <li><strong>22:00 Sercotel Rosellón 屋上から夜のサグラダ ★</strong></li>
+              </ul>
+            </span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">服装</span>
+            <span class="day-card__meta-value">移動日:動きやすい服+ジャケット / 夕食:カジュアル</span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">注意</span>
+            <span class="day-card__meta-value">Vueling 直行便が時間&コスト最効率 / サグラダ予約は16:00-17:00枠(西面の午後光)</span>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Plan B Day 8 -->
+      <article class="day-card day-card--spain">
+        <header class="day-card__header">
+          <div class="day-card__day">
+            <span class="day-card__number">Day 8</span>
+            <span class="day-card__date">10/3(土)</span>
+            <span class="country country--spain">🇪🇸 Barcelona</span>
+          </div>
+          <p class="day-card__theme">ガウディ全網羅(凝縮版)+ 💧 魔法の噴水(土曜)</p>
+        </header>
+        <div class="day-card__body">
+          <div class="day-card__timeline">
+            <div class="timeline-row"><span class="timeline-time">08:00</span><span class="timeline-action">ホテル朝食</span></div>
+            <div class="timeline-row"><span class="timeline-time">09:00</span><span class="timeline-action">メトロでグエル公園へ(L3 Lesseps)<span class="timeline-note">Vallcarca駅 経由のエスカレーターが楽</span></span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">09:30</span><span class="timeline-action"><strong>🏛️ グエル公園(朝一の入場枠)</strong><span class="timeline-note">大蜥蜴前で2人写真、無人</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">11:30</span><span class="timeline-action">メトロでカサ・バトリョへ(L3)</span></div>
+            <div class="timeline-row"><span class="timeline-time">12:00</span><span class="timeline-action"><strong>🏛️ カサ・バトリョ(Gold Ticket)</strong><span class="timeline-note">グラシア通り、海の家コンセプト</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">14:00</span><span class="timeline-action">🍴 ランチ:Bar del Pli or Cervecería Catalana</span></div>
+            <div class="timeline-row"><span class="timeline-time">15:30</span><span class="timeline-action">徒歩で <strong>🏛️ カサ・ミラ(ラ・ペドレラ)</strong><span class="timeline-note">屋上の「兵士と煙突」</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">17:30</span><span class="timeline-action">メトロでボルン地区へ(L4)</span></div>
+            <div class="timeline-row"><span class="timeline-time">18:00</span><span class="timeline-action"><strong>🏛️ ピカソ美術館(土曜開館、10-19時)</strong></span></div>
+            <div class="timeline-row"><span class="timeline-time">19:00</span><span class="timeline-action">ボルン地区散策、Santa Maria del Mar</span></div>
+            <div class="timeline-row"><span class="timeline-time">20:00</span><span class="timeline-action">🍴 ディナー:El Xampanyet(ボルン、1929年カバ立ち飲み)<span class="timeline-note">€40-60/2人</span></span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">21:00</span><span class="timeline-action"><strong>💧 モンジュイック魔法の噴水ショー(土曜 21:00-22:00)</strong><span class="timeline-note">音楽連動、無料</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">22:30</span><span class="timeline-action">Free Now でホテル戻り</span></div>
+          </div>
+        </div>
+        <footer class="day-card__footer">
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">📷 Photo Spots</span>
+            <span class="day-card__meta-value">
+              <ul>
+                <li>09:30 グエル公園 大蜥蜴(El Drac)</li>
+                <li>10:00 グエル公園 大テラス + バルセロナ全景</li>
+                <li>12:00 カサ・バトリョ ファサード</li>
+                <li>15:30 カサ・ミラ 屋上の煙突</li>
+                <li>18:30 ボルン地区 Santa Maria del Mar 夜景</li>
+                <li><strong>21:00 魔法の噴水とMNAC背景 ★旅程の締めくくり</strong></li>
+              </ul>
+            </span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">服装</span>
+            <span class="day-card__meta-value">日中:長袖+カーディガン / 夜(魔法の噴水):防寒 / 靴:スニーカー</span>
+          </div>
+          <div class="day-card__meta">
+            <span class="day-card__meta-label">注意</span>
+            <span class="day-card__meta-value">グエル公園 9:30枠は 2026/8月までに予約 / 魔法の噴水は土曜稼働(公式で再確認)/ 観光税 €8.4×2人×2泊 = ¥5,712</span>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Plan B Day 9 -->
+      <article class="day-card day-card--travel">
+        <header class="day-card__header">
+          <div class="day-card__day">
+            <span class="day-card__number">Day 9</span>
+            <span class="day-card__date">10/4(日)</span>
+            <span class="country country--travel">移動日</span>
+          </div>
+          <p class="day-card__theme">バルセロナ → CDG(乗継)→ 東京</p>
+        </header>
+        <div class="day-card__body">
+          <div class="day-card__timeline">
+            <div class="timeline-row"><span class="timeline-time">08:30</span><span class="timeline-action">ホテル朝食、ゆっくり</span></div>
+            <div class="timeline-row"><span class="timeline-time">09:30</span><span class="timeline-action">最後のサグラダ散策(屋上 or 駅前)</span></div>
+            <div class="timeline-row"><span class="timeline-time">10:30</span><span class="timeline-action">ホテル チェックアウト、タクシーで El Prat 空港</span></div>
+            <div class="timeline-row"><span class="timeline-time">11:30</span><span class="timeline-action">El Prat 空港着、Vueling チェックイン</span></div>
+            <div class="timeline-row timeline-row--highlight"><span class="timeline-time">12:00</span><span class="timeline-action"><strong>🛍 BCN 空港で IVA還付手続き(DIVA端末)</strong><span class="timeline-note">EU圏外出国扱い、€100超があれば</span></span></div>
+            <div class="timeline-row"><span class="timeline-time">13:30</span><span class="timeline-action">✈️ Vueling BCN → CDG(目安、約2h)</span></div>
+            <div class="timeline-row"><span class="timeline-time">15:30</span><span class="timeline-action">CDG 着、AF 国際線へ乗継</span></div>
+            <div class="timeline-row"><span class="timeline-time">16:00</span><span class="timeline-action">CDG ターミナル間移動(2A/2E)、出国手続き</span></div>
+            <div class="timeline-row"><span class="timeline-time">17:30</span><span class="timeline-action">ラウンジで休憩</span></div>
+            <div class="timeline-row"><span class="timeline-time">19:00</span><span class="timeline-action">✈️ AF CDG → 羽田/関空 出発(目安、約14h)</span></div>
+            <div class="timeline-row"><span class="timeline-time">翌日 14:00頃</span><span class="timeline-action">帰国</span></div>
+          </div>
+
+          <div class="callout" style="margin-top: var(--space-md);">
+            <div class="callout__label">IVA還付の二段階対応</div>
+            <ul>
+              <li><strong>BCN El Prat(Day 9 出国時)</strong>: スペインで買ったもの → DIVA端末でバーコードスキャン</li>
+              <li><strong>CDG では Tax Free 還付なし</strong>(乗継のため、最終出国地は CDG だが、フランス購入分があれば別途 DIVA で済ます)</li>
+              <li>乗継時間が短いと還付手続きが間に合わない可能性 → BCN 出発便は <strong>13:30 頃</strong>で、CDG 着 15:30、AF 出発 19:00 が安全</li>
+              <li>当日は <strong>観光なし</strong>、空港で時間に余裕を</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ §18 Plan B 宿泊・食事・予算の差分 ============ -->
+<section class="section" id="planb-diff">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 18</div>
+      <h2 class="section__title">Plan B 宿泊・食事・予算の差分</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">Plan A 比較で見る Plan B の差分。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">全日程ホテル(Plan B)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Day</th><th>日付</th><th>場所</th><th>ホテル</th><th>1泊2人</th></tr></thead>
+          <tbody>
+            <tr><td>1-3</td><td>9/26-9/29</td><td>パリ(6区) <span class="country country--france">🇫🇷</span></td><td><strong>Hôtel de l'Abbaye ★4</strong></td><td class="price">¥55,000</td></tr>
+            <tr style="background-color: var(--color-highlight);"><td><strong>4</strong></td><td>9/29-9/30</td><td>MSM 島内</td><td><strong>Auberge Saint-Pierre ★3</strong></td><td class="price">¥40,000</td></tr>
+            <tr><td>5-6</td><td>9/30-10/2</td><td>パリ(6区)</td><td>Hôtel de l'Abbaye(続泊)</td><td class="price">¥55,000</td></tr>
+            <tr><td>7-8</td><td>10/2-10/4</td><td>バルセロナ <span class="country country--spain">🇪🇸</span></td><td><strong>Sercotel Rosellón ★4</strong></td><td class="price">¥40,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted text-small">パリは <strong>9/26-10/2(6泊連続)</strong>で一括予約。MSM中(9/29夜)も部屋確保。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">宿泊費合計 — Plan A との差分</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>項目</th><th>Plan A</th><th>Plan B</th><th>差額</th></tr></thead>
+          <tbody>
+            <tr><td>パリ 宿泊</td><td class="price">5泊 ¥275,000</td><td class="price"><strong>6泊 ¥330,000</strong></td><td class="price">+¥55,000</td></tr>
+            <tr><td>BCN 宿泊</td><td class="price">3泊 ¥120,000</td><td class="price"><strong>2泊 ¥80,000</strong></td><td class="price">-¥40,000</td></tr>
+            <tr><td>MSM 宿泊</td><td class="price">1泊 ¥40,000</td><td class="price">1泊 ¥40,000</td><td>±0</td></tr>
+            <tr><td>観光税</td><td class="price">¥17,756</td><td class="price">¥17,000</td><td class="price">-¥756</td></tr>
+            <tr style="background-color: #FAF7F2;"><td><strong>総宿泊費</strong></td><td class="price"><strong>¥452,756</strong></td><td class="price"><strong>¥467,000</strong></td><td class="price"><strong>+¥14,244</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">ディナー計画(Plan B、Plan A 差分)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Day</th><th>場所</th><th>Plan B の店</th><th>2人金額</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>パリ</td><td>ホテル周辺ビストロ(軽い)</td><td class="price">¥6,000</td></tr>
+            <tr><td>2</td><td>パリ</td><td><strong>Madame Brasserie</strong>(エッフェル塔1階)</td><td class="price">¥28,000</td></tr>
+            <tr><td>3</td><td>パリ</td><td>Le Consulat(モンマルトル)</td><td class="price">¥15,000</td></tr>
+            <tr><td>4</td><td>MSM</td><td>Auberge Saint-Pierre(プレ・サレ仔羊)</td><td class="price">¥18,000</td></tr>
+            <tr><td>5</td><td>パリ</td><td>Bateaux Parisiens Premier席</td><td class="price">¥44,200</td></tr>
+            <tr style="background-color: var(--color-highlight);"><td><strong>6</strong></td><td>パリ</td><td><strong>🌟 Arpège(★★★、野菜中心)</strong></td><td class="price"><strong>¥166,600</strong></td></tr>
+            <tr><td>7</td><td>BCN</td><td>Cervecería Catalana(軽い夕食)</td><td class="price">¥6,000</td></tr>
+            <tr><td>8</td><td>BCN</td><td>El Xampanyet(カバ + タパス)</td><td class="price">¥10,000</td></tr>
+            <tr style="background-color: #FAF7F2;"><td><strong>小計</strong></td><td>-</td><td>-</td><td class="price"><strong>¥293,800</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted text-small">Plan A ディナー小計 ¥242,500 から +¥51,300。Day 6 Arpège(★★★)が主因。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">総予算試算(Plan B、Plan A 差分)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>項目</th><th>Plan A</th><th>Plan B</th><th>差額</th></tr></thead>
+          <tbody>
+            <tr><td>航空券(プレエコ往復2人)</td><td class="price">¥800,000</td><td class="price">¥800,000</td><td>±0</td></tr>
+            <tr><td>国際移動 Vueling</td><td class="price">¥45,000</td><td class="price">¥45,000</td><td>±0</td></tr>
+            <tr><td>宿泊+観光税</td><td class="price">¥452,756</td><td class="price">¥467,000</td><td class="price">+¥14,244</td></tr>
+            <tr><td>食事</td><td class="price">¥324,500</td><td class="price">¥399,800</td><td class="price">+¥75,300</td></tr>
+            <tr><td>観光・入場</td><td class="price">¥101,660</td><td class="price">¥123,540</td><td class="price">+¥21,880</td></tr>
+            <tr><td>都市内移動</td><td class="price">¥97,100</td><td class="price">¥97,100</td><td>±0</td></tr>
+            <tr><td>保険+eSIM</td><td class="price">¥30,000</td><td class="price">¥30,000</td><td>±0</td></tr>
+            <tr><td>お土産・予備費</td><td class="price">¥150,000</td><td class="price">¥150,000</td><td>±0</td></tr>
+            <tr style="background-color: #FAF7F2;"><td><strong>小計</strong></td><td class="price"><strong>¥2,001,016</strong></td><td class="price"><strong>¥2,112,440</strong></td><td class="price"><strong>+¥111,424</strong></td></tr>
+            <tr><td>緊急バッファ</td><td class="price">¥300,000</td><td class="price">¥188,000</td><td class="price">-¥112,000</td></tr>
+            <tr style="background-color: var(--color-highlight);"><td><strong>総合計(上限)</strong></td><td class="price"><strong>約 ¥2,300,000</strong></td><td class="price"><strong>約 ¥2,300,000</strong></td><td>±0</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §19 Plan A vs Plan B 比較 ============ -->
+<section class="section" id="planb-compare">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 19</div>
+      <h2 class="section__title">Plan A vs Plan B 比較・判断フレーム</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">最終判断のための一覧表。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">体験の比較サマリ</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>観点</th><th>Plan A:BCN先着</th><th>Plan B:パリ先着</th></tr></thead>
+          <tbody>
+            <tr><td><strong>滞在配分</strong></td><td>BCN 3 / パリ 4 / MSM 1</td><td><strong>BCN 2 / パリ 6 / MSM 1</strong></td></tr>
+            <tr><td>総予算</td><td>約 ¥2.0M(バッファ ¥0.3M)</td><td>約 ¥2.11M(バッファ ¥0.19M)</td></tr>
+            <tr><td>サグラダ完成イヤー</td><td>◎ 朝一+塔+夕景</td><td>○ 午後+夕方(西面の暖色光)</td></tr>
+            <tr><td>ガウディ建築</td><td>◎ 完全網羅</td><td>○ サグラダ+グエル+カサ・バトリョ+カサ・ミラ</td></tr>
+            <tr><td>パラウ・ダ・ラ・ムジカ</td><td>◎</td><td>×</td></tr>
+            <tr><td>サン・パウ病院</td><td>◎</td><td>×</td></tr>
+            <tr style="background-color: var(--color-highlight);"><td><strong>メルセ祭花火</strong></td><td><strong>◎</strong></td><td><strong>× 体験不可</strong></td></tr>
+            <tr><td><strong>🌟 ミシュラン3★</strong></td><td>Disfrutar(BCN、世界Best 1位)</td><td><strong>Arpège(パリ、野菜中心 — レバーNG最適)</strong></td></tr>
+            <tr><td>ルーヴル</td><td>×</td><td>◎ 木曜夜セッション</td></tr>
+            <tr><td>オルセー</td><td>×</td><td>◎ 終日+木曜夜21:45</td></tr>
+            <tr><td>ロダン美術館</td><td>×</td><td>◎</td></tr>
+            <tr><td>ノートルダム本堂(再開後)</td><td>×</td><td>◎</td></tr>
+            <tr><td>サント・シャペル</td><td>×</td><td>◎</td></tr>
+            <tr><td>コンシェルジュリー</td><td>×</td><td>◎</td></tr>
+            <tr><td>モンマルトル+サクレ・クール</td><td>×</td><td>◎</td></tr>
+            <tr><td>ジヴェルニー</td><td>◎</td><td>◎</td></tr>
+            <tr><td>オランジュリー モネ100周年展</td><td>◎ 9/30 開幕日</td><td>◎ 9/30 開幕日</td></tr>
+            <tr style="background-color: var(--color-highlight);"><td><strong>MSM 島内泊</strong></td><td>10/1(係数82)</td><td><strong>9/29(係数98、年間ピーク級)★</strong></td></tr>
+            <tr><td>ヴェルサイユ</td><td>◎</td><td><strong>× スキップ</strong></td></tr>
+            <tr><td>エッフェル塔頂上+シャンパン</td><td>◎(Day 8 最終夜)</td><td><strong>◎(Day 2 旅の始まり)</strong></td></tr>
+            <tr><td>セーヌディナークルーズ</td><td>◎</td><td>◎</td></tr>
+            <tr><td>魔法の噴水(モンジュイック)</td><td>×</td><td><strong>◎(Day 8 土曜)</strong></td></tr>
+            <tr><td>疲労ペース</td><td>中</td><td>高(Day 6 美術館3館連続)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">判断フレーム — どちらを選ぶか</h3>
+      <div class="two-col">
+        <div class="callout">
+          <div class="callout__label">✅ Plan A を選ぶべき人</div>
+          <ul>
+            <li>メルセ祭フィナーレ花火を絶対に逃したくない</li>
+            <li>ガウディ建築を完全に堪能したい(パラウ・サン・パウ含む)</li>
+            <li>世界Best 1位 Disfrutar で「一度しかない美食体験」</li>
+            <li>ヴェルサイユ宮殿の鏡の間+王妃の村里は譲れない</li>
+            <li>疲労に余裕を持って、ペース配分重視</li>
+            <li>予算を抑え、バッファを多く(¥0.3M)</li>
+          </ul>
+        </div>
+        <div class="callout callout--positive">
+          <div class="callout__label">✅ Plan B を選ぶべき人</div>
+          <ul>
+            <li><strong>MSM 大潮ピーク(係数98)の年間屈指の体験</strong>を逃さない</li>
+            <li>印象派+古典絵画の美術館を全制覇(ルーヴル+オルセー+オランジュリー+ロダン+ジヴェルニー)</li>
+            <li>2024年再開ノートルダム本堂+サント・シャペル+コンシェルジュリー</li>
+            <li>モンマルトル(サクレ・クール、テルトル広場、Le Consulat)が外せない</li>
+            <li><strong>Arpège(野菜中心★★★)</strong>でレバーNGに完璧対応</li>
+            <li>時差ボケ初日にパリの優雅な街並みでソフトランディング</li>
+            <li>「フランス深掘り → スペイン陽気な締め」の感情のグラデーション</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">プロからの最終提案</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>お二人の優先度</th><th>おすすめ</th></tr></thead>
+          <tbody>
+            <tr><td>メルセ祭 + ガウディ完全 + Disfrutar(2026年BCNの希少性)</td><td><strong>Plan A</strong></td></tr>
+            <tr><td>MSM大潮ピーク + ルーヴル+オルセー+ロダン+モンマルトル + Arpège</td><td><strong>Plan B</strong></td></tr>
+            <tr><td>「初フランス」の夫がパリのアイコン全部見たい</td><td><strong>Plan B</strong></td></tr>
+            <tr><td>2回目以降のヨーロッパで、新しい体験(ガウディ完成イヤー)を優先</td><td><strong>Plan A</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §20 Plan B 予約タイムライン ============ -->
+<section class="section" id="planb-bookings">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 20</div>
+      <h2 class="section__title">Plan B 予約タイムライン(差分)</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">Plan A から外す予約 + Plan B 固有の追加予約。</p>
+    </div>
+
+    <div class="priority-group">
+      <div class="priority-group__heading"><span class="priority-dot priority-dot--critical"></span>🔴 最優先(2026/5月-6月)</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>項目(Plan B 固有)</th><th>締切</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td><strong>航空券</strong>(AF 関空-CDG 往復、プレエコ以上)+ <strong>Vueling CDG-BCN-CDG</strong></td><td>2026/6月</td></tr>
+            <tr><td>2</td><td><strong>Hôtel de l'Abbaye(パリ 6区、6泊続泊)</strong></td><td><strong>2026/5-6月</strong></td></tr>
+            <tr><td>3</td><td>Sercotel Rosellón(BCN、2泊、10/2-10/4)</td><td>2026/5月まで</td></tr>
+            <tr><td>4</td><td><strong>Auberge Saint-Pierre(MSM 島内、9/29-9/30)</strong></td><td><strong>2026/5月中</strong></td></tr>
+            <tr style="background-color: var(--color-highlight);"><td>5</td><td><strong>🌟 Arpège(★★★)予約</strong>(Day 6、10/1 木)</td><td><strong>2026/3-4月</strong>(6ヶ月前)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="priority-group">
+      <div class="priority-group__heading"><span class="priority-dot priority-dot--high"></span>🟡 高優先(2026/6-7月)</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>項目</th><th>締切</th></tr></thead>
+          <tbody>
+            <tr><td>6</td><td><strong>エッフェル塔頂上+シャンパン(Day 2、9/27 日、60日前枠開放)</strong></td><td><strong>2026/7月末</strong></td></tr>
+            <tr><td>7</td><td>Madame Brasserie(Day 2 夜)</td><td>2026/7月</td></tr>
+            <tr><td>8</td><td>サグラダ・ファミリア(Day 7、16:30 枠)</td><td>2026/7月</td></tr>
+            <tr><td>9</td><td>カサ・バトリョ Gold Ticket(Day 8、12:00 枠)</td><td>2026/7月</td></tr>
+            <tr><td>10</td><td>グエル公園(Day 8、9:30 朝一枠)</td><td>2026/8月</td></tr>
+            <tr><td>11</td><td>ルーヴル(Day 6、9:00 開館直後)</td><td>2026/7月</td></tr>
+            <tr><td>12</td><td>オルセー(Day 6、17:30 木曜夜枠)</td><td>2026/7月</td></tr>
+            <tr><td>13</td><td>ロダン美術館(Day 6、15:30 枠)</td><td>2026/8月</td></tr>
+            <tr><td>14</td><td>サント・シャペル+コンシェルジュリー(Day 2)</td><td>2026/8月</td></tr>
+            <tr><td>15</td><td>ノートルダム本堂(Day 2、優先入場予約)</td><td>出発2日前(公式アプリ)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="priority-group">
+      <div class="priority-group__heading"><span class="priority-dot priority-dot--medium"></span>🟢 中優先(2026/7-8月)</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>項目</th><th>締切</th></tr></thead>
+          <tbody>
+            <tr><td>16</td><td>ジヴェルニー モネの家(Day 3)</td><td>2026/8月</td></tr>
+            <tr><td>17</td><td>オランジュリー モネ100周年展(Day 5、開幕日)</td><td>2026/8月</td></tr>
+            <tr><td>18</td><td>Bateaux Parisiens ディナークルーズ Premier(Day 5)</td><td>2026/8月</td></tr>
+            <tr><td>19</td><td>カサ・ミラ(Day 8)</td><td>2026/8月</td></tr>
+            <tr><td>20</td><td>ピカソ美術館(Day 8)</td><td>2026/8月</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="priority-group">
+      <div class="priority-group__heading"><span class="priority-dot priority-dot--soft"></span>🔵 出発準備(2026/8-9月)</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>項目</th><th>締切</th></tr></thead>
+          <tbody>
+            <tr><td>21</td><td>Keolisバス(Rennes-MSM 往復、Day 4-5)</td><td>2026/9月</td></tr>
+            <tr><td>22</td><td>TGV パリ-Rennes 往復(Prem's早割)</td><td>2026/8月</td></tr>
+            <tr><td>23</td><td>Vueling(CDG-BCN-CDG)</td><td>2026/8月</td></tr>
+            <tr><td>24</td><td>海外旅行保険、eSIM Holafly</td><td>2026/9月</td></tr>
+            <tr><td>25</td><td>ハネムーン伝達メール送信(§11 例文)</td><td>出発2週間前</td></tr>
+            <tr><td>26</td><td>リーヴル・ドー(MSM教会)へ事前連絡</td><td>出発1ヶ月前</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p class="text-muted text-small" style="margin-top: var(--space-md);">→ <strong>Plan A の §08 から、メルセ祭関連・パラウ・サン・パウ・ヴェルサイユを除外</strong>。<strong>ルーヴル・オルセー・ロダン・サント・シャペル・ノートルダム・サクレ・クール・モンマルトル関連を追加</strong>。</p>
+  </div>
+</section>
+
+<!-- ============ §21 Plan B 結論 ============ -->
+<section class="section" id="planb-conclusion">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 21</div>
+      <h2 class="section__title">結論 — お二人の選択</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">Plan A か Plan B か、最終判断のための4つの問い。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">2 つのプランの本質</h3>
+      <div class="two-col">
+        <div class="callout">
+          <div class="callout__label">Plan A: BCN 集中</div>
+          <p>2026年の3つの好機(完成イヤー+ガウディ100周年+メルセ祭)を最大活用。</p>
+          <ul style="margin-top: 8px;">
+            <li>メルセ祭フィナーレ + サグラダ完成イヤー全体験</li>
+            <li>ガウディ全網羅 + Disfrutar + ヴェルサイユ</li>
+            <li>予算 <strong>¥2.0M</strong>、バッファ ¥0.3M</li>
+            <li>動線: 東京 → BCN → パリ → MSM → パリ → 東京</li>
+          </ul>
+        </div>
+        <div class="callout callout--positive">
+          <div class="callout__label">Plan B: パリ中心(東京→パリ着)</div>
+          <p>MSM 大潮ピーク + パリ美術館全制覇 + Arpège の深掘り。</p>
+          <ul style="margin-top: 8px;">
+            <li>パリ美術館全制覇 + ノートルダム再開 + モンマルトル + Arpège</li>
+            <li><strong>MSM大潮ピーク係数98</strong></li>
+            <li>予算 <strong>¥2.11M</strong>、バッファ ¥0.19M</li>
+            <li>動線: 東京 → パリ → MSM → パリ → BCN → 東京(CDG経由)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">共通(両プラン)</h3>
+      <ul class="clean-list">
+        <li>MSM 島内泊 + リーヴル・ドー(💍 新婚特典)</li>
+        <li>エッフェル塔頂上シャンパン + ジヴェルニー + オランジュリー モネ100周年展</li>
+        <li>Bateaux Parisiens ディナークルーズ</li>
+        <li>サグラダ・ファミリア + ピカソ美術館 + カサ・バトリョ + グエル公園</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">意思決定の問い</h3>
+      <ul class="numbered-list">
+        <li><strong>メルセ祭花火(9/27)に賭けるか、MSM大潮ピーク(9/29 係数98)に賭けるか?</strong><br>メルセ祭 → <strong>Plan A</strong> / MSM大潮 → <strong>Plan B</strong></li>
+        <li><strong>時差ボケ初日にスペインの陽気さに飛び込むか、パリの落ち着いた街並みでソフトランディングか?</strong><br>スペイン → <strong>Plan A</strong> / パリ → <strong>Plan B</strong></li>
+        <li><strong>ガウディ完全網羅 + Disfrutar か、ルーヴル+オルセー+ロダン+モンマルトル + Arpège か?</strong><br>スペイン文化重視 → <strong>Plan A</strong> / フランス美術重視 → <strong>Plan B</strong></li>
+        <li><strong>ヴェルサイユ宮殿は譲れないか?</strong><br>Yes → <strong>Plan A</strong> / No → <strong>Plan B</strong></li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">プロからの推奨</h3>
+      <div class="callout">
+        <div class="callout__label">Final Words</div>
+        <ul>
+          <li><strong>2026年は「サグラダ完成イヤー」「ガウディ没後100年」「モネ没後100周年」「メルセ祭フィナーレ重複」「MSM大潮ピーク」が全部重なる稀有な年。</strong></li>
+          <li>Plan A は完成イヤー+メルセ祭の希少性を、Plan B は MSM大潮ピーク+パリ深掘りを最大化。</li>
+          <li><strong>妻ヨーロッパ経験あり、夫初パリ</strong>:Plan A は「ガウディ完成イヤー」の希少性を新鮮に / Plan B は夫の初パリを完璧に演出</li>
+          <li>迷ったら:「2026年だからこその希少性」優先 → <strong>Plan A</strong> / 「夫の初パリを最大化したい」優先 → <strong>Plan B</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Closing ============ -->
+<section class="section">
+  <div class="container">
+    <div class="closing">
+      <p class="closing__quote">
+        Plan A も Plan B も「実行可能な9日間ハネムーン」として設計されています。<br>
+        各日のタイミングは現地で柔軟に調整してください。<br><br>
+        <strong>最終的にお二人がどちらに惹かれるか — それが正解です。</strong><br>
+        — 良いハネムーンを。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__rule"></div>
+    <p>Pro Edition · Last updated 2026.05.16 · Rev. 1.1</p>
+    <p style="margin-top: 4px;">Related: <code>spanish/summary.html</code> · <code>french/summary.html</code> · 各国原資料5ファイル</p>
+  </div>
+</footer>
+
+</body>
+</html>
