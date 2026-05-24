@@ -1,0 +1,1866 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>ホテル候補調査 Plan B | Honeymoon 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --color-bg: #FAFAF8;
+    --color-surface: #FFFFFF;
+    --color-text: #1C1C1C;
+    --color-text-muted: #5C5C5C;
+    --color-text-subtle: #8A8A8A;
+    --color-border: #E8E6E1;
+    --color-border-strong: #C9C5BC;
+
+    --color-accent: #8B6F3A;
+    --color-accent-light: #F7F1E5;
+    --color-accent-dark: #6B5429;
+
+    --color-spain: #B0432A;
+    --color-spain-light: #FAEFE9;
+    --color-france: #7C2D3F;
+    --color-france-light: #F7EEF0;
+    --color-msm: #3D5468;
+    --color-msm-light: #EBF0F5;
+
+    --color-highlight: #FFF8E7;
+    --color-highlight-border: #E8D9A8;
+    --color-positive: #2D5A3D;
+    --color-positive-bg: #EEF5EF;
+    --color-warning: #8B5A20;
+    --color-warning-bg: #FBF4E6;
+    --color-danger: #8E2A2A;
+    --color-danger-bg: #FBEFEF;
+
+    --font-serif: 'Cormorant Garamond', 'Noto Serif JP', 'Hiragino Mincho ProN', serif;
+    --font-sans: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', sans-serif;
+    --font-mono: 'SF Mono', 'Menlo', 'Consolas', monospace;
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+  }
+
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.75;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a { color: var(--color-accent); text-decoration: none; transition: color 0.2s ease; word-break: break-word; }
+  a:hover { color: var(--color-accent-dark); text-decoration: underline; }
+
+  .container { max-width: 1080px; margin: 0 auto; padding: 0 var(--space-md); }
+
+  /* ============ HERO ============ */
+  .hero {
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-xl) 0 var(--space-lg);
+    text-align: center;
+    position: relative;
+  }
+  .hero::before {
+    content: "";
+    position: absolute; top: 0; left: 0; right: 0; height: 5px;
+    background: linear-gradient(90deg, var(--color-france) 0%, var(--color-france) 33%, var(--color-msm) 50%, var(--color-spain) 66%, var(--color-spain) 100%);
+  }
+  .hero__eyebrow {
+    font-family: var(--font-serif);
+    font-size: 0.875rem;
+    letter-spacing: 0.3em;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    margin-bottom: var(--space-sm);
+    font-weight: 500;
+  }
+  .hero__title {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: var(--space-sm);
+    letter-spacing: -0.01em;
+  }
+  .hero__subtitle {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: clamp(1rem, 2vw, 1.35rem);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-lg);
+    font-weight: 400;
+  }
+  .hero__meta {
+    display: flex; flex-wrap: wrap; justify-content: center;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+    max-width: 880px;
+    margin-left: auto; margin-right: auto;
+  }
+  .hero__meta-item {
+    display: flex; flex-direction: column; align-items: center;
+    min-width: 120px;
+  }
+  .hero__meta-label {
+    font-size: 0.7rem; letter-spacing: 0.2em;
+    color: var(--color-text-subtle);
+    text-transform: uppercase;
+    margin-bottom: 4px; font-weight: 500;
+  }
+  .hero__meta-value {
+    font-family: var(--font-serif);
+    font-size: 1.05rem; font-weight: 500;
+    color: var(--color-text);
+  }
+
+  /* ============ TOC ============ */
+  .toc {
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-sm) 0;
+    position: sticky; top: 0; z-index: 10;
+    box-shadow: 0 1px 0 var(--color-border);
+  }
+  .toc__inner {
+    display: flex; flex-wrap: wrap;
+    gap: var(--space-sm) var(--space-md);
+    justify-content: center;
+    font-size: 0.82rem;
+  }
+  .toc a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    white-space: nowrap;
+  }
+  .toc a:hover { color: var(--color-accent); border-bottom-color: var(--color-accent); text-decoration: none; }
+
+  /* ============ Sections ============ */
+  .section {
+    padding: var(--space-xl) 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .section:last-of-type { border-bottom: none; }
+  .section__header { margin-bottom: var(--space-lg); }
+  .section__number {
+    font-family: var(--font-serif);
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    letter-spacing: 0.25em;
+    font-weight: 500;
+    margin-bottom: var(--space-xs);
+  }
+  .section__title {
+    font-family: var(--font-serif);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+    letter-spacing: -0.01em;
+  }
+  .section__subtitle {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+  }
+  .section__divider {
+    width: 48px; height: 1px;
+    background-color: var(--color-accent);
+    margin: var(--space-sm) 0 var(--space-md);
+  }
+
+  /* ============ Country/Region Tags ============ */
+  .country {
+    display: inline-block;
+    font-size: 0.72rem;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  .country--france { background-color: var(--color-france-light); color: var(--color-france); }
+  .country--spain { background-color: var(--color-spain-light); color: var(--color-spain); }
+  .country--msm { background-color: var(--color-msm-light); color: var(--color-msm); }
+
+  /* ============ Hotel Cards ============ */
+  .hotel-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+  }
+  .hotel-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+  }
+  .hotel-card--france { border-left: 4px solid var(--color-france); }
+  .hotel-card--spain { border-left: 4px solid var(--color-spain); }
+  .hotel-card--msm { border-left: 4px solid var(--color-msm); }
+  .hotel-card--top { box-shadow: 0 4px 16px rgba(139, 111, 58, 0.08); border-color: var(--color-highlight-border); }
+
+  .hotel-card__header {
+    padding: var(--space-md) var(--space-md) var(--space-sm);
+    background: linear-gradient(180deg, #FBFAF6 0%, #FFFFFF 100%);
+    border-bottom: 1px solid var(--color-border);
+    display: flex; flex-wrap: wrap; gap: var(--space-xs) var(--space-sm);
+    align-items: baseline; justify-content: space-between;
+  }
+  .hotel-card__title-group { flex: 1 1 auto; min-width: 0; }
+  .hotel-card__rank {
+    font-family: var(--font-serif);
+    font-size: 0.78rem;
+    letter-spacing: 0.2em;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .hotel-card__rank--top { color: var(--color-france); }
+  .hotel-card__rank--top-spain { color: var(--color-spain); }
+  .hotel-card__rank--top-msm { color: var(--color-msm); }
+  .hotel-card__name {
+    font-family: var(--font-serif);
+    font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 4px;
+    word-break: break-word;
+  }
+  .hotel-card__location {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    font-family: var(--font-serif);
+    font-style: italic;
+  }
+  .hotel-card__price-tag {
+    text-align: right;
+    flex: 0 0 auto;
+  }
+  .hotel-card__price-label {
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--color-text-subtle);
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  .hotel-card__price-value {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--color-accent-dark);
+    font-feature-settings: "tnum";
+    white-space: nowrap;
+  }
+  .hotel-card__price-sub {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--color-text-subtle);
+    margin-top: 2px;
+  }
+
+  .hotel-card__body {
+    padding: var(--space-md);
+  }
+
+  .hotel-card__cta {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin-bottom: var(--space-md);
+  }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 8px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1px solid var(--color-border-strong);
+    background: var(--color-surface);
+    color: var(--color-text-muted);
+    line-height: 1.4;
+  }
+  .btn:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    text-decoration: none;
+    background-color: var(--color-accent-light);
+  }
+  .btn--primary {
+    background-color: var(--color-accent);
+    color: var(--color-surface);
+    border-color: var(--color-accent);
+  }
+  .btn--primary:hover {
+    background-color: var(--color-accent-dark);
+    color: var(--color-surface);
+    border-color: var(--color-accent-dark);
+  }
+  .btn__icon { font-size: 0.95rem; }
+
+  .hotel-card__details {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 8px var(--space-sm);
+    font-size: 0.88rem;
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-sm);
+  }
+  .hotel-card__details dt {
+    color: var(--color-text-subtle);
+    font-weight: 500;
+    font-size: 0.82rem;
+    padding-top: 2px;
+  }
+  .hotel-card__details dd {
+    color: var(--color-text);
+    line-height: 1.65;
+    word-break: break-word;
+  }
+  .hotel-card__details dd strong { color: var(--color-text); font-weight: 600; }
+
+  .hotel-card__tags {
+    list-style: none;
+    display: flex; flex-wrap: wrap; gap: 6px;
+    margin-top: var(--space-sm);
+    padding-top: var(--space-sm);
+    border-top: 1px dashed var(--color-border);
+  }
+  .hotel-card__tags li {
+    font-size: 0.75rem;
+    padding: 3px 10px;
+    border-radius: 12px;
+    background-color: #F5F3EE;
+    color: var(--color-text-muted);
+    border: 1px solid var(--color-border);
+    white-space: nowrap;
+  }
+  .hotel-card__tags li.tag--positive { background-color: var(--color-positive-bg); color: var(--color-positive); border-color: #B8D0BD; }
+  .hotel-card__tags li.tag--warning { background-color: var(--color-warning-bg); color: var(--color-warning); border-color: #D9C28C; }
+  .hotel-card__tags li.tag--danger { background-color: var(--color-danger-bg); color: var(--color-danger); border-color: #D9B6B6; }
+
+  /* ============ Tables ============ */
+  .table-wrap {
+    overflow-x: auto;
+    margin: var(--space-sm) 0;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface);
+    -webkit-overflow-scrolling: touch;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+  }
+  thead th {
+    background-color: #F5F3EE;
+    color: var(--color-text);
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 0.85rem;
+    border-bottom: 1px solid var(--color-border-strong);
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  tbody td {
+    padding: 0.65rem 0.85rem;
+    border-bottom: 1px solid var(--color-border);
+    vertical-align: top;
+    line-height: 1.55;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background-color: #FAFAF5; }
+  .price { font-family: var(--font-serif); font-weight: 500; font-feature-settings: "tnum"; white-space: nowrap; }
+  .row--highlight { background-color: var(--color-highlight); }
+  .row--highlight:hover { background-color: #FAF1D5; }
+
+  /* ============ Callouts ============ */
+  .callout {
+    background-color: var(--color-highlight);
+    border: 1px solid var(--color-highlight-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    margin: var(--space-sm) 0 var(--space-md);
+  }
+  .callout--warning { background-color: var(--color-warning-bg); border-color: #D9C28C; }
+  .callout--positive { background-color: var(--color-positive-bg); border-color: #B8D0BD; }
+  .callout--danger { background-color: var(--color-danger-bg); border-color: #D9B6B6; }
+  .callout__label {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: var(--space-xs);
+  }
+  .callout--warning .callout__label { color: var(--color-warning); }
+  .callout--positive .callout__label { color: var(--color-positive); }
+  .callout--danger .callout__label { color: var(--color-danger); }
+  .callout p, .callout ol, .callout ul { margin: 0; color: var(--color-text); font-size: 0.92rem; line-height: 1.7; }
+  .callout ol, .callout ul { margin-left: 1.25rem; margin-top: 4px; }
+  .callout li { margin-bottom: 4px; }
+
+  /* ============ Subsection ============ */
+  .subsection { margin-bottom: var(--space-md); }
+  .subsection__title {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+    padding-bottom: var(--space-xs);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .subsection__title-inline {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-xs);
+    color: var(--color-text);
+  }
+
+  /* ============ Lists ============ */
+  ul.clean-list, ol.clean-list {
+    margin: var(--space-xs) 0 var(--space-sm) 1.25rem;
+    color: var(--color-text);
+  }
+  ul.clean-list li, ol.clean-list li { margin-bottom: 0.4rem; line-height: 1.7; }
+  ul.clean-list li::marker { color: var(--color-accent); }
+  ol.clean-list li::marker { color: var(--color-accent); font-weight: 600; }
+
+  ul.numbered-list {
+    margin: var(--space-xs) 0 var(--space-sm) 0;
+    list-style: none;
+    counter-reset: num-counter;
+  }
+  ul.numbered-list li {
+    counter-increment: num-counter;
+    padding: 6px 0 6px 38px;
+    position: relative;
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+  ul.numbered-list li::before {
+    content: counter(num-counter, decimal-leading-zero);
+    position: absolute; left: 0; top: 6px;
+    font-family: var(--font-serif);
+    font-size: 0.9rem; color: var(--color-accent);
+    font-weight: 600; letter-spacing: 0.05em;
+    width: 28px;
+  }
+
+  ul.check-list {
+    list-style: none;
+    margin: var(--space-sm) 0;
+  }
+  ul.check-list li {
+    padding: 8px 0 8px 30px;
+    position: relative;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    border-bottom: 1px dashed var(--color-border);
+  }
+  ul.check-list li::before {
+    content: "☐";
+    position: absolute; left: 0; top: 8px;
+    font-size: 1.1rem;
+    color: var(--color-accent);
+  }
+  ul.check-list li:last-child { border-bottom: none; }
+
+  /* ============ Email Template ============ */
+  .email-block {
+    background-color: #FBFAF7;
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-accent);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    margin: var(--space-sm) 0;
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    line-height: 1.7;
+    overflow-x: auto;
+    white-space: pre;
+    color: var(--color-text);
+    -webkit-overflow-scrolling: touch;
+  }
+  .email-subject {
+    background-color: var(--color-accent-light);
+    border: 1px solid var(--color-highlight-border);
+    border-radius: var(--radius-sm);
+    padding: 6px 12px;
+    font-family: var(--font-mono);
+    font-size: 0.83rem;
+    margin: var(--space-sm) 0 8px;
+    color: var(--color-accent-dark);
+    word-break: break-all;
+  }
+  .email-subject strong { color: var(--color-accent-dark); }
+  .email-targets {
+    font-size: 0.85rem;
+    background-color: #F8F7F2;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: var(--space-sm);
+    margin-top: var(--space-xs);
+  }
+  .email-targets ul { margin: 4px 0 0 1.2rem; }
+  .email-targets li { margin-bottom: 2px; }
+
+  /* ============ Scenario Cards ============ */
+  .scenario-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-md);
+    margin: var(--space-md) 0;
+  }
+  .scenario-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-md);
+    border-top: 4px solid var(--color-accent);
+  }
+  .scenario-card--budget { border-top-color: var(--color-positive); }
+  .scenario-card--balanced { border-top-color: var(--color-accent); }
+  .scenario-card--premium { border-top-color: var(--color-france); }
+  .scenario-card__label {
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .scenario-card--budget .scenario-card__label { color: var(--color-positive); }
+  .scenario-card--premium .scenario-card__label { color: var(--color-france); }
+  .scenario-card__title {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+  }
+  .scenario-card__total {
+    font-family: var(--font-serif);
+    font-size: 1.55rem;
+    font-weight: 600;
+    color: var(--color-accent-dark);
+    margin-bottom: var(--space-sm);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px dashed var(--color-border);
+    font-feature-settings: "tnum";
+  }
+  .scenario-card ul {
+    list-style: none;
+    font-size: 0.88rem;
+  }
+  .scenario-card li {
+    padding: 6px 0;
+    border-bottom: 1px dotted var(--color-border);
+    display: flex; justify-content: space-between; gap: 8px;
+  }
+  .scenario-card li:last-child { border-bottom: none; }
+  .scenario-card li .stay { color: var(--color-text); }
+  .scenario-card li .stay-meta { color: var(--color-text-muted); font-size: 0.78rem; display: block; }
+  .scenario-card li .price-cell { font-family: var(--font-serif); font-weight: 500; color: var(--color-accent-dark); white-space: nowrap; }
+
+  /* ============ Booking link list ============ */
+  .booking-link {
+    display: inline-block;
+    word-break: break-all;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--color-accent);
+    line-height: 1.5;
+  }
+
+  /* ============ Footer ============ */
+  .footer {
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    padding: var(--space-lg) 0;
+    text-align: center;
+    color: var(--color-text-subtle);
+    font-size: 0.85rem;
+  }
+  .footer__rule {
+    width: 40px; height: 1px;
+    background-color: var(--color-accent);
+    margin: 0 auto var(--space-sm);
+  }
+
+  /* ============ Utility ============ */
+  .text-muted { color: var(--color-text-muted); }
+  .text-subtle { color: var(--color-text-subtle); }
+  .text-center { text-align: center; }
+  .text-small { font-size: 0.85rem; }
+  .text-strong { font-weight: 600; }
+  .nowrap { white-space: nowrap; }
+
+  /* ============ Responsive ============ */
+  @media (max-width: 720px) {
+    .hero { padding: var(--space-lg) 0 var(--space-md); }
+    .section { padding: var(--space-lg) 0; }
+    .toc { padding: 8px 0; }
+    .toc__inner { gap: 0.5rem 0.9rem; font-size: 0.74rem; }
+    .hero__meta-item { min-width: 90px; }
+    .hero__meta { gap: var(--space-sm); }
+
+    table { font-size: 0.78rem; }
+    thead th, tbody td { padding: 0.5rem 0.55rem; }
+
+    .hotel-card__header {
+      flex-direction: column;
+      align-items: stretch;
+      gap: var(--space-xs);
+    }
+    .hotel-card__price-tag { text-align: left; }
+    .hotel-card__price-value { font-size: 1.05rem; }
+    .hotel-card__details { grid-template-columns: 100px 1fr; gap: 6px 8px; font-size: 0.82rem; }
+    .hotel-card__details dt { font-size: 0.76rem; }
+
+    .btn { padding: 8px 12px; font-size: 0.82rem; }
+    .email-block { font-size: 0.72rem; padding: var(--space-sm); }
+    .scenario-cards { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 480px) {
+    .hotel-card__details {
+      grid-template-columns: 1fr;
+      gap: 4px;
+    }
+    .hotel-card__details dt {
+      padding-top: 6px;
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .hotel-card__details dd { padding-bottom: 4px; border-bottom: 1px dotted var(--color-border); }
+    .hotel-card__details dd:last-child { border-bottom: none; }
+  }
+
+  @media print {
+    body { background: white; font-size: 11pt; }
+    .toc { position: static; box-shadow: none; }
+    .section { page-break-inside: avoid; padding: var(--space-md) 0; }
+    .hotel-card { page-break-inside: avoid; }
+    .btn { border: 1px solid #999 !important; color: #333 !important; background: white !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="container">
+    <div class="hero__eyebrow">Honeymoon 2026 · Plan B · Accommodation Research</div>
+    <h1 class="hero__title">ホテル候補調査</h1>
+    <p class="hero__subtitle">Paris &middot; Mont Saint-Michel &middot; Barcelona &mdash; 各拠点5候補</p>
+    <div class="hero__meta">
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Trip Dates</span>
+        <span class="hero__meta-value">2026.09.26 – 10.04</span>
+      </div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Nights</span>
+        <span class="hero__meta-value">8泊(2人)</span>
+      </div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Candidates</span>
+        <span class="hero__meta-value">15軒</span>
+      </div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Currency</span>
+        <span class="hero__meta-value">JPY (€1=¥165)</span>
+      </div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Updated</span>
+        <span class="hero__meta-value">2026.05.24</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ TOC ============ -->
+<nav class="toc">
+  <div class="container">
+    <div class="toc__inner">
+      <a href="#prerequisites">§0 重要前提</a>
+      <a href="#paris">§1 パリ</a>
+      <a href="#msm">§2 MSM</a>
+      <a href="#barcelona">§3 バルセロナ</a>
+      <a href="#matrix">§4 比較表</a>
+      <a href="#review">§5 重要観点</a>
+      <a href="#emails">§6 メール文例</a>
+      <a href="#scenarios">§7 シナリオ</a>
+      <a href="#checklist">§8 予約手順</a>
+      <a href="#sources">§9 出典</a>
+      <a href="#notes">§10 注意事項</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ §0 ============ -->
+<section class="section" id="prerequisites">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 00</div>
+      <h2 class="section__title">重要前提(必読)</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">5つの最優先事項。これを押さえずに動くと後で困る。</p>
+    </div>
+
+    <ul class="numbered-list">
+      <li><strong>2026年9月末〜10月初旬は真夏並みの繁忙期</strong>: モネ100周年展開幕(9/30)、メルセ祭、サグラダ完成イヤー終盤が重なる。<strong>MSM 9/28〜29は年間屈指の大潮係数98-99で1年〜半年前から完売の常連</strong>。<strong>5月中の予約が必須</strong>。</li>
+      <li><strong>空室自動取得の限界</strong>: 各予約システムはJavaScript製のため自動空室照会不可。<strong>Booking.com 直リンクは日付プリセット済</strong>で、クリック時点の空室・実勢価格を表示。確定は必ずクリックして照会のこと。</li>
+      <li><strong>エアコンと階段</strong>: パリ・MSMの歴史的建造物は<strong>エアコンなし・エレベーターなしが標準</strong>。9月末のパリ平均最高気温は18-22℃で大きな問題は少ないが、地球温暖化による稀な残暑(28℃超)では扇風機のみとなる。6泊の荷物上げ下ろし負担も要考慮(§4比較表参照)。</li>
+      <li><strong>MSM の demi-pension(半膳)</strong>: 強制ではないが、繁忙期は<strong>夕食予約を併せて入れないと島内レストランが完売</strong>するリスク大。<code>results.md</code> Day 4 ディナーはホテル併設レストラン推奨。</li>
+      <li><strong>荷物保管</strong>: Day 4 MSM 1泊行きの大荷物は<strong>パリのホテルに置きっぱなし</strong>が定石(続泊予約で部屋確保しているため可能、無料)。サブバッグ1個と1泊分着替えだけで入島。</li>
+    </ul>
+
+    <div class="callout callout--danger">
+      <div class="callout__label">最優先タスク</div>
+      <p><strong>MSM 5軒に同時メール打診</strong> → 返信が来た順に確定。詳細は <a href="#emails">§6-1 メール文例</a> 参照。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §1 PARIS ============ -->
+<section class="section" id="paris">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 01</div>
+      <h2 class="section__title">パリ <span class="country country--france">🇫🇷 6泊</span></h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">9/26 → 10/2(MSM行き 9/29夜も部屋保持で続泊予約推奨)</p>
+    </div>
+
+    <p class="text-muted text-small">
+      <strong>動線指針</strong>: 5区(カルチエ・ラタン)・6区(サンジェルマン)が <code>results.md</code> のシテ島・サンジェルマン・エッフェル塔・モンマルトル・サンラザール駅(MSM行きTGV)全てに噛み合う。<strong>予算節約寄り(1泊2人 ¥15,000〜40,000)+ 個室マスト + 共同施設OK</strong>。
+    </p>
+
+    <div class="hotel-grid">
+
+      <!-- Paris 1: Esmeralda -->
+      <article class="hotel-card hotel-card--france hotel-card--top">
+        <div class="hotel-card__header">
+          <div class="hotel-card__title-group">
+            <div class="hotel-card__rank hotel-card__rank--top">★ 第1推奨</div>
+            <h3 class="hotel-card__name">Hôtel Esmeralda</h3>
+            <div class="hotel-card__location">5区・ノートルダム真向かい / 17世紀(1640年)建築</div>
+          </div>
+          <div class="hotel-card__price-tag">
+            <span class="hotel-card__price-label">1泊2人</span>
+            <span class="hotel-card__price-value">¥23,430〜29,700</span>
+            <span class="hotel-card__price-sub">6泊 約¥140,580</span>
+          </div>
+        </div>
+        <div class="hotel-card__body">
+          <div class="hotel-card__cta">
+            <a class="btn btn--primary" href="https://www.booking.com/hotel/fr/esmeralda.html?checkin=2026-09-26&checkout=2026-10-02&group_adults=2&no_rooms=1" target="_blank" rel="noopener"><span class="btn__icon">▶</span> Booking.com で空室確認</a>
+            <a class="btn" href="https://www.hotel-esmeralda.fr/en/paris-notre-dame/" target="_blank" rel="noopener">公式サイト</a>
+            <a class="btn" href="https://www.hotel-esmeralda.fr/en/rooms/" target="_blank" rel="noopener">客室一覧</a>
+          </div>
+          <dl class="hotel-card__details">
+            <dt>住所</dt><dd>4 Rue Saint-Julien-le-Pauvre, 75005 Paris<br><span class="text-subtle text-small">シテ島対岸、ノートルダム正面徒歩2分</span></dd>
+            <dt>該当客室</dt><dd>Standard Double view Notre-Dame ¥23,430〜 / Classic Double ¥24,915〜 / Twin ¥25,245〜 <strong>(全Double部屋からノートルダム眺望)</strong></dd>
+            <dt>予約問合せ</dt><dd>reception@hotel-esmeralda.fr / +33 1 43 54 19 20</dd>
+            <dt>ハネムーン実績</dt><dd>Booking.com <strong>カップル評価 9.8</strong>。<a href="https://www.tripadvisor.com/Hotel_Review-g187147-d235558-Reviews-Esmeralda_Hotel-Paris_Ile_de_France.html" target="_blank" rel="noopener">Tripadvisor</a>・<a href="https://www.eurocheapo.com/paris/hotel/hotel-esmeralda.html" target="_blank" rel="noopener">EuroCheapo</a> で「ノートルダム真向かいの希少な歴史宿」として特集多数</dd>
+            <dt>動線適合</dt><dd>Day 2 シテ島・ノートルダム → ホテルから徒歩2分。Day 5 オランジュリーもメトロ10分。</dd>
+            <dt>注意点</dt><dd>教会の鐘が早朝から鳴る可能性。古い建物のため階段の状態に難ありの口コミ多数(2020年以降改装情報あり)。<strong>ノートルダム正面を部屋窓から独占</strong>できる立地は他に存在しない。</dd>
+          </dl>
+          <ul class="hotel-card__tags">
+            <li class="tag--danger">❌ AC無し(扇風機)</li>
+            <li class="tag--danger">❌ EV無し(螺旋階段)</li>
+            <li>✅ WiFi無料</li>
+            <li>✅ 24h受付</li>
+            <li class="tag--positive">★ ノートルダム眺望</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Paris 2: Marignan -->
+      <article class="hotel-card hotel-card--france">
+        <div class="hotel-card__header">
+          <div class="hotel-card__title-group">
+            <div class="hotel-card__rank">第2推奨</div>
+            <h3 class="hotel-card__name">Hôtel Marignan</h3>
+            <div class="hotel-card__location">5区・カルチエ・ラタン / 1955年〜家族経営・共同シャワー可</div>
+          </div>
+          <div class="hotel-card__price-tag">
+            <span class="hotel-card__price-label">1泊2人(高シーズン)</span>
+            <span class="hotel-card__price-value">¥15,675〜22,275</span>
+            <span class="hotel-card__price-sub">6泊 約¥94,050〜133,650</span>
+          </div>
+        </div>
+        <div class="hotel-card__body">
+          <div class="hotel-card__cta">
+            <a class="btn btn--primary" href="https://www.booking.com/hotel/fr/marignan.html?checkin=2026-09-26&checkout=2026-10-02&group_adults=2&no_rooms=1" target="_blank" rel="noopener"><span class="btn__icon">▶</span> Booking.com で空室確認</a>
+            <a class="btn" href="https://www.hotel-marignan.com/page/view/en/home" target="_blank" rel="noopener">公式サイト</a>
+            <a class="btn" href="https://hotel-marignan.com/reservations/en" target="_blank" rel="noopener">公式予約</a>
+            <a class="btn" href="https://www.hotel-marignan.com/page/view/en/rooms" target="_blank" rel="noopener">客室詳細</a>
+          </div>
+          <dl class="hotel-card__details">
+            <dt>住所</dt><dd>13 rue du Sommerard, 75005 Paris<br><span class="text-subtle text-small">ソルボンヌ大学近く、シテ島徒歩7分</span></dd>
+            <dt>該当客室</dt><dd>Standard Double(共同シャワー&共同トイレ) <strong>¥15,675</strong> / Double + 専用トイレ(共同シャワー) <strong>¥17,820</strong> / Double + 専用トイレ&シャワー <strong>¥22,275</strong></dd>
+            <dt>予約問合せ</dt><dd>reserv@hotel-marignan.com / +33 1 43 54 63 81</dd>
+            <dt>ハネムーン実績</dt><dd>1955年〜家族経営、共同シャワー/共同トイレ可の数少ない伝統スタイル。日本人ハネムーン宿泊記多数。<strong>朝食/WiFi無料・共有キッチン・洗濯機・乾燥機完備</strong>(6泊滞在に最適)</dd>
+            <dt>動線適合</dt><dd>Day 2 シテ島・サンジェルマン徒歩圏 / Day 4 MSM(L10→Montparnasse 20分) / Day 9 帰国(L10→RER B→CDG 80分)</dd>
+            <dt>注意点</dt><dd><strong>数ヶ月前に売り切れる</strong>(EuroCheapo記載)。今すぐ確認/予約推奨。ハネムーン旨を予約時メールに明記。</dd>
+          </dl>
+          <ul class="hotel-card__tags">
+            <li class="tag--danger">❌ AC無し</li>
+            <li class="tag--danger">❌ EV無し(5階建)</li>
+            <li class="tag--positive">✅ 朝食込</li>
+            <li class="tag--positive">✅ キッチン/洗濯機</li>
+            <li>✅ WiFi無料</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Paris 3: Bonaparte -->
+      <article class="hotel-card hotel-card--france">
+        <div class="hotel-card__header">
+          <div class="hotel-card__title-group">
+            <div class="hotel-card__rank">第3推奨</div>
+            <h3 class="hotel-card__name">Hôtel Bonaparte</h3>
+            <div class="hotel-card__location">6区・サンジェルマンデプレ中心 / 29室の家族経営</div>
+          </div>
+          <div class="hotel-card__price-tag">
+            <span class="hotel-card__price-label">1泊2人</span>
+            <span class="hotel-card__price-value">¥29,700〜41,250</span>
+            <span class="hotel-card__price-sub">6泊 約¥178,200〜247,500</span>
+          </div>
+        </div>
+        <div class="hotel-card__body">
+          <div class="hotel-card__cta">
+            <a class="btn btn--primary" href="https://www.booking.com/hotel/fr/bonaparte-paris.html?checkin=2026-09-26&checkout=2026-10-02&group_adults=2&no_rooms=1" target="_blank" rel="noopener"><span class="btn__icon">▶</span> Booking.com で空室確認</a>
+            <a class="btn" href="https://www.hotelbonaparte.fr/en/" target="_blank" rel="noopener">公式サイト</a>
+            <a class="btn" href="https://www.secure-direct-hotel-booking.com/module_booking_engine/index.php?id_etab=0cbfb0a03f1e1438177824f29a02f00e&langue=anglais" target="_blank" rel="noopener">公式予約</a>
+          </div>
+          <dl class="hotel-card__details">
+            <dt>住所</dt><dd>61 rue Bonaparte, 75006 Paris<br><span class="text-subtle text-small">サンジェルマンデプレ教会徒歩3分、Café de Flore 徒歩4分</span></dd>
+            <dt>該当客室</dt><dd>Classic Double / Classic Twin / Bachelor Apartment / Alice Room(専用) / Napoleon Room(専用) — <strong>全室バス・トイレ専用</strong></dd>
+            <dt>予約問合せ</dt><dd>reservation@hotelbonaparte.fr / +33 1 43 26 97 37</dd>
+            <dt>ハネムーン実績</dt><dd>「Neoromantic ambiance」を打ち出し。<strong>Booking.com カップル評価 9.6</strong></dd>
+            <dt>動線適合</dt><dd>Day 2 サンジェルマン散歩がほぼ「玄関先」、Day 6 Arpège(7区)も徒歩15分。Day 4 MSM(徒歩→St-Sulpice→L4→Montparnasse 12分)</dd>
+            <dt>注意点</dt><dd>公式に料金非表示 → reservation@ にメール推奨。ハネムーン旨で部屋アサインに配慮あり(Alice Room / Napoleon Room を打診する手も)</dd>
+          </dl>
+          <ul class="hotel-card__tags">
+            <li class="tag--positive">✅ AC全室</li>
+            <li class="tag--positive">✅ EV あり</li>
+            <li>✅ WiFi無料</li>
+            <li>✅ 24h受付</li>
+            <li class="tag--positive">★ カップル9.6</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Paris 4: Generator -->
+      <article class="hotel-card hotel-card--france">
+        <div class="hotel-card__header">
+          <div class="hotel-card__title-group">
+            <div class="hotel-card__rank">第4推奨(節約)</div>
+            <h3 class="hotel-card__name">Generator Paris</h3>
+            <div class="hotel-card__location">10区・カナル・サンマルタン / デザインホステル</div>
+          </div>
+          <div class="hotel-card__price-tag">
+            <span class="hotel-card__price-label">1泊2人</span>
+            <span class="hotel-card__price-value">¥8,448〜12,408</span>
+            <span class="hotel-card__price-sub">6泊 約¥50,688〜74,448</span>
+          </div>
+        </div>
+        <div class="hotel-card__body">
+          <div class="hotel-card__cta">
+            <a class="btn btn--primary" href="https://www.booking.com/hotel/fr/generator-paris.html?checkin=2026-09-26&checkout=2026-10-02&group_adults=2&no_rooms=1" target="_blank" rel="noopener"><span class="btn__icon">▶</span> Booking.com で空室確認</a>
+            <a class="btn" href="https://staygenerator.com/hostels/paris?lang=en-GB" target="_blank" rel="noopener">公式サイト</a>
+          </div>
+          <dl class="hotel-card__details">
+            <dt>住所</dt><dd>9-11 Place du Colonel Fabien, 75010 Paris<br><span class="text-subtle text-small">Colonel Fabien メトロ駅直結、L2線</span></dd>
+            <dt>該当客室</dt><dd>Deluxe Twin <strong>¥8,448〜</strong> / Deluxe Queen <strong>¥8,976〜</strong> / Deluxe King <strong>¥8,976〜</strong> / <strong>Deluxe King + Private Terrace ¥12,408〜</strong> (全室バス・トイレ専用)</dd>
+            <dt>ハネムーン実績</dt><dd>デザインホステルの代表格。屋上テラスバー("Café Fabien")・カクテルバー・地下ナイトクラブ。日本人ブログ <a href="https://korutak.com/2019/03/05/%E3%83%91%E3%83%AA%E3%81%AE%E3%83%9B%E3%82%B9%E3%83%86%E3%83%AB%E3%80%90generator-paris%E3%80%91%E3%81%A8%E3%80%90st-christophers-inns-the-canal-hostel%E3%80%91%E3%81%AB%E6%B3%8A%E3%81%BE%E3%81%A3/" target="_blank" rel="noopener">「いつも雨ばかり」</a> 等に宿泊記</dd>
+            <dt>動線適合</dt><dd>Day 3 モンマルトル(L2直結6駅) / Day 4 MSM(L2→Gare du Nord→RER→Montparnasse 30分)。<strong>サンジェルマン/シテ島へはメトロ20分</strong>で離れる(動線弱点)</dd>
+            <dt>注意点</dt><dd>"Private Terrace" 付きDeluxe Kingがロマンチック度高い。共有施設は若い宿泊客中心で深夜まで賑やか</dd>
+          </dl>
+          <ul class="hotel-card__tags">
+            <li class="tag--positive">✅ AC全室</li>
+            <li class="tag--positive">✅ EV あり</li>
+            <li>✅ WiFi無料</li>
+            <li>✅ 24h受付</li>
+            <li class="tag--warning">△ メトロ20分</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Paris 5: The People Belleville -->
+      <article class="hotel-card hotel-card--france">
+        <div class="hotel-card__header">
+          <div class="hotel-card__title-group">
+            <div class="hotel-card__rank">第5推奨(節約・チャーミング)</div>
+            <h3 class="hotel-card__name">The People — Paris Belleville</h3>
+            <div class="hotel-card__location">11区(旧 Les Piaules) / アールデコ建築</div>
+          </div>
+          <div class="hotel-card__price-tag">
+            <span class="hotel-card__price-label">1泊2人</span>
+            <span class="hotel-card__price-value">¥14,850〜17,325</span>
+            <span class="hotel-card__price-sub">6泊 約¥89,100〜103,950</span>
+          </div>
+        </div>
+        <div class="hotel-card__body">
+          <div class="hotel-card__cta">
+            <a class="btn btn--primary" href="https://www.booking.com/hotel/fr/the-people-paris-belleville-ex-les-piaules.html?checkin=2026-09-26&checkout=2026-10-02&group_adults=2&no_rooms=1" target="_blank" rel="noopener"><span class="btn__icon">▶</span> Booking.com で空室確認</a>
+            <a class="btn" href="https://www.thepeoplehostel.com/en/destinations/paris-belleville/" target="_blank" rel="noopener">公式サイト</a>
+            <a class="btn" href="https://app.mews.com/distributor/ead22e06-f347-4eeb-ac6d-ab9800d056c5" target="_blank" rel="noopener">公式予約</a>
+          </div>
+          <dl class="hotel-card__details">
+            <dt>住所</dt><dd>59 Boulevard de Belleville, 75011 Paris<br><span class="text-subtle text-small">Belleville / Couronnes 駅徒歩2分、L2・L11</span></dd>
+            <dt>該当客室</dt><dd>Double/Twin Room <strong>¥14,850〜</strong>(専用バス) / <strong>Double Room with Rooftop Access ¥17,325〜</strong></dd>
+            <dt>ハネムーン実績</dt><dd>旧称 Les Piaules、アールデコ建築、屋上テラスからモンマルトル/サクレ・クール一望。Hostelworld評価上位、<a href="https://thegaypassport.com/venue/les-piaules/" target="_blank" rel="noopener">The Gay Passport</a> 等で「カップル可」明記</dd>
+            <dt>動線適合</dt><dd>Day 3 モンマルトル(L2直結6駅) / Day 2 シテ島(L11→Châtelet 10分)</dd>
+            <dt>注意点</dt><dd>ベルヴィル地区はナイトライフ活発、夜遅い帰宅は同行で。Day 4 MSM 行きはMontparnasseまでメトロ40分(早朝発に注意)</dd>
+          </dl>
+          <ul class="hotel-card__tags">
+            <li class="tag--positive">✅ AC あり</li>
+            <li class="tag--positive">✅ EV あり</li>
+            <li>✅ WiFi無料</li>
+            <li>✅ 24h受付</li>
+            <li class="tag--positive">★ 屋上テラス</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+    <h3 class="subsection__title" style="margin-top:var(--space-lg);">パリ候補 サマリー</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>#</th><th>名称</th><th>区</th><th>1泊2人</th><th>6泊合計</th><th>空調</th><th>EV</th><th>動線</th></tr>
+        </thead>
+        <tbody>
+          <tr class="row--highlight"><td>1 ★</td><td>Hôtel Esmeralda</td><td>5区</td><td class="price">¥23,430〜29,700</td><td class="price">約14万</td><td>❌(扇風機)</td><td>❌</td><td>◎ ノートルダム真向</td></tr>
+          <tr><td>2</td><td>Hôtel Marignan</td><td>5区</td><td class="price">¥15,675〜22,275</td><td class="price">約9-13万</td><td>❌</td><td>❌</td><td>○ 徒歩圏</td></tr>
+          <tr><td>3</td><td>Hôtel Bonaparte</td><td>6区</td><td class="price">¥29,700〜41,250</td><td class="price">約18-25万</td><td>✅</td><td>✅</td><td>◎ サンジェルマン中心</td></tr>
+          <tr><td>4</td><td>Generator Paris</td><td>10区</td><td class="price">¥8,448〜12,408</td><td class="price">約5-7万</td><td>✅</td><td>✅</td><td>△ メトロ20分</td></tr>
+          <tr><td>5</td><td>The People Belleville</td><td>11区</td><td class="price">¥14,850〜17,325</td><td class="price">約9-10万</td><td>✅</td><td>✅</td><td>○ L2直結</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §2 MSM ============ -->
+<section class="section" id="msm">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 02</div>
+      <h2 class="section__title">モン・サン・ミシェル <span class="country country--msm">島内泊 1泊</span></h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">9/29 → 9/30 / 大潮係数98の年間ピーク日 / 予算上限なし・眺望優先</p>
+    </div>
+
+    <div class="callout callout--warning">
+      <div class="callout__label">共通注意(全島内ホテル該当)</div>
+      <ul>
+        <li><strong>島内全7軒・各8〜30室と希少</strong>。9/28〜9/30は係数98-99の年間ピーク日。<strong>今すぐ動くべき(現在2026/5、残4ヶ月)</strong>。</li>
+        <li>全島内ホテルに<strong>エレベーターなし</strong>(歴史的建造物のため不可)。スーツケースは対岸ロッカー、サブバッグだけで入島が定石。</li>
+        <li><strong>demi-pension(夕食付)は強制ではないが繁忙期は併せて予約</strong>することで島内レストラン完売リスクを回避(<code>results.md</code> Day 4 ディナーはホテル併設レストランが推奨)。</li>
+        <li><strong>エアコン無しが標準</strong>(歴史的建造物)。9月末の島内夜間気温は10〜15℃なので問題なし。</li>
+        <li><strong>夜間は対岸シャトル停止</strong>(最終便22:30頃)。<strong>島内泊だけが22:10満潮+ライトアップを「歩いて部屋に戻れる」唯一の方法</strong>。</li>
+      </ul>
+    </div>
+
+    <div class="hotel-grid">
+
+      <!-- MSM 1: Mère Poulard -->
+      <article class="hotel-card hotel-card--msm hotel-card--top">
+        <div class="hotel-card__header">
+          <div class="hotel-card__title-group">
+            <div class="hotel-card__rank hotel-card__rank--top-msm">★ 第1推奨</div>
+            <h3 class="hotel-card__name">Hôtel La Mère Poulard</h3>
+            <div class="hotel-card__location">島内・グラン・リュ中腹 / 3★ / 1888年〜伝説のオムレツ発祥地</div>
+          </div>
+          <div class="hotel-card__price-tag">
+            <span class="hotel-card__price-label">1泊2人(湾ビュー)</span>
+            <span class="hotel-card__price-value">¥28,875〜57,750+</span>
+          </div>
+        </div>
+        <div class="hotel-card__body">
+          <div class="hotel-card__cta">
+            <a class="btn btn--primary" href="https://www.booking.com/hotel/fr/la-mere-poulard.html?checkin=2026-09-29&checkout=2026-09-30&group_adults=2&no_rooms=1" target="_blank" rel="noopener"><span class="btn__icon">▶</span> Booking.com で空室確認</a>
+            <a class="btn" href="https://www.aubergelamerepoulard.com/en/hotel-la-mere-poulard/" target="_blank" rel="noopener">公式サイト</a>
+            <a class="btn" href="https://www.secure-hotel-booking.com/d-edge/La-Mere-Poulard/2M3W/en" target="_blank" rel="noopener">公式予約</a>
+          </div>
+          <dl class="hotel-card__details">
+            <dt>住所</dt><dd>Grande Rue, 50170 Le Mont-Saint-Michel<br><span class="text-subtle text-small">島内、グラン・リュ中腹</span></dd>
+            <dt>客室構成</dt><dd><strong>25室を5つの歴史的家屋に分散配置</strong>(Auberge本館 / Maison Rouge / Hermitage / Maison de l'Epée / Maison de l'Artichaut)。<strong>「vue baie(湾向き)」「vue village(村向き)」「vue abbaye(修道院向き)」</strong>の3タイプから指定可能</dd>
+            <dt>ハネムーン実績</dt><dd>1888年創業・Annette Poulard の<strong>伝説のオムレツ発祥地</strong>。<a href="https://www.honeymoon-s.jp/topic/letter-france/montsaintmichel20191031" target="_blank" rel="noopener">ハネムーンS</a> で島内No.1推薦。<strong>Booking.com カップル評価 9.2</strong></dd>
+            <dt>眺望戦略</dt><dd><strong>「vue baie」指名で予約</strong>すれば部屋窓から朝日・潮汐(係数98)・夜のライトアップを全て楽しめる(22:10満潮を部屋から鑑賞可能)</dd>
+            <dt>動線適合</dt><dd>グラン・リュ中央なので<strong>修道院・西テラスへ徒歩3分</strong>。Day 4 ブルーアワー→満潮(22:10)→部屋直行が可能。Mère Poulard レストラン(オムレツ)が同建物のため Day 5 朝食もそのまま</dd>
+            <dt>キャンセル</dt><dd>公式予約は通常「14日前まで無料」だが繁忙期は厳格化される傾向。<strong>予約画面で必ず確認</strong></dd>
+            <dt>注意点</dt><dd>部屋アサインで体験差大。予約時に「<strong>chambre vue baie pour notre voyage de noces</strong>」と明記。<strong>Maison Rouge / Hermitage 棟が比較的新しく快適</strong></dd>
+          </dl>
+          <ul class="hotel-card__tags">
+            <li class="tag--danger">❌ AC</li>
+            <li class="tag--danger">❌ EV</li>
+            <li>✅ WiFi無料</li>
+            <li class="tag--positive">★ オムレツ発祥</li>
+            <li class="tag--positive">★ 湾ビュー</li>
+            <li class="tag--warning">△ 繁忙期キャンセル厳格</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- MSM 2: Les Terrasses Poulard -->
+      <article class="hotel-card hotel-card--msm">
+        <div class="hotel-card__header">
+          <div class="hotel-card__title-group">
+            <div class="hotel-card__rank">第2推奨</div>
+            <h3 class="hotel-card__name">Hôtel Les Terrasses Poulard</h3>
+            <div class="hotel-card__location">島内・本通り / 3★ / Mère Poulard 姉妹店</div>
+          </div>
+          <div class="hotel-card__price-tag">
+            <span class="hotel-card__price-label">1泊2人</span>
+            <span class="hotel-card__price-value">¥16,005〜38,775</span>
+          </div>
+        </div>
+        <div class="hotel-card__body">
+          <div class="hotel-card__cta">
+            <a class="btn btn--primary" href="https://www.booking.com/hotel/fr/les-terrasses-poulard.html?checkin=2026-09-29&checkout=2026-09-30&group_adults=2&no_rooms=1" target="_blank" rel="noopener"><span class="btn__icon">▶</span> Booking.com で空室確認</a>
+            <a class="btn" href="https://www.aubergelamerepoulard.com/en/" target="_blank" rel="noopener">グループ公式</a>
+            <a class="btn" href="https://www.manche-tourism.com/hotels/hotel-les-terrasses-poulard/" target="_blank" rel="noopener">案内ページ</a>
+          </div>
+          <dl class="hotel-card__details">
+            <dt>住所</dt><dd>Grande Rue, 50170 Le Mont-Saint-Michel<br><span class="text-subtle text-small">島内、Mère Poulard 系列</span></dd>
+            <dt>客室構成</dt><dd>30室を2棟に分散。バス・村・通り向きあり。<strong>湾ビュー部屋は大きな窓</strong></dd>
+            <dt>ハネムーン実績</dt><dd>Mère Poulard 系列(姉妹施設、24h予約可)。Tripadvisor 2026年1月レビューで「景色は完璧」評価。Fodor's 推薦「rooms are among the Mont's most spacious」</dd>
+            <dt>眺望戦略</dt><dd><strong>島内ホテル中で部屋面積が最大級</strong>。湾ビュー予約時は窓位置を Email で確認推奨</dd>
+            <dt>動線適合</dt><dd>朝食は系列 La Confiance レストラン(徒歩2分)</dd>
+            <dt>注意点</dt><dd>部屋によって階段500m分歩く奥地配置あり。<strong>「vue baie + bâtiment principal(本館)」指定で予約</strong>。Mère Poulard 満室時の最有力代替</dd>
+          </dl>
+          <ul class="hotel-card__tags">
+            <li class="tag--danger">❌ AC</li>
+            <li class="tag--danger">❌ EV</li>
+            <li>✅ WiFi無料</li>
+            <li class="tag--positive">★ 部屋広め</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- MSM 3: La Croix Blanche -->
+      <article class="hotel-card hotel-card--msm">
+        <div class="hotel-card__header">
+          <div class="hotel-card__title-group">
+            <div class="hotel-card__rank">第3推奨</div>
+            <h3 class="hotel-card__name">Hôtel La Croix Blanche</h3>
+            <div class="hotel-card__location">島内・城壁直結 / 3★ / 9室のみ</div>
+          </div>
+          <div class="hotel-card__price-tag">
+            <span class="hotel-card__price-label">1泊2人</span>
+            <span class="hotel-card__price-value">¥26,400〜42,900</span>
+          </div>
+        </div>
+        <div class="hotel-card__body">
+          <div class="hotel-card__cta">
+            <a class="btn btn--primary" href="https://www.booking.com/hotel/fr/ha-el-la-croix-blanche.html?checkin=2026-09-29&checkout=2026-09-30&group_adults=2&no_rooms=1" target="_blank" rel="noopener"><span class="btn__icon">▶</span> Booking.com で空室確認</a>
+            <a class="btn" href="https://www.hotel-la-croix-blanche.com/en/" target="_blank" rel="noopener">公式サイト</a>
+            <a class="btn" href="http://hotel.reservit.com/front165093/front.do?m=booking&custid=2&langcode=EN&hotelid=165093" target="_blank" rel="noopener">公式予約</a>
+          </div>
+          <dl class="hotel-card__details">
+            <dt>住所</dt><dd>Grande Rue, 50170 Le Mont-Saint-Michel<br><span class="text-subtle text-small">島内、ランパール直上</span></dd>
+            <dt>客室構成</dt><dd><strong>9室のみ</strong>。3-4階の8室はエレベーターなし。<strong>「ランパール直上の城壁ビュー」</strong>が売り</dd>
+            <dt>予約問合せ</dt><dd>contact@hotel-la-croix-blanche.com / +33 2 33 60 14 04</dd>
+            <dt>ハネムーン実績</dt><dd><strong>Booking.com カップル評価 9.5</strong>(646件レビュー)。レストラン・テラスから「panoramic view over the bay and the sea」、Auberge Saint-Pierre/La Vieille Auberge と姉妹店。<a href="https://normandielovers.fr/en/hotel-croix-blanche-mont-saint-michel-review/" target="_blank" rel="noopener">Normandie Lovers</a> で「島内bay view rooms ベストバリュー」評</dd>
+            <dt>眺望戦略</dt><dd>城壁の上に立つため<strong>湾と海の遮るもののない180°ビュー</strong>。客室から直接湾を見られる</dd>
+            <dt>注意点</dt><dd><strong>9室は争奪戦</strong>、早期予約必須。階段のみで荷物は最小限</dd>
+          </dl>
+          <ul class="hotel-card__tags">
+            <li class="tag--danger">❌ AC</li>
+            <li class="tag--danger">❌ EV(急階段)</li>
+            <li>✅ WiFi無料</li>
+            <li class="tag--positive">★ カップル9.5</li>
+            <li class="tag--positive">★ 湾180°</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- MSM 4: Du Guesclin -->
+      <article class="hotel-card hotel-card--msm">
+        <div class="hotel-card__header">
+          <div class="hotel-card__title-group">
+            <div class="hotel-card__rank">第4推奨</div>
+            <h3 class="hotel-card__name">Hôtel Du Guesclin</h3>
+            <div class="hotel-card__location">島内・入口から100m / 3★ / 10室</div>
+          </div>
+          <div class="hotel-card__price-tag">
+            <span class="hotel-card__price-label">1泊2人</span>
+            <span class="hotel-card__price-value">¥24,750〜36,300</span>
+          </div>
+        </div>
+        <div class="hotel-card__body">
+          <div class="hotel-card__cta">
+            <a class="btn btn--primary" href="https://www.booking.com/hotel/fr/le-duguesclin-le-mont-saint-michel.html?checkin=2026-09-29&checkout=2026-09-30&group_adults=2&no_rooms=1" target="_blank" rel="noopener"><span class="btn__icon">▶</span> Booking.com で空室確認</a>
+            <a class="btn" href="https://www.hotel-mont-saintmichel.fr/en/hotel.html" target="_blank" rel="noopener">公式サイト</a>
+          </div>
+          <dl class="hotel-card__details">
+            <dt>住所</dt><dd>Grande Rue, 50170 Le Mont-Saint-Michel<br><span class="text-subtle text-small">島内入口から100m</span></dd>
+            <dt>客室構成</dt><dd><strong>10室</strong>(Village Side 5 / <strong>Bay Side 5</strong>)。Double bed or Twin</dd>
+            <dt>予約問合せ</dt><dd>+33 2 33 60 14 10(公式予約はメール/電話)</dd>
+            <dt>ハネムーン実績</dt><dd>レストランの「panoramic bay view」が島内屈指。<a href="https://www.tripadvisor.com/Hotel_Review-g196646-d260829-Reviews-Hotel_Du_Guesclin-Mont_Saint_Michel_Manche_Basse_Normandie_Normandy.html" target="_blank" rel="noopener">Tripadvisor口コミ</a> で「rooms are ordinary but the views are fantastic」。<strong>bay-side 部屋から日の出</strong></dd>
+            <dt>眺望戦略</dt><dd>Bay Side 客室は<strong>二面窓</strong>で湾全景</dd>
+            <dt>動線適合</dt><dd>島内入口から100mで<strong>最も荷物アクセスが楽</strong></dd>
+            <dt>注意点</dt><dd>グラン・リュ側の部屋は早朝4時の搬入トラックの騒音あり → <strong>必ず "chambre côté baie(Bay Side)" 指定で予約</strong></dd>
+          </dl>
+          <ul class="hotel-card__tags">
+            <li class="tag--danger">❌ AC</li>
+            <li class="tag--danger">❌ EV</li>
+            <li>✅ WiFi無料</li>
+            <li class="tag--positive">★ 荷物動線最楽</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- MSM 5: Auberge Saint-Pierre -->
+      <article class="hotel-card hotel-card--msm">
+        <div class="hotel-card__header">
+          <div class="hotel-card__title-group">
+            <div class="hotel-card__rank">第5推奨(現プラン)</div>
+            <h3 class="hotel-card__name">Auberge Saint-Pierre</h3>
+            <div class="hotel-card__location">島内・修道院直下 / 3★ / 15世紀木組み・歴史的記念物</div>
+          </div>
+          <div class="hotel-card__price-tag">
+            <span class="hotel-card__price-label">1泊2人</span>
+            <span class="hotel-card__price-value">¥29,700〜46,200</span>
+          </div>
+        </div>
+        <div class="hotel-card__body">
+          <div class="hotel-card__cta">
+            <a class="btn btn--primary" href="https://www.booking.com/hotel/fr/auberge-saint-pierre.html?checkin=2026-09-29&checkout=2026-09-30&group_adults=2&no_rooms=1" target="_blank" rel="noopener"><span class="btn__icon">▶</span> Booking.com で空室確認</a>
+            <a class="btn" href="https://www.auberge-saint-pierre.fr/en/" target="_blank" rel="noopener">公式サイト</a>
+            <a class="btn" href="http://hotel.reservit.com/front473/front.do?m=booking&custid=2&langcode=EN&hotelid=473" target="_blank" rel="noopener">公式予約</a>
+          </div>
+          <dl class="hotel-card__details">
+            <dt>住所</dt><dd>Grande Rue, 50170 Le Mont-Saint-Michel<br><span class="text-subtle text-small">島内、修道院アクセス階段すぐ下</span></dd>
+            <dt>客室構成</dt><dd>23室を3棟の歴史的建造物に分散。<strong>「別館(annex)の湾向き部屋」</strong>が静かで眺望良し</dd>
+            <dt>予約問合せ</dt><dd>contact@auberge-saint-pierre.fr / +33 2 33 60 14 03</dd>
+            <dt>ハネムーン実績</dt><dd><strong>15世紀木組み建築・歴史的記念物登録</strong>。プレ・サレ仔羊レストラン併設。<code>results.md</code> Day 4 ディナーの推薦店。Booking.com評価 8.0(963件)</dd>
+            <dt>眺望戦略</dt><dd>別館(annex)の湾ビュー部屋指定推奨。本館は修道院・グランリュ向き</dd>
+            <dt>動線適合</dt><dd><strong>修道院入口階段直下</strong>、Day 4 修道院見学(15:00)前後の動線が最短</dd>
+            <dt>注意点</dt><dd>予約時に<strong>「chambre avec vue sur la baie, dans l'annexe」と明記</strong>して湾ビュー別館を確保</dd>
+          </dl>
+          <ul class="hotel-card__tags">
+            <li class="tag--danger">❌ AC</li>
+            <li class="tag--danger">❌ EV</li>
+            <li>✅ WiFi無料</li>
+            <li class="tag--positive">★ 修道院直下</li>
+            <li class="tag--positive">★ 仔羊レストラン</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+    <h3 class="subsection__title" style="margin-top:var(--space-lg);">MSM候補 サマリー</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>#</th><th>名称</th><th>室数</th><th>1泊2人(湾ビュー)</th><th>眺望</th><th>カップル評価</th><th>レストラン</th></tr>
+        </thead>
+        <tbody>
+          <tr class="row--highlight"><td>1 ★</td><td>La Mère Poulard</td><td>25</td><td class="price">¥28,875〜57,750+</td><td>湾/修道院/村</td><td>9.2</td><td>✅ オムレツ発祥</td></tr>
+          <tr><td>2</td><td>Les Terrasses Poulard</td><td>30</td><td class="price">¥16,005〜38,775</td><td>湾/村</td><td>—</td><td>△ 姉妹店徒歩2分</td></tr>
+          <tr><td>3</td><td>La Croix Blanche</td><td>9</td><td class="price">¥26,400〜42,900</td><td>湾180°</td><td>9.5</td><td>✅</td></tr>
+          <tr><td>4</td><td>Du Guesclin</td><td>10</td><td class="price">¥24,750〜36,300</td><td>湾/村</td><td>—</td><td>✅ 湾ビュー</td></tr>
+          <tr><td>5</td><td>Auberge Saint-Pierre</td><td>23</td><td class="price">¥29,700〜46,200</td><td>湾(別館)/修道院</td><td>—</td><td>✅ プレ・サレ仔羊</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §3 BARCELONA ============ -->
+<section class="section" id="barcelona">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 03</div>
+      <h2 class="section__title">バルセロナ <span class="country country--spain">🇪🇸 2泊・節約寄り</span></h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">10/2 → 10/4 / サグラダ徒歩圏 / 1泊2人 ¥10,000〜30,000</p>
+    </div>
+
+    <div class="hotel-grid">
+
+      <!-- BCN 1: Generator -->
+      <article class="hotel-card hotel-card--spain hotel-card--top">
+        <div class="hotel-card__header">
+          <div class="hotel-card__title-group">
+            <div class="hotel-card__rank hotel-card__rank--top-spain">★ 第1推奨(節約)</div>
+            <h3 class="hotel-card__name">Generator Barcelona</h3>
+            <div class="hotel-card__location">Gràcia・カサ・ミラ徒歩5分 / デザインホステル</div>
+          </div>
+          <div class="hotel-card__price-tag">
+            <span class="hotel-card__price-label">1泊2人</span>
+            <span class="hotel-card__price-value">¥9,768〜13,068</span>
+            <span class="hotel-card__price-sub">2泊 約¥19,536〜26,136</span>
+          </div>
+        </div>
+        <div class="hotel-card__body">
+          <div class="hotel-card__cta">
+            <a class="btn btn--primary" href="https://www.booking.com/hotel/es/generator-hostel-barcelona.html?checkin=2026-10-02&checkout=2026-10-04&group_adults=2&no_rooms=1" target="_blank" rel="noopener"><span class="btn__icon">▶</span> Booking.com で空室確認</a>
+            <a class="btn" href="https://staygenerator.com/hostels/barcelona?lang=en-GB" target="_blank" rel="noopener">公式サイト</a>
+          </div>
+          <dl class="hotel-card__details">
+            <dt>住所</dt><dd>Carrer de Còrsega 373, 08037 Barcelona<br><span class="text-subtle text-small">Gràcia、カサ・ミラ徒歩5分、サグラダ徒歩20分/メトロ1駅</span></dd>
+            <dt>該当客室</dt><dd>Superior Twin <strong>¥9,768〜</strong> / Deluxe Twin <strong>¥11,220〜</strong> / <strong>Deluxe King ¥13,068〜</strong>(全室バス・トイレ専用)</dd>
+            <dt>ハネムーン実績</dt><dd>デザインホステルチェーンの代表格。<strong>Penthouse SuiteからはサグラダもCasa Batllóも一望</strong>。Hostelworld評価上位、欧米カップル人気</dd>
+            <dt>動線適合</dt><dd>Day 7 サグラダ午後入場 → メトロ L5一駅 / Day 8 カサ・ミラ・カサ・バトリョ徒歩圏</dd>
+            <dt>注意点</dt><dd>サグラダ屋上独占はSercotelに劣るが、<strong>価格対デザイン性で圧勝</strong>。Day 8 魔法の噴水(モンジュイック)からは Free Now で約20分</dd>
+          </dl>
+          <ul class="hotel-card__tags">
+            <li class="tag--positive">✅ AC全室</li>
+            <li class="tag--positive">✅ EV</li>
+            <li>✅ WiFi無料</li>
+            <li>✅ 24h受付</li>
+            <li class="tag--positive">★ 屋上バー</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- BCN 2: Hostemplo SF (hostel) -->
+      <article class="hotel-card hotel-card--spain">
+        <div class="hotel-card__header">
+          <div class="hotel-card__title-group">
+            <div class="hotel-card__rank">第2推奨(節約)</div>
+            <h3 class="hotel-card__name">Hostemplo Sagrada Familia</h3>
+            <div class="hotel-card__location">サグラダから1ブロック / モダニズム建造物・10室のみ</div>
+          </div>
+          <div class="hotel-card__price-tag">
+            <span class="hotel-card__price-label">1泊2人</span>
+            <span class="hotel-card__price-value">¥11,550〜23,100</span>
+            <span class="hotel-card__price-sub">2泊 約¥23,100〜46,200</span>
+          </div>
+        </div>
+        <div class="hotel-card__body">
+          <div class="hotel-card__cta">
+            <a class="btn btn--primary" href="https://www.booking.com/hotel/es/hostemplo-sagrada-familia.html?checkin=2026-10-02&checkout=2026-10-04&group_adults=2&no_rooms=1" target="_blank" rel="noopener"><span class="btn__icon">▶</span> Booking.com で空室確認</a>
+            <a class="btn" href="https://hostemplo.com/en/hostemplo-sagrada-familia-hsf-en/" target="_blank" rel="noopener">公式サイト</a>
+            <a class="btn" href="https://book.octorate.com/octobook/site/reservation/index.xhtml?codice=758953" target="_blank" rel="noopener">公式予約</a>
+          </div>
+          <dl class="hotel-card__details">
+            <dt>住所</dt><dd>サグラダから<strong>1ブロック</strong>(姉妹施設・ゲストハウス)</dd>
+            <dt>該当客室</dt><dd><strong>10室のみ</strong>、Private Double with private bathroom</dd>
+            <dt>ハネムーン実績</dt><dd>モダニズム建造物完全改装、24hサービス、オンラインチェックイン。<strong>Booking.com 立地評価 9.4</strong></dd>
+            <dt>動線適合</dt><dd>Boutique Hostemplo より更にサグラダに近い。Day 7 サグラダ午後入場 → 徒歩1分で部屋休憩可</dd>
+            <dt>注意点</dt><dd>10室と希少、繁忙期早期予約必須。<strong>オンラインチェックインのため24h入退室自由</strong>(深夜帰宅でも問題なし)</dd>
+          </dl>
+          <ul class="hotel-card__tags">
+            <li class="tag--positive">✅ AC</li>
+            <li class="tag--positive">✅ EV</li>
+            <li>✅ WiFi無料</li>
+            <li class="tag--positive">✅ オンラインCK(24h)</li>
+            <li class="tag--positive">★ サグラダ1ブロック</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- BCN 3: Primavera -->
+      <article class="hotel-card hotel-card--spain">
+        <div class="hotel-card__header">
+          <div class="hotel-card__title-group">
+            <div class="hotel-card__rank">第3推奨(節約・チャーミング)</div>
+            <h3 class="hotel-card__name">Primavera Hostel</h3>
+            <div class="hotel-card__location">エイサンプラ・サグラダ徒歩8分 / ブティックホステル</div>
+          </div>
+          <div class="hotel-card__price-tag">
+            <span class="hotel-card__price-label">1泊2人</span>
+            <span class="hotel-card__price-value">¥9,900〜19,800</span>
+            <span class="hotel-card__price-sub">2泊 約¥19,800〜39,600</span>
+          </div>
+        </div>
+        <div class="hotel-card__body">
+          <div class="hotel-card__cta">
+            <a class="btn btn--primary" href="https://www.booking.com/hotel/es/primavera-hostel.html?checkin=2026-10-02&checkout=2026-10-04&group_adults=2&no_rooms=1" target="_blank" rel="noopener"><span class="btn__icon">▶</span> Booking.com で空室確認</a>
+            <a class="btn" href="https://www.primavera-hostel.com/en/" target="_blank" rel="noopener">公式サイト</a>
+            <a class="btn" href="https://www.primavera-hostel.com/en/rooms/" target="_blank" rel="noopener">客室一覧</a>
+          </div>
+          <dl class="hotel-card__details">
+            <dt>住所</dt><dd>Calle Mallorca 330, 08037 Barcelona<br><span class="text-subtle text-small">サグラダ徒歩8分</span></dd>
+            <dt>該当客室</dt><dd><strong>Exterior Double Room with Private Bathroom</strong>(バルコニー付き、街並みビュー)</dd>
+            <dt>予約問合せ</dt><dd>primaverahostel@gmail.com / +34 623 066 533(WhatsApp)</dd>
+            <dt>ハネムーン実績</dt><dd>エイサンプラのブティックホステル。デザイン重視で個室にバルコニー付き。WhatsApp 予約可で日本人にもハードル低い</dd>
+            <dt>動線適合</dt><dd>Day 7 サグラダ徒歩8分 / Day 8 グラシア通り徒歩圏</dd>
+            <dt>注意点</dt><dd>24h対応・WhatsApp 予約可で<strong>英語不要(WhatsApp の自動翻訳で対応可)</strong></dd>
+          </dl>
+          <ul class="hotel-card__tags">
+            <li class="tag--positive">✅ AC</li>
+            <li class="tag--positive">✅ EV</li>
+            <li>✅ WiFi無料</li>
+            <li class="tag--positive">★ バルコニー個室</li>
+            <li class="tag--positive">★ WhatsApp予約可</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- BCN 4: Boutique Hostemplo -->
+      <article class="hotel-card hotel-card--spain">
+        <div class="hotel-card__header">
+          <div class="hotel-card__title-group">
+            <div class="hotel-card__rank">第4推奨(中堅)</div>
+            <h3 class="hotel-card__name">Hotel Boutique Hostemplo Sagrada Familia</h3>
+            <div class="hotel-card__location">3★ / サグラダ200m / モダニズム建築フル改装</div>
+          </div>
+          <div class="hotel-card__price-tag">
+            <span class="hotel-card__price-label">1泊2人</span>
+            <span class="hotel-card__price-value">¥19,800〜36,300</span>
+            <span class="hotel-card__price-sub">2泊 約¥39,600〜72,600</span>
+          </div>
+        </div>
+        <div class="hotel-card__body">
+          <div class="hotel-card__cta">
+            <a class="btn btn--primary" href="https://www.booking.com/hotel/es/boutique-hostemplo-barcelona.html?checkin=2026-10-02&checkout=2026-10-04&group_adults=2&no_rooms=1" target="_blank" rel="noopener"><span class="btn__icon">▶</span> Booking.com で空室確認</a>
+            <a class="btn" href="https://hostemplo.com/en/hotel-boutique-hostemplo-hbh-en/" target="_blank" rel="noopener">公式サイト</a>
+            <a class="btn" href="https://book.octorate.com/octobook/site/reservation/index.xhtml?codice=527328" target="_blank" rel="noopener">公式予約</a>
+          </div>
+          <dl class="hotel-card__details">
+            <dt>住所</dt><dd>Carrer de la Marina(歩行者専用通り), 08025 Barcelona<br><span class="text-subtle text-small">サグラダから200m、地下鉄駅250m</span></dd>
+            <dt>該当客室</dt><dd>Standard Double / Deluxe / <strong>Superior Double with Balcony</strong> / <strong>Superior Double with Terrace</strong> / Deluxe with Spa Bath</dd>
+            <dt>ハネムーン実績</dt><dd>モダニズム建築をフル改装した3★ブティック。Sagrada徒歩2分の歩行者専用通り(車通行なし)で静か。<a href="https://www.redt-rex.com/barcelona-sagrada-familia-hotel-3-stars/" target="_blank" rel="noopener">redt-rex 旅行ブログ</a> で「立地と快適さで選ぶバルセロナ3つ星」推薦</dd>
+            <dt>動線適合</dt><dd>サグラダ Day 7 入場 → 徒歩2分でチェックイン直行可。Day 8 朝のサグラダ撮影も超近距離</dd>
+            <dt>注意点</dt><dd><strong>Superior with Terrace を予約すれば専用バルコニー</strong>から角度によりサグラダ塔が見える可能性</dd>
+          </dl>
+          <ul class="hotel-card__tags">
+            <li class="tag--positive">✅ AC</li>
+            <li class="tag--positive">✅ EV</li>
+            <li>✅ WiFi無料</li>
+            <li class="tag--positive">★ 歩行者通りで静か</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- BCN 5: Sercotel Rosellón -->
+      <article class="hotel-card hotel-card--spain">
+        <div class="hotel-card__header">
+          <div class="hotel-card__title-group">
+            <div class="hotel-card__rank">第5推奨(贅沢オプション・現プラン)</div>
+            <h3 class="hotel-card__name">Sercotel Rosellón</h3>
+            <div class="hotel-card__location">4★ / サグラダ徒歩3分 / 屋上テラスからサグラダ眺望</div>
+          </div>
+          <div class="hotel-card__price-tag">
+            <span class="hotel-card__price-label">サグラダビュー客室</span>
+            <span class="hotel-card__price-value">¥33,495〜42,735</span>
+            <span class="hotel-card__price-sub">2泊 約¥66,990〜85,470</span>
+          </div>
+        </div>
+        <div class="hotel-card__body">
+          <div class="hotel-card__cta">
+            <a class="btn btn--primary" href="https://www.booking.com/hotel/es/ayre-rosellon.html?checkin=2026-10-02&checkout=2026-10-04&group_adults=2&no_rooms=1" target="_blank" rel="noopener"><span class="btn__icon">▶</span> Booking.com で空室確認</a>
+            <a class="btn" href="https://www.sercotelhoteles.com/en/hotel-rosellon/" target="_blank" rel="noopener">公式サイト</a>
+            <a class="btn" href="https://www.sercotelhoteles.com/en/hotel-rosellon/terraza-del-rosellon" target="_blank" rel="noopener">屋上テラス</a>
+          </div>
+          <dl class="hotel-card__details">
+            <dt>住所</dt><dd>Carrer del Rosselló, 390, Eixample, 08025 Barcelona<br><span class="text-subtle text-small">サグラダ徒歩3分</span></dd>
+            <dt>該当客室</dt><dd>Basic Double/Twin ¥24,090〜30,690 / Classic Double ¥25,245〜33,000 / <strong>Classic Double with Sagrada Familia Views ¥33,495〜42,735</strong> / Junior Suite ¥41,745〜52,140</dd>
+            <dt>予約問合せ</dt><dd>reservas@sercotelrosellon.com / +34 936 009 200</dd>
+            <dt>ハネムーン実績</dt><dd><strong>Booking.com カップル評価 9.5</strong>。<a href="https://thirdeyetraveller.com/sercotel-rosellon-barcelona-review/" target="_blank" rel="noopener">Third Eye Traveller</a>「Best Hotel with a View of La Sagrada Familia」、<a href="https://baila.hpplus.jp/blogs/morota_keiko/54592" target="_blank" rel="noopener">@BAILA 旅行部</a>「サグラダ・ファミリアをひとり占め」特集多数</dd>
+            <dt>屋上テラス</dt><dd>宿泊者は24h無料アクセス。<strong>サグラダの塔の至近距離パノラマ</strong></dd>
+            <dt>動線適合</dt><dd>Day 7 サグラダ16:30入場 → 直後にホテル屋上で夜景独占(<code>results.md</code> 22:00ハイライト)、Day 8 朝のサグラダ撮影もそのまま屋上から</dd>
+            <dt>注意点</dt><dd><strong>「Classic Double with Sagrada Familia Views」を指名予約</strong>(それ以外は中庭/通り向きでサグラダ見えない)。<strong>節約寄り再編により第5位だが、屋上テラスとサグラダビューに価値を感じるなら唯一無二</strong></dd>
+          </dl>
+          <ul class="hotel-card__tags">
+            <li class="tag--positive">✅ AC全室</li>
+            <li class="tag--positive">✅ EV</li>
+            <li>✅ WiFi無料</li>
+            <li>✅ 24h受付</li>
+            <li class="tag--positive">★ サグラダ屋上独占</li>
+            <li class="tag--positive">★ カップル9.5</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+    <h3 class="subsection__title" style="margin-top:var(--space-lg);">バルセロナ候補 サマリー(節約優先順)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>#</th><th>名称</th><th>距離</th><th>1泊2人</th><th>2泊合計</th><th>サグラダ眺望</th></tr>
+        </thead>
+        <tbody>
+          <tr class="row--highlight"><td>1 ★</td><td>Generator Barcelona</td><td>徒歩20分/メトロ1駅</td><td class="price">¥9,768〜13,068</td><td class="price">約2-3万</td><td>Penthouseのみ</td></tr>
+          <tr><td>2</td><td>Hostemplo SF(ホステル)</td><td>1ブロック</td><td class="price">¥11,550〜23,100</td><td class="price">約2-5万</td><td>×</td></tr>
+          <tr><td>3</td><td>Primavera Hostel</td><td>徒歩8分</td><td class="price">¥9,900〜19,800</td><td class="price">約2-4万</td><td>×</td></tr>
+          <tr><td>4</td><td>Boutique Hostemplo(3★)</td><td>200m</td><td class="price">¥19,800〜36,300</td><td class="price">約4-7万</td><td>バルコニー越し可能性</td></tr>
+          <tr><td>5</td><td>Sercotel Rosellón(4★)</td><td>徒歩3分</td><td class="price">¥24,090〜42,735</td><td class="price">約5-9万</td><td><strong>客室+屋上◎</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §4 MATRIX ============ -->
+<section class="section" id="matrix">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 04</div>
+      <h2 class="section__title">全15候補 設備・予約条件マトリクス</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">空調・エレベーター・朝食・キャンセル・24h受付の横並び比較。</p>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>都市</th><th>ホテル</th><th>1泊2人</th><th>個室</th><th>バス</th><th>空調</th><th>EV</th><th>WiFi</th><th>朝食</th><th>24h受付</th><th>キャンセル</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="country country--france">パリ</span></td><td><strong>Hôtel Esmeralda</strong></td><td class="price">¥23,000〜30,000</td><td>◎</td><td>専用</td><td>❌(扇)</td><td>❌</td><td>✅無料</td><td>別途</td><td>✅</td><td>公式7日前無料</td></tr>
+          <tr><td><span class="country country--france">パリ</span></td><td><strong>Hôtel Marignan</strong></td><td class="price">¥16,000〜22,000</td><td>◎</td><td>共同/専用選択</td><td>❌</td><td>❌</td><td>✅無料</td><td><strong>込</strong></td><td>△(深夜要確認)</td><td>公式7日前</td></tr>
+          <tr><td><span class="country country--france">パリ</span></td><td><strong>Hôtel Bonaparte</strong></td><td class="price">¥30,000〜41,000</td><td>◎</td><td>専用</td><td>✅</td><td>✅</td><td>✅無料</td><td>€15/人</td><td>✅</td><td>Booking柔軟</td></tr>
+          <tr><td><span class="country country--france">パリ</span></td><td><strong>Generator Paris</strong></td><td class="price">¥9,000〜12,000</td><td>◎</td><td>専用</td><td>✅</td><td>✅</td><td>✅無料</td><td>別途</td><td>✅</td><td>柔軟</td></tr>
+          <tr><td><span class="country country--france">パリ</span></td><td><strong>The People Belleville</strong></td><td class="price">¥15,000〜17,000</td><td>◎</td><td>専用</td><td>✅</td><td>✅</td><td>✅無料</td><td>別途</td><td>✅</td><td>柔軟</td></tr>
+
+          <tr><td><span class="country country--msm">MSM</span></td><td><strong>La Mère Poulard</strong></td><td class="price">¥29,000〜58,000+</td><td>◎</td><td>専用</td><td>❌</td><td>❌</td><td>✅無料</td><td>別途/込プラン</td><td>△</td><td><strong>繁忙期厳格化注意</strong></td></tr>
+          <tr><td><span class="country country--msm">MSM</span></td><td><strong>Les Terrasses Poulard</strong></td><td class="price">¥16,000〜39,000</td><td>◎</td><td>専用</td><td>❌</td><td>❌</td><td>✅無料</td><td>別途</td><td>△</td><td>同上</td></tr>
+          <tr><td><span class="country country--msm">MSM</span></td><td><strong>La Croix Blanche</strong></td><td class="price">¥26,000〜43,000</td><td>◎</td><td>専用</td><td>❌</td><td>❌</td><td>✅無料</td><td>別途</td><td>△</td><td>同上</td></tr>
+          <tr><td><span class="country country--msm">MSM</span></td><td><strong>Du Guesclin</strong></td><td class="price">¥25,000〜36,000</td><td>◎</td><td>専用</td><td>❌</td><td>❌</td><td>✅無料</td><td>別途</td><td>△</td><td>同上</td></tr>
+          <tr><td><span class="country country--msm">MSM</span></td><td><strong>Auberge Saint-Pierre</strong></td><td class="price">¥30,000〜46,000</td><td>◎</td><td>専用</td><td>❌</td><td>❌</td><td>✅無料</td><td>別途</td><td>△</td><td>同上</td></tr>
+
+          <tr><td><span class="country country--spain">BCN</span></td><td><strong>Generator Barcelona</strong></td><td class="price">¥10,000〜13,000</td><td>◎</td><td>専用</td><td>✅</td><td>✅</td><td>✅無料</td><td>別途</td><td>✅</td><td>柔軟</td></tr>
+          <tr><td><span class="country country--spain">BCN</span></td><td><strong>Hostemplo SF</strong></td><td class="price">¥12,000〜23,000</td><td>◎</td><td>専用</td><td>✅</td><td>✅</td><td>✅無料</td><td>込(別途€)</td><td><strong>オンラインCK</strong></td><td>柔軟</td></tr>
+          <tr><td><span class="country country--spain">BCN</span></td><td><strong>Primavera Hostel</strong></td><td class="price">¥10,000〜20,000</td><td>◎</td><td>専用</td><td>✅</td><td>✅</td><td>✅無料</td><td>別途</td><td>✅</td><td>柔軟</td></tr>
+          <tr><td><span class="country country--spain">BCN</span></td><td><strong>Boutique Hostemplo</strong></td><td class="price">¥20,000〜36,000</td><td>◎</td><td>専用</td><td>✅</td><td>✅</td><td>✅無料</td><td>込(別途€)</td><td>✅</td><td>柔軟</td></tr>
+          <tr><td><span class="country country--spain">BCN</span></td><td><strong>Sercotel Rosellón</strong></td><td class="price">¥24,000〜43,000</td><td>◎</td><td>専用</td><td>✅</td><td>✅</td><td>✅無料</td><td>別途</td><td>✅</td><td>柔軟</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §5 REVIEW ============ -->
+<section class="section" id="review">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 05</div>
+      <h2 class="section__title">プロ視点 重要観点レビュー</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">候補比較から漏れがちな8つの観点。予約前に必ず確認。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">5-1. エアコン問題(パリ Esmeralda/Marignan・MSM全件)</h3>
+      <ul class="clean-list">
+        <li><strong>9月末のパリ平均最高気温は18-22℃</strong>で通常はAC不要。ただし<strong>2023年・2024年は9月末で28℃超の記録</strong>があり、地球温暖化リスク無視できず。</li>
+        <li><strong>対策</strong>: Esmeralda/Marignan に泊まる場合は<strong>ファン付き客室をリクエスト</strong>(<code>Could you please assign us a room with a fan?</code>)。窓開けは可能だが街騒音あり。</li>
+        <li><strong>MSM</strong>: 9月末の島内気温は10-15℃、AC無は問題なし。<strong>むしろ夜の海風が涼しい</strong>(防寒対策の方が重要)。</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">5-2. 階段の負担(パリ Esmeralda/Marignan、全MSM)</h3>
+      <ul class="clean-list">
+        <li>6泊のパリ滞在で<strong>1階の部屋をリクエスト</strong>(<code>Could you please assign a room on the lower floor?</code>)。</li>
+        <li>MSM入島時は<strong>スーツケース対岸ロッカーに預け、サブバッグだけで入島</strong>。Mère Poulard / Auberge Saint-Pierre は本館の階段がしんどいので、<strong>Maison Rouge(Mère)別館 / 別館(Saint-Pierre)</strong>リクエスト推奨。</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">5-3. チェックイン/アウト動線</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Day</th><th>場所</th><th>動線リスク</th><th>対策</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>パリ着</td><td>CDG 17:30着 → ホテル19:30着</td><td><strong>チェックイン時刻16:00以降の宿選定</strong>(全候補OK)。Booking.comで「late check-in 19:30」を備考に</td></tr>
+            <tr><td>4</td><td>MSM</td><td>13:00島着、22:30以降に部屋戻り</td><td><strong>22:30以降の入室可否を予約時に確認</strong>(全島内ホテル可、但しレセプション無人時間あり)</td></tr>
+            <tr><td>5</td><td>パリ戻り</td><td>16:00着、続泊のためチェックイン手続き不要</td><td>6泊連続予約(MSM行きの夜も部屋確保)</td></tr>
+            <tr><td>7</td><td>BCN</td><td>13:30着、チェックイン14:00以降</td><td>早着の場合は<strong>荷物預け</strong>を依頼</td></tr>
+            <tr><td>9</td><td>BCN出発</td><td>11:30 El Prat 空港着想定</td><td><strong>チェックアウト11:00標準</strong>(早朝便なら前夜会計可)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">5-4. 荷物保管戦略</h3>
+      <ul class="clean-list">
+        <li><strong>パリのホテルで6泊続泊予約</strong>することで、Day 4 MSM行きに<strong>大荷物をホテル部屋に置きっぱなし可能</strong>(続泊の客は部屋確保される=荷物無料保管)。</li>
+        <li><strong>Day 4 MSM入島時のサブバッグ</strong>: 1泊分着替え + カメラ + 充電器 + 防寒着 + 洗面具のみ(15Lデイパック1個でOK)。</li>
+        <li><strong>Day 9 BCN出発時</strong>: チェックアウト後 → ホテル荷物預け → 最後のサグラダ散策 → 空港。</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">5-5. ハネムーン特典のお願い(全候補対象)</h3>
+      <ul class="clean-list">
+        <li><strong>どこも「ハネムーン旨を予約時に伝える」だけで何かしらの配慮あり</strong>(花・カード・無料アップグレード・シャンパン等は宿により異なる)。</li>
+        <li><strong>メール文例は <a href="#emails">§6</a> 参照</strong>。<strong>予約直後 + チェックイン3日前の2回送信</strong>で念押し。</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">5-6. キャンセル規定(繁忙期は厳格化)</h3>
+      <ul class="clean-list">
+        <li><strong>MSM 全島内ホテルは繁忙期(7-9月)はキャンセル規定が厳格</strong>(到着14-30日前から100%課金が一般的)。</li>
+        <li>公式予約は規定が厳しいことが多いが、Booking.comの<strong>「無料キャンセル可」プラン</strong>を選べば柔軟。価格差5-10%。</li>
+        <li><strong>海外旅行保険のキャンセル補償</strong>(2人なら年¥30,000程度)を併用するとリスクヘッジ完了。</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">5-7. パリ・バルセロナのスリ対策(全候補共通)</h3>
+      <ul class="clean-list">
+        <li><strong>パリ Esmeralda 周辺(シテ島)・Marignan 周辺(Sorbonne)・Bonaparte 周辺(Saint-Germain)</strong>: 観光客密集地でスリ多発。<strong>メトロ車内・カフェテラス・教会前</strong>で注意。</li>
+        <li><strong>バルセロナ Sercotel 周辺(サグラダ)</strong>: ガウディ建築前は世界有数のスリ多発地帯。<strong>バッグは前抱え、財布はクロスボディーバッグの内ポケット</strong>。</li>
+        <li><strong>ホテル金庫</strong>(全候補に有り): パスポート・帰国便eチケット印刷物は金庫保管推奨。</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">5-8. WiFi・電源・電圧</h3>
+      <ul class="clean-list">
+        <li>全候補で<strong>WiFi無料</strong>(速度は宿により差あり。Generator系・The People は速い。古い宿は遅め)。</li>
+        <li>フランス/スペインの<strong>電源はCタイプ</strong>(日本のAタイプから変換アダプタ必須)。USB-C充電器は世界共通。</li>
+        <li><strong>電圧は220-240V</strong>(日本100V)。ドライヤー・ヘアアイロンは変圧器必要、ホテル備付ヘアドライヤーを使えば安心。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §6 EMAILS ============ -->
+<section class="section" id="emails">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 06</div>
+      <h2 class="section__title">予約交渉メール文例集</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">コピペでそのまま使える4テンプレート。仏語・英語・西語対応。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">6-1. MSM 5軒同時打診(仏語)</h3>
+      <div class="email-subject"><strong>件名:</strong> Demande de réservation pour notre voyage de noces - 29/09/2026</div>
+      <div class="email-block">Madame, Monsieur,
+
+Nous souhaitons réserver une chambre pour deux personnes
+pour la nuit du mardi 29 septembre 2026 (arrivée le 29/09,
+départ le 30/09).
+
+Il s'agit de notre voyage de noces, et nous serions très
+reconnaissants si vous pouviez nous proposer une chambre
+avec vue sur la baie (chambre vue baie), idéalement dans
+[l'annexe / Maison Rouge / le bâtiment principal selon hôtel].
+
+Pourriez-vous nous indiquer :
+- la disponibilité pour ces dates
+- le tarif total (petit-déjeuner et taxe de séjour inclus)
+- la politique d'annulation
+- si la demi-pension (dîner au restaurant de l'hôtel) est
+  disponible
+
+Nous vous remercions par avance et restons dans l'attente
+de votre réponse.
+
+Cordialement,
+[Votre nom]
+[Téléphone]</div>
+      <div class="email-targets">
+        <strong>送信先(全5軒同時送信推奨):</strong>
+        <ul>
+          <li><code>contact@aubergelamerepoulard.com</code> (Mère Poulard + Les Terrasses Poulard 系列で同時打診可)</li>
+          <li><code>contact@hotel-la-croix-blanche.com</code> (La Croix Blanche)</li>
+          <li>公式問合せフォーム: <a href="https://www.hotel-mont-saintmichel.fr/en/contact-us.html" target="_blank" rel="noopener">hotel-mont-saintmichel.fr</a> (Du Guesclin)</li>
+          <li><code>contact@auberge-saint-pierre.fr</code> (Saint-Pierre)</li>
+        </ul>
+        <p class="text-muted text-small" style="margin-top:8px;">返信が来た順に「予約条件問題なし」のものから1軒に確定、残り4軒は丁寧に断り(後日同地域で再利用する場合の印象に響くため、24時間以内に断りメールを返す)。</p>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">6-2. パリ 続泊予約(6泊連続、英語)</h3>
+      <div class="email-subject"><strong>件名:</strong> Honeymoon reservation request - 26 Sep to 2 Oct 2026 (6 nights, continuous)</div>
+      <div class="email-block">Dear Reservations team,
+
+We would like to book a room for 2 adults for 6 consecutive
+nights from 26 September 2026 (check-in) to 2 October 2026
+(check-out).
+
+We are on our honeymoon (nous sommes en voyage de noces) and
+would appreciate any special touches you can arrange.
+
+Important context:
+- Our arrival at the hotel will be around 19:30 on 26 Sep
+  (late check-in - please advise on procedures).
+- On the evening of 29 Sep we will be staying at Mont
+  Saint-Michel overnight, returning on 30 Sep afternoon.
+  We will keep the room reserved for that night to store
+  our larger luggage - please confirm this is acceptable.
+- We would prefer a room on a lower floor if available
+  (no elevator) and would appreciate a fan in the room
+  given variable September temperatures.
+
+Could you please confirm:
+- Availability and total price (incl. breakfast and tourist tax)
+- Cancellation policy
+- Late check-in procedure on 26 Sep
+
+Many thanks,
+[Your Name] / [Phone] / [Booking reference if any]</div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">6-3. バルセロナ サグラダビュー指名(西語+英、Sercotel 用)</h3>
+      <div class="email-subject"><strong>件名:</strong> Honeymoon reservation - Classic Double Sagrada Familia Views - 2-4 Oct 2026</div>
+      <div class="email-block">Estimados,
+
+Quisiéramos reservar para 2 adultos, dos noches del 2 al 4
+de octubre de 2026, específicamente en una "Classic Double
+Room with Sagrada Familia Views".
+
+Estamos en luna de miel (nuestro viaje de novios) y nos
+encantaría disfrutar de la vista directa a la Sagrada
+Familia desde la habitación.
+
+¿Podrían confirmarnos:
+- disponibilidad en las fechas indicadas
+- tarifa total (incluyendo desayuno e impuesto turístico)
+- política de cancelación
+- acceso a la terraza Rosellón
+
+Muchas gracias,
+[Su nombre]</div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">6-4. Generator/Hostemplo/Primavera/The People 等(英語、シンプル版)</h3>
+      <div class="email-subject"><strong>件名:</strong> Honeymoon - Private double room reservation - [dates]</div>
+      <div class="email-block">Hi,
+
+We'd like to book your "[Deluxe King / Exterior Double / etc.]"
+for 2 adults, [check-in date] to [check-out date].
+
+We are on our honeymoon - any small touch you can arrange
+(welcome drink, room with the nicest view, quieter floor,
+etc.) would be very appreciated.
+
+Could you confirm:
+- availability and total price
+- check-in time (we may arrive around [time])
+- breakfast options
+- cancellation policy
+
+Thanks!
+[Name]</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §7 SCENARIOS ============ -->
+<section class="section" id="scenarios">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 07</div>
+      <h2 class="section__title">推奨組合せシナリオ(8泊合計)</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">予算優先軸別に3パターン。実値は予約タイミングで変動するためBooking.comリンクで再確認を。</p>
+    </div>
+
+    <div class="scenario-cards">
+
+      <div class="scenario-card scenario-card--budget">
+        <div class="scenario-card__label">Scenario A · 徹底節約</div>
+        <h3 class="scenario-card__title">節約優先型</h3>
+        <div class="scenario-card__total">約 ¥130,911</div>
+        <ul>
+          <li>
+            <div><span class="stay">Hôtel Marignan</span><span class="stay-meta">パリ 5泊・共同シャワー</span></div>
+            <span class="price-cell">¥78,375</span>
+          </li>
+          <li>
+            <div><span class="stay">La Croix Blanche</span><span class="stay-meta">MSM 1泊・湾ビュー9室</span></div>
+            <span class="price-cell">¥26,400</span>
+          </li>
+          <li>
+            <div><span class="stay">Generator Barcelona</span><span class="stay-meta">BCN 2泊・Deluxe King</span></div>
+            <span class="price-cell">¥26,136</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="scenario-card scenario-card--balanced">
+        <div class="scenario-card__label">Scenario B · メリハリ型</div>
+        <h3 class="scenario-card__title">MSM奮発・他節約</h3>
+        <div class="scenario-card__total">約 ¥190,375</div>
+        <ul>
+          <li>
+            <div><span class="stay">Hôtel Marignan</span><span class="stay-meta">パリ 5泊・専用バス</span></div>
+            <span class="price-cell">¥111,375</span>
+          </li>
+          <li>
+            <div><span class="stay">La Mère Poulard</span><span class="stay-meta">MSM 1泊・湾ビュー上位</span></div>
+            <span class="price-cell">¥45,000</span>
+          </li>
+          <li>
+            <div><span class="stay">Hostemplo SF</span><span class="stay-meta">BCN 2泊・サグラダ1ブロック</span></div>
+            <span class="price-cell">¥34,000</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="scenario-card scenario-card--premium">
+        <div class="scenario-card__label">Scenario C · 動線最優先</div>
+        <h3 class="scenario-card__title">立地/眺望ベスト</h3>
+        <div class="scenario-card__total">約 ¥237,000</div>
+        <ul>
+          <li>
+            <div><span class="stay">Hôtel Esmeralda</span><span class="stay-meta">パリ 5泊・Notre-Dame view</span></div>
+            <span class="price-cell">¥125,000</span>
+          </li>
+          <li>
+            <div><span class="stay">La Mère Poulard</span><span class="stay-meta">MSM 1泊・湾ビュー</span></div>
+            <span class="price-cell">¥45,000</span>
+          </li>
+          <li>
+            <div><span class="stay">Sercotel Rosellón</span><span class="stay-meta">BCN 2泊・サグラダビュー+屋上</span></div>
+            <span class="price-cell">¥67,000</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="callout">
+      <div class="callout__label">注意</div>
+      <p>上記試算は「該当客室の中央値」で見積もり。実勢価格は予約タイミング・需給で変動するため、各候補の Booking.com 日付プリセット済リンクで実値を必ず確認のこと。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §8 CHECKLIST ============ -->
+<section class="section" id="checklist">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 08</div>
+      <h2 class="section__title">予約手順チェックリスト</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">2026/5/24 → 5月末を目処に。</p>
+    </div>
+
+    <ul class="check-list">
+      <li><strong>MSM(最優先・1年前から完売の常連)</strong>: <a href="#emails">§6-1</a> のテンプレで<strong>5軒に同時メール送信</strong>して 9/29-9/30 空室+「vue baie」希望を確認。返信が来た順に確定。</li>
+      <li><strong>パリ(6泊連続)</strong>: <a href="#emails">§6-2</a> のテンプレで第1候補に<strong>6泊続泊で予約</strong>(MSM行く9/29夜も部屋保持)。</li>
+      <li><strong>バルセロナ(節約寄り)</strong>: Generator Barcelona または Hostemplo SF を <a href="#emails">§6-4</a> のテンプレで予約 10/2-10/4。</li>
+      <li>予約確定後、各ホテルに<strong>ハネムーン旨を再送</strong>(チェックイン3日前にも念押しメール)。</li>
+      <li><strong>海外旅行保険のキャンセル補償</strong>を確認(MSMの繁忙期キャンセル料保護用、年¥30,000程度)。</li>
+      <li>パスポート残存期間6ヶ月以上を確認(2026年4月以降に取得した夫婦は要チェック)。</li>
+      <li>全予約完了後、<code>results.md</code> の §21 宿泊計画表を更新。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ §9 SOURCES ============ -->
+<section class="section" id="sources">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 09</div>
+      <h2 class="section__title">出典・参考URL</h2>
+      <div class="section__divider"></div>
+    </div>
+
+    <h3 class="subsection__title-inline"><span class="country country--france">🇫🇷 パリ</span></h3>
+    <ul class="clean-list">
+      <li><a href="https://www.hotel-esmeralda.fr/en/paris-notre-dame/" target="_blank" rel="noopener">Hôtel Esmeralda 公式</a> / <a href="https://www.hotel-esmeralda.fr/en/rooms/" target="_blank" rel="noopener">客室</a></li>
+      <li><a href="https://www.hotel-marignan.com/page/view/en/home" target="_blank" rel="noopener">Hôtel Marignan 公式</a> / <a href="https://www.hotel-marignan.com/page/view/en/rooms" target="_blank" rel="noopener">客室</a></li>
+      <li><a href="https://www.hotelbonaparte.fr/en/" target="_blank" rel="noopener">Hôtel Bonaparte 公式</a></li>
+      <li><a href="https://staygenerator.com/hostels/paris?lang=en-GB" target="_blank" rel="noopener">Generator Paris 公式</a></li>
+      <li><a href="https://www.thepeoplehostel.com/en/destinations/paris-belleville/" target="_blank" rel="noopener">The People - Paris Belleville 公式</a></li>
+      <li>ハネムーン参考: <a href="https://korutak.com/2019/03/05/%E3%83%91%E3%83%AA%E3%81%AE%E3%83%9B%E3%82%B9%E3%83%86%E3%83%AB%E3%80%90generator-paris%E3%80%91%E3%81%A8%E3%80%90st-christophers-inns-the-canal-hostel%E3%80%91%E3%81%AB%E6%B3%8A%E3%81%BE%E3%81%A3/" target="_blank" rel="noopener">いつも雨ばかり Generator Paris 宿泊記</a> / <a href="https://www.tripadvisor.com/Hotel_Review-g187147-d235558-Reviews-Esmeralda_Hotel-Paris_Ile_de_France.html" target="_blank" rel="noopener">Hotel Esmeralda Tripadvisor</a> / <a href="https://www.eurocheapo.com/paris/hotel/hotel-esmeralda.html" target="_blank" rel="noopener">Hotel Esmeralda EuroCheapo</a></li>
+    </ul>
+
+    <h3 class="subsection__title-inline"><span class="country country--msm">⛰ MSM</span></h3>
+    <ul class="clean-list">
+      <li><a href="https://www.aubergelamerepoulard.com/en/hotel-la-mere-poulard/" target="_blank" rel="noopener">La Mère Poulard 公式</a> / <a href="https://www.secure-hotel-booking.com/d-edge/La-Mere-Poulard/2M3W/en" target="_blank" rel="noopener">予約</a></li>
+      <li><a href="https://www.auberge-saint-pierre.fr/en/" target="_blank" rel="noopener">Auberge Saint-Pierre 公式</a></li>
+      <li><a href="https://www.hotel-la-croix-blanche.com/en/" target="_blank" rel="noopener">La Croix Blanche 公式</a></li>
+      <li><a href="https://www.hotel-mont-saintmichel.fr/en/hotel.html" target="_blank" rel="noopener">Hotel Du Guesclin 公式</a></li>
+      <li>ハネムーン参考: <a href="https://www.honeymoon-s.jp/area/europe/france/northwest.html" target="_blank" rel="noopener">ハネムーンS MSM 特集</a> / <a href="https://www.honeymoon-s.jp/topic/letter-france/montsaintmichel20191031" target="_blank" rel="noopener">ハネムーンS 宿泊記</a> / <a href="https://www.redt-rex.com/mont-saint-michel-island-hotel-recommendations/" target="_blank" rel="noopener">redt-rex 島内ホテル</a> / <a href="https://note.com/sumikiki/n/na94a8169b982" target="_blank" rel="noopener">住んでる人に聞いてみた 編集部 note</a> / <a href="https://normandielovers.fr/en/hotels-on-mont-saint-michel-inside/" target="_blank" rel="noopener">Normandie Lovers 島内7軒比較</a></li>
+    </ul>
+
+    <h3 class="subsection__title-inline"><span class="country country--spain">🇪🇸 バルセロナ</span></h3>
+    <ul class="clean-list">
+      <li><a href="https://staygenerator.com/hostels/barcelona?lang=en-GB" target="_blank" rel="noopener">Generator Barcelona 公式</a></li>
+      <li><a href="https://hostemplo.com/en/hostemplo-sagrada-familia-hsf-en/" target="_blank" rel="noopener">Hostemplo Sagrada Familia 公式</a></li>
+      <li><a href="https://www.primavera-hostel.com/en/" target="_blank" rel="noopener">Primavera Hostel 公式</a></li>
+      <li><a href="https://hostemplo.com/en/hotel-boutique-hostemplo-hbh-en/" target="_blank" rel="noopener">Hotel Boutique Hostemplo 公式</a> / <a href="https://book.octorate.com/octobook/site/reservation/index.xhtml?codice=527328" target="_blank" rel="noopener">予約</a></li>
+      <li><a href="https://www.sercotelhoteles.com/en/hotel-rosellon/" target="_blank" rel="noopener">Sercotel Rosellón 公式</a> / <a href="https://www.sercotelhoteles.com/en/hotel-rosellon/terraza-del-rosellon" target="_blank" rel="noopener">屋上テラス</a></li>
+      <li>ハネムーン参考: <a href="https://thirdeyetraveller.com/sercotel-rosellon-barcelona-review/" target="_blank" rel="noopener">Third Eye Traveller</a> / <a href="https://whattodoinbarcelona.com/barcelona-sercotel-rosellon-review/" target="_blank" rel="noopener">What To Do In Barcelona</a> / <a href="https://baila.hpplus.jp/blogs/morota_keiko/54592" target="_blank" rel="noopener">@BAILA 旅行部 ホテルレポ</a> / <a href="https://www.redt-rex.com/barcelona-sagrada-familia-hotel-3-stars/" target="_blank" rel="noopener">redt-rex 3つ星ホテル</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ §10 NOTES ============ -->
+<section class="section" id="notes">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 10</div>
+      <h2 class="section__title">注意事項・免責</h2>
+      <div class="section__divider"></div>
+    </div>
+
+    <ul class="numbered-list">
+      <li><strong>空室状況・価格は2026-05-24 時点の調査結果に基づく見積もり</strong>。確定は必ず公式予約システム/Booking.com 日付プリセット済リンクで照会のこと。</li>
+      <li><strong>MSM 大潮ピーク日(9/28-29、係数98-99)は1年〜半年前から完売の希少日</strong>。本書記載の5軒すべて <a href="#emails">§6-1</a> のテンプレで同時打診し、最初に確定したものを押さえることを強く推奨。</li>
+      <li><strong>円換算は €1=¥165 で計算</strong>(2026年5月時点)。為替の動向(±10%程度)で実費は前後する。</li>
+      <li><strong>エアコン有無・エレベーター有無は2026年5月時点の公式表記/口コミ集計値</strong>。最新状況は予約時に再確認のこと。</li>
+      <li>全URLは 2026-05-24 にHTTP 200/302で生存確認済。アクセス時に不具合があれば、各宿の Booking.com 日付プリセット済リンクで代替確認可能。</li>
+      <li>Booking.com 日付プリセット済リンクは「ホテルを開いて自動で旅程日付検索」を実行する。検索結果に該当客室タイプ(Standard Double / Bay View / Sagrada View等)が表示されない場合は、その客室タイプが<strong>該当日完売</strong>を意味する → 残った客室タイプで再検討するか、別候補に切替。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__rule"></div>
+    <p>Honeymoon 2026 · Hotel Research Document · Plan B</p>
+    <p class="text-subtle text-small">Compiled 2026-05-24 — All URLs verified live (HTTP 200/302)</p>
+  </div>
+</footer>
+
+</body>
+</html>

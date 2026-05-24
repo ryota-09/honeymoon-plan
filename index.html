@@ -21,6 +21,7 @@
     --color-border: #E8E6E1;
     --color-france: #7C2D3F;      /* フランス: ワインレッド */
     --color-spain: #B0432A;       /* スペイン: テラコッタ */
+    --color-hotels: #8B6F3A;      /* ホテル: ディープゴールド */
     --font-serif: 'Cormorant Garamond', 'Hiragino Mincho ProN', serif;
     --font-sans: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
   }
@@ -99,7 +100,7 @@
   .reports {
     padding: 2rem 0 5rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
   }
 
@@ -140,6 +141,7 @@
 
   .report-card--france { --card-color: var(--color-france); }
   .report-card--spain { --card-color: var(--color-spain); }
+  .report-card--hotels { --card-color: var(--color-hotels); }
 
   .report-card__label {
     font-family: var(--font-serif);
@@ -285,6 +287,25 @@
         <span><strong>15</strong> セクション</span>
         <span><strong>4,049</strong> 行(原資料)</span>
         <span>ワインレッド</span>
+      </div>
+      <div class="report-card__cta">View Report</div>
+    </a>
+
+    <a href="./hotels.html" class="report-card report-card--hotels">
+      <div class="report-card__label">Section · 03 · Plan B</div>
+      <h2 class="report-card__title">
+        ホテル候補調査
+        <span class="report-card__title-sub">Paris · MSM · Barcelona</span>
+      </h2>
+      <p class="report-card__description">
+        Plan B 旅程に沿った3拠点 × 5候補 = 15軒のホテル徹底調査。
+        ハネムーン実績・空調/EV有無・キャンセル規定・メール文例(仏/英/西)・予算3シナリオまで網羅。
+        全URL生存確認済、Booking.com 日付プリセットリンク付き。
+      </p>
+      <div class="report-card__stats">
+        <span><strong>10</strong> セクション</span>
+        <span><strong>15</strong> 候補</span>
+        <span>ディープゴールド</span>
       </div>
       <div class="report-card__cta">View Report</div>
     </a>
