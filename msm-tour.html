@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>MSM ツアー候補調査 | Honeymoon 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --color-bg: #FAFAF8;
+    --color-surface: #FFFFFF;
+    --color-text: #1C1C1C;
+    --color-text-muted: #5C5C5C;
+    --color-text-subtle: #8A8A8A;
+    --color-border: #E8E6E1;
+    --color-border-strong: #C9C5BC;
+    --color-accent: #8B6F3A;
+    --color-accent-light: #F7F1E5;
+    --color-accent-dark: #6B5429;
+    --color-msm: #3D5468;
+    --color-msm-light: #EBF0F5;
+    --color-msm-dark: #2A3D4D;
+    --color-highlight: #FFF8E7;
+    --color-highlight-border: #E8D9A8;
+    --color-positive: #2D5A3D;
+    --color-positive-bg: #EEF5EF;
+    --color-warning: #8B5A20;
+    --color-warning-bg: #FBF4E6;
+    --color-danger: #8E2A2A;
+    --color-danger-bg: #FBEFEF;
+
+    --font-serif: 'Cormorant Garamond', 'Noto Serif JP', 'Hiragino Mincho ProN', serif;
+    --font-sans: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', sans-serif;
+    --font-mono: 'SF Mono', 'Menlo', 'Consolas', monospace;
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+  }
+
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.75;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--color-accent); text-decoration: none; transition: color 0.2s ease; word-break: break-word; }
+  a:hover { color: var(--color-accent-dark); text-decoration: underline; }
+
+  .container { max-width: 1080px; margin: 0 auto; padding: 0 var(--space-md); }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(180deg, var(--color-msm-light) 0%, var(--color-surface) 100%);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-xl) 0 var(--space-lg);
+    text-align: center;
+    position: relative;
+  }
+  .hero::before {
+    content: "";
+    position: absolute; top: 0; left: 0; right: 0; height: 5px;
+    background: linear-gradient(90deg, var(--color-msm) 0%, var(--color-accent) 50%, var(--color-msm) 100%);
+  }
+  .hero__eyebrow {
+    font-family: var(--font-serif);
+    font-size: 0.875rem;
+    letter-spacing: 0.3em;
+    color: var(--color-msm-dark);
+    text-transform: uppercase;
+    margin-bottom: var(--space-sm);
+    font-weight: 500;
+  }
+  .hero__title {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: var(--space-sm);
+    letter-spacing: -0.01em;
+  }
+  .hero__subtitle {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: clamp(1rem, 2vw, 1.35rem);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-lg);
+  }
+  .hero__meta {
+    display: flex; flex-wrap: wrap; justify-content: center;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+    max-width: 880px;
+    margin: var(--space-md) auto 0;
+  }
+  .hero__meta-item { display: flex; flex-direction: column; align-items: center; min-width: 120px; }
+  .hero__meta-label {
+    font-size: 0.7rem; letter-spacing: 0.2em;
+    color: var(--color-text-subtle);
+    text-transform: uppercase;
+    margin-bottom: 4px; font-weight: 500;
+  }
+  .hero__meta-value {
+    font-family: var(--font-serif);
+    font-size: 1.05rem; font-weight: 500;
+  }
+
+  /* TOC */
+  .toc {
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-sm) 0;
+    position: sticky; top: 0; z-index: 10;
+    box-shadow: 0 1px 0 var(--color-border);
+  }
+  .toc__inner {
+    display: flex; flex-wrap: wrap;
+    gap: var(--space-sm) var(--space-md);
+    justify-content: center;
+    font-size: 0.82rem;
+  }
+  .toc a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    white-space: nowrap;
+  }
+  .toc a:hover { color: var(--color-msm); border-bottom-color: var(--color-msm); text-decoration: none; }
+
+  /* Sections */
+  .section {
+    padding: var(--space-xl) 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .section:last-of-type { border-bottom: none; }
+  .section__header { margin-bottom: var(--space-lg); }
+  .section__number {
+    font-family: var(--font-serif);
+    font-size: 0.9rem;
+    color: var(--color-msm);
+    letter-spacing: 0.25em;
+    font-weight: 500;
+    margin-bottom: var(--space-xs);
+  }
+  .section__title {
+    font-family: var(--font-serif);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: var(--space-xs);
+    letter-spacing: -0.01em;
+  }
+  .section__subtitle {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    font-family: var(--font-serif);
+    font-style: italic;
+  }
+  .section__divider {
+    width: 48px; height: 1px;
+    background-color: var(--color-msm);
+    margin: var(--space-sm) 0 var(--space-md);
+  }
+
+  /* Tour Cards */
+  .tour-grid { display: flex; flex-direction: column; gap: var(--space-md); margin-top: var(--space-md); }
+  .tour-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border-left: 4px solid var(--color-msm);
+  }
+  .tour-card--top { box-shadow: 0 4px 16px rgba(61, 84, 104, 0.1); border-color: var(--color-highlight-border); }
+  .tour-card--alt { border-left-color: var(--color-accent); }
+  .tour-card__header {
+    padding: var(--space-md) var(--space-md) var(--space-sm);
+    background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+    border-bottom: 1px solid var(--color-border);
+    display: flex; flex-wrap: wrap; gap: var(--space-xs) var(--space-sm);
+    align-items: baseline; justify-content: space-between;
+  }
+  .tour-card__title-group { flex: 1 1 auto; min-width: 0; }
+  .tour-card__rank {
+    font-family: var(--font-serif);
+    font-size: 0.78rem;
+    letter-spacing: 0.2em;
+    color: var(--color-msm);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .tour-card__rank--top { color: var(--color-msm-dark); }
+  .tour-card__rank--alt { color: var(--color-accent-dark); }
+  .tour-card__name {
+    font-family: var(--font-serif);
+    font-size: clamp(1.2rem, 2.3vw, 1.55rem);
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 4px;
+    word-break: break-word;
+  }
+  .tour-card__operator {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    font-family: var(--font-serif);
+    font-style: italic;
+  }
+  .tour-card__price-tag {
+    text-align: right;
+    flex: 0 0 auto;
+  }
+  .tour-card__price-label {
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--color-text-subtle);
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  .tour-card__price-value {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--color-msm-dark);
+    font-feature-settings: "tnum";
+    white-space: nowrap;
+  }
+  .tour-card__price-sub {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--color-text-subtle);
+    margin-top: 2px;
+  }
+  .tour-card__body { padding: var(--space-md); }
+  .tour-card__cta {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin-bottom: var(--space-md);
+  }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 8px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1px solid var(--color-border-strong);
+    background: var(--color-surface);
+    color: var(--color-text-muted);
+    line-height: 1.4;
+  }
+  .btn:hover {
+    border-color: var(--color-msm);
+    color: var(--color-msm);
+    text-decoration: none;
+    background-color: var(--color-msm-light);
+  }
+  .btn--primary {
+    background-color: var(--color-msm);
+    color: var(--color-surface);
+    border-color: var(--color-msm);
+  }
+  .btn--primary:hover {
+    background-color: var(--color-msm-dark);
+    color: var(--color-surface);
+    border-color: var(--color-msm-dark);
+  }
+
+  .tour-card__details {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 8px var(--space-sm);
+    font-size: 0.88rem;
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-sm);
+  }
+  .tour-card__details dt {
+    color: var(--color-text-subtle);
+    font-weight: 500;
+    font-size: 0.82rem;
+    padding-top: 2px;
+  }
+  .tour-card__details dd {
+    color: var(--color-text);
+    line-height: 1.65;
+    word-break: break-word;
+  }
+  .tour-card__details dd strong { color: var(--color-text); font-weight: 600; }
+
+  .tour-card__tags {
+    list-style: none;
+    display: flex; flex-wrap: wrap; gap: 6px;
+    margin-top: var(--space-sm);
+    padding-top: var(--space-sm);
+    border-top: 1px dashed var(--color-border);
+  }
+  .tour-card__tags li {
+    font-size: 0.75rem;
+    padding: 3px 10px;
+    border-radius: 12px;
+    background-color: #F5F3EE;
+    color: var(--color-text-muted);
+    border: 1px solid var(--color-border);
+    white-space: nowrap;
+  }
+  .tour-card__tags li.tag--positive { background-color: var(--color-positive-bg); color: var(--color-positive); border-color: #B8D0BD; }
+  .tour-card__tags li.tag--warning { background-color: var(--color-warning-bg); color: var(--color-warning); border-color: #D9C28C; }
+  .tour-card__tags li.tag--danger { background-color: var(--color-danger-bg); color: var(--color-danger); border-color: #D9B6B6; }
+
+  /* Tables */
+  .table-wrap {
+    overflow-x: auto;
+    margin: var(--space-sm) 0;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface);
+    -webkit-overflow-scrolling: touch;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  thead th {
+    background-color: #F0F4F7;
+    color: var(--color-text);
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 0.85rem;
+    border-bottom: 1px solid var(--color-border-strong);
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  tbody td {
+    padding: 0.65rem 0.85rem;
+    border-bottom: 1px solid var(--color-border);
+    vertical-align: top;
+    line-height: 1.55;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background-color: #F8FAFC; }
+  .price { font-family: var(--font-serif); font-weight: 500; font-feature-settings: "tnum"; white-space: nowrap; }
+  .row--highlight { background-color: var(--color-highlight); }
+  .row--danger { background-color: var(--color-danger-bg); }
+  .row--positive { background-color: var(--color-positive-bg); }
+
+  /* Callouts */
+  .callout {
+    background-color: var(--color-highlight);
+    border: 1px solid var(--color-highlight-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    margin: var(--space-sm) 0 var(--space-md);
+  }
+  .callout--warning { background-color: var(--color-warning-bg); border-color: #D9C28C; }
+  .callout--positive { background-color: var(--color-positive-bg); border-color: #B8D0BD; }
+  .callout--danger { background-color: var(--color-danger-bg); border-color: #D9B6B6; }
+  .callout--info { background-color: var(--color-msm-light); border-color: #B6CADC; }
+  .callout__label {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: var(--space-xs);
+  }
+  .callout--warning .callout__label { color: var(--color-warning); }
+  .callout--positive .callout__label { color: var(--color-positive); }
+  .callout--danger .callout__label { color: var(--color-danger); }
+  .callout--info .callout__label { color: var(--color-msm-dark); }
+  .callout p, .callout ol, .callout ul { margin: 0; color: var(--color-text); font-size: 0.92rem; line-height: 1.7; }
+  .callout ol, .callout ul { margin-left: 1.25rem; margin-top: 4px; }
+  .callout li { margin-bottom: 4px; }
+
+  /* Subsection */
+  .subsection { margin-bottom: var(--space-md); }
+  .subsection__title {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    padding-bottom: var(--space-xs);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  /* Lists */
+  ul.clean-list, ol.clean-list { margin: var(--space-xs) 0 var(--space-sm) 1.25rem; }
+  ul.clean-list li, ol.clean-list li { margin-bottom: 0.4rem; line-height: 1.7; }
+  ul.clean-list li::marker { color: var(--color-msm); }
+
+  ul.numbered-list {
+    margin: var(--space-xs) 0 var(--space-sm) 0;
+    list-style: none;
+    counter-reset: num-counter;
+  }
+  ul.numbered-list li {
+    counter-increment: num-counter;
+    padding: 6px 0 6px 38px;
+    position: relative;
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+  ul.numbered-list li::before {
+    content: counter(num-counter, decimal-leading-zero);
+    position: absolute; left: 0; top: 6px;
+    font-family: var(--font-serif);
+    font-size: 0.9rem; color: var(--color-msm);
+    font-weight: 600; letter-spacing: 0.05em;
+    width: 28px;
+  }
+  ul.check-list { list-style: none; margin: var(--space-sm) 0; }
+  ul.check-list li {
+    padding: 8px 0 8px 30px;
+    position: relative;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    border-bottom: 1px dashed var(--color-border);
+  }
+  ul.check-list li::before {
+    content: "☐";
+    position: absolute; left: 0; top: 8px;
+    font-size: 1.1rem;
+    color: var(--color-msm);
+  }
+  ul.check-list li:last-child { border-bottom: none; }
+
+  /* Footer */
+  .footer {
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    padding: var(--space-lg) 0;
+    text-align: center;
+    color: var(--color-text-subtle);
+    font-size: 0.85rem;
+  }
+  .footer__rule {
+    width: 40px; height: 1px;
+    background-color: var(--color-msm);
+    margin: 0 auto var(--space-sm);
+  }
+
+  /* Utility */
+  .text-muted { color: var(--color-text-muted); }
+  .text-subtle { color: var(--color-text-subtle); }
+  .text-small { font-size: 0.85rem; }
+  .strike { text-decoration: line-through; color: var(--color-text-subtle); }
+
+  /* Responsive */
+  @media (max-width: 720px) {
+    .hero { padding: var(--space-lg) 0 var(--space-md); }
+    .section { padding: var(--space-lg) 0; }
+    .toc { padding: 8px 0; }
+    .toc__inner { gap: 0.5rem 0.9rem; font-size: 0.74rem; }
+    .hero__meta-item { min-width: 90px; }
+    .hero__meta { gap: var(--space-sm); }
+    table { font-size: 0.78rem; }
+    thead th, tbody td { padding: 0.5rem 0.55rem; }
+    .tour-card__header { flex-direction: column; align-items: stretch; gap: var(--space-xs); }
+    .tour-card__price-tag { text-align: left; }
+    .tour-card__price-value { font-size: 1.05rem; }
+    .tour-card__details { grid-template-columns: 100px 1fr; gap: 6px 8px; font-size: 0.82rem; }
+    .tour-card__details dt { font-size: 0.76rem; }
+    .btn { padding: 8px 12px; font-size: 0.82rem; }
+  }
+
+  @media (max-width: 480px) {
+    .tour-card__details { grid-template-columns: 1fr; gap: 4px; }
+    .tour-card__details dt { padding-top: 6px; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; }
+    .tour-card__details dd { padding-bottom: 4px; border-bottom: 1px dotted var(--color-border); }
+    .tour-card__details dd:last-child { border-bottom: none; }
+  }
+
+  @media print {
+    body { background: white; font-size: 11pt; }
+    .toc { position: static; box-shadow: none; }
+    .section { page-break-inside: avoid; padding: var(--space-md) 0; }
+    .tour-card { page-break-inside: avoid; }
+    .btn { border: 1px solid #999 !important; color: #333 !important; background: white !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <div class="hero__eyebrow">Honeymoon 2026 · Plan B · MSM Tour Research</div>
+    <h1 class="hero__title">モン・サン・ミシェル ツアー候補調査</h1>
+    <p class="hero__subtitle">Day 4-5 (9/29 火 → 9/30 水) をツアー化する検討</p>
+    <div class="hero__meta">
+      <div class="hero__meta-item"><span class="hero__meta-label">対象日程</span><span class="hero__meta-value">2026.09.29 – 09.30</span></div>
+      <div class="hero__meta-item"><span class="hero__meta-label">期間</span><span class="hero__meta-value">1泊2日</span></div>
+      <div class="hero__meta-item"><span class="hero__meta-label">候補</span><span class="hero__meta-value">5ツアー</span></div>
+      <div class="hero__meta-item"><span class="hero__meta-label">Currency</span><span class="hero__meta-value">JPY (€1=¥165)</span></div>
+      <div class="hero__meta-item"><span class="hero__meta-label">Updated</span><span class="hero__meta-value">2026.05.24</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="container">
+    <div class="toc__inner">
+      <a href="#prerequisites">§0 前提</a>
+      <a href="#tradeoff">§0.5 トレードオフ</a>
+      <a href="#tours">§1 5ツアー</a>
+      <a href="#matrix">§2 比較表</a>
+      <a href="#review">§3 重要観点</a>
+      <a href="#decision">§4 判断フレーム</a>
+      <a href="#checklist">§5 予約手順</a>
+      <a href="#sources">§6 出典</a>
+      <a href="#notes">§7 注意事項</a>
+    </div>
+  </div>
+</nav>
+
+<!-- §0 -->
+<section class="section" id="prerequisites">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 00</div>
+      <h2 class="section__title">重要前提(必読)</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">ツアー化検討の動機と最大のトレードオフ。</p>
+    </div>
+
+    <ul class="numbered-list">
+      <li><strong>ツアー化を検討する動機を整理</strong>: ホテル予約・TGV手配・Keolisバス接続を1パッケージに集約 → 予約労力ゼロ、リスク分散、日本語サポートあり。一方で<strong>スケジュールの自由度が大幅に下がる</strong>。</li>
+      <li><strong>Plan B Day 4-5 の現行設計</strong>: 9/29 Paris 08:30発 → 13:00 MSM 着 → 修道院・ブルーアワー・係数98満潮(22:10)→ 9/30 朝もや → 12:00 出発 → <strong>16:00 パリ着 → 17:00 オランジュリーモネ100周年展 + 20:30 Bateaux Parisiens ディナークルーズ(エッフェル塔シャンパンフラッシュ)</strong>。Day 5 の午後〜夜は旅程ピークの一つ。</li>
+      <li><strong>ツアー化の最大のトレードオフ</strong>: ほぼ全てのツアーは <strong>Day 2 復路 Paris到着が 20:00〜22:30</strong>。<strong>Day 5 のオランジュリー(モネ100周年展開幕日!)+ ディナークルーズが実質的に消失</strong>。詳細は §0.5 参照。</li>
+      <li><strong>ハネムーン特化のツアー</strong>は EMI Travel のみ(LIVRE D'OR 婚姻証明書サービス込み)。</li>
+      <li><strong>島内泊ホテルは VELTRA 列車1泊2日(マイバス系)・EMI Travel のみ手配可能</strong>。Mère Poulard / La Confiance / Mouton Blanc から選択。</li>
+    </ul>
+
+    <div class="callout callout--danger">
+      <div class="callout__label">★ 最重要</div>
+      <p>ツアー化すると、<strong>Day 5 のオランジュリー モネ100周年展開幕日 + Bateaux Parisiens ディナークルーズが実質不可</strong>。Plan B の設計思想の核心の1つを失う。詳細トレードオフ表は <a href="#tradeoff">§0.5</a>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- §0.5 -->
+<section class="section" id="tradeoff">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 00.5</div>
+      <h2 class="section__title">★ 最重要トレードオフ分析: ツアーで失うもの</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">DIY (Plan B 現行) vs ツアー化 の徹底比較。</p>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>観点</th><th>DIY (Plan B 現行)</th><th>ツアー化</th><th>影響度</th></tr>
+        </thead>
+        <tbody>
+          <tr class="row--danger"><td><strong>Day 5 オランジュリー モネ100周年展 開幕日(17:00入場)</strong></td><td>✅ 可能(Paris戻り16:00)</td><td>❌ <strong>不可能</strong>(Paris戻り20:00以降)</td><td>★★★ 旅程ピーク級の喪失</td></tr>
+          <tr class="row--danger"><td><strong>Day 5 Bateaux Parisiens ディナークルーズ(20:30)+ エッフェル塔シャンパンフラッシュ(22:00)</strong></td><td>✅ 可能</td><td>❌ <strong>不可能</strong>(返着22:00過ぎ)</td><td>★★★ ハネムーン定番演出の喪失</td></tr>
+          <tr><td>Day 5 セーヌ川夜景・パリ最後の夜の体験</td><td>✅ 可能</td><td>⚠️ パリ着後ホテル直行のみ</td><td>★★ 雰囲気を失う</td></tr>
+          <tr><td>9/29 朝のパリ余裕</td><td>△(08:30出発で多少余裕)</td><td>❌ 07:15-07:30出発で早朝</td><td>★ ホテル朝食を急ぐ必要</td></tr>
+          <tr class="row--positive"><td>TGV予約の手間</td><td>TGV+Keolisバスの2区間予約必要</td><td>✅ ツアー一括</td><td>▼ ツアーのメリット</td></tr>
+          <tr class="row--positive"><td>島内ホテルの希少枠の獲得</td><td>5月時点完売リスクが個別交渉</td><td>✅ ツアー枠で確保(条件付き)</td><td>▼ ツアーのメリット</td></tr>
+          <tr><td>9/29 大潮係数98 / 22:10満潮の体験</td><td>✅ 完全に体験</td><td>✅ 同様(島内泊の場合)</td><td>同等</td></tr>
+          <tr><td>9/30 朝もや + 干潟散歩</td><td>✅ 完全に体験</td><td>⚠️ 多くのツアーで11:35-12:00 出発</td><td>△ 時間短縮</td></tr>
+          <tr class="row--positive"><td>観光案内・歴史的解説</td><td>DIY = 自分で予習が必要</td><td>✅ ガイド/アシスタント説明あり</td><td>▼ ツアーのメリット</td></tr>
+          <tr><td>総費用(2人)</td><td>約¥82,000-100,000(Auberge Saint-Pierre 基準)</td><td>約¥71,000-172,000(ツアーによる)</td><td>ほぼ同等 〜 やや高い</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <div class="callout__label">結論</div>
+      <ul>
+        <li><strong>DIY (Plan B 現行) は Day 5 夜の旅程ピーク2件(モネ展+クルーズ)を確実に体験できる優位性が大きい</strong>。</li>
+        <li><strong>ツアー化のメリットは「予約労力の軽減」と「島内ホテル希少枠の確保」</strong>。費用は同等〜やや高い程度。</li>
+        <li><strong>判断ポイント</strong>: 「予約労力を軽減したい」or 「Day 5 夜を失っても許容できる」場合のみツアー化を推奨。それ以外は DIY 維持を推奨。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- §1 TOURS -->
+<section class="section" id="tours">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 01</div>
+      <h2 class="section__title">5ツアー候補詳細</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">日本語/英語/送迎の各タイプを網羅。</p>
+    </div>
+
+    <div class="tour-grid">
+
+      <!-- Tour 1: VELTRA -->
+      <article class="tour-card tour-card--top">
+        <div class="tour-card__header">
+          <div class="tour-card__title-group">
+            <div class="tour-card__rank tour-card__rank--top">★ 第1推奨 / Best Value</div>
+            <h3 class="tour-card__name">VELTRA 列車で行く!世界遺産モンサンミッシェル 1泊2日ツアー</h3>
+            <div class="tour-card__operator">運営: マイバス系 / 選べる6ホテル・修道院チケット付き</div>
+          </div>
+          <div class="tour-card__price-tag">
+            <span class="tour-card__price-label">1人(島内 Mère Poulard)</span>
+            <span class="tour-card__price-value">¥46,067〜</span>
+            <span class="tour-card__price-sub">2人合計 ¥71,020〜92,134</span>
+          </div>
+        </div>
+        <div class="tour-card__body">
+          <div class="tour-card__cta">
+            <a class="btn btn--primary" href="https://www.veltra.com/jp/europe/france/paris/a/195372" target="_blank" rel="noopener">▶ VELTRA で予約</a>
+          </div>
+          <dl class="tour-card__details">
+            <dt>価格(対岸)</dt><dd>ラ・ディーグ <strong>¥35,510</strong> / ルレ・サン・ミッシェル ¥41,269 / メルキュール ¥46,067</dd>
+            <dt>価格(島内)</dt><dd>ル・ムートン・ブラン <strong>¥44,148</strong> / <strong>ラ・メール・プラール ¥46,067</strong> / ラ・コンフィアンス ¥46,067</dd>
+            <dt>含むもの</dt><dd>TGV往復・バス・宿泊・朝食・修道院入場券</dd>
+            <dt>ガイド</dt><dd>バス車内のみ日本語アシスタント / 現地は自由行動</dd>
+            <dt>スケジュール</dt><dd><strong>Day 1</strong>: パリ・モンパルナス駅 07:15発 → MSM 12:10着<br><strong>Day 2</strong>: MSM 17:22発 → パリ・モンパルナス駅 <strong>22:21着</strong></dd>
+            <dt>実施日</dt><dd>月〜金曜日(9/29 火 OK)/ 金曜日は復路TGV必須</dd>
+            <dt>ハネムーン対応</dt><dd>△ 標準パッケージのみ、別途要交渉</dd>
+            <dt>注意点</dt><dd>列車利用のため移動が比較的快適、島内3ホテルから選択可。<strong>最もコスパが良い島内泊ツアー</strong></dd>
+          </dl>
+          <ul class="tour-card__tags">
+            <li class="tag--positive">★ 島内3ホテル選択可</li>
+            <li class="tag--positive">★ コスパ最良</li>
+            <li>✅ TGV往復</li>
+            <li>✅ 修道院入場</li>
+            <li class="tag--warning">⚠️ Day 5 Paris 22:21着 → クルーズ不可</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Tour 2: EMI -->
+      <article class="tour-card">
+        <div class="tour-card__header">
+          <div class="tour-card__title-group">
+            <div class="tour-card__rank">第2推奨 / Premium 日本語</div>
+            <h3 class="tour-card__name">EMI Travel 1泊+ノルマンディーいなか村</h3>
+            <div class="tour-card__operator">運営: EMI Travel Paris / 全行程日本語アシスタント + オリジナルマップ</div>
+          </div>
+          <div class="tour-card__price-tag">
+            <span class="tour-card__price-label">1人(島内 Mère Poulard)</span>
+            <span class="tour-card__price-value">¥69,101〜86,376</span>
+            <span class="tour-card__price-sub">2人合計 ¥138,202〜172,752</span>
+          </div>
+        </div>
+        <div class="tour-card__body">
+          <div class="tour-card__cta">
+            <a class="btn btn--primary" href="https://www.veltra.com/jp/europe/france/paris/a/13441" target="_blank" rel="noopener">▶ VELTRA経由予約</a>
+            <a class="btn" href="https://www.emitravel.net/michel-tour-list/" target="_blank" rel="noopener">EMI 公式</a>
+          </div>
+          <dl class="tour-card__details">
+            <dt>価格(対岸)</dt><dd>La Digue <strong>¥69,101</strong> / Saint-Aubert ¥72,000 / Mercure ¥77,734 / Relais Saint-Michel ¥78,694</dd>
+            <dt>価格(島内)</dt><dd>Terrasse Poulard ¥82,535 / <strong>Mère Poulard ¥86,376</strong></dd>
+            <dt>含むもの</dt><dd>朝食 / 入場料 / 宿泊費 / <strong>日本語アシスタント全行程</strong> / EMIオリジナル島内散策&修道院マップ</dd>
+            <dt>スケジュール</dt><dd>Day 1: パリ朝発 → <strong>ノルマンディーいなか村(自由行動)</strong> → MSM 島内散策<br>Day 2: 自由な朝 → 帰路(Paris着 約 <strong>20:40</strong>)</dd>
+            <dt>集合場所</dt><dd>エミトラベル・サポートラウンジ(ヴィエンヌ通り、Saint-Lazare/Saint-Augustin 近く)</dd>
+            <dt>注意点</dt><dd><strong>オリジナルマップ + ノルマンディーいなか村寄道</strong>で標準ツアーより1.5倍密度。日本語サポート手厚い</dd>
+          </dl>
+          <ul class="tour-card__tags">
+            <li class="tag--positive">✅ 全行程日本語</li>
+            <li class="tag--positive">★ ノルマンディーいなか村</li>
+            <li class="tag--positive">★ オリジナルマップ</li>
+            <li>✅ 島内ホテル2選択</li>
+            <li class="tag--warning">⚠️ Day 5 Paris 20:40着</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Tour 3: EMI Honeymoon -->
+      <article class="tour-card tour-card--alt">
+        <div class="tour-card__header">
+          <div class="tour-card__title-group">
+            <div class="tour-card__rank tour-card__rank--alt">第3推奨 / Honeymoon 特化</div>
+            <h3 class="tour-card__name">EMI Travel ハネムーン1泊2日 + LIVRE D'OR</h3>
+            <div class="tour-card__operator">運営: EMI Travel Paris / MSM教会で永久保管の婚姻証明書サービス</div>
+          </div>
+          <div class="tour-card__price-tag">
+            <span class="tour-card__price-label">1人(ベース)</span>
+            <span class="tour-card__price-value">¥63,200</span>
+            <span class="tour-card__price-sub">+ LIVRE D'OR ¥33,800 = <strong>2人合計 ¥160,200</strong></span>
+          </div>
+        </div>
+        <div class="tour-card__body">
+          <div class="tour-card__cta">
+            <a class="btn btn--primary" href="https://www.emitravel.net/michel-tour-list/" target="_blank" rel="noopener">▶ EMI 公式から問合せ</a>
+          </div>
+          <dl class="tour-card__details">
+            <dt>含むもの(基本)</dt><dd>朝食 / 入場料 / 宿泊費 / 日本語アシスタント / オリジナルマップ / <strong>多時間帯の修道院鑑賞</strong>(夕景・夜景・朝景) / 特別ゲーム</dd>
+            <dt>LIVRE D'OR 内容</dt><dd><strong>MSM 教会で署名された結婚証明書</strong> / marriage document / wedding calendar(島内永久保管、再訪時に名前確認可能)</dd>
+            <dt>ホテル</dt><dd>対岸メイン(島内オプションは要相談)</dd>
+            <dt>ガイド言語</dt><dd>日本語アシスタント</dd>
+            <dt>追加価値</dt><dd>`results.md` Day 4 でも触れられていた「LIVRE D'OR への結婚証明書提出」DIY ハードル(英語メール・戸籍抄本英訳)が、ツアーで<strong>完全代行</strong>される</dd>
+            <dt>注意点</dt><dd><strong>ハネムーン専用設計</strong>。LIVRE D'OR は希少な体験。20:00頃 Paris着 → クルーズ不可</dd>
+          </dl>
+          <ul class="tour-card__tags">
+            <li class="tag--positive">★ ハネムーン特化設計</li>
+            <li class="tag--positive">★ LIVRE D'OR 代行</li>
+            <li class="tag--positive">★ 多時間帯の修道院鑑賞</li>
+            <li class="tag--positive">✅ 全行程日本語</li>
+            <li class="tag--warning">⚠️ 対岸メイン(島内要相談)</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Tour 4: Mybus shuttle -->
+      <article class="tour-card">
+        <div class="tour-card__header">
+          <div class="tour-card__title-group">
+            <div class="tour-card__rank">第4推奨 / Max 柔軟性</div>
+            <h3 class="tour-card__name">Mybus / JTB 片道シャトル × 2 + 自前ホテル</h3>
+            <div class="tour-card__operator">運営: Mybus France / JTB / ホテルは hotels.md から自由選択</div>
+          </div>
+          <div class="tour-card__price-tag">
+            <span class="tour-card__price-label">送迎のみ・2人 R/T</span>
+            <span class="tour-card__price-value">¥89,424</span>
+            <span class="tour-card__price-sub">+ 別途ホテル代</span>
+          </div>
+        </div>
+        <div class="tour-card__body">
+          <div class="tour-card__cta">
+            <a class="btn btn--primary" href="https://www.veltra.com/jp/europe/france/paris/a/105311" target="_blank" rel="noopener">▶ VELTRA Mybus 予約</a>
+            <a class="btn" href="https://www.jtb.co.jp/kaigai_opt/srh/prddetail/p276491/" target="_blank" rel="noopener">JTB 片道トランスファー</a>
+          </div>
+          <dl class="tour-card__details">
+            <dt>価格(片道)</dt><dd>JTB <strong>¥22,356</strong> / Mybus ¥23,034</dd>
+            <dt>ホテル選択</dt><dd><strong>別途自由予約</strong>(hotels.md §2 参照: La Mère Poulard ¥64,422 / Du Guesclin ¥28,050 / La Croix Blanche ¥41,773 等)</dd>
+            <dt>スケジュール(JTB)</dt><dd>往路: パリ 07:20発 → MSM 12:00着<br>復路: MSM 16:10発 → パリ <strong>20:50着</strong></dd>
+            <dt>集合場所</dt><dd>18 Rue des Pyramides 75001 Paris(MyBus France office)</dd>
+            <dt>含むもの</dt><dd>バス専用車 / 日本語公認ガイド(車内のみ) / MSMマップ</dd>
+            <dt>含まないもの</dt><dd>ホテル / 食事 / 修道院入場券</dd>
+            <dt>注意点</dt><dd><strong>ホテルを自由選択できる</strong>ため、hotels.md の Mère Poulard 等を組み合わせれば<strong>完全カスタマイズ可能</strong>。費用は TGV+Keolis バス DIY と同等。実質的に DIY と同じ柔軟性だが日本語ガイド付きで車内安心</dd>
+          </dl>
+          <ul class="tour-card__tags">
+            <li class="tag--positive">★ ホテル完全自由選択</li>
+            <li class="tag--positive">✅ 日本語ガイド車内</li>
+            <li>送迎のみシンプル</li>
+            <li class="tag--warning">⚠️ Day 5 Paris 20:50着</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Tour 5: PARISCityVISION -->
+      <article class="tour-card">
+        <div class="tour-card__header">
+          <div class="tour-card__title-group">
+            <div class="tour-card__rank">第5推奨 / 英語 + D-Day込み</div>
+            <h3 class="tour-card__name">PARISCityVISION 2-Day Normandy + Saint-Malo + Mont Saint-Michel</h3>
+            <div class="tour-card__operator">運営: PARISCityVISION (Gray Line) / 英語ガイド</div>
+          </div>
+          <div class="tour-card__price-tag">
+            <span class="tour-card__price-label">1人</span>
+            <span class="tour-card__price-value">¥82,335</span>
+            <span class="tour-card__price-sub">2人合計 ¥164,670</span>
+          </div>
+        </div>
+        <div class="tour-card__body">
+          <div class="tour-card__cta">
+            <a class="btn btn--primary" href="https://www.pariscityvision.com/en/normandy-saint-malo-mont-saint-michel-2-days" target="_blank" rel="noopener">▶ PARISCityVISION 予約</a>
+            <a class="btn" href="https://www.viator.com/tours/Paris/2-Day-Normandy-Saint-Malo-and-Mont-St-Michel-Tour-from-Paris/d479-2050PM2" target="_blank" rel="noopener">Viator 予約</a>
+          </div>
+          <dl class="tour-card__details">
+            <dt>含むもの</dt><dd>英語ガイド・大型バス・修道院入場・1夕食・1朝食・<strong>4★ホテル宿泊</strong>(D-Dayエリア滞在、対岸ではない場合あり)</dd>
+            <dt>スケジュール</dt><dd>Day 1: Paris → Rouen → Honfleur → D-Day Beaches → 4★Hotel<br>Day 2: Saint-Malo → Mont Saint-Michel → Paris(夜帰着)</dd>
+            <dt>ガイド言語</dt><dd><strong>英語</strong>(日本語非対応)</dd>
+            <dt>ハネムーン対応</dt><dd>❌ 標準ツアー</dd>
+            <dt>注意点</dt><dd><strong>MSM 単独ではなく D-Day ビーチ + Saint-Malo も同行</strong>。歴史好きには◎。<strong>Plan B の DIY 範囲を大きく超えるので、ハネムーンの「Day 4-5 だけツアー化」用途には不適</strong>。比較情報として記載</dd>
+          </dl>
+          <ul class="tour-card__tags">
+            <li>英語ガイド</li>
+            <li class="tag--positive">★ D-Day + Saint-Malo 込み</li>
+            <li>4★ホテル</li>
+            <li class="tag--danger">❌ ハネムーン非対応</li>
+            <li class="tag--warning">⚠️ Plan B 範囲超</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- §2 MATRIX -->
+<section class="section" id="matrix">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 02</div>
+      <h2 class="section__title">ツアー候補 比較マトリクス</h2>
+      <div class="section__divider"></div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>#</th><th>ツアー名</th><th>価格(2人)</th><th>島内ホテル選択</th><th>ガイド</th><th>Day 1 出発</th><th>Day 2 Paris帰着</th><th>ハネムーン</th></tr>
+        </thead>
+        <tbody>
+          <tr class="row--highlight"><td>1 ★</td><td>VELTRA 列車1泊2日</td><td class="price">¥71,020〜92,134</td><td><strong>Mère Poulard / Mouton Blanc / Confiance</strong></td><td>車内のみ日本語</td><td>07:15</td><td><strong>22:21</strong></td><td>△</td></tr>
+          <tr><td>2</td><td>EMI Travel 1泊+いなか村</td><td class="price">¥138,202〜172,752</td><td>Mère Poulard / Terrasse Poulard</td><td>全行程日本語</td><td>朝発</td><td><strong>20:40</strong></td><td>△</td></tr>
+          <tr><td>3</td><td>EMI Travel ハネムーン + LIVRE D'OR</td><td class="price">¥160,200</td><td>対岸メイン</td><td>全行程日本語</td><td>朝発</td><td><strong>20:00</strong></td><td><strong>◎ LIVRE D'OR</strong></td></tr>
+          <tr><td>4</td><td>Mybus/JTB 片道×2 + 自前ホテル</td><td class="price">¥89,424 + ホテル代</td><td><strong>全島内ホテル選択可</strong></td><td>車内のみ日本語</td><td>07:20</td><td><strong>20:50</strong></td><td>△</td></tr>
+          <tr><td>5</td><td>PARISCityVISION 2-Day</td><td class="price">¥164,670</td><td>D-Dayエリア4★(島外)</td><td>英語</td><td>Day 1 全日</td><td><strong>22:00頃</strong></td><td>❌</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="subsection__title" style="margin-top:var(--space-lg);">Tour vs DIY 総費用比較(2人 1泊、島内 Mère Poulard ベース)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>方式</th><th>内訳</th><th>合計(2人)</th></tr></thead>
+        <tbody>
+          <tr><td>DIY (Plan B 現行 / Auberge Saint-Pierre)</td><td>TGV+バス ¥24,750 + ホテル ¥52,225 + 修道院 ¥5,280</td><td class="price"><strong>¥82,255</strong></td></tr>
+          <tr><td>DIY (Mère Poulard 島内)</td><td>TGV+バス ¥24,750 + ホテル ¥64,422 + 修道院 ¥5,280</td><td class="price"><strong>¥94,452</strong></td></tr>
+          <tr class="row--highlight"><td><strong>VELTRA 列車1泊2日 Mère Poulard</strong></td><td>一括 ¥46,067 × 2</td><td class="price"><strong>¥92,134</strong></td></tr>
+          <tr><td>EMI Travel 1泊 Mère Poulard</td><td>一括 ¥86,376 × 2</td><td class="price"><strong>¥172,752</strong></td></tr>
+          <tr><td>EMI Travel ハネムーン + LIVRE D'OR</td><td>¥63,200 × 2 + 婚姻証明</td><td class="price"><strong>¥160,200</strong></td></tr>
+          <tr><td>Mybus片道×2 + Mère Poulard 自前</td><td>¥22,356 × 2 × 2 + Mère Poulard</td><td class="price"><strong>¥153,846</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout callout--info">
+      <div class="callout__label">結論</div>
+      <p><strong>VELTRA 列車1泊2日(Mère Poulard)¥92,134 が DIY(¥94,452)とほぼ同等で最経済的</strong>。Mybus 片道×2 はホテル代を上乗せすると ¥153k と高くなる。</p>
+    </div>
+  </div>
+</section>
+
+<!-- §3 REVIEW -->
+<section class="section" id="review">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 03</div>
+      <h2 class="section__title">重要観点 — プロ視点レビュー</h2>
+      <div class="section__divider"></div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">3-1. 復路時刻の致命的影響</h3>
+      <ul class="clean-list">
+        <li><strong>ほぼ全てのツアーで Day 2 Paris帰着が 20:00〜22:30</strong>。`results.md` Day 5 のオランジュリー(モネ100周年展開幕日)+ Bateaux Parisiens ディナークルーズが<strong>事実上不可</strong>。</li>
+        <li><strong>オランジュリー モネ100周年展は 9/30 開幕日</strong>で、「現地ジヴェルニー(Day 3)→絵画(Day 5)」体験の完結ポイント。これを失うと Plan B の設計思想の核心の1つが崩れる。</li>
+        <li><strong>回避策</strong>: クルーズを Day 5 ではなく Day 2(9/27)に前倒し可能か検討。但しその場合は他の予定との競合発生。</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">3-2. ハネムーンの体験密度</h3>
+      <ul class="clean-list">
+        <li><strong>VELTRA / Mybus / PARISCityVISION は標準パッケージ</strong>で、ハネムーン特典は別途交渉。</li>
+        <li><strong>EMI Travel ハネムーンプランの LIVRE D'OR は唯一無二</strong>: MSM 教会で署名された婚姻証明書が島内永久保管され、再訪時に確認可能。`results.md` Day 4 で「事前に英語メールで教会連絡、戸籍抄本英訳を持参」と記載があるDIY ハードルが、ツアーで完全代行される。</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">3-3. 島内泊の希少性確保</h3>
+      <ul class="clean-list">
+        <li><code>hotels.md</code> §0.5 で確認したとおり、<strong>MSM 島内ホテルは9月末完売リスク高</strong>。ツアーは<strong>割当て枠で確保</strong>できる可能性あり。</li>
+        <li>但し、<strong>VELTRA / EMI は「島内ホテル指定」が予約時のみ可能</strong>、空室なら他ホテルに自動割当。9月末の予約は5月中が望ましい。</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">3-4. 移動快適性</h3>
+      <ul class="clean-list">
+        <li><strong>列車利用(VELTRA)</strong> vs <strong>バス利用(EMI/Mybus)</strong>: 5時間移動の快適性が異なる。
+          <ul>
+            <li>TGV: Paris→Rennes 2h、座席快適、Wi-Fi、トイレ清潔</li>
+            <li>大型バス: 4.5-5h、トイレ付き、Wi-Fi、車中ガイド説明あり</li>
+          </ul>
+        </li>
+        <li><strong>新婚旅行で5時間移動を2回</strong>、列車のほうが疲労少。</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">3-5. キャンセル規定</h3>
+      <ul class="clean-list">
+        <li><strong>VELTRA / みゅう</strong>: 出発10日前まで無料、それ以降は段階的に課金。</li>
+        <li><strong>EMI Travel</strong>: 14-30日前から課金率上昇。</li>
+        <li><strong>PARISCityVISION</strong>: 7日前まで無料、それ以降課金。</li>
+        <li><strong>Mybus片道シャトル</strong>: 数日前まで対応可能(Mybus標準規定)。</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">3-6. 予約タイミング</h3>
+      <ul class="clean-list">
+        <li><strong>2026/5〜6月中の予約推奨</strong>(島内ホテル指定で確保が必要なため)。</li>
+        <li>9月末は3-6ヶ月前から島内枠が埋まる。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- §4 DECISION -->
+<section class="section" id="decision">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 04</div>
+      <h2 class="section__title">推奨判断フレーム</h2>
+      <div class="section__divider"></div>
+    </div>
+
+    <div class="callout callout--danger">
+      <div class="callout__label">★ Plan B の核心を守るならツアー化「不可」</div>
+      <p><code>results.md</code> Day 5 の <strong>オランジュリー モネ100周年展開幕日(9/30) + Bateaux Parisiens エッフェル塔シャンパンフラッシュ</strong> が旅程ピークの一つ。<strong>ツアー化するとこれが消失</strong>。</p>
+      <p style="margin-top:8px;">→ <strong>DIY(現行 Plan B)を強く推奨</strong>。<code>hotels.md</code> §0.5 で確認した通り MSM 全5軒空室あり(Du Guesclin ¥28,050最安、Mère Poulard ¥64,422、Croix Blanche ¥41,773湾180°ビュー)。</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">それでもツアー化したい場合</h3>
+      <ul class="numbered-list">
+        <li><strong>コスパ最優先 + 島内泊</strong>: VELTRA 列車1泊2日 ラ・コンフィアンス(¥46,067/人 × 2 = ¥92,134)</li>
+        <li><strong>日本語サポート手厚く</strong>: EMI Travel 1泊2日 + ノルマンディーいなか村(Mère Poulard ¥86,376/人 × 2 = ¥172,752)</li>
+        <li><strong>ハネムーン記念</strong>: EMI Travel ハネムーン + LIVRE D'OR(¥126,400 + 婚姻証明 ¥33,800 = ¥160,200)</li>
+        <li><strong>柔軟性最重視 + 自前ホテル</strong>: Mybus片道×2 + 別予約(¥89,424 + 別ホテル代)</li>
+        <li><strong>D-Day も興味あり</strong>: PARISCityVISION 2-Day(¥164,670、Plan B範囲を超える)</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3 class="subsection__title">Day 5 損失をどう回避するか</h3>
+      <ul class="clean-list">
+        <li><strong>オランジュリーモネ100周年展は 9/30 以降も継続</strong>(展期間 9/30-2027/2)。<strong>MSM ツアー前に Day 2(9/27 日)に追加見学する代替案あり</strong>。但し9/27 はサンジェルマン散歩・エッフェル塔頂上で既に密度高い。</li>
+        <li><strong>Bateaux Parisiens ディナークルーズも 9/27 や 9/28 に前倒し可能</strong>。但しサクレ・クールやジヴェルニーとの兼ね合いで動線複雑化。</li>
+      </ul>
+    </div>
+
+    <div class="callout callout--info">
+      <div class="callout__label">総合判断</div>
+      <p><strong>Plan B 設計を維持して DIY が最適。ツアー化は「Day 5 を諦めた上で予約労力を最小化したい」場合のみ</strong>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- §5 CHECKLIST -->
+<section class="section" id="checklist">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 05</div>
+      <h2 class="section__title">予約手順(ツアー化を選んだ場合)</h2>
+      <div class="section__divider"></div>
+    </div>
+
+    <ul class="check-list">
+      <li><strong>判断</strong>: Day 5 のオランジュリー+クルーズを諦められるか家族会議で決定。</li>
+      <li><strong>第1選択(VELTRA 列車1泊2日)</strong>の場合:
+        <ul style="margin-top:6px;">
+          <li>VELTRA で 2026/9/29 火曜日の空席確認 → 「ラ・コンフィアンス(島内)」を選択</li>
+          <li>予約後、ハネムーン旨を VELTRA カスタマーサービスに連絡</li>
+          <li>「特別ゲーム」「LIVRE D'OR(EMI 系)」相当の希望があれば EMI Travel に切替検討</li>
+        </ul>
+      </li>
+      <li><strong>代替(EMI Travel ハネムーン特化 + LIVRE D'OR)</strong>の場合:
+        <ul style="margin-top:6px;">
+          <li>EMI Travel 公式 <a href="https://www.emitravel.net/michel-tour-list/" target="_blank" rel="noopener">emitravel.net</a> から問合せ</li>
+          <li>LIVRE D'OR 申込書 + 戸籍抄本英訳の準備(約2-3週間)</li>
+        </ul>
+      </li>
+      <li><strong>キャンセル補償付き海外旅行保険</strong>を加入。</li>
+      <li><code>results.md</code> の Day 4-5 セクションをツアー版に書き換え(オランジュリー・クルーズ削除)。</li>
+      <li><strong>オランジュリー モネ100周年展は Day 2(9/27 日)に前倒し可能か</strong>を <code>results.md</code> で再検討。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- §6 SOURCES -->
+<section class="section" id="sources">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 06</div>
+      <h2 class="section__title">出典・参考URL</h2>
+      <div class="section__divider"></div>
+    </div>
+
+    <h3 class="subsection__title">日本語ツアー</h3>
+    <ul class="clean-list">
+      <li><a href="https://www.veltra.com/jp/europe/france/paris/a/195372" target="_blank" rel="noopener">VELTRA 列車1泊2日ツアー</a></li>
+      <li><a href="https://www.veltra.com/jp/europe/france/paris/a/13441" target="_blank" rel="noopener">EMI Travel 1泊+ノルマンディーいなか村</a></li>
+      <li><a href="https://www.emitravel.net/michel-tour-list/" target="_blank" rel="noopener">EMI Travel 公式 ツアー一覧</a></li>
+      <li><a href="https://www.myushop.net/options/detail/3775" target="_blank" rel="noopener">みゅう 1泊2日ツアー</a></li>
+      <li><a href="https://www.myushop.net/options/detail/30" target="_blank" rel="noopener">みゅう 日帰り(参考)</a></li>
+    </ul>
+
+    <h3 class="subsection__title">送迎・トランスファー</h3>
+    <ul class="clean-list">
+      <li><a href="https://www.veltra.com/jp/europe/france/paris/a/105311" target="_blank" rel="noopener">Mybus シャトルバス</a></li>
+      <li><a href="https://www.jtb.co.jp/kaigai_opt/srh/prddetail/p276491/" target="_blank" rel="noopener">JTB 片道トランスファー</a></li>
+    </ul>
+
+    <h3 class="subsection__title">英語ツアー</h3>
+    <ul class="clean-list">
+      <li><a href="https://www.pariscityvision.com/en/normandy-saint-malo-mont-saint-michel-2-days" target="_blank" rel="noopener">PARISCityVISION 2-Day Normandy</a></li>
+      <li><a href="https://www.viator.com/tours/Paris/2-Day-Normandy-Saint-Malo-and-Mont-St-Michel-Tour-from-Paris/d479-2050PM2" target="_blank" rel="noopener">Viator 2-Day Normandy + MSM</a></li>
+      <li><a href="https://www.getyourguide.com/mont-saint-michel-l1805/" target="_blank" rel="noopener">GetYourGuide Mont St-Michel</a></li>
+    </ul>
+
+    <h3 class="subsection__title">関連書類</h3>
+    <ul class="clean-list">
+      <li><code>hotels.md</code> §2 — MSM 個別ホテル空室確認結果(2026-05-24)</li>
+      <li><code>results.md</code> §20 Plan B Day 4-5 — 現行 DIY 設計</li>
+    </ul>
+  </div>
+</section>
+
+<!-- §7 NOTES -->
+<section class="section" id="notes">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__number">SECTION 07</div>
+      <h2 class="section__title">注意事項・免責</h2>
+      <div class="section__divider"></div>
+    </div>
+
+    <ul class="numbered-list">
+      <li><strong>価格は 2026-05-24 時点の VELTRA / EMI / Mybus 公式表示価格</strong>。為替(€1=¥165)で円換算。実勢は変動あり。</li>
+      <li><strong>対象日(2026/9/29 火曜日)の空席状況は VELTRA 等の公式予約システムで再確認のこと</strong>。月〜金実施の VELTRA は火曜OK。</li>
+      <li><strong>島内ホテル指定枠(Mère Poulard / Confiance / Mouton Blanc 等)は早期完売</strong>。希望ホテル確保のため 5-6月中の予約推奨。</li>
+      <li><strong>LIVRE D'OR(MSM 教会婚姻証明)</strong> は事前申込が必要(戸籍抄本英訳・約2-3週間の準備期間)。EMI Travel ハネムーン特化プランで一括代行可能。</li>
+      <li><strong>本書は Plan B Day 4-5 をツアー化する選択肢の比較情報</strong>。最終判断は <code>results.md</code> Day 5 の旅程ピーク(モネ展+クルーズ)損失とのトレードオフで決定。</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__rule"></div>
+    <p>Honeymoon 2026 · MSM Tour Comparison · Plan B</p>
+    <p class="text-subtle text-small">Researched 2026-05-24 — Pricing based on VELTRA/EMI/Mybus public listings</p>
+  </div>
+</footer>
+
+</body>
+</html>
