@@ -7,7 +7,7 @@
 > Booking.comリンクは旅程日付プリセット済み(クリック後、対象期間の客室と価格が直接表示)。
 > **✅ 2026-05-24 ブラウザ実空室確認済(§0.5参照)**
 >
-> **🔄 v4 整合メモ(2026-06-14)**: 現行の確定プランは [results.md](results.md) **改訂版v4(MSM往復・パリ戻り1泊)**。**最新の実勢・候補は下記 §0.0**(本資料 §1〜の旧泊数・旧価格・島内泊前提は史料)。要点:**パリ=連泊3泊(Dragon等)+ 戻り1泊(別ホテル)**(Dragon は最低3泊)、**MSM=Hôtel de la Digue(対岸)9/29 で決定**(島内 La Mère Poulard ではない)、**バルセロナ=Hostemplo 10/1-10/4(3泊)**。
+> **🔄 v4 整合メモ(2026-06-14)**: 現行の確定プランは [results.md](results.md) **改訂版v4(MSM往復・パリ戻り1泊)**。**最新の実勢・候補は下記 §0.0(要約)と §1 パリ(連泊3泊+戻り1泊・詳細個票=2026-06-14 更新済)**。**§2(MSM)/§3(BCN)以降の旧泊数・旧価格・島内泊前提は史料**(MSM 島内泊・BCN 2泊などは v4 では不採用)。要点:**パリ=連泊3泊(Dragon等)+ 戻り1泊(別ホテル)**(Dragon は最低3泊)、**MSM=Hôtel de la Digue(対岸)9/29 で決定**(島内 La Mère Poulard ではない)、**バルセロナ=Hostemplo 10/1-10/4(3泊)**。
 
 ---
 
@@ -130,100 +130,217 @@ Booking.com で全15軒+代替3軒を実ブラウザで確認。**当初パリ�
 
 ---
 
-## §1. パリ(9/26〜10/2、6泊)— **2026-05-24 空室確認済(代替3軒含む)**
+## §1. パリ(v4: 連泊3泊 + 戻り1泊)— **2026-06-14 実地確認済(Booking.com・2名入力)**
 
-**動線指針**: 5区(カルチエ・ラタン)・6区(サンジェルマン)が `results.md` のシテ島・サンジェルマン・エッフェル塔・モンマルトル・サンラザール駅(MSM行きTGV)全てに噛み合う。**繁忙期で旧第1〜3推奨が完売したため、代替を選定**。
+> **v4 構成**: パリ滞在は「**連泊3泊(9/26 IN → 9/29 OUT)**」と「**MSM往復後の戻り1泊(9/30 IN → 10/1 OUT)**」の**2区間に分割**。**Hôtel du Dragon は当該期間「最低3泊」要件**のため 9/30 の単泊が予約不可 → 両区間は **別ホテル**(最安:Dragon + Balcons)か、**同一ホテルの2予約**(荷物据置)で組む。**全候補が6区(サンジェルマン・デ・プレ/オデオン)**。
+> 価格は **2名・税別/区間合計**((+)は税・都市税の概算)。**返金可(キャンセル無料)レート**を優先。空室は **2026-06-14 時点**で2名・日付入力して確認、流動的。€1≒¥165換算。
 
-### ★ 第1推奨(代替): **Familia Hotel**(5区・カルチエ・ラタン、Notre-Dame徒歩6分)
+**動線指針(全候補共通)**: 6区(Odéon〜Saint-Germain)は本旅程と相性最良。**M4一本で Gare Montparnasse 約10分**(Day4 9/29・Day5 9/30 の MSM往復 TGV)、**シテ島・サンジェルマン散歩は徒歩圏**、**Arpège(7区 rue de Varenne)**へも近接、**Day6 10/1 朝の ORY** へは Odéon の RER B(Saint-Michel 乗継)/ Orlybus 等でアクセス可。
 
-| 項目 | 内容 |
-|---|---|
-| 住所 | 11 Rue des Écoles, 75005 Paris(**Maubert-Mutualité駅徒歩3分、L10**) |
-| 公式サイト | https://www.familiahotel.com/en/ |
-| 客室紹介 | https://www.familiahotel.com/en/rooms-hotel-familia-paris/ |
-| **Booking.com 日付プリセット済** | https://www.booking.com/hotel/fr/familia-paris.html?checkin=2026-09-26&checkout=2026-10-02&group_adults=2&no_rooms=1 |
-| 該当客室(2人) | Classic Double / Twin / Deluxe / Balcony Notre-Dame view(8室のみバルコニー、一部Notre-Dame見える) |
-| 価格目安(実勢) | **¥41,522/泊 × 6泊 = ¥249,131(割引後 ¥226,482)** |
-| 空室状況(2026-05-24) | **✅ 残り 1+2+1+5室 = 9+室** |
-| ハネムーン実績 | 2★・30室・1976年〜家族経営。[Rick Steves' Paris Guide で「Latin Quarterのベスト小規模ホテル」](https://www.familiahotel.com/en/) として長年推薦。中世風ファサードに花のフレスコ画、エレベーター完備、AC全室。 |
-| エアコン | **✅ あり**(全室、climate control) |
-| エレベーター | **✅ あり**(2★ホテルとしては稀) |
-| 動線適合 | Day 2 シテ島・ノートルダム → メトロL10 1駅+徒歩 / Day 4 MSM(L10直結→Montparnasse 18分)/ Day 5 オランジュリー(L10→Sully→徒歩 or L4 Saint-Michel)。 |
-| 注意点 | バルコニー付き部屋(8室)を **「balcony room」と指定して予約**。Notre-Dame view は更に絞られる(2-3室)ので早期予約必須。 |
+> ⚠️ **予約時の注意**: Booking の「ホテル名」直検索は、1泊など短期で**「空室なし」と誤表示**することがある(Balcons・La Digue で確認)。**地区検索(サンジェルマン/オデオン)+日付チップ**で見れば実空室が出る。名前検索の警告で慌てないこと。
 
-### 第2推奨(代替): **Hotel de Nesle**(6区/5区境界・サンジェルマン-カルチエ・ラタン)
+---
+
+### 🛏 パリ① 連泊3泊(9/26 IN → 9/29 OUT・2名)— 候補5件 ※**返金可(キャンセル無料)**レート
+
+#### ★ 第1推奨(✅確定・最安): **Hôtel du Dragon ★★**(6区・サンジェルマン・デ・プレ中心)
 
 | 項目 | 内容 |
 |---|---|
-| 住所 | 7 Rue de Nesle, 75006 Paris(**Saint-Germain-des-Prés駅徒歩4分・Mabillon徒歩3分**) |
-| 公式サイト | https://www.hoteldenesleparis.com/ |
-| **Booking.com 日付プリセット済** | https://www.booking.com/hotel/fr/de-nesle.html?checkin=2026-09-26&checkout=2026-10-02&group_adults=2&no_rooms=1 |
-| 該当客室(2人) | **19室すべてオーナー親子による手描きテーマ別装飾**(モロッコ・サヴァンナ・中世フランス・プロヴァンス・啓蒙時代 等)。一部に専用バス、一部に共同シャワー(共同OK の条件にも合致)。 |
-| 価格目安(実勢) | **¥45,828/泊 × 6泊 = ¥274,967 / Premium ¥51,918/泊 × 6 = ¥311,506** |
-| 空室状況(2026-05-24) | ✅ 複数客室タイプ空室あり |
-| ハネムーン実績 | 1976年〜家族経営、ガイドブック・ブログで「**他にない個性的ブティック**」と頻出推薦。庭付き、室内に絵巻のような壁画。**ハネムーンに記憶残りやすい**選択肢。 |
-| エアコン | △(夏季扇風機リクエスト可) |
-| エレベーター | ❌(ヨーロッパ古い建物標準) |
-| 動線適合 | Day 2 サンジェルマン・シテ島へ徒歩5-10分 / Day 4 MSM(L10 Mabillon→Montparnasse 12分) |
-| 注意点 | 部屋ごとに雰囲気が全く異なるため、**公式メールに「pour notre voyage de noces, chambre la plus romantique possible(ハネムーン用に最もロマンチックな部屋希望)」と明記**。共同シャワーOKなら最安部屋でも体験価値高い。 |
-
-### 第3推奨(代替): **Hôtel du Dragon**(6区・サンジェルマンデプレ中心)
-
-| 項目 | 内容 |
-|---|---|
-| 住所 | 36 Rue du Dragon, 75006 Paris(**Saint-Germain-des-Prés徒歩2分・Café de Flore徒歩4分**) |
+| 住所 | 36 Rue du Dragon, 75006 Paris(**Saint-Germain-des-Prés駅 M4 徒歩3-4分**・Café de Flore / Les Deux Magots 徒歩2分) |
 | 公式サイト | https://www.hoteldudragon.com/en/ |
-| **Booking.com 日付プリセット済** | https://www.booking.com/hotel/fr/du-dragon-paris.html?checkin=2026-09-26&checkout=2026-10-02&group_adults=2&no_rooms=1 |
-| 該当客室(2人) | Double / Twin / Triple — 全室バス・トイレ専用 |
-| 価格目安(実勢) | **¥39,061/泊 × 6泊 = ¥234,368** |
-| 空室状況(2026-05-24) | **✅ 残り 3+1+1室 = 5室** |
-| ハネムーン実績 | 2★・**19世紀建築・サンジェルマンの中心**で家族経営。Café de Flore / Les Deux Magots へ徒歩、Café de Flore は Day 2 朝のアペリティフ動線。 |
-| エアコン | △(Booking.comで要確認、夏季扇風機リクエスト可) |
-| エレベーター | ❌(古い建物) |
-| 動線適合 | `results.md` Day 2 サンジェルマン散歩の「玄関先」、Day 6 Arpège(7区)徒歩15分、Day 4 MSM(徒歩→St-Sulpice→L4→Montparnasse 14分)。 |
-| 注意点 | 客室数が少なく早期予約必須。価格は安定的に低め。 |
+| **Booking.com(日付プリセット)** | https://www.booking.com/hotel/fr/du-dragon-paris.html?checkin=2026-09-26&checkout=2026-09-29&group_adults=2&no_rooms=1 |
+| 該当客室(2人) | Double / Twin / Family — 全室バス・トイレ専用 |
+| 価格目安(3泊・税別) | **¥120,544**(+¥3,616)※返金可。非返金レート ¥117,762 |
+| 空室状況(2026-06-14) | **✅ 残2**(2名・返金可) |
+| 評価 / ロケ | 8.1 / **9.5** |
+| ハネムーン実績 | 19世紀建築・家族経営の2★。サンジェルマンのど真ん中、Café de Flore / Les Deux Magots 徒歩2分。ピアノラウンジ+夏季パティオ。"cosy & charming" の雰囲気重視カップル向き |
+| エアコン | **❌ なし**(扇風機リクエスト可)— 9月残暑時は要確認 |
+| エレベーター | **❌ なし**(公式 "pas d'ascenseur"・階段は急)→ **下層階リクエスト推奨** |
+| 動線適合 | Day2 サンジェルマン散歩の玄関先 / Day4 MSM(徒歩→SGdP/St-Sulpice→M4→Montparnasse 約14分)/ Arpège(7区)徒歩15分 |
+| 注意点 | **AC・EV ともになし**(2★・設備簡素)。客室約27室と少なく早期確保必須。**最低3泊要件のため戻り1泊(9/30単泊)には使えない** → 9/30 は別ホテル |
 
-### 第4推奨(節約): **Generator Paris**(10区・カナル・サンマルタン)
-
-| 項目 | 内容 |
-|---|---|
-| 住所 | 9-11 Place du Colonel Fabien, 75010 Paris(**Colonel Fabien メトロ駅直結**、L2線) |
-| 公式サイト | https://staygenerator.com/hostels/paris?lang=en-GB |
-| **Booking.com 日付プリセット済** | https://www.booking.com/hotel/fr/generator-paris.html?checkin=2026-09-26&checkout=2026-10-02&group_adults=2&no_rooms=1 |
-| 該当客室(2人) | Deluxe Twin / Deluxe Queen / Deluxe King / **Deluxe King + Private Terrace**(全室バス・トイレ専用) |
-| 価格目安(実勢) | **¥32,418/泊 × 6泊 = ¥194,507(割引後 ¥176,824)** |
-| 空室状況(2026-05-24) | **✅ 8タイプ × 2〜7室 = 30+室と圧倒的に余裕** |
-| ハネムーン実績 | デザインホステルの代表格。屋上テラスバー("Café Fabien")、カクテルバー、地下ナイトクラブで欧米バックパッカー人気。**4 候補中で最安・最多空室**。 |
-| エアコン | ✅ あり(2016年改装) |
-| エレベーター | ✅ あり |
-| 動線適合 | Day 3 モンマルトル(L2直結6駅)・Day 4 MSM(L2→Gare du Nord→RER→Montparnasse 30分)。**サンジェルマン/シテ島へはメトロ20分**で離れる(動線弱点)。 |
-| 注意点 | "Private Terrace" 付きDeluxe Kingがロマンチック度高い。共有施設は若い宿泊客中心で深夜まで賑やか。 |
-
-### 第5推奨(節約・チャーミング): **The People — Paris Belleville**(11区、旧 Les Piaules)
+#### 第2推奨(★両用・割安): **Hôtel La Folie des Prés ★★★**(旧 Hôtel de Saint-Germain・6区)
 
 | 項目 | 内容 |
 |---|---|
-| 住所 | 59 Boulevard de Belleville, 75011 Paris(Belleville / Couronnes 駅徒歩2分、L2・L11) |
-| 公式サイト | https://www.thepeoplehostel.com/en/destinations/paris-belleville/ |
-| **Booking.com 日付プリセット済(URL修正済)** | https://www.booking.com/hotel/fr/les-piaules.html?checkin=2026-09-26&checkout=2026-10-02&group_adults=2&no_rooms=1 |
-| 該当客室(2人) | Double/Twin Room **¥39,994/泊**(専用バス) / Double Room + Breakfast **¥43,684/泊** / **Double Panorama View ¥42,164/泊** |
-| 6泊合計目安 | **Double ¥218,147(割引後)/ Panorama View ¥252,983(割引後)** |
-| 空室状況(2026-05-24) | **✅ 残り5+6室 = 11+室** |
-| ハネムーン実績 | 旧称 Les Piaules、アールデコ建築、屋上テラスからモンマルトル/サクレ・クール一望。Hostelworld評価上位。 |
-| エアコン | ✅ あり(2017年完全改装) |
+| 住所 | 50 Rue du Four, 75006 Paris(**Mabillon駅 M10 / Saint-Sulpice駅 M4 徒歩2分圏**・SGdP徒歩圏) |
+| 公式サイト | https://www.hotelfoliedespres.com/en/ |
+| **Booking.com(日付プリセット)** | https://www.booking.com/hotel/fr/desaintgermain.html?checkin=2026-09-26&checkout=2026-09-29&group_adults=2&no_rooms=1 ※slug は旧名 "de Saint-Germain" 由来(同一物件) |
+| 該当客室(2人) | Madness Classic(約12㎡)/ Superior(約15㎡)/ Premium Superior(各室デザインが異なるモダン内装) |
+| 価格目安(3泊・税別) | ¥163,029(+¥6,153) |
+| 空室状況(2026-06-14) | **✅ 残4** |
+| 評価 / ロケ | 8.4 / 9.6 |
+| ハネムーン実績 | 19世紀ファサードの奥にある大胆デザインの3★ブティック。防音窓・モダンで遊び心ある内装。サンジェルマン教会・文学カフェ・セーヌ川至近 |
+| エアコン | **✅ あり**(全室・climatisation) |
+| エレベーター | △ 要確認(改装3★だが明示記載を確認できず) |
+| 動線適合 | Day4 MSM(Mabillon→M10/St-Sulpice→M4→Montparnasse 約12-14分)/ サンジェルマン散歩は玄関先 |
+| 注意点 | 客室がコンパクト(最小約12㎡)。Booking 上は旧名 slug `desaintgermain` 表示に戸惑わないこと。**★両用=戻り1泊(9/30)にも空室あり→同一ホテル2予約で荷物据置可** |
+
+#### 第3推奨: **Hôtel Michelet Odéon ★★★**(6区・オデオン広場前)
+
+| 項目 | 内容 |
+|---|---|
+| 住所 | 6 Place de l'Odéon, 75006 Paris(**Odéon駅 M4/M10 徒歩5分**・**リュクサンブール公園 徒歩2分**・RER B Luxembourg) |
+| 公式サイト | https://www.hotelmicheletodeon.com/en/ |
+| **Booking.com(日付プリセット)** | https://www.booking.com/hotel/fr/michelet-odeon.html?checkin=2026-09-26&checkout=2026-09-29&group_adults=2&no_rooms=1 |
+| 該当客室(2人) | Classic(ダブル)/ Superior(ツイン可)/ Standard / Family Suite(全42室) |
+| 価格目安(3泊・税別) | ¥174,325(+¥6,153) |
+| 空室状況(2026-06-14) | **✅ 残5** |
+| 評価 / ロケ | **8.7 / 9.7** |
+| ハネムーン実績 | オデオン座の広場に面し、リュクサンブール公園 徒歩2分という屈指のロマンチック立地。ラテン地区中心で「静かで温かみのある」雰囲気 |
+| エアコン | **✅ あり**(客室エアコン・Wi-Fi・薄型TV) |
+| エレベーター | ✅ あり(※口コミで稼働・急な階段の指摘あり→稼働状況は予約時確認) |
+| 動線適合 | Day4 MSM(Odéon→M4→Montparnasse 約10分)/ **Day6 ORY は RER B「Luxembourg」直結でやや優位** |
+| 注意点 | エレベーター稼働・客室階を要確認。AC は OTA 情報ベースのため予約時に念のため確認 |
+
+#### 第4推奨(★両用・全室AC): **Hôtel Sèvres Saint-Germain ★★★**(6区・ボン・マルシェ近く)
+
+| 項目 | 内容 |
+|---|---|
+| 住所 | 22 Rue Saint Placide, 75006 Paris(**Saint-Placide駅 M4 徒歩4分 / Sèvres-Babylone駅 M10・M12 徒歩4分**) |
+| 公式サイト | https://www.sevres-saint-germain.com/en/ |
+| **Booking.com(日付プリセット)** | https://www.booking.com/hotel/fr/sevres-saint-germain-paris.html?checkin=2026-09-26&checkout=2026-09-29&group_adults=2&no_rooms=1 |
+| 該当客室(2人) | Classic(約13㎡)/ Superior(約15㎡)/ Deluxe(約18㎡・通り側)/ **Prestige(約20㎡・中庭ビュー)**(全30室・禁煙) |
+| 価格目安(3泊・税別) | ¥179,889(+¥6,153) |
+| 空室状況(2026-06-14) | **✅ 残5** |
+| 評価 / ロケ | 8.6 / 9.6 |
+| ハネムーン実績 | サンジェルマン中心で「静けさと洗練」。ル・ボン・マルシェ/サン・シュルピス広場 徒歩数分。2017年改装の「モダン×パリ古典」。Prestige は中庭ビューで静かでカップル向き |
+| エアコン | **✅ あり**(全室) |
 | エレベーター | ✅ あり |
-| 動線適合 | Day 3 モンマルトル(L2直結6駅) / Day 2 シテ島(L11→Châtelet 10分) |
-| 注意点 | ベルヴィル地区はナイトライフ活発。Day 4 MSM 行きはMontparnasseまでメトロ40分。 |
+| 動線適合 | **Sèvres-Babylone(M10/M12)から Arpège(7区)へ最短級** / Day4 MSM(St-Placide→M4→Montparnasse 約8分)|
+| 注意点 | 全30室と小規模。類似名 "Hôtel de Sèvres"(別物件)と混同注意。**★両用=戻り1泊にも空室あり** |
 
-### パリ候補 サマリー(実勢価格反映済)
+#### 第5推奨(★両用・最高評価): **Hôtel de Fleurie ★★★**(6区・サンジェルマン)
 
-| # | 名称 | 区 | 1泊2人(実勢) | 6泊合計 | 空調 | EV | 動線 |
-|---|---|---|---|---|---|---|---|
-| 1 ★ | Familia Hotel | 5区 | **¥41,522** | ¥226,482 | ✅ | ✅ | ◎(Notre-Dame徒歩6分) |
-| 2 | Hotel de Nesle | 6区 | **¥45,828** | ¥274,967 | △ | ❌ | ◎(サンジェルマン中心) |
-| 3 | Hôtel du Dragon | 6区 | **¥39,061** | ¥234,368 | △ | ❌ | ◎(Café Flore徒歩4分) |
-| 4 | Generator Paris | 10区 | **¥32,418** | ¥176,824 | ✅ | ✅ | △(メトロ20分) |
-| 5 | The People Belleville | 11区 | **¥39,994** | ¥218,147 | ✅ | ✅ | ○(L2直結) |
+| 項目 | 内容 |
+|---|---|
+| 住所 | 32 Rue Grégoire de Tours, 75006 Paris(**Odéon駅 M4/M10 至近・Mabillon駅 M10**・RER B/C St-Michel 徒歩5分) |
+| 公式サイト | https://www.hoteldefleurieparis.com/en/ |
+| **Booking.com(日付プリセット)** | https://www.booking.com/hotel/fr/de-fleurie.html?checkin=2026-09-26&checkout=2026-09-29&group_adults=2&no_rooms=1 |
+| 該当客室(2人) | 全29室・各室個別装飾。Double / Twin / 隣接(アジョイニング)ルーム(ベッド構成は予約時確認) |
+| 価格目安(3泊・税別) | ¥191,860(+¥6,153) |
+| 空室状況(2026-06-14) | **✅ 残3** |
+| 評価 / ロケ | **9.0 / 9.8**(候補中**最高評価**) |
+| ハネムーン実績 | 18世紀建物・1862年開業/2008年改装の「シャルム・ホテル」。SGdP教会・オデオン・サン・シュルピス・リュクサンブール公園いずれも徒歩約5分。**ペストリー付きアフタヌーンティー/オネスティ・バー**等きめ細かなサービスがロケ9.8・高評価の背景 |
+| エアコン | **✅ あり**(全29室・冷蔵庫付) |
+| エレベーター | ✅ あり |
+| 動線適合 | Day4 MSM(Odéon→M4→Montparnasse 約10分)/ シテ島・ノートルダム徒歩約10分 |
+| 注意点 | 全29室と小規模 → 9月人気部屋は早期確保。記念日対応(ハネムーン特典)は予約時に直接依頼すると確実。**★両用=戻り1泊にも空室あり** |
+
+#### パリ① サマリー(連泊3泊・2名・返金可)
+
+| # | ホテル | 星 | 3泊2人(税別) | 空室 | 評価/ロケ | AC | EV | 備考 |
+|---|---|---|---|---|---|---|---|---|
+| 1 ★ | **Hôtel du Dragon** | 2★ | **¥120,544**(+¥3,616) | 残2 | 8.1 / 9.5 | ❌ | ❌ | **✅確定/最安**(非返金¥117,762)・最低3泊 |
+| 2 | **La Folie des Prés**(★両用) | 3★ | ¥163,029(+¥6,153) | 残4 | 8.4 / 9.6 | ✅ | △ | 旧名 de Saint-Germain・割安 |
+| 3 | Michelet Odéon | 3★ | ¥174,325(+¥6,153) | 残5 | 8.7 / 9.7 | ✅ | ✅ | 公園徒歩2分・ORYに RER B 優位 |
+| 4 | **Sèvres SG**(★両用) | 3★ | ¥179,889(+¥6,153) | 残5 | 8.6 / 9.6 | ✅ | ✅ | 全室AC・Arpège最短 |
+| 5 | **Hôtel de Fleurie**(★両用) | 3★ | ¥191,860(+¥6,153) | 残3 | **9.0 / 9.8** | ✅ | ✅ | 候補中最高評価 |
+
+> ★両用=パリ②(戻り1泊)にも空室があり、**同一ホテルで連泊+戻りの2予約**が可能(荷物据置・寄り道ゼロ)。
+
+---
+
+### 🛏 パリ② 戻り1泊(9/30 IN → 10/1 OUT・2名)— 候補5件 ※**返金可**・残2以上を優先
+
+> 9/30 はパリ繁忙で「宿の約89%が予約不可」表示が出るほど逼迫。**返金可・残2以上**を優先する。**同一ホテル(★両用)なら荷物移動・好意預けの問題が消える**。
+
+#### ★ 第1推奨(✅確定): **Grand Hôtel des Balcons ★★**(6区・オデオン)
+
+| 項目 | 内容 |
+|---|---|
+| 住所 | 3 Rue Casimir Delavigne, 75006 Paris(**Odéon駅 M4/M10 徒歩3-4分**・オデオン座/リュクサンブール公園 至近) |
+| 公式サイト | https://www.balcons.com/en/(※調査時点サイト改装中。reservation@balcons.com / +33 1 46 34 78 50) |
+| **Booking.com(日付プリセット)** | https://www.booking.com/hotel/fr/grand-des-balcons.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1 |
+| 該当客室(2人) | Double / Twin。**多くの部屋に小さなバルコニーあり**(ホテル名の由来) |
+| 価格目安(1泊・税別) | **¥51,758**(+¥1,205)※キャンセル無料 |
+| 空室状況(2026-06-14) | **✅ 残2**(返金可) |
+| 評価 / ロケ | 8.5 / **9.6** |
+| ハネムーン実績 | **アール・ヌーヴォー調ロビー**(木製パネル・ステンドグラス・鏡)。通りからオデオン座の列柱が見える立地。24時間多言語レセプション |
+| エアコン | **△ 要確認**(2★・客室独立ACなし=扇風機リクエストの説が有力。情報が割れるため予約前にホテルへ直接確認) |
+| エレベーター | ✅ あり |
+| 動線適合 | MSM戻り(Montparnasse→M4→Odéon 約10分)→ 翌朝 ORY(Odéon RER B 経由 or Orlybus)。Dragon(連泊)から徒歩圏で **9/30 の荷物移動も近接** |
+| 注意点 | **AC の有無を要確認**(最重要)。公式サイト改装中で情報が薄い。2★相当の簡素な設備感(清潔さは高評価) |
+
+#### 第2推奨(★両用): **Hôtel La Folie des Prés ★★★**(旧 de Saint-Germain・6区)
+
+| 項目 | 内容 |
+|---|---|
+| 住所 / 設備 | 50 Rue du Four, 75006(Mabillon M10/St-Sulpice M4 徒歩2分)・**AC あり**・EV要確認(詳細は **パリ① 第2推奨** 参照) |
+| **Booking.com(日付プリセット)** | https://www.booking.com/hotel/fr/desaintgermain.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1 |
+| 価格目安(1泊・税別) | ¥52,770(+¥2,051) |
+| 空室状況(2026-06-14) | **✅ 多め** |
+| 評価 / ロケ | 8.4 / 9.6 |
+| 動線適合 | MSM戻り(Montparnasse→M4→St-Sulpice/Mabillon 約12分)→ 翌朝 ORY |
+| 注意点 | **★両用=連泊3泊と同一ホテルにすれば荷物据置・寄り道ゼロ**(連泊¥163,029+1泊¥52,770=¥215,799) |
+
+#### 第3推奨(★両用・全室AC): **Hôtel Sèvres Saint-Germain ★★★**(6区)
+
+| 項目 | 内容 |
+|---|---|
+| 住所 / 設備 | 22 Rue Saint Placide, 75006(St-Placide M4 / Sèvres-Babylone M10・M12 徒歩4分)・**全室AC**・**EV あり**(詳細は **パリ① 第4推奨** 参照) |
+| **Booking.com(日付プリセット)** | https://www.booking.com/hotel/fr/sevres-saint-germain-paris.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1 |
+| 価格目安(1泊・税別) | ¥60,524(+¥2,051) |
+| 空室状況(2026-06-14) | **✅ 残4** |
+| 評価 / ロケ | 8.6 / 9.6 |
+| 動線適合 | MSM戻り(Montparnasse→M4→St-Placide 約8分)→ 翌朝 ORY。Sèvres-Babylone から Arpège(7区)最短 |
+| 注意点 | **★両用**(同一ホテル案 連泊¥179,889+1泊¥60,524=¥240,413) |
+
+#### 第4推奨(★両用・最高評価): **Hôtel de Fleurie ★★★**(6区)
+
+| 項目 | 内容 |
+|---|---|
+| 住所 / 設備 | 32 Rue Grégoire de Tours, 75006(Odéon M4/M10 至近)・**全室AC**・**EV あり**・全29室(詳細は **パリ① 第5推奨** 参照) |
+| **Booking.com(日付プリセット)** | https://www.booking.com/hotel/fr/de-fleurie.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1 |
+| 価格目安(1泊・税別) | ¥71,989(+¥2,051) |
+| 空室状況(2026-06-14) | **✅ 残4** |
+| 評価 / ロケ | **9.0 / 9.8**(候補中最高評価) |
+| 動線適合 | MSM戻り(Montparnasse→M4→Odéon 約10分)→ 翌朝 ORY |
+| 注意点 | 1泊単価はやや高め。**★両用**(同一ホテル案 連泊¥191,860+1泊¥71,989=¥263,849)。最高評価で締めの1泊に贅沢する選択も |
+
+#### 第5推奨(残多・全室AC): **Odéon Hôtel ★★★**(6区・オデオン交差点)
+
+| 項目 | 内容 |
+|---|---|
+| 住所 | 3 Rue de l'Odéon, 75006 Paris(**Odéon駅 M4/M10 徒歩2-3分**・RER B/C St-Michel 近接) |
+| 公式サイト | https://odeonhotel.fr/en/ |
+| **Booking.com(日付プリセット)** | https://www.booking.com/hotel/fr/odeon-paris.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1 |
+| 該当客室(2人) | Standard / Deluxe(各室個別装飾・ダブル)※ツインの有無は要確認 |
+| 価格目安(1泊・税別) | ¥77,705(+¥2,051) |
+| 空室状況(2026-06-14) | **✅ 残7**(候補中最多=取りやすい) |
+| 評価 / ロケ | 8.4 / 9.6 |
+| ハネムーン実績 | 修復された18世紀建物の6階建て3★。オデオン座至近、独立系書店街・サンジェルマンのカフェ徒歩圏 |
+| エアコン | **✅ あり**(全室・防音) |
+| エレベーター | ✅ あり |
+| 動線適合 | MSM戻り(Montparnasse→M4→Odéon 約10分)→ 翌朝 ORY(Odéon RER B / Orlybus) |
+| 注意点 | 1泊単価は高めだが**残7と最も取りやすい**。ツイン希望は予約時確認。"by Malone" 表記でも同一物件 |
+
+#### パリ② サマリー(戻り1泊・2名・返金可)
+
+| # | ホテル | 星 | 1泊2人(税別) | 空室 | 評価/ロケ | AC | EV | 備考 |
+|---|---|---|---|---|---|---|---|---|
+| 1 ★ | **Grand Hôtel des Balcons** | 2★ | **¥51,758**(+¥1,205) | 残2 | 8.5 / 9.6 | △ | ✅ | **✅確定**・キャンセル無料・Dragonと近接 |
+| 2 | **La Folie des Prés**(★両用) | 3★ | ¥52,770(+¥2,051) | 多め | 8.4 / 9.6 | ✅ | △ | 同一ホテル案最安 |
+| 3 | **Sèvres SG**(★両用) | 3★ | ¥60,524(+¥2,051) | 残4 | 8.6 / 9.6 | ✅ | ✅ | 全室AC |
+| 4 | **Hôtel de Fleurie**(★両用) | 3★ | ¥71,989(+¥2,051) | 残4 | **9.0 / 9.8** | ✅ | ✅ | 最高評価 |
+| 5 | Odéon Hôtel | 3★ | ¥77,705(+¥2,051) | 残7 | 8.4 / 9.6 | ✅ | ✅ | 残最多・取りやすい |
+
+> ※さらに安い**残1枠**(早い者勝ち):Hôtel Bonaparte ¥42,148 / L'Univers Saint-Germain ¥52,264 / Michelet Odéon ¥56,480。残1のため**返金可・残2以上の上表を優先**。
+
+---
+
+### 🇫🇷 荷物動線の最適解 — 連泊+戻りを「同一ホテルの2予約」(★両用)
+
+Dragon は最低3泊で 9/30 単泊が不可のため、**最安は別ホテル(Dragon + Balcons = ¥172,302・いずれも6区/近接)**。ただし 9/30 朝に大荷物を Dragon 預け or Gare Montparnasse のロッカーに預け→9/30 夜 Balcons へ移す一手間がある。**手間を消すなら ★両用ホテルの2予約**(継続宿泊客として荷物据置・9/30 は同じ宿に戻るだけ)。
+
+| 同一ホテル(★両用) | 星 | 連泊3泊(税別) | 戻り1泊(税別) | 計(税別) | 評価/ロケ | AC/EV |
+|---|---|---|---|---|---|---|
+| **La Folie des Prés**(最安) | 3★ | ¥163,029(残4) | ¥52,770 | **¥215,799** | 8.4 / 9.6 | ✅ / △ |
+| **Sèvres Saint-Germain** | 3★ | ¥179,889(残5) | ¥60,524(残4) | **¥240,413** | 8.6 / 9.6 | ✅ / ✅ |
+| **Hôtel de Fleurie**(最高評価) | 3★ | ¥191,860(残3) | ¥71,989(残4) | **¥263,849** | **9.0 / 9.8** | ✅ / ✅ |
+
+> **別ホテル最安**(返金可・9/30に荷物移動の一手間):**Dragon ¥120,544 + Balcons ¥51,758 = ¥172,302**。`results.md` は最安の **Dragon + Balcons** を採用。
 
 ---
 
