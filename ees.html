@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>EES(出入域システム)完全ガイド | Honeymoon 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --color-bg: #FAFAF8;
+    --color-surface: #FFFFFF;
+    --color-text: #1C1C1C;
+    --color-text-muted: #5C5C5C;
+    --color-text-subtle: #8A8A8A;
+    --color-border: #E8E6E1;
+    --color-border-strong: #C9C5BC;
+
+    --color-ees: #2E4A6B;
+    --color-ees-light: #EDF1F6;
+    --color-ees-dark: #1F3549;
+    --color-france: #7C2D3F;
+    --color-spain: #B0432A;
+
+    --color-highlight: #FFF8E7;
+    --color-highlight-border: #E8D9A8;
+    --color-positive: #2D5A3D;
+    --color-positive-bg: #EEF5EF;
+    --color-positive-border: #B8D0BD;
+    --color-warning: #8B5A20;
+    --color-warning-bg: #FBF4E6;
+    --color-warning-border: #E8D2A6;
+    --color-danger: #8E2A2A;
+    --color-danger-bg: #FBEFEF;
+    --color-danger-border: #E5BFBF;
+
+    --font-serif: 'Cormorant Garamond', 'Noto Serif JP', 'Hiragino Mincho ProN', serif;
+    --font-sans: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', sans-serif;
+    --font-mono: 'SF Mono', 'Menlo', 'Consolas', monospace;
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+  }
+
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.8;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--color-ees); text-decoration: none; transition: color .2s ease; word-break: break-word; }
+  a:hover { color: var(--color-ees-dark); text-decoration: underline; }
+  strong { font-weight: 600; }
+
+  .container { max-width: 1000px; margin: 0 auto; padding: 0 var(--space-md); }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    background: linear-gradient(180deg, var(--color-ees-light) 0%, var(--color-surface) 100%);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-xl) 0 var(--space-lg);
+    text-align: center;
+    position: relative;
+  }
+  .hero::before {
+    content: "";
+    position: absolute; top: 0; left: 0; right: 0; height: 5px;
+    background: linear-gradient(90deg, var(--color-ees) 0%, var(--color-france) 50%, var(--color-spain) 100%);
+  }
+  .hero__eyebrow {
+    font-family: var(--font-serif);
+    font-size: .85rem; letter-spacing: .3em; text-transform: uppercase;
+    color: var(--color-ees-dark); font-weight: 600; margin-bottom: var(--space-sm);
+  }
+  .hero__title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.1rem, 5.5vw, 3.4rem);
+    font-weight: 600; line-height: 1.2; margin-bottom: .5rem;
+  }
+  .hero__subtitle {
+    font-family: var(--font-serif); font-style: italic;
+    font-size: clamp(1rem, 2vw, 1.2rem); color: var(--color-text-muted);
+    margin-bottom: var(--space-md);
+  }
+  .hero__badges { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; margin-bottom: var(--space-md); }
+  .badge {
+    display: inline-block; padding: 5px 14px; border-radius: 20px;
+    font-size: .78rem; font-weight: 600; letter-spacing: .03em;
+  }
+  .badge--ok { background: var(--color-positive-bg); color: var(--color-positive); border: 1px solid var(--color-positive-border); }
+  .badge--warn { background: var(--color-warning-bg); color: var(--color-warning); border: 1px solid var(--color-warning-border); }
+  .badge--info { background: var(--color-ees-light); color: var(--color-ees-dark); border: 1px solid #C6D3E0; }
+  .hero__meta {
+    display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 1.75rem;
+    padding: .75rem 1.5rem; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);
+    font-size: .82rem; color: var(--color-text-muted);
+  }
+  .hero__meta strong { font-family: var(--font-serif); font-size: 1rem; color: var(--color-text); }
+
+  .backlink { display: inline-block; margin-top: var(--space-md); font-size: .85rem; color: var(--color-text-muted); }
+
+  /* ---------- Verdict ---------- */
+  .verdict { margin: var(--space-lg) 0; display: grid; gap: var(--space-sm); }
+  .verdict__item {
+    background: var(--color-surface); border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-ees); border-radius: var(--radius-md);
+    padding: var(--space-sm) var(--space-md);
+    display: flex; gap: var(--space-sm); align-items: flex-start;
+  }
+  .verdict__num {
+    font-family: var(--font-serif); font-size: 1.6rem; font-weight: 700;
+    color: var(--color-ees); line-height: 1.2; flex-shrink: 0; min-width: 1.4em;
+  }
+
+  /* ---------- Sections ---------- */
+  section.block { padding: var(--space-lg) 0; border-top: 1px solid var(--color-border); }
+  section.block:first-of-type { border-top: none; }
+  h2 {
+    font-family: var(--font-serif); font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+    font-weight: 600; line-height: 1.3; margin-bottom: var(--space-sm);
+    padding-bottom: .4rem; border-bottom: 2px solid var(--color-ees);
+  }
+  h2 .num { color: var(--color-ees); font-size: .78em; margin-right: .4em; }
+  h3 {
+    font-size: 1.08rem; font-weight: 600; margin: var(--space-md) 0 var(--space-xs);
+    padding-left: .6rem; border-left: 3px solid var(--color-border-strong);
+  }
+  h4 { font-size: .98rem; font-weight: 600; margin: var(--space-sm) 0 var(--space-xs); color: var(--color-text-muted); }
+  p { margin-bottom: var(--space-sm); }
+  ul, ol { margin: 0 0 var(--space-sm) 1.4rem; }
+  li { margin-bottom: .35rem; }
+
+  /* ---------- Tables ---------- */
+  .table-wrap { overflow-x: auto; margin-bottom: var(--space-sm); -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: .88rem; background: var(--color-surface); min-width: 480px; }
+  th, td { padding: .6rem .8rem; text-align: left; border: 1px solid var(--color-border); vertical-align: top; }
+  th { background: var(--color-ees-light); font-weight: 600; color: var(--color-ees-dark); white-space: nowrap; }
+  tbody tr:nth-child(even) { background: #FCFCFB; }
+
+  /* ---------- Callouts ---------- */
+  .note { border-radius: var(--radius-md); padding: var(--space-sm) var(--space-md); margin-bottom: var(--space-sm); border: 1px solid; }
+  .note > *:last-child { margin-bottom: 0; }
+  .note--ok { background: var(--color-positive-bg); border-color: var(--color-positive-border); }
+  .note--warn { background: var(--color-warning-bg); border-color: var(--color-warning-border); }
+  .note--danger { background: var(--color-danger-bg); border-color: var(--color-danger-border); }
+  .note--tip { background: var(--color-highlight); border-color: var(--color-highlight-border); }
+  .note--quote { background: var(--color-ees-light); border-color: #C6D3E0; font-style: normal; }
+  .note__label { display: block; font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; margin-bottom: .35rem; }
+  .note--ok .note__label { color: var(--color-positive); }
+  .note--warn .note__label { color: var(--color-warning); }
+  .note--danger .note__label { color: var(--color-danger); }
+  .note--tip .note__label { color: #8B6F3A; }
+  .note--quote .note__label { color: var(--color-ees-dark); }
+
+  /* ---------- TOC ---------- */
+  .toc { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-md); margin: var(--space-lg) 0; }
+  .toc h2 { font-size: 1.1rem; border: none; padding: 0; margin-bottom: var(--space-xs); font-family: var(--font-sans); letter-spacing: .05em; }
+  .toc ol { columns: 2; column-gap: var(--space-lg); margin-left: 1.2rem; font-size: .9rem; }
+  @media (max-width: 640px) { .toc ol { columns: 1; } }
+
+  /* ---------- Timeline ---------- */
+  .flow { border-left: 3px solid var(--color-ees); margin: var(--space-sm) 0 var(--space-md); padding-left: var(--space-md); }
+  .flow__row { display: flex; gap: var(--space-sm); margin-bottom: .6rem; align-items: baseline; }
+  .flow__time { font-family: var(--font-mono); font-size: .85rem; font-weight: 600; color: var(--color-ees-dark); min-width: 5.2em; flex-shrink: 0; }
+  .flow__row--hot .flow__time { color: var(--color-danger); }
+  .flow__row--hot { background: var(--color-danger-bg); border-radius: var(--radius-sm); padding: .35rem .5rem; margin-left: -.5rem; }
+
+  /* ---------- Checklist ---------- */
+  .check { list-style: none; margin-left: 0; }
+  .check li { padding-left: 1.8rem; position: relative; margin-bottom: .5rem; }
+  .check li::before { position: absolute; left: 0; top: 0; font-weight: 700; }
+  .check--do li::before { content: "☐"; color: var(--color-ees); font-size: 1.1rem; }
+  .check--dont li::before { content: "✕"; color: var(--color-danger); }
+
+  /* ---------- Countries ---------- */
+  .countries { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: var(--space-sm); }
+  .country { font-size: .82rem; padding: 3px 10px; border-radius: 4px; background: var(--color-surface); border: 1px solid var(--color-border); }
+  .country--us { background: var(--color-ees-light); border-color: var(--color-ees); font-weight: 600; color: var(--color-ees-dark); }
+
+  /* ---------- Sources ---------- */
+  .sources { font-size: .87rem; }
+  .sources li { margin-bottom: .45rem; }
+  .sources .sub { margin-left: 1.4rem; margin-top: .3rem; }
+
+  /* ---------- Footer ---------- */
+  .footer { border-top: 1px solid var(--color-border); padding: var(--space-lg) 0; margin-top: var(--space-lg); text-align: center; font-size: .82rem; color: var(--color-text-subtle); }
+  .footer__rule { width: 60px; height: 2px; background: var(--color-ees); margin: 0 auto var(--space-sm); }
+
+  @media (max-width: 640px) {
+    body { font-size: 14.5px; }
+    .hero { padding: var(--space-lg) 0 var(--space-md); }
+    .hero__meta { gap: 1rem; padding: .6rem 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <div class="hero__eyebrow">Border Formalities · Schengen</div>
+    <h1 class="hero__title">EES(出入域システム)完全ガイド</h1>
+    <p class="hero__subtitle">Entry/Exit System — Honeymoon 2026 対応版</p>
+    <div class="hero__badges">
+      <span class="badge badge--ok">✅ 事前手続き 不要・無料</span>
+      <span class="badge badge--ok">✅ ETIAS は未稼働 → 今回は不要</span>
+      <span class="badge badge--warn">⚠️ CDG 到着審査に 60〜120分</span>
+      <span class="badge badge--info">🛂 接点は CDG の2回だけ</span>
+    </div>
+    <div class="hero__meta">
+      <span><strong>2026-04-10</strong> 全面運用開始</span>
+      <span><strong>29</strong> か国</span>
+      <span><strong>顔+指紋4本</strong> を登録</span>
+      <span><strong>3年</strong> データ保存</span>
+    </div>
+    <div><a class="backlink" href="./index.html">← Honeymoon 2026 トップへ</a></div>
+  </div>
+</header>
+
+<main class="container">
+
+  <div class="verdict">
+    <div class="verdict__item">
+      <span class="verdict__num">1</span>
+      <div><strong>事前手続きは一切不要・費用もゼロ。</strong> 申請サイトも申請書も存在しません。EES は「制度」ではなく<strong>国境の設備</strong>です(<a href="#s6">ETIAS もまだ稼働していない</a>)。</div>
+    </div>
+    <div class="verdict__item">
+      <span class="verdict__num">2</span>
+      <div>やることは<strong>「国境で顔写真+指紋を登録する」だけ</strong>。ただし<strong>初回登録は時間がかかる</strong>ので、<strong>9/26 CDG 到着後のスケジュールに余裕</strong>を持たせます。</div>
+    </div>
+    <div class="verdict__item">
+      <span class="verdict__num">3</span>
+      <div>この旅程で EES に触れるのは <strong>CDG の2回だけ</strong>(9/26 入国 / 10/4 出国)。<strong>10/1 パリ→バルセロナ、10/4 バルセロナ→パリはシェンゲン域内</strong>なので EES は無関係です(<a href="#s8">§8</a>)。</div>
+    </div>
+  </div>
+
+  <nav class="toc">
+    <h2>目次</h2>
+    <ol>
+      <li><a href="#s0">エグゼクティブサマリー</a></li>
+      <li><a href="#s1">EES とは何か</a></li>
+      <li><a href="#s2">対象国 — 29か国</a></li>
+      <li><a href="#s3">誰が対象か / 対象外か</a></li>
+      <li><a href="#s4">登録データと保存期間</a></li>
+      <li><a href="#s5">国境で実際に何が起きるか</a></li>
+      <li><a href="#s6">ETIAS はどうなったか</a></li>
+      <li><a href="#s7">90/180 ルール</a></li>
+      <li><a href="#s8">🎯 この旅程への具体的な影響</a></li>
+      <li><a href="#s9">2026年9月時点の運用実態</a></li>
+      <li><a href="#s10">出発前チェックリスト</a></li>
+      <li><a href="#s11">🚨 詐欺サイトへの注意</a></li>
+      <li><a href="#s12">出典</a></li>
+    </ol>
+  </nav>
+
+  <!-- ============ §0 ============ -->
+  <section class="block" id="s0">
+    <h2><span class="num">§0</span>エグゼクティブサマリー</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>論点</th><th>結論</th></tr></thead>
+        <tbody>
+          <tr><td><strong>事前の申請・登録</strong></td><td><strong>不要</strong>。EES は「国境の設備」であって、申請制度ではありません</td></tr>
+          <tr><td><strong>費用</strong></td><td><strong>無料</strong>。登録料を請求するサイトは<strong>すべて詐欺</strong>(<a href="#s11">§11</a>)</td></tr>
+          <tr><td><strong>ETIAS(€20 の渡航認証)</strong></td><td><strong>2026-09-10 時点で未稼働・開始日未定</strong>。<strong>今回の旅行では不要</strong>(<a href="#s6">§6</a>)</td></tr>
+          <tr><td><strong>旅行者がやること</strong></td><td>国境で<strong>顔写真+指紋4本</strong>を提供。拒否すると<strong>入国拒否</strong></td></tr>
+          <tr><td><strong>パスポートのスタンプ</strong></td><td><strong>原則廃止</strong>(2026-04-10〜)。押されなくても正常です</td></tr>
+          <tr><td><strong>所要時間</strong></td><td><strong>初回は長い</strong>。2回目以降(3年以内)は照合のみで短い</td></tr>
+          <tr><td><strong>この旅程での接点</strong></td><td><strong>CDG のみ2回</strong>:9/26(入国・初回登録)、10/4(出国・乗継中)</td></tr>
+          <tr><td><strong>最大の実務リスク</strong></td><td><strong>10/4 の乗継 2h55m 中に EES 出国登録</strong>が入ること(<a href="#s8">§8-3</a>)</td></tr>
+          <tr><td><strong>準備すべきもの</strong></td><td>宿泊先住所・復路 e チケット・保険証券(質問に答えるため)(<a href="#s10">§10</a>)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ §1 ============ -->
+  <section class="block" id="s1">
+    <h2><span class="num">§1</span>EES とは何か</h2>
+    <p><strong>EES(Entry/Exit System、日本語の公式訳は「出入域システム」)</strong> は、<strong>短期滞在の非EU国籍者</strong>が欧州29か国の対外国境を通過するたびに、その出入国を<strong>自動的に電子記録する EU の IT システム</strong>です。根拠法は <strong>Regulation (EU) 2017/2226</strong>。</p>
+    <ul>
+      <li><strong>2025-10-12</strong>:段階的運用を開始(国・国境ごとにバラバラ、スタンプも併用)</li>
+      <li><strong>2026-04-10</strong>:<strong>全面運用開始</strong>。パスポートへの手押しスタンプは原則廃止</li>
+      <li>運用実績:全面稼働の発表時点で<strong>出入国 5,200万件超</strong>を登録、<strong>約27,000件の入国拒否</strong>、<strong>700人超</strong>の要注意人物を検知(欧州委員会発表)</li>
+    </ul>
+
+    <h3>何のためのシステムか(公式が挙げる4点)</h3>
+    <ol>
+      <li><strong>国境審査の近代化・効率化</strong> — スタンプを電子記録に置き換える</li>
+      <li><strong>越境の高速化</strong> — セルフ端末・事前入力による時短</li>
+      <li><strong>不法移民の防止</strong> — オーバーステイ・偽名の検知</li>
+      <li><strong>域内の安全確保</strong> — 国境当局・法執行機関への情報提供</li>
+    </ol>
+
+    <h3>「スタンプ廃止」の副作用として知っておくこと</h3>
+    <ul>
+      <li><strong>90/180 ルールの管理が自動化</strong>されます。従来は係官がスタンプを数えていたため曖昧さがありましたが、<strong>今後は機械が正確に日数を計算</strong>します(<a href="#s7">§7</a>)</li>
+      <li><strong>免税還付(TVA / IVA)はスタンプとは別系統</strong>なので影響しません。フランスは <strong>PABLO</strong>、スペインは <strong>DIVA</strong> の電子認証端末を使います(旅程 §2 Day 9 の記載どおりで OK)</li>
+    </ul>
+  </section>
+
+  <!-- ============ §2 ============ -->
+  <section class="block" id="s2">
+    <h2><span class="num">§2</span>対象国 — 29か国(+例外2か国)</h2>
+    <div class="countries">
+      <span class="country">アイスランド</span><span class="country">イタリア</span><span class="country">エストニア</span><span class="country">オーストリア</span><span class="country">オランダ</span><span class="country">ギリシャ</span><span class="country">クロアチア</span><span class="country">スイス</span><span class="country">スウェーデン</span><span class="country country--us">スペイン</span><span class="country">スロバキア</span><span class="country">スロベニア</span><span class="country">チェコ</span><span class="country">デンマーク</span><span class="country">ドイツ</span><span class="country">ノルウェー</span><span class="country">ハンガリー</span><span class="country">フィンランド</span><span class="country country--us">フランス</span><span class="country">ブルガリア</span><span class="country">ベルギー</span><span class="country">ポーランド</span><span class="country">ポルトガル</span><span class="country">マルタ</span><span class="country">ラトビア</span><span class="country">リトアニア</span><span class="country">リヒテンシュタイン</span><span class="country">ルクセンブルク</span><span class="country">ルーマニア</span>
+    </div>
+    <div class="note note--warn">
+      <span class="note__label">例外</span>
+      <p><strong>キプロスとアイルランドは EU 加盟国だが EES 非対象</strong> — この2国では<strong>従来どおり手押しスタンプ</strong>が続きます。</p>
+    </div>
+    <p><strong>重要</strong>:「180日間で90日」という滞在枠は、<strong>29か国を合算した1つの期間</strong>として計算されます。国ごとに90日ではありません。</p>
+  </section>
+
+  <!-- ============ §3 ============ -->
+  <section class="block" id="s3">
+    <h2><span class="num">§3</span>誰が対象か / 誰が対象外か</h2>
+
+    <h3>✅ 対象(= 私たち)</h3>
+    <p><strong>短期滞在(180日間で最大90日)目的の非EU国籍者</strong>で、以下のどちらか:</p>
+    <ul>
+      <li>短期滞在ビザが必要な国籍</li>
+      <li><strong>ビザが不要な国籍(← 日本はこちら)</strong></li>
+    </ul>
+    <div class="note note--tip">
+      <span class="note__label">誤解しやすい点</span>
+      <p>日本国籍者は<strong>ビザ免除</strong>ですが、<strong>EES の登録対象</strong>です。「ビザがいらない＝何もしなくていい」ではありません。</p>
+    </div>
+
+    <h3>❌ 対象外(主なもの)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>区分</th><th>内容</th></tr></thead>
+        <tbody>
+          <tr><td>国籍</td><td>EES 実施29か国の国籍者、キプロス・アイルランド国籍者</td></tr>
+          <tr><td>ミニ国家</td><td>アンドラ、モナコ、サンマリノ、バチカン(教皇庁)発行旅券の保持者</td></tr>
+          <tr><td>長期滞在者</td><td>滞在許可証・長期滞在ビザの保持者</td></tr>
+          <tr><td>EU 市民の家族</td><td>滞在カードを持つ EU 市民の近親者</td></tr>
+          <tr><td>特定目的</td><td>企業内転勤・研究・就学・訓練・ボランティア・生徒交換・オペア</td></tr>
+          <tr><td>特権</td><td>国家元首、認定外交官、越境労働者、NATO 関係者 など</td></tr>
+          <tr><td>交通従事者</td><td>国際列車の乗務員、越境交通許可証保持者 など</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ §4 ============ -->
+  <section class="block" id="s4">
+    <h2><span class="num">§4</span>登録されるデータと保存期間</h2>
+
+    <h3>収集される情報</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>種別</th><th>内容</th></tr></thead>
+        <tbody>
+          <tr><td>旅券情報</td><td>氏名、生年月日、旅券番号など、旅券に記載された事項</td></tr>
+          <tr><td>出入国記録</td><td><strong>各回の出入国の日付・場所</strong></td></tr>
+          <tr><td>生体情報</td><td><strong>顔画像 + 指紋(4本)</strong> ※<strong>12歳未満は指紋を採取しない</strong>(顔画像のみ)</td></tr>
+          <tr><td>拒否記録</td><td>入国を拒否されたことがあるか</td></tr>
+          <tr><td>連携情報</td><td>VIS(ビザ情報システム)、ETIAS(稼働後)からの情報</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note note--danger">
+      <span class="note__label">重要</span>
+      <p><strong>生体情報の提供を拒否すると、入国を拒否されます。</strong>「顔写真は嫌だ」「指紋は取らせない」という選択肢はありません。</p>
+    </div>
+
+    <h3>保存期間</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>対象</th><th>期間</th><th>起算日</th></tr></thead>
+        <tbody>
+          <tr><td>出入国・入国拒否の<strong>記録</strong></td><td><strong>3年</strong></td><td>記録が作成された日</td></tr>
+          <tr><td><strong>個人ファイル</strong>(個人データ)</td><td><strong>3年+1日</strong></td><td><strong>最後に出国した日</strong>(または入国拒否日)</td></tr>
+          <tr><td>出国記録がない場合</td><td><strong>5年</strong></td><td>許可された滞在期間の満了日</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>期間経過後、データは<strong>自動的に消去</strong>されます。</p>
+
+    <div class="note note--tip">
+      <span class="note__label">実務上の意味</span>
+      <p>今回 <strong>2026-10-04 に出国</strong>すると、個人ファイルは <strong>2029-10-05 頃まで有効</strong>。<strong>2029年秋までに再訪すれば、指紋の再登録は不要で照合だけ</strong>になります。</p>
+    </div>
+
+    <h3>データ主体としての権利</h3>
+    <ul>
+      <li>自分のデータへの<strong>アクセス請求</strong>、<strong>訂正</strong>、<strong>削除</strong>の請求が可能</li>
+      <li>監督機関は <strong>EDPS(欧州データ保護監察官)</strong> と各国の独立監督機関</li>
+      <li>苦情申立ては、データを処理した国の監督機関 or EDPS へ</li>
+    </ul>
+  </section>
+
+  <!-- ============ §5 ============ -->
+  <section class="block" id="s5">
+    <h2><span class="num">§5</span>国境で実際に何が起きるか</h2>
+
+    <h3>🔵 パターンA:初回(= 私たちの 9/26 CDG 入国)</h3>
+    <ol>
+      <li><strong>(任意)セルフ端末 / タブレットで事前入力</strong> — 旅券をスキャン、顔写真、指紋、質問への回答</li>
+      <li><strong>審査ブースへ</strong> — 係官が顔写真を撮影し、指紋をスキャン(端末で済ませていれば係官は確認するだけ)</li>
+      <li><strong>デジタルファイルが作成される</strong></li>
+      <li><strong>旅券にスタンプは押されない</strong></li>
+    </ol>
+    <div class="note note--quote">
+      <span class="note__label">公式の注記</span>
+      <p><strong>端末を使っても、必ず係官と対面します。</strong> 端末は「係官の前でやる作業を先に済ませておく」ためのものです。</p>
+    </div>
+
+    <h3>🟢 パターンB:2回目以降(3年以内)= 私たちの 10/4 CDG 出国</h3>
+    <ul>
+      <li>顔と指紋はすでに登録済み → <strong>係官は照合するだけ</strong>で、<strong>所要時間は短い</strong></li>
+      <li><strong>生体認証旅券</strong>(日本の IC 旅券は該当)なら、<strong>セルフサービスゲートで通過できる場合がある</strong>。問題がなければ係官の対面を省略できることも</li>
+      <li>※まれに再採取を求められることがあります</li>
+    </ul>
+
+    <h3>🛫 出国時も EES に記録されます</h3>
+    <p>入国だけでなく、<strong>シェンゲン圏を出るときにも顔写真・指紋の照合と出国記録の作成</strong>が行われます。<strong>「出国はスルー」ではありません</strong>(<a href="#s8">§8-3</a> の乗継リスクの原因)。</p>
+
+    <h3>フランスの「事前登録端末(bornes de pré-enregistrement)」</h3>
+    <p>仏政府 service-public によれば:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>項目</th><th>内容</th></tr></thead>
+        <tbody>
+          <tr><td><strong>費用・義務</strong></td><td><strong>無料 かつ 任意</strong></td></tr>
+          <tr><td><strong>必要なもの</strong></td><td><strong>有効な生体認証旅券</strong>(日本の IC 旅券で OK)</td></tr>
+          <tr><td><strong>設置場所</strong></td><td>パリ CDG、リヨン、ニースなどの主要空港、ユーロスター駅、ユーロトンネル、カレー港・ドーバー港 など</td></tr>
+          <tr><td><strong>2形態</strong></td><td>①<strong>キオスク型</strong>(自分で操作) ②<strong>タブレット型</strong>(係員が横で案内)</td></tr>
+          <tr><td><strong>やること</strong></td><td>質問への回答 → 旅券スキャン → 顔写真 → 指紋</td></tr>
+          <tr><td><strong>その後</strong></td><td>国境検問所で<strong>係官がファイルを承認</strong></td></tr>
+          <tr><td><strong>12歳未満</strong></td><td>同伴されていれば利用可(ただし顔画像は取得しない)。<strong>単独の未成年は利用不可</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note note--warn">
+      <span class="note__label">現地で確認</span>
+      <p><strong>CDG では第2ターミナル(2E・2F)の設備が最も充実</strong>していると報じられています。<strong>第1ターミナル(アシアナ到着ターミナルの想定)の端末配備状況は現地確認</strong>してください。端末があれば必ず使ったほうが速いです。</p>
+    </div>
+
+    <h3>📱 "Travel to Europe" アプリ — 今回は使えません</h3>
+    <p>EU 公式のスマホアプリで、<strong>入国の72時間前から旅券情報・顔画像・入国条件アンケートを事前登録</strong>できます。ただし:</p>
+    <div class="note note--danger">
+      <span class="note__label">対応国が足りない</span>
+      <p><strong>2026-09-10 時点で対応国は スウェーデン(旅券・顔画像・アンケート)と ポルトガル(アンケートのみ)のみ。</strong><br>
+      <strong>フランス・スペインは未対応</strong>なので、<strong>今回の旅行ではダウンロードしても意味がありません。</strong></p>
+    </div>
+    <p>出発直前に対応国が増えている可能性はゼロではないので、<strong>出発1週間前に公式サイトで再確認</strong>する価値はあります(<a href="#s12">§12</a> の EU 公式リンク)。</p>
+  </section>
+
+  <!-- ============ §6 ============ -->
+  <section class="block" id="s6">
+    <h2><span class="num">§6</span>ETIAS はどうなったか — 今回は不要</h2>
+    <p><strong>ETIAS(欧州渡航情報認証制度)は EES とは別物</strong>です。EES が「国境の設備」なのに対し、ETIAS は「<strong>渡航前にオンラインで申請・支払いをする渡航認証</strong>」(米国の ESTA に相当)。</p>
+
+    <h3>🔴 2026-09-10 時点の公式ステータス</h3>
+    <div class="note note--quote">
+      <span class="note__label">EU 公式 ETIAS サイトの記載(趣旨)</span>
+      <p><strong>ETIAS は現在稼働しておらず、渡航認証の申請は一切受け付けていない。</strong><br>
+      <strong>EU は開始日を、開始の数か月前に告知する。</strong></p>
+    </div>
+    <ul>
+      <li>公式サイトからは<strong>「2026年第4四半期」という開始時期の記載が削除</strong>されました</li>
+      <li>背景として、システムを構築する <strong>eu-LISA が 2026年内の稼働は不可能と内部判断した</strong>と報じられています(2026年7月・Financial Times 報道)</li>
+      <li>業界筋は <strong>2027年4月以降</strong>を最短と見ていますが、<strong>公式には未確定</strong></li>
+    </ul>
+
+    <div class="note note--ok">
+      <span class="note__label">判断</span>
+      <p><strong>2026-09-26 出発の今回の旅行に ETIAS は不要</strong>です。開始は「数か月前に告知」される運用なので、<strong>9月10日時点で告知がない＝9月末に始まることはありません</strong>。出発直前(9/20 頃)に <strong>EU 公式サイトを1回だけ再確認</strong>すれば十分です。</p>
+    </div>
+
+    <h4>参考:稼働後の条件(将来の旅行用)</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>項目</th><th>内容</th></tr></thead>
+        <tbody>
+          <tr><td>手数料</td><td><strong>€20</strong></td></tr>
+          <tr><td>免除</td><td><strong>18歳未満・70歳以上は無料</strong></td></tr>
+          <tr><td>有効期間</td><td><strong>3年</strong>(または旅券の有効期限まで)</td></tr>
+          <tr><td>滞在可能日数</td><td>180日間で最大90日</td></tr>
+          <tr><td>対象国</td><td>30か国</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ §7 ============ -->
+  <section class="block" id="s7">
+    <h2><span class="num">§7</span>90/180 ルールと滞在日数の確認</h2>
+    <ul>
+      <li><strong>「180日間のうち90日まで」</strong> — 29か国合算での計算</li>
+      <li>EU は <strong>オンラインの滞在日数計算ツール</strong>を公開しています(旅券番号・発行国・入出国予定日を入力)</li>
+      <li>一部の国境には同じ機能の端末が設置されています</li>
+      <li>係官に「あと何日滞在できるか」を<strong>尋ねる権利</strong>があります</li>
+    </ul>
+
+    <div class="note note--warn">
+      <span class="note__label">移行期の重要な注意(公式明記)</span>
+      <p><strong>残存滞在日数の計算には、2026年4月10日より前のシェンゲン滞在は反映されません。</strong>(滞在が4月10日をまたいでいた場合も同様)<br>
+      つまり <strong>2026-04-10 が実質的なカウンターのリセット日</strong>です。</p>
+    </div>
+
+    <div class="note note--tip">
+      <span class="note__label">今回の旅程では</span>
+      <p><strong>9泊10日(現地滞在 9/26〜10/4 の9日間)</strong>なので、90日枠には全く問題ありません。ただし <strong>今回の入出国が正式な記録として3年間残る</strong>ので、<strong>2027年以降にヨーロッパへ再訪する場合は、今回の9日間が90日枠から差し引かれます</strong>。</p>
+    </div>
+
+    <h3>オーバーステイした場合</h3>
+    <ul>
+      <li>自動的に <strong>「オーバーステイヤー」リスト</strong>に登録され、国境・入管・ビザ発給当局が閲覧可能に</li>
+      <li>各国法により、<strong>退去強制・行政罰金・拘留・将来の入域禁止</strong>などの措置がありうる</li>
+      <li>不可抗力(重傷による入院など)の証拠を示せば、記録の訂正とリスト削除が可能</li>
+    </ul>
+  </section>
+
+  <!-- ============ §8 ============ -->
+  <section class="block" id="s8">
+    <h2><span class="num">§8</span>🎯 この旅程(2026/09/26 - 10/05)への具体的な影響</h2>
+
+    <h3>§8-1. EES に触れるのは CDG の2回だけ</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>日付</th><th>区間</th><th>シェンゲン境界</th><th>EES</th></tr></thead>
+        <tbody>
+          <tr><td>9/26(土)</td><td>HND → ICN → <strong>CDG 17:20 着</strong></td><td><strong>域外 → 域内</strong></td><td>🔴 <strong>入国登録(初回・生体登録)</strong></td></tr>
+          <tr><td>10/1(木)</td><td>CDG T3 10:10 → BCN T1 12:05</td><td>域内 → 域内</td><td>⚪️ <strong>なし</strong></td></tr>
+          <tr><td>10/4(日)</td><td>BCN T1 18:10 → CDG T2F 20:05</td><td>域内 → 域内</td><td>⚪️ <strong>なし</strong></td></tr>
+          <tr><td>10/4(日)</td><td><strong>CDG T2E 23:00 発 → HND</strong></td><td><strong>域内 → 域外</strong></td><td>🔴 <strong>出国登録(2回目・照合のみ)</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note note--ok">
+      <span class="note__label">安心材料</span>
+      <p><strong>パリ↔バルセロナのフライトでは入出国審査そのものがありません。</strong>(搭乗手続き・保安検査では<strong>パスポートの提示が必要</strong> — 日本人はシェンゲン域内でも身分証明として旅券を携行してください)<br>
+      <strong>ソウル(ICN)での乗り継ぎは韓国</strong>なので EES とは無関係です。</p>
+    </div>
+
+    <h3>§8-2. 🔴 9/26(土)CDG 入国 — 初回登録</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>項目</th><th>内容</th></tr></thead>
+        <tbody>
+          <tr><td>到着</td><td><strong>17:20 / 土曜夕方</strong>(※アシアナは <strong>第1ターミナル</strong>着の想定 — 発券時に要確認)</td></tr>
+          <tr><td>手続き</td><td><strong>初回のため顔写真+指紋4本のフル登録</strong></td></tr>
+          <tr><td>想定所要</td><td><strong>60〜120分</strong>を見込む(混雑時はそれ以上)</td></tr>
+          <tr><td>対策①</td><td><strong>事前登録端末があれば必ず使う</strong>(降機順を早めに)</td></tr>
+          <tr><td>対策②</td><td><strong>入国条件の質問に即答できるよう準備</strong>(<a href="#s10">§10</a>)</td></tr>
+          <tr><td>対策③</td><td><strong>Day 1 の夜に予約を入れない</strong>。旅程 Day 1 は「Dragon で早寝」なので<strong>この点は既に安全設計</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note note--tip">
+      <span class="note__label">時間帯</span>
+      <p><strong>朝の到着便(06:00-10:00)が最も混む</strong>と報じられています。<strong>17:20 着は比較的マシな時間帯</strong>ですが、EES 全面運用後は夕方も読めません。</p>
+    </div>
+
+    <h3>§8-3. 🔴🔴 10/4(日)CDG 出国 — 乗継 2h55m の実質的な唯一の圧迫要因</h3>
+    <div class="flow">
+      <div class="flow__row"><span class="flow__time">18:10</span><span>BCN T1 発(AF1549)</span></div>
+      <div class="flow__row"><span class="flow__time">20:05</span><span><strong>CDG T2F 着</strong> — ここから乗継 2時間55分</span></div>
+      <div class="flow__row"><span class="flow__time">↓</span><span>T2F → T2E へ移動(<strong>同ターミナル内</strong>・徒歩25〜35分程度)</span></div>
+      <div class="flow__row flow__row--hot"><span class="flow__time">↓</span><span>🛂 <strong>EES 出国登録 + 保安検査</strong> ← ★ここが読めない</span></div>
+      <div class="flow__row"><span class="flow__time">23:00</span><span>CDG T2E 発(AF274)→ 翌 19:40 羽田着</span></div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>観点</th><th>判断</th></tr></thead>
+        <tbody>
+          <tr><td>理論上の所要</td><td><strong>2回目の通過なので照合のみ</strong>。手続き自体は本来短い</td></tr>
+          <tr><td>実際のリスク</td><td><strong>待ち行列</strong>。設備の処理能力と職員数の問題で、混雑時は長時間化しうる</td></tr>
+          <tr><td>緩和材料①</td><td><strong>AF1549 + AF274 は同一予約・同一 PNR・スルーバゲージ</strong> → 乗り継げなくても <strong>AF が振替を負う</strong>(旅程 §1-1)</td></tr>
+          <tr><td>緩和材料②</td><td><strong>T2F → T2E は同じ第2ターミナル内</strong>。CDGVAL 不要</td></tr>
+          <tr><td>緩和材料③</td><td><strong>日曜21時台</strong>は朝ほど混まない時間帯</td></tr>
+          <tr><td>🔴 残るリスク</td><td>AF274 は <strong>23:00 発の最終便級</strong>。乗り遅れると<strong>翌日行き</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>推奨アクション</h4>
+    <ol>
+      <li><strong>BCN で座席は前方通路側</strong>を選び、CDG での降機を早める</li>
+      <li><strong>T2F 到着後、寄り道せず即 T2E へ</strong>。免税店は保安検査通過後</li>
+      <li><strong>フランス分の TVA 還付(PABLO)は、出国審査より先</strong>に端末で処理する</li>
+      <li><strong>スペイン分の IVA 還付(DIVA)は BCN で済ませる</strong>(CDG に持ち越さない)</li>
+      <li><strong>21:30 までに出国審査の列に並べていない場合</strong>は、係員に <strong>「AF274, 23:00, Tokyo」</strong> と申告して優先レーンを確認する</li>
+    </ol>
+
+    <h3>§8-4. 旅程本体との整合</h3>
+    <p>現行の <a href="./results.html">改訂版v5.6 旅程</a> には既に以下の記載があり、本書と矛盾しません:</p>
+    <ul>
+      <li>§2 Day 9 の 20:40 行「🛂 EES 出国登録(シェンゲン出国)+ 保安検査 — 乗継 2h55m の実質的な圧迫要因はここ」</li>
+      <li>§8 リスク表の「🆕 EES 出国登録(復路 CDG)」「🆕 EES 入国登録(往路 CDG、初回生体登録)」</li>
+    </ul>
+    <div class="note note--ok">
+      <span class="note__label">本書で新たに確定した事実</span>
+      <ol style="margin-bottom:0">
+        <li><strong>事前手続きは公式に「不要」</strong> — 何かを申請し忘れているリスクはゼロ</li>
+        <li><strong>ETIAS は未稼働で開始日未定</strong> — 今回は完全に不要</li>
+        <li><strong>"Travel to Europe" アプリはフランス・スペイン未対応</strong> — 事前入力による時短は<strong>現地の端末頼み</strong></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ §9 ============ -->
+  <section class="block" id="s9">
+    <h2><span class="num">§9</span>2026年9月時点の運用実態</h2>
+    <div class="note note--warn">
+      <span class="note__label">確度の注記</span>
+      <p>この章は<strong>ニュース報道ベース</strong>の情報です。§1〜§7 の公式情報とは確度が異なります。</p>
+    </div>
+
+    <h3>🔴 2026-09-06:混雑時の生体データ収集停止措置が失効</h3>
+    <ul>
+      <li>全面運用(4/10)後、加盟国は<strong>混雑時に生体データの採取を一時停止できる柔軟措置</strong>を持っていました(フランスは最大6時間の停止が可能)</li>
+      <li>この措置が <strong>2026年9月6日に失効</strong>。欧州委員会は、航空業界の要請にもかかわらず<strong>延長を拒否</strong></li>
+      <li>→ <strong>9月7日以降は、原則としてすべての対象旅客から生体データを採取</strong>する運用に</li>
+    </ul>
+
+    <h3>現場の実態は「まだら」</h3>
+    <ul>
+      <li>欧州委員会は「夏を通じて概ね良好に機能した」との立場。ただし<strong>一部加盟国とは調整を継続中</strong>とし、<strong>年末までに残る課題を解決する</strong>方針を示唆</li>
+      <li><strong>カレー港は「猶予期間が年末まで延長されたと通知を受けた」</strong>と報じられていますが、<strong>公式発表はなし</strong></li>
+      <li><strong>フランスは EES ソフトウェアの技術的問題</strong>により、実務上ほとんど変化がないとの報道もあり</li>
+      <li><strong>CDG の事前登録端末は不調が続いている</strong>との指摘もあります</li>
+    </ul>
+
+    <h3>報じられている待ち時間(裏取りの質にばらつきあり)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>出典</th><th>内容</th></tr></thead>
+        <tbody>
+          <tr><td>ACI(国際空港評議会)</td><td><strong>2026年7月に最大5時間</strong>待ちの空港も。リスボン・ミラノ・ローマ・クラクフが特に深刻</td></tr>
+          <tr><td>複数の旅行系メディア</td><td>CDG 第2ターミナル E の非EU到着は<strong>繁忙期に1〜3時間</strong></td></tr>
+          <tr><td>業界の声</td><td>Ryanair COO「EES の扱いは最初から最後まで大失態」— 柔軟措置の 2027年4月までの延長を要求</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note note--tip">
+      <span class="note__label">結論</span>
+      <p>数字は情報源によって大きくブレます。<strong>「初回登録は最大2時間かかりうる」という前提でスケジュールを組む</strong>のが安全側の判断です。</p>
+    </div>
+  </section>
+
+  <!-- ============ §10 ============ -->
+  <section class="block" id="s10">
+    <h2><span class="num">§10</span>出発前チェックリスト</h2>
+
+    <h3>✅ やること(全部で3つだけ)</h3>
+    <ul class="check check--do">
+      <li><strong>パスポートの有効期限を確認</strong> — <strong>シェンゲン圏出国予定日(10/5)から3か月以上</strong>の残存有効期間 + <strong>発行から10年以内</strong>であること<br>
+        → 今回なら <strong>2027年1月5日以降まで有効</strong> かつ <strong>2016年9月26日以降に発行</strong> されたものであること</li>
+      <li><strong>入国審査で聞かれる項目を、スマホですぐ出せる状態にしておく</strong>(下表)</li>
+      <li><strong>9/20 頃に EU 公式サイトを1回だけ確認</strong>(ETIAS 開始告知の有無・"Travel to Europe" アプリの対応国)</li>
+    </ul>
+
+    <h3>❌ やらなくていいこと</h3>
+    <ul class="check check--dont">
+      <li>EES の事前申請 → <strong>制度自体が存在しません</strong></li>
+      <li>ETIAS の申請 → <strong>未稼働</strong></li>
+      <li>"Travel to Europe" アプリのダウンロード → <strong>仏西とも未対応</strong></li>
+      <li>有料の「代行サイト」への申し込み → <strong>全部詐欺</strong>(<a href="#s11">§11</a>)</li>
+    </ul>
+
+    <h3>§10-2. 国境で聞かれること(入国条件アンケート)</h3>
+    <p>セルフ端末や係官から、<strong>入国条件</strong>について質問されます。<strong>「はい」と答えられない項目があると、国境警察の担当官に回されます</strong>。</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>質問される内容</th><th>今回の答え・根拠</th><th>すぐ出せるように</th></tr></thead>
+        <tbody>
+          <tr><td><strong>滞在目的</strong></td><td>観光(新婚旅行)</td><td>—</td></tr>
+          <tr><td><strong>宿泊先</strong></td><td>Hôtel du Dragon(9/26-29)/ ラ・ディーグ(9/29-30)/ La Folie des Prés(9/30-10/1)/ Hotel Gótico(10/1-10/4)</td><td><strong>4軒の予約確認メール</strong>をスマホのオフラインで見られるように</td></tr>
+          <tr><td><strong>復路の航空券</strong></td><td>AF1549 + AF274(10/4 BCN → 10/5 HND)</td><td><strong>e チケット控え PDF</strong></td></tr>
+          <tr><td><strong>滞在資金</strong></td><td>クレジットカード + 現金</td><td>明細を見せる必要はまずないが、<strong>カードは複数枚</strong>携行</td></tr>
+          <tr><td><strong>海外旅行保険</strong></td><td>⚠️ <strong>未加入なら要手配</strong>(旅程 §7 の残タスク)</td><td><strong>保険証券(英文)</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note note--quote">
+      <span class="note__label">補足</span>
+      <p><strong>在日フランス大使館・外務省とも「渡航前に必要な手続きはない」</strong>と明記していますが、上記は <strong>EES 以前からのシェンゲン入国条件</strong>(Regulation (EU) 2016/399)であり、<strong>EES の端末で機械的に聞かれるようになった</strong>というのが実態です。<strong>紙で持つ必要はなく、スマホに保存</strong>しておけば十分です。</p>
+    </div>
+
+    <h3>§10-3. 当日の動き方(まとめ)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>タイミング</th><th>動き</th></tr></thead>
+        <tbody>
+          <tr><td><strong>9/26 CDG 着</strong></td><td>降機後、<strong>事前登録端末(borne)を探す</strong> → あれば使う → 審査ブースへ。<strong>焦らない</strong></td></tr>
+          <tr><td><strong>10/1 パリ→BCN</strong></td><td><strong>EES なし</strong>。ただし搭乗にパスポート必須</td></tr>
+          <tr><td><strong>10/4 BCN 出発前</strong></td><td><strong>DIVA でスペイン分の IVA 還付を完了</strong>させる</td></tr>
+          <tr><td><strong>10/4 CDG T2F 着</strong></td><td><strong>寄り道せず T2E へ</strong> → <strong>PABLO で仏分 TVA 還付</strong> → <strong>EES 出国登録</strong> → 保安検査</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ §11 ============ -->
+  <section class="block" id="s11">
+    <h2><span class="num">§11</span>🚨 詐欺サイトへの注意</h2>
+    <div class="note note--danger">
+      <span class="note__label">大原則</span>
+      <p><strong>EES の「登録料」を請求するサイトは、例外なく詐欺です。</strong></p>
+    </div>
+    <ul>
+      <li><strong>EES には申請・アカウント・支払いが存在しません。</strong> 国境に着いた時点で自動的にファイルが作られるだけです</li>
+      <li>手口:公式ポータルに似せた見た目で「登録料」「手数料」を請求し、<strong>何も提供せず個人情報を収集</strong>する</li>
+      <li><strong>ETIAS(将来稼働)と混同させる</strong>のが典型的な手口。ETIAS は本当に申請・支払い(€20)が必要になるため、区別がつきにくい</li>
+      <li>当局は<strong>「公式 ETIAS ポータル」を名乗る偽サイトを多数確認</strong>しています</li>
+    </ul>
+    <div class="note note--tip">
+      <span class="note__label">見分け方</span>
+      <p>公式ドメインは <strong><code>travel-europe.europa.eu</code></strong> のみ。<strong><code>.europa.eu</code> で終わらないサイトは公式ではありません。</strong></p>
+    </div>
+  </section>
+
+  <!-- ============ §12 ============ -->
+  <section class="block" id="s12">
+    <h2><span class="num">§12</span>出典</h2>
+
+    <h3>公式一次情報</h3>
+    <ul class="sources">
+      <li><a href="https://travel-europe.europa.eu/ees_en">Entry/Exit System (EES) — EU 公式サイト</a>
+        <ul class="sub">
+          <li><a href="https://travel-europe.europa.eu/ees/what-is-the-ees">What is the EES?</a> — 対象29か国、短期滞在の定義</li>
+          <li><a href="https://travel-europe.europa.eu/ees/data-held-by-ees">Data held by the EES</a> — 収集データ、保存期間、拒否時の扱い、権利</li>
+          <li><a href="https://travel-europe.europa.eu/ees/ltr/how-does-the-ees-work">How does the EES work?</a> — 初回/2回目以降の流れ</li>
+          <li><a href="https://travel-europe.europa.eu/ees/to-whom-does-ees-not-apply">To whom does the EES not apply?</a> — 免除対象</li>
+          <li><a href="https://travel-europe.europa.eu/ees/Travel-to-Europe-mobile-app">Travel to Europe mobile app</a> — 対応国(スウェーデン・ポルトガル)</li>
+          <li><a href="https://travel-europe.europa.eu/ees/check-how-long-you-can-stay">Check how long you can stay</a> — 滞在日数計算ツール、4/10 前は非反映</li>
+        </ul>
+      </li>
+      <li><a href="https://travel-europe.europa.eu/etias_en">ETIAS 公式サイト</a> — <strong>「現在稼働しておらず、申請は受け付けていない」</strong></li>
+      <li><a href="https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/entry-exit-system_en">Entry/Exit System (EES) — 欧州委員会 Migration and Home Affairs</a></li>
+      <li><a href="https://home-affairs.ec.europa.eu/news/entryexit-system-ees-fully-operational-2026-04-10_en">The EES is fully operational(2026-04-10 発表)</a> — 5,200万件、27,000件の入国拒否</li>
+      <li><a href="https://www.mofa.go.jp/mofaj/toko/pagew_000001_01637.html">EES(出入域システム)— 日本国外務省</a>(令和8年7月16日)</li>
+      <li><a href="https://jp.diplomatie.gouv.fr/ja/ees-le-nouveau-systeme-europeen-de-gestion-des-frontieres-entre-en-service-le-10-avril-2026">ヨーロッパの新国境管理システム「EES」が2026年4月10日より運用開始 — 在日フランス大使館</a> — <strong>「渡航前に必要な手続きはありません」</strong></li>
+      <li><a href="https://www.diplomatie.gouv.fr/en/services-to-foreigners/visiting-france/ees-the-new-european-border-entryexit-system-goes-live-on-10-april-2026">EES: The new European border Entry/Exit System — France Diplomatie</a></li>
+      <li><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F39254?lang=en">European Entry/Exit System (EES) pre-registration devices — service-public.gouv.fr(仏政府)</a> — 端末の仕様・設置場所・無料/任意</li>
+    </ul>
+
+    <h3>報道(§9 の運用実態)</h3>
+    <ul class="sources">
+      <li><a href="https://www.euronews.com/travel/2026/09/08/travel-industry-piles-pressure-on-eu-as-shambolic-ees-rollout-sparks-fresh-fears-of-border">Travel industry piles pressure on EU as 'shambolic' EES rollout sparks fresh fears of border chaos — Euronews(2026-09-08)</a></li>
+      <li><a href="https://www.connexionfrance.com/news/will-tighter-ees-border-checks-cause-long-queues/812976">France EES border checks: Will new biometric rules cause queues from September 7, 2026? — The Connexion</a></li>
+      <li><a href="https://www.thelocal.es/20260904/could-europes-border-queues-get-longer-this-month-as-key-ees-date-passes/">Could Europe's border queues get longer this month as key EES date passes? — The Local(2026-09-04)</a></li>
+      <li><a href="https://www.thelocal.fr/20260505/queues-worsen-at-french-airports-as-ees-rollout-continues">Queues worsen at French airports as EES rollout continues — The Local France(2026-05-05)</a></li>
+      <li><a href="https://etias.com/articles/etias-drops-2026-date-as-launch-slips-out-of-view">ETIAS drops 2026 date as launch slips out of view</a></li>
+      <li><a href="https://www.euronews.com/travel/2025/10/09/etias-scams-eu-travel-eta-launch-confusion">ETIAS scams: Everything you need to know about EU travel as EES launch causes confusion — Euronews</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__rule"></div>
+    <p>Honeymoon 2026 · EES(出入域システム)完全ガイド v1.0</p>
+    <p style="margin-top:4px;">調査日 2026-09-10 · Private document · Not indexed</p>
+    <p style="margin-top:8px;"><a href="./index.html">← トップ</a> · <a href="./results.html">旅程 v5.6</a> · <a href="./hotels.html">ホテル</a> · <a href="./msm-tour.html">MSM ツアー</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
