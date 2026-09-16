@@ -7,6 +7,8 @@ Spain & France 9-day journey research digest.
 - **Index**: <https://ryota-09.github.io/honeymoon-plan/>
 - **France**: <https://ryota-09.github.io/honeymoon-plan/french/summary.html>
 - **Spain**: <https://ryota-09.github.io/honeymoon-plan/spanish/summary.html>
+- **EES(入出国手続き)**: <https://ryota-09.github.io/honeymoon-plan/ees.html>
+- **レストラン選定**: <https://ryota-09.github.io/honeymoon-plan/restaurants.html>
 
 ## Structure
 
@@ -18,6 +20,8 @@ Spain & France 9-day journey research digest.
 ├── results.md / .html          # 9日間旅程(改訂版v5・現行)
 ├── hotels.md / .html           # ホテル調査(確定2軒 + 候補)
 ├── msm-tour.md / .html         # MSM ツアー(VELTRA・予約確定)
+├── ees.md / .html              # EES(出入域システム)完全ガイド
+├── restaurants.md / .html      # レストラン選定(パリ/バルセロナ・全8店 空席確認済み)
 ├── private/                    # 🔒 予約番号・暗証番号(gitignore 済み・非公開)
 │   ├── bookings.local.md       #    予約控え一覧
 │   └── tickets/                #    e チケット・入場券 PDF の原本

@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>レストラン選定(パリ / バルセロナ) | Honeymoon 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --color-bg: #FAFAF8;
+    --color-surface: #FFFFFF;
+    --color-text: #1C1C1C;
+    --color-text-muted: #5C5C5C;
+    --color-text-subtle: #8A8A8A;
+    --color-border: #E8E6E1;
+    --color-border-strong: #C9C5BC;
+
+    --color-resto: #3F5D45;
+    --color-resto-light: #EDF2EE;
+    --color-resto-dark: #2C4231;
+    --color-france: #7C2D3F;
+    --color-spain: #B0432A;
+
+    --color-highlight: #FFF8E7;
+    --color-highlight-border: #E8D9A8;
+    --color-positive: #2D5A3D;
+    --color-positive-bg: #EEF5EF;
+    --color-positive-border: #B8D0BD;
+    --color-warning: #8B5A20;
+    --color-warning-bg: #FBF4E6;
+    --color-warning-border: #E8D2A6;
+    --color-danger: #8E2A2A;
+    --color-danger-bg: #FBEFEF;
+    --color-danger-border: #E5BFBF;
+
+    --font-serif: 'Cormorant Garamond', 'Noto Serif JP', 'Hiragino Mincho ProN', serif;
+    --font-sans: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', sans-serif;
+    --font-mono: 'SF Mono', 'Menlo', 'Consolas', monospace;
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+  }
+
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.8;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--color-resto); text-decoration: none; transition: color .2s ease; word-break: break-word; }
+  a:hover { color: var(--color-resto-dark); text-decoration: underline; }
+  strong { font-weight: 600; }
+
+  .container { max-width: 1000px; margin: 0 auto; padding: 0 var(--space-md); }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    background: linear-gradient(180deg, var(--color-resto-light) 0%, var(--color-surface) 100%);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-xl) 0 var(--space-lg);
+    text-align: center;
+    position: relative;
+  }
+  .hero::before {
+    content: "";
+    position: absolute; top: 0; left: 0; right: 0; height: 5px;
+    background: linear-gradient(90deg, var(--color-france) 0%, var(--color-resto) 50%, var(--color-spain) 100%);
+  }
+  .hero__eyebrow {
+    font-family: var(--font-serif);
+    font-size: .85rem; letter-spacing: .3em; text-transform: uppercase;
+    color: var(--color-resto-dark); font-weight: 600; margin-bottom: var(--space-sm);
+  }
+  .hero__title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.1rem, 5.5vw, 3.4rem);
+    font-weight: 600; line-height: 1.2; margin-bottom: .5rem;
+  }
+  .hero__subtitle {
+    font-family: var(--font-serif); font-style: italic;
+    font-size: clamp(1rem, 2vw, 1.2rem); color: var(--color-text-muted);
+    margin-bottom: var(--space-md);
+  }
+  .hero__badges { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; margin-bottom: var(--space-md); }
+  .badge {
+    display: inline-block; padding: 5px 14px; border-radius: 20px;
+    font-size: .78rem; font-weight: 600; letter-spacing: .03em;
+  }
+  .badge--ok { background: var(--color-positive-bg); color: var(--color-positive); border: 1px solid var(--color-positive-border); }
+  .badge--warn { background: var(--color-warning-bg); color: var(--color-warning); border: 1px solid var(--color-warning-border); }
+  .badge--info { background: var(--color-resto-light); color: var(--color-resto-dark); border: 1px solid #C3D3C7; }
+  .hero__meta {
+    display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 1.75rem;
+    padding: .75rem 1.5rem; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);
+    font-size: .82rem; color: var(--color-text-muted);
+  }
+  .hero__meta strong { font-family: var(--font-serif); font-size: 1rem; color: var(--color-text); }
+
+  .backlink { display: inline-block; margin-top: var(--space-md); font-size: .85rem; color: var(--color-text-muted); }
+
+  /* ---------- Verdict ---------- */
+  .verdict { margin: var(--space-lg) 0; display: grid; gap: var(--space-sm); }
+  .verdict__item {
+    background: var(--color-surface); border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-resto); border-radius: var(--radius-md);
+    padding: var(--space-sm) var(--space-md);
+    display: flex; gap: var(--space-sm); align-items: flex-start;
+  }
+  .verdict__num {
+    font-family: var(--font-serif); font-size: 1.6rem; font-weight: 700;
+    color: var(--color-resto); line-height: 1.2; flex-shrink: 0; min-width: 1.4em;
+  }
+
+  /* ---------- Sections ---------- */
+  section.block { padding: var(--space-lg) 0; border-top: 1px solid var(--color-border); }
+  section.block:first-of-type { border-top: none; }
+  h2 {
+    font-family: var(--font-serif); font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+    font-weight: 600; line-height: 1.3; margin-bottom: var(--space-sm);
+    padding-bottom: .4rem; border-bottom: 2px solid var(--color-resto);
+  }
+  h2 .num { color: var(--color-resto); font-size: .78em; margin-right: .4em; }
+  h3 {
+    font-size: 1.08rem; font-weight: 600; margin: var(--space-md) 0 var(--space-xs);
+    padding-left: .6rem; border-left: 3px solid var(--color-border-strong);
+  }
+  h4 { font-size: .98rem; font-weight: 600; margin: var(--space-sm) 0 var(--space-xs); color: var(--color-text-muted); }
+  p { margin-bottom: var(--space-sm); }
+  ul, ol { margin: 0 0 var(--space-sm) 1.4rem; }
+  li { margin-bottom: .35rem; }
+
+  /* ---------- Tables ---------- */
+  .table-wrap { overflow-x: auto; margin-bottom: var(--space-sm); -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: .88rem; background: var(--color-surface); min-width: 480px; }
+  th, td { padding: .6rem .8rem; text-align: left; border: 1px solid var(--color-border); vertical-align: top; }
+  th { background: var(--color-resto-light); font-weight: 600; color: var(--color-resto-dark); white-space: nowrap; }
+  tbody tr:nth-child(even) { background: #FCFCFB; }
+  td.ok { color: var(--color-positive); font-weight: 600; }
+  td.ng { color: var(--color-danger); font-weight: 600; }
+
+  /* ---------- Callouts ---------- */
+  .note { border-radius: var(--radius-md); padding: var(--space-sm) var(--space-md); margin-bottom: var(--space-sm); border: 1px solid; }
+  .note > *:last-child { margin-bottom: 0; }
+  .note--ok { background: var(--color-positive-bg); border-color: var(--color-positive-border); }
+  .note--warn { background: var(--color-warning-bg); border-color: var(--color-warning-border); }
+  .note--danger { background: var(--color-danger-bg); border-color: var(--color-danger-border); }
+  .note--tip { background: var(--color-highlight); border-color: var(--color-highlight-border); }
+  .note--quote { background: var(--color-resto-light); border-color: #C3D3C7; }
+  .note__label { display: block; font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; margin-bottom: .35rem; }
+  .note--ok .note__label { color: var(--color-positive); }
+  .note--warn .note__label { color: var(--color-warning); }
+  .note--danger .note__label { color: var(--color-danger); }
+  .note--tip .note__label { color: #8B6F3A; }
+  .note--quote .note__label { color: var(--color-resto-dark); }
+
+  /* ---------- TOC ---------- */
+  .toc { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-md); margin: var(--space-lg) 0; }
+  .toc h2 { font-size: 1.1rem; border: none; padding: 0; margin-bottom: var(--space-xs); font-family: var(--font-sans); letter-spacing: .05em; }
+  .toc ol { columns: 2; column-gap: var(--space-lg); margin-left: 1.2rem; font-size: .9rem; }
+  @media (max-width: 640px) { .toc ol { columns: 1; } }
+
+  /* ---------- Pick cards ---------- */
+  .pick {
+    background: var(--color-surface); border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg); padding: var(--space-md);
+    margin-bottom: var(--space-md); position: relative; overflow: hidden;
+  }
+  .pick::before { content: ""; position: absolute; top: 0; left: 0; bottom: 0; width: 5px; background: var(--pick-color, var(--color-resto)); }
+  .pick--fr { --pick-color: var(--color-france); }
+  .pick--es { --pick-color: var(--color-spain); }
+  .pick__head { display: flex; flex-wrap: wrap; gap: .6rem; align-items: baseline; margin-bottom: .5rem; }
+  .pick__slot {
+    font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+    background: var(--pick-color); color: #fff; padding: 3px 11px; border-radius: 20px;
+  }
+  .pick__when { font-family: var(--font-mono); font-size: .9rem; font-weight: 600; color: var(--color-text); }
+  .pick__name { font-family: var(--font-serif); font-size: 1.55rem; font-weight: 600; line-height: 1.25; margin-bottom: .15rem; }
+  .pick__name small { font-family: var(--font-sans); font-size: .62em; font-weight: 500; color: var(--color-text-muted); margin-left: .5em; }
+  .pick__addr { font-size: .84rem; color: var(--color-text-muted); margin-bottom: .75rem; }
+  .pick__facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .6rem; margin-bottom: .85rem; }
+  .pick__fact { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: .5rem .7rem; }
+  .pick__fact dt { font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--color-text-subtle); margin-bottom: .15rem; }
+  .pick__fact dd { font-size: .88rem; font-weight: 600; }
+  .pick__avail {
+    background: var(--color-positive-bg); border: 1px solid var(--color-positive-border);
+    border-radius: var(--radius-sm); padding: .5rem .75rem; font-size: .84rem; margin-bottom: .75rem;
+  }
+  .pick__avail b { color: var(--color-positive); }
+
+  /* ---------- Timeline ---------- */
+  .flow { border-left: 3px solid var(--color-resto); margin: var(--space-sm) 0 var(--space-md); padding-left: var(--space-md); }
+  .flow__row { display: flex; gap: var(--space-sm); margin-bottom: .6rem; align-items: baseline; }
+  .flow__time { font-family: var(--font-mono); font-size: .85rem; font-weight: 600; color: var(--color-resto-dark); min-width: 5.4em; flex-shrink: 0; }
+  .flow__row--hot { background: var(--color-highlight); border-radius: var(--radius-sm); padding: .35rem .5rem; margin-left: -.5rem; }
+  .flow__row--hot .flow__time { color: #8B5A20; }
+  .flow__row--stop { background: var(--color-danger-bg); border-radius: var(--radius-sm); padding: .35rem .5rem; margin-left: -.5rem; }
+  .flow__row--stop .flow__time { color: var(--color-danger); }
+
+  /* ---------- Order list ---------- */
+  .order { list-style: none; margin-left: 0; counter-reset: ord; }
+  .order li {
+    counter-increment: ord; position: relative; padding-left: 2.6rem;
+    margin-bottom: .7rem; min-height: 1.9rem;
+  }
+  .order li::before {
+    content: counter(ord); position: absolute; left: 0; top: .1rem;
+    width: 1.9rem; height: 1.9rem; border-radius: 50%;
+    background: var(--color-resto); color: #fff;
+    font-family: var(--font-serif); font-weight: 700; font-size: .95rem;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .order li.order--hot::before { background: var(--color-danger); }
+
+  /* ---------- Sources ---------- */
+  .sources { font-size: .87rem; }
+  .sources li { margin-bottom: .45rem; }
+
+  /* ---------- Footer ---------- */
+  .footer { border-top: 1px solid var(--color-border); padding: var(--space-lg) 0; margin-top: var(--space-lg); text-align: center; font-size: .82rem; color: var(--color-text-subtle); }
+  .footer__rule { width: 60px; height: 2px; background: var(--color-resto); margin: 0 auto var(--space-sm); }
+
+  @media (max-width: 640px) {
+    body { font-size: 14.5px; }
+    .hero { padding: var(--space-lg) 0 var(--space-md); }
+    .hero__meta { gap: 1rem; padding: .6rem 1rem; }
+    .pick { padding: var(--space-sm); }
+    .pick__name { font-size: 1.35rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <div class="hero__eyebrow">Restaurants · Paris &amp; Barcelona</div>
+    <h1 class="hero__title">レストラン選定</h1>
+    <p class="hero__subtitle">昼2 × 夜2 × 2都市 — 全8店を実日付で空席確認</p>
+    <div class="hero__badges">
+      <span class="badge badge--ok">✅ 全8店の空席を実地確認(2026-09-16)</span>
+      <span class="badge badge--ok">✅ 1食2人 ¥40,000〜50,000 以内</span>
+      <span class="badge badge--warn">⚠️ Arpège は予算・満席の両方で不成立</span>
+      <span class="badge badge--info">🍴 8食合計 約 ¥238,000〜292,000</span>
+    </div>
+    <div class="hero__meta">
+      <span><strong>8</strong> 店</span>
+      <span><strong>4</strong> ランチ / <strong>4</strong> ディナー</span>
+      <span><strong>1★</strong> × 1軒</span>
+      <span><strong>€1 = ¥170</strong></span>
+    </div>
+    <div><a class="backlink" href="./index.html">← Honeymoon 2026 トップへ</a></div>
+  </div>
+</header>
+
+<main class="container">
+
+  <div class="verdict">
+    <div class="verdict__item">
+      <span class="verdict__num">1</span>
+      <div><strong>Arpège(★★★)は今回外します。</strong> 公式 PDF の実額が <strong>昼 €260/人・夜 €380/人</strong>(サービス込)で <strong>2人 ¥88,400〜¥129,200 = 予算の2〜3倍</strong>。加えて <strong>9/28 夜は全枠 Waitlist = 実質満席</strong>でした(<a href="#s5">§5-1</a>)。長く懸案だった「案A か案B か」は<strong>両方とも不採用</strong>で決着します。</div>
+    </div>
+    <div class="verdict__item">
+      <span class="verdict__num">2</span>
+      <div><strong>パリは「月曜ディナーは満席・ランチは空いている」。</strong> 出発10日前では Tomy &amp; Co(1★)も 9/28 は夜が "Not available for 2" でした。<strong>昼に重心を置く構成</strong>にしています(<a href="#s2">§2-1</a>)。</div>
+    </div>
+    <div class="verdict__item">
+      <span class="verdict__num">3</span>
+      <div><strong>バルセロナは1日1食ずつに分散できました。</strong> <strong>最も過酷な 10/2</strong>(サント・パウ → サグラダ → グエル → 噴水)<strong>にはレストラン予約を置きません</strong>(<a href="#s2">§2-2</a>)。</div>
+    </div>
+    <div class="verdict__item">
+      <span class="verdict__num">4</span>
+      <div><strong>最優先はレストランではなくエッフェル塔の頂上枠(9/27 19:30)です。</strong> 未予約のままで、<strong>Les Ombres 21:30 はこの枠が取れることが前提</strong>。日没は 19:35(<a href="#s6">§6-1</a>)。</div>
+    </div>
+  </div>
+
+  <nav class="toc">
+    <h2>目次</h2>
+    <ol>
+      <li><a href="#s1">確定候補 8店 一覧</a></li>
+      <li><a href="#s2">選定の前提 — 「枠」はどこか</a></li>
+      <li><a href="#s3">パリ 4店</a></li>
+      <li><a href="#s4">バルセロナ 4店</a></li>
+      <li><a href="#s5">見送った店と理由</a></li>
+      <li><a href="#s6">予約の優先順位と実務</a></li>
+      <li><a href="#s7">🔴 旅程側で直すべき3点</a></li>
+      <li><a href="#s8">予算サマリ</a></li>
+      <li><a href="#s9">出典</a></li>
+    </ol>
+  </nav>
+
+  <!-- ============ §1 ============ -->
+  <section class="block" id="s1">
+    <h2><span class="num">§1</span>確定候補 8店 — 一覧</h2>
+
+    <h3>パリ(9/26 IN → 9/29 OUT / 9/30 深夜着)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>枠</th><th>日時</th><th>店</th><th>エリア</th><th>2人概算</th><th>空席確認</th></tr></thead>
+        <tbody>
+          <tr><td><strong>ランチ①</strong></td><td><strong>9/27(日) 13:30</strong></td><td><strong>Allard</strong>(A.デュカス)</td><td>6区 rue Saint-André des Arts</td><td>¥28,900〜37,400</td><td class="ok">✅ 12:00〜13:30</td></tr>
+          <tr><td><strong>ランチ②</strong></td><td><strong>9/28(月) 12:00</strong></td><td><strong>Drouant</strong></td><td>2区 place Gaillon</td><td>€48/人 → ¥16,300〜</td><td class="ok">✅ 12:00〜14:30</td></tr>
+          <tr><td><strong>ディナー①</strong></td><td><strong>9/28(月) 19:30</strong></td><td><strong>Restaurant Auguste</strong> <small>1★</small></td><td>7区 rue de Bourgogne</td><td>€96/人 → ¥32,600〜</td><td class="ok">✅ 19:30〜21:45 全枠</td></tr>
+          <tr><td><strong>ディナー②</strong></td><td><strong>9/27(日) 21:30</strong></td><td><strong>Les Ombres</strong></td><td>7区 ケ・ブランリ美術館 屋上</td><td>€98/人 → ¥33,300〜</td><td class="ok">✅ 21:30(残り3枠)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>バルセロナ(10/1 IN → 10/4 OUT)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>枠</th><th>日時</th><th>店</th><th>エリア</th><th>2人概算</th><th>空席確認</th></tr></thead>
+        <tbody>
+          <tr><td><strong>ランチ①</strong></td><td><strong>10/1(木) 14:30</strong></td><td><strong>Compartir Barcelona</strong></td><td>エイシャンプラ C. València 225</td><td>¥27,200〜34,000</td><td class="ok">✅ 13:45〜15:00</td></tr>
+          <tr><td><strong>ランチ②</strong></td><td><strong>10/4(日) 12:45</strong></td><td><strong>7 Portes</strong>(1836年創業)</td><td>Pg. d'Isabel II(徒歩8分)</td><td>¥15,600〜22,400</td><td class="ok">✅ 12:45〜13:30(残り4枠)</td></tr>
+          <tr><td><strong>ディナー①</strong></td><td><strong>10/3(土) 20:30</strong></td><td><strong>Estimar</strong>(R.サフラ)</td><td>ボルン(徒歩5分)</td><td>¥34,000〜51,000</td><td class="ok">✅ 20:30〜22:30 全枠</td></tr>
+          <tr><td><strong>ディナー②</strong></td><td><strong>10/2(金) 21:30</strong></td><td><strong>Rías de Galicia</strong></td><td>ポブレ・セック(噴水 徒歩5分)</td><td>¥27,200〜44,200</td><td class="ok">✅ 19:30〜22:15 全枠</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note note--warn">
+      <span class="note__label">Caution</span>
+      <p><strong>空席状況は 2026-09-16 時点のスナップショット</strong>です。出発まで10日しかないため、<a href="#s6">§6</a> の優先順位に従って即座に押さえてください。</p>
+    </div>
+  </section>
+
+  <!-- ============ §2 ============ -->
+  <section class="block" id="s2">
+    <h2><span class="num">§2</span>選定の前提 — 「枠」はどこに空いているか</h2>
+    <p>レストランは「良い店を選ぶ」問題ではなく、<strong>旅程のどこに食事を置けるか</strong>の問題でした。確定済みの予約(MSM ツアー・ルーヴル半日ツアー・サグラダ・セーヌ川クルーズ)が時間を固定しているためです。</p>
+
+    <h3>2-1. パリ — 夕食枠は3夜しかない</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>日</th><th>状況</th><th>判定</th></tr></thead>
+        <tbody>
+          <tr><td><strong>9/26(土)</strong></td><td>17:20 CDG 着 → <strong>EES 初回生体登録(待ち時間が読めない)</strong> → 19:30 ホテル</td><td class="ng">❌ 予約は入れない</td></tr>
+          <tr><td><strong>9/27(日)</strong></td><td>昼:オルセー後 / 夜:エッフェル塔頂上(19:30)の後</td><td class="ok">✅ 昼・夜とも使える<br><small>ただし日曜休業の店が多い</small></td></tr>
+          <tr><td><strong>9/28(月)</strong></td><td>昼:ルーヴルツアー集合 13:50 の前 / 夜:17:00 解散の後</td><td>⚠️ 昼は95分制限<br>夜は翌朝 05:45 起床の前夜</td></tr>
+          <tr><td><strong>9/29(火)・9/30(水)</strong></td><td>MSM ツアー(9/30 は 22:16 パリ着)</td><td class="ng">❌ 使えない</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>この結果、<strong>パリのランチは 9/27・9/28 の2枠、ディナーも 9/27・9/28 の2枠しかありません。</strong></p>
+
+    <h4>さらに「月曜ディナーは満席・ランチは空いている」という明確な傾向が出ました</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>店</th><th>9/28(月) 昼</th><th>9/28(月) 夜</th></tr></thead>
+        <tbody>
+          <tr><td>Arpège(★★★)</td><td class="ok">⭕ 12:00〜14:00 空き</td><td class="ng">❌ 19:30〜22:00 <strong>全枠 Waitlist</strong></td></tr>
+          <tr><td>Tomy &amp; Co(1★)</td><td class="ok">⭕ 12:00〜13:15 空き</td><td class="ng">❌ <strong>"Not available for 2"</strong></td></tr>
+          <tr><td><strong>Restaurant Auguste(1★)</strong></td><td class="ok">⭕ 空き</td><td class="ok">✅ <strong>19:30〜21:45 空き</strong> ← 唯一の当たり</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>2-2. バルセロナ — 1日1食ずつに分散できる</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>日</th><th>昼</th><th>夜</th></tr></thead>
+        <tbody>
+          <tr><td><strong>10/1(木)</strong></td><td class="ok">⭕ 着陸12:05 → ホテル13:30。<strong>14:30 以降なら安全</strong></td><td>(サグラダ夜景 20:00 の後)</td></tr>
+          <tr><td><strong>10/2(金)</strong></td><td class="ng">❌ <strong>11:10 しか空かない</strong>(サグラダ 12:45 が確定枠)</td><td class="ok">⭕ <strong>魔法の噴水(21:00)の後 = 21:30</strong></td></tr>
+          <tr><td><strong>10/3(土)</strong></td><td class="ok">⭕ カサ・ミラの後 13:30</td><td class="ok">⭕ <strong>20:30 = 旅の締めくくり</strong></td></tr>
+          <tr><td><strong>10/4(日)</strong></td><td class="ok">⭕ <strong>12:45〜14:15 のみ</strong>(12:00 CO・15:00 空港へ)</td><td class="ng">❌ 18:10 のフライト</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note note--ok">
+      <span class="note__label">Design</span>
+      <p><strong>「10/1 昼・10/2 夜・10/3 夜・10/4 昼」で1日1食ずつに分散。</strong> 最も過酷な 10/2 の昼と、カサ・バトリョ〜ピカソ美術館で6件が詰まる 10/3 の昼には予約を置きません。</p>
+    </div>
+  </section>
+
+  <!-- ============ §3 ============ -->
+  <section class="block" id="s3">
+    <h2><span class="num">§3</span>パリ 4店</h2>
+
+    <!-- Allard -->
+    <div class="pick pick--fr">
+      <div class="pick__head">
+        <span class="pick__slot">Lunch 1</span>
+        <span class="pick__when">9/27(日) 13:30</span>
+      </div>
+      <div class="pick__name">Allard <small>アラン・デュカス</small></div>
+      <div class="pick__addr">41 rue Saint-André des Arts, 75006(M4/M10 Odéon 徒歩4分)</div>
+      <div class="pick__facts">
+        <dl class="pick__fact"><dt>営業</dt><dd>年中無休(12:00-14:00)</dd></dl>
+        <dl class="pick__fact"><dt>予約</dt><dd>Zenchef(公式)</dd></dl>
+        <dl class="pick__fact"><dt>2人概算</dt><dd>¥28,900〜37,400</dd></dl>
+      </div>
+      <div class="pick__avail"><b>✅ 空席:</b> 昼 12:00 / 12:30 / 13:00 / 13:15 / <b>13:30</b> ・ 夜 21:15 / 21:30</div>
+      <p><strong>1932年創業の名店をアラン・デュカスが再生</strong>。ブルゴーニュ系の古典(エスカルゴ、鴨のオリーブ煮、île flottante)。<strong>日曜に開いている数少ない実力店</strong>で、オルセーからシテ島への徒歩動線上にあります。</p>
+      <div class="note note--warn">
+        <span class="note__label">日曜の注意</span>
+        <p><strong>€34 / €28 の定食(formule)は月〜金限定</strong>で、<strong>日曜はアラカルトのみ</strong>です。名物の <em>canard aux olives</em>(鴨のオリーブ煮)は<strong>2名でシェアする一皿</strong>なので、これを軸にすると予算内に収まります。</p>
+      </div>
+      <h4>⏱ 9/27 の時刻設計</h4>
+      <div class="flow">
+        <div class="flow__row"><span class="flow__time">11:00</span><span>オルセー美術館(<strong>月曜定休のため 9/27 が唯一の機会</strong>)</span></div>
+        <div class="flow__row flow__row--hot"><span class="flow__time">13:10</span><span><strong>🔴 オルセーを切り上げる</strong>(元旅程の 13:30 から20分前倒し)</span></div>
+        <div class="flow__row"><span class="flow__time">13:10→</span><span>セーヌ河岸を<strong>徒歩18分</strong></span></div>
+        <div class="flow__row flow__row--hot"><span class="flow__time">13:30</span><span><strong>Allard 着席</strong></span></div>
+        <div class="flow__row"><span class="flow__time">15:15</span><span>退店 → <strong>徒歩9分</strong>(サン・ミシェル橋経由)</span></div>
+        <div class="flow__row"><span class="flow__time">15:30</span><span>サント・シャペル</span></div>
+        <div class="flow__row"><span class="flow__time">16:20</span><span>ノートルダム大聖堂</span></div>
+        <div class="flow__row"><span class="flow__time">17:30</span><span>🚢 セーヌ川クルーズ(確定券)</span></div>
+      </div>
+      <div class="note note--danger">
+        <span class="note__label">旅程の欠陥修正</span>
+        <p><code>results.md</code> Day 2 は「オルセー 13:30 終了 → <strong>13:30 ランチ</strong> → <strong>15:00 サント・シャペル</strong>」となっており、<strong>オルセー→6区(徒歩18分)もランチ→シテ島(徒歩9分)も移動時間が計上されていません</strong>。13:30 着席にすると全ての連鎖が通ります。</p>
+      </div>
+    </div>
+
+    <!-- Drouant -->
+    <div class="pick pick--fr">
+      <div class="pick__head">
+        <span class="pick__slot">Lunch 2</span>
+        <span class="pick__when">9/28(月) 12:00</span>
+      </div>
+      <div class="pick__name">Drouant <small>ゴンクール賞の舞台</small></div>
+      <div class="pick__addr">16-18 place Gaillon, 75002(M7/M14 Pyramides ・集合地点まで徒歩10分)</div>
+      <div class="pick__facts">
+        <dl class="pick__fact"><dt>営業</dt><dd>年中無休(08:00 朝食〜)</dd></dl>
+        <dl class="pick__fact"><dt>予約</dt><dd>TheFork(公式)</dd></dl>
+        <dl class="pick__fact"><dt>メニュー</dt><dd>Menu Déjeuner €48/人</dd></dl>
+        <dl class="pick__fact"><dt>2人概算</dt><dd>¥16,300〜22,000</dd></dl>
+      </div>
+      <div class="pick__avail"><b>✅ 空席:</b> <b>12:00</b> / 12:30 / 13:00 / 13:30 / 14:00 / 14:30</div>
+      <p><strong>1880年創業。1914年から現在まで「ゴンクール賞」の選考委員が昼食を取る店</strong>で、ルールマン設計の階段を持つ歴史的サロンです。</p>
+      <div class="note note--quote">
+        <span class="note__label">選定基準</span>
+        <p>9/28 の昼は <strong>13:50 のルーヴルツアー集合(取り消し不可・¥37,738)</strong> という<strong>絶対に遅れられない締切</strong>の直前です。したがって基準は「星の数」ではなく <strong>① 集合地点から徒歩10分圏 ② 時間に追われる客を捌き慣れていること ③ 定食形式で提供が速いこと</strong>。Drouant は<strong>朝食を 08:00 から出しているビジネス客の店</strong>で、<strong>€48 の3皿定食</strong>(前菜 + 本日の一皿 + デセール)があります。</p>
+      </div>
+      <h4>⏱ 9/28 午前の時刻設計</h4>
+      <div class="flow">
+        <div class="flow__row"><span class="flow__time">09:30</span><span>モンマルトル散策</span></div>
+        <div class="flow__row flow__row--hot"><span class="flow__time">11:20</span><span><strong>🔴 モンマルトルを切り上げる</strong>(サクレ・クールのドーム登頂 €8 は割愛)</span></div>
+        <div class="flow__row flow__row--hot"><span class="flow__time">12:00</span><span><strong>Drouant 着席</strong></span></div>
+        <div class="flow__row"><span class="flow__time">13:25</span><span>退店 → <strong>徒歩10分</strong>(オペラ大通りを下る)</span></div>
+        <div class="flow__row flow__row--stop"><span class="flow__time">13:50</span><span><strong>🚩 マイバスフランス集合(18 rue des Pyramides)</strong></span></div>
+      </div>
+      <div class="note note--tip">
+        <span class="note__label">調整の余地</span>
+        <p><strong>ドーム登頂を残したい場合</strong>はランチを <strong>12:30</strong> に後ろ倒し(€48 の定食なら 13:35 終了で間に合います)。<strong>ツアーが催行中止</strong>になった場合(参加者6名未満で中止の可能性あり)は <strong>13:00</strong> に変更して余裕を持たせてください。</p>
+      </div>
+    </div>
+
+    <!-- Auguste -->
+    <div class="pick pick--fr">
+      <div class="pick__head">
+        <span class="pick__slot">Dinner 1</span>
+        <span class="pick__when">9/28(月) 19:30</span>
+      </div>
+      <div class="pick__name">Restaurant Auguste <small>ミシュラン1★ / Gaël Orieux</small></div>
+      <div class="pick__addr">54 rue de Bourgogne, 75007(M12 Assemblée Nationale / Solférino 徒歩5分)</div>
+      <div class="pick__facts">
+        <dl class="pick__fact"><dt>営業</dt><dd>月〜金(土日休)</dd></dl>
+        <dl class="pick__fact"><dt>予約</dt><dd>TheFork(公式)</dd></dl>
+        <dl class="pick__fact"><dt>メニュー</dt><dd>Instant Michelin €96/人</dd></dl>
+        <dl class="pick__fact"><dt>2人概算</dt><dd>¥32,600〜40,800</dd></dl>
+      </div>
+      <div class="pick__avail"><b>✅ 空席:</b> 19:30 / 19:45 / 20:00 / 20:15 / 20:30 / 20:45 / 21:00 / 21:15 / 21:30 / 21:45 <b>全枠</b></div>
+      <p>持続可能な漁業を掲げる<strong>魚介主体の1★</strong>。<strong>レバーNG に構造的に安全</strong>で、パクチーも使わない古典フランス系です。</p>
+      <div class="note note--danger">
+        <span class="note__label">必ず 4皿(€96)を選ぶこと</span>
+        <p><strong>5皿の Menu signature(€120)ではなく、Menu Instant Michelin(€96・前菜+肉+魚+デセール)を選んでください。</strong> 9/28 は<strong>旅程最大の山場である MSM の前夜</strong>で、翌朝は 05:45 起床・06:15 チェックアウト・07:32 モンパルナス発です。5皿にすると退店が 22:00 を回り、荷造りを経て就寝が0時近くになります。</p>
+      </div>
+      <h4>⏱ 9/28 夜 → 9/29 朝</h4>
+      <div class="flow">
+        <div class="flow__row"><span class="flow__time">17:00</span><span>ルーヴル美術館にて解散</span></div>
+        <div class="flow__row"><span class="flow__time">17:25</span><span>ホテル(6区)着 — 休憩・着替え</span></div>
+        <div class="flow__row"><span class="flow__time">19:00</span><span>出発(Rue du Bac から M12 で2駅)</span></div>
+        <div class="flow__row flow__row--hot"><span class="flow__time">19:30</span><span><strong>Auguste 着席</strong></span></div>
+        <div class="flow__row"><span class="flow__time">21:30</span><span>退店(4皿ならこの時刻)</span></div>
+        <div class="flow__row"><span class="flow__time">22:00</span><span>ホテル着 → <strong>E チケット6点・サブバッグ・大荷物の仕分け・翌朝のタクシー手配</strong></span></div>
+        <div class="flow__row flow__row--stop"><span class="flow__time">23:00</span><span><strong>就寝(→ 05:45 起床)</strong></span></div>
+      </div>
+    </div>
+
+    <!-- Les Ombres -->
+    <div class="pick pick--fr">
+      <div class="pick__head">
+        <span class="pick__slot">Dinner 2</span>
+        <span class="pick__when">9/27(日) 21:30</span>
+      </div>
+      <div class="pick__name">Les Ombres <small>ケ・ブランリ美術館 屋上</small></div>
+      <div class="pick__addr">27 quai Branly, 75007(<strong>エッフェル塔の北脚から河岸沿いに徒歩6分・平坦</strong>)</div>
+      <div class="pick__facts">
+        <dl class="pick__fact"><dt>営業</dt><dd>年中無休</dd></dl>
+        <dl class="pick__fact"><dt>予約</dt><dd>OpenTable(公式)</dd></dl>
+        <dl class="pick__fact"><dt>メニュー</dt><dd>3皿 €98 / 4皿 €118</dd></dl>
+        <dl class="pick__fact"><dt>2人概算</dt><dd>¥33,300〜42,500</dd></dl>
+      </div>
+      <div class="pick__avail"><b>✅ 空席:</b> 昼 13:15 / 13:30 ・ 夜 <b>21:30</b>(「残り3枠」表示)</div>
+      <p><strong>ジャン・ヌーヴェル設計の総ガラス張り</strong>。地中海植物のパノラマテラスで、<strong>エッフェル塔が正面</strong>。公式の説明に「<strong>夜は塔の金色の光が店内を照らす</strong>」「<strong>天井が毎正時に星空に変わり、隣の名建築に呼応して煌めく</strong>」とあります。</p>
+      <div class="note note--quote">
+        <span class="note__label">なぜ Madame Brasserie ではないのか</span>
+        <ol>
+          <li><strong>予算内で取れるのは「窓なしの内側席」だけ</strong> — €259.60 払って眺望ゼロ(<a href="#s5">§5-2</a>)</li>
+          <li><strong>同じ 9/27 にすでにクルーズ(塔の真下発)+ 頂上シャンパンがある</strong> — 塔の中で食べると<strong>エッフェル体験が4重</strong>に</li>
+          <li><strong>Les Ombres の方が €98/人 と安く、しかも塔が正面に見える</strong></li>
+        </ol>
+      </div>
+      <h4>⏱ 9/27 夜の時刻設計</h4>
+      <div class="flow">
+        <div class="flow__row"><span class="flow__time">17:30</span><span>🚢 セーヌ川クルーズ(Port de la Bourdonnais 発・確定券)</span></div>
+        <div class="flow__row"><span class="flow__time">18:30</span><span>下船 → エッフェル塔へ徒歩5分</span></div>
+        <div class="flow__row flow__row--stop"><span class="flow__time">19:30</span><span><strong>🥂 エッフェル塔 頂上 + シャンパン(日没 19:35)</strong> ← <strong>未予約・最優先</strong></span></div>
+        <div class="flow__row"><span class="flow__time">20:45</span><span>塔を降りる → 河岸沿いを<strong>徒歩6分</strong></span></div>
+        <div class="flow__row flow__row--hot"><span class="flow__time">21:30</span><span><strong>Les Ombres 着席</strong></span></div>
+        <div class="flow__row"><span class="flow__time">23:30</span><span>退店 → タクシーで6区へ</span></div>
+      </div>
+      <div class="note note--danger">
+        <span class="note__label">前提条件</span>
+        <p><strong>エッフェル塔の頂上枠(19:30)がまだ未予約</strong>です(<code>results.md</code> §6 で ⬜)。<strong>日没が 19:35 なので 19:30 枠は狙って取る価値があり</strong>、かつ <strong>Les Ombres 21:30 はこの枠が取れることが前提</strong>です。<strong>レストランより先に塔を押さえてください。</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ §4 ============ -->
+  <section class="block" id="s4">
+    <h2><span class="num">§4</span>バルセロナ 4店</h2>
+
+    <!-- Compartir -->
+    <div class="pick pick--es">
+      <div class="pick__head">
+        <span class="pick__slot">Lunch 1</span>
+        <span class="pick__when">10/1(木) 14:30</span>
+      </div>
+      <div class="pick__name">Compartir Barcelona <small>Disfrutar の3人による姉妹店</small></div>
+      <div class="pick__addr">Carrer de València 225, 08007(L2/L3/L4 Passeig de Gràcia 徒歩6分)</div>
+      <div class="pick__facts">
+        <dl class="pick__fact"><dt>営業</dt><dd>火〜土(日・月 休)</dd></dl>
+        <dl class="pick__fact"><dt>予約</dt><dd>CoverManager(公式)</dd></dl>
+        <dl class="pick__fact"><dt>メニュー</dt><dd>テイスティング 約€80/人</dd></dl>
+        <dl class="pick__fact"><dt>2人概算</dt><dd>¥27,200〜34,000</dd></dl>
+      </div>
+      <div class="pick__avail"><b>✅ 空席:</b> 昼 13:45 / 14:00 / <b>14:30</b> / 14:45 / 15:00 ・ 夜 19:30〜22:00</div>
+      <p><strong>「世界のベストレストラン」1位 Disfrutar の3人</strong>(Oriol Castro / Eduard Xatruch / Mateu Casañas)<strong>による姉妹店</strong>。創造性はそのままに、価格は Disfrutar の約1/3です。</p>
+      <div class="note note--danger">
+        <span class="note__label">13:45 ではなく 14:30 にする理由</span>
+        <p>着陸 12:05 から逆算すると、<strong>受託荷物2個の受取(20〜30分)+ Aerobús(35分)+ 徒歩(12分)+ ホテルで荷物預け + 地下鉄(15分)</strong> で、<strong>現実の到着は14:00過ぎ</strong>です。13:45 の予約は成立しません。14:30 なら約60分のバッファがあり、遅延時も 14:45・15:00 が空いています。</p>
+      </div>
+      <h4>⏱ 10/1 の時刻設計</h4>
+      <div class="flow">
+        <div class="flow__row"><span class="flow__time">12:05</span><span>BCN T1 着 → 受託荷物受取</span></div>
+        <div class="flow__row"><span class="flow__time">12:45</span><span>Aerobús A1 で Plaça Catalunya へ</span></div>
+        <div class="flow__row"><span class="flow__time">13:30</span><span><strong>Hotel Gótico 着・大荷物を預ける</strong></span></div>
+        <div class="flow__row flow__row--hot"><span class="flow__time">14:30</span><span><strong>Compartir 着席</strong></span></div>
+        <div class="flow__row"><span class="flow__time">16:45</span><span>ホテルへ戻り<strong>チェックイン・休憩</strong></span></div>
+        <div class="flow__row"><span class="flow__time">20:00</span><span>🌃 サグラダ・ファミリア 夜の外観</span></div>
+      </div>
+      <div class="note note--tip">
+        <span class="note__label">代替案</span>
+        <p><strong>10/3(土) 13:30 も有力</strong>です。<strong>Compartir はカサ・ミラから徒歩5分</strong>(400m)なので動線は完璧。ただし 10/3 は<strong>カサ・バトリョ → カサ・ミラ → 大聖堂 → ピカソ美術館 → Estimar</strong> と既に6件が入る日なので、<strong>負担の軽い 10/1 を推奨</strong>します。</p>
+      </div>
+    </div>
+
+    <!-- 7 Portes -->
+    <div class="pick pick--es">
+      <div class="pick__head">
+        <span class="pick__slot">Lunch 2</span>
+        <span class="pick__when">10/4(日) 12:45</span>
+      </div>
+      <div class="pick__name">7 Portes <small>1836年創業・365日営業</small></div>
+      <div class="pick__addr">Passeig d'Isabel II 14, 08003(<strong>Hotel Gótico から徒歩8分</strong>)</div>
+      <div class="pick__facts">
+        <dl class="pick__fact"><dt>営業</dt><dd>毎日 13:00-23:00 通し</dd></dl>
+        <dl class="pick__fact"><dt>予約</dt><dd>OpenTable / +34 93 319 30 33</dd></dl>
+        <dl class="pick__fact"><dt>2人概算</dt><dd>¥15,600〜22,400</dd></dl>
+      </div>
+      <div class="pick__avail"><b>✅ 空席:</b> <b>12:45</b> / 13:00 / 13:15 / 13:30 — <b>「残り4枠」表示・最優先で押さえる</b></div>
+      <p>10/4 は <strong>12:00 チェックアウト・15:00 に空港へ出発</strong>という<strong>約2時間の窓しかない</strong>日です。スペインのレストランは 13:00 開店が標準で選択肢が極端に狭まりますが、<strong>7 Portes は 12:45 の枠が取れ、ホテルから徒歩8分</strong>です。</p>
+      <h4>⏱ 10/4 の時刻設計</h4>
+      <div class="flow">
+        <div class="flow__row"><span class="flow__time">09:30</span><span>ランブラス・ボケリア市場前・コロンブスの塔まで徒歩散歩</span></div>
+        <div class="flow__row"><span class="flow__time">12:00</span><span><strong>Hotel Gótico チェックアウト</strong>(荷物はホテルに預ける)</span></div>
+        <div class="flow__row flow__row--hot"><span class="flow__time">12:45</span><span><strong>7 Portes 着席</strong></span></div>
+        <div class="flow__row"><span class="flow__time">14:20</span><span>退店 → 徒歩でホテルへ → 荷物回収</span></div>
+        <div class="flow__row flow__row--stop"><span class="flow__time">15:00</span><span><strong>タクシー / Aerobús で El Prat 空港へ</strong>(18:10 AF1549)</span></div>
+      </div>
+      <div class="note note--warn">
+        <span class="note__label">注文の注意</span>
+        <p>OpenTable のレビュー要約に「<strong>伝統的なパエリアの評価は分かれる</strong>」とあります。<strong>看板はむしろカネロニと「アロス・パレリャーダ」</strong>(殻や骨を全て取り除いた米料理)なので、そちらを軸に。予算に余裕があるので前菜に魚介を足しても上限内です。<br>
+        <strong>代替案</strong>:<strong>Can Solé</strong>(バルセロネータ・1903年創業、日曜 13:00-16:00、徒歩15分)は米料理の評価がより高い一方、<strong>開店が13:00</strong>で余裕が減ります。</p>
+      </div>
+    </div>
+
+    <!-- Estimar -->
+    <div class="pick pick--es">
+      <div class="pick__head">
+        <span class="pick__slot">Dinner 1 · 締めくくり</span>
+        <span class="pick__when">10/3(土) 20:30</span>
+      </div>
+      <div class="pick__name">Estimar <small>ラファ・サフラ</small></div>
+      <div class="pick__addr">C. de Sant Antoni dels Sombrerers 3, 08003(<strong>Hotel Gótico から徒歩5分</strong>)</div>
+      <div class="pick__facts">
+        <dl class="pick__fact"><dt>営業</dt><dd>日曜休・月曜は昼のみ休</dd></dl>
+        <dl class="pick__fact"><dt>予約</dt><dd>TheFork(公式)</dd></dl>
+        <dl class="pick__fact"><dt>形式</dt><dd>時価アラカルト</dd></dl>
+        <dl class="pick__fact"><dt>2人概算</dt><dd>¥34,000〜51,000</dd></dl>
+      </div>
+      <div class="pick__avail"><b>✅ 空席:</b> 20:30 / 20:45 / 21:00 / 21:15 / 21:30 / 21:45 / 22:00 / 22:15 / 22:30 <b>全枠</b></div>
+      <p>フェラン・アドリアいわく「<strong>21世紀のマリスケリア</strong>」。ロサス港直送の魚介を最小限の手数で出す店で、<strong>レバー・パクチーとも無縁</strong>。<strong>ホテルから徒歩5分</strong>なので、旅の最終夜に地下鉄もタクシーも不要です。</p>
+      <div class="note note--danger">
+        <span class="note__label">唯一かつ最大の注意 — 会計の分散が大きい</span>
+        <p>Estimar は<strong>時価アラカルト</strong>です。カラビネロスやパラモス産の海老をグラム単位で頼むと<strong>簡単に €200/人 を超えます</strong>。<strong>予約時または着席時に「2名で €250 前後に収めたい」と明確に伝えてください。</strong></p>
+        <ul>
+          <li>🇪🇸 <em>"Nos gustaría quedarnos en torno a 250 € para dos personas, ¿podría recomendarnos?"</em></li>
+          <li>🇬🇧 <em>"We'd like to keep the total around €250 for two — could you guide our order?"</em></li>
+        </ul>
+        <p>これがこの店における唯一の予算制御手段です。</p>
+      </div>
+    </div>
+
+    <!-- Rias -->
+    <div class="pick pick--es">
+      <div class="pick__head">
+        <span class="pick__slot">Dinner 2</span>
+        <span class="pick__when">10/2(金) 21:30</span>
+      </div>
+      <div class="pick__name">Rías de Galicia <small>ガリシア産甲殻類</small></div>
+      <div class="pick__addr">Carrer de Lleida 7, 08004(<strong>魔法の噴水から徒歩5分</strong>)</div>
+      <div class="pick__facts">
+        <dl class="pick__fact"><dt>営業</dt><dd>昼・夜とも営業</dd></dl>
+        <dl class="pick__fact"><dt>予約</dt><dd>CoverManager</dd></dl>
+        <dl class="pick__fact"><dt>2人概算</dt><dd>¥27,200〜44,200</dd></dl>
+      </div>
+      <div class="pick__avail"><b>✅ 空席:</b> 19:30 / 19:45 / 20:00 / 20:15 / 20:30 / 20:45 / 21:00 / 21:15 / <b>21:30</b> / 21:45 / 22:00 / 22:15</div>
+      <div class="note note--quote">
+        <span class="note__label">噴水の「前」ではなく「後」に置く理由</span>
+        <p>19:30 に入れると、<strong>21:00 のショーに間に合わせるため80分で切り上げる</strong>必要があり、しかも<strong>開店直後の空のダイニング</strong>で €100/人 級の食事を急いで食べることになります。<strong>スペインでは 21:30 の着席は完全に標準時刻</strong>です。噴水の後に回すことで、急ぐ理由が消えます。</p>
+      </div>
+      <h4>⏱ 10/2 の時刻設計</h4>
+      <div class="flow">
+        <div class="flow__row"><span class="flow__time">09:30</span><span>サント・パウ病院(モデルニスタ建築世界遺産)</span></div>
+        <div class="flow__row"><span class="flow__time">11:10</span><span>🍴 軽いランチ(<strong>この日の昼は予約を入れない</strong>)</span></div>
+        <div class="flow__row flow__row--stop"><span class="flow__time">12:45</span><span><strong>🏛️ サグラダ・ファミリア 入場(確定枠)</strong> / 13:00 生誕のファサードの塔</span></div>
+        <div class="flow__row"><span class="flow__time">16:00</span><span>グエル公園</span></div>
+        <div class="flow__row"><span class="flow__time">21:00</span><span>💧 <strong>モンジュイック魔法の噴水ショー(約20分)</strong></span></div>
+        <div class="flow__row"><span class="flow__time">21:20</span><span>MNAC からの夜景 → <strong>徒歩5分</strong></span></div>
+        <div class="flow__row flow__row--hot"><span class="flow__time">21:30</span><span><strong>Rías de Galicia 着席</strong></span></div>
+      </div>
+      <div class="note note--tip">
+        <span class="note__label">変化をつけたい場合</span>
+        <p>Estimar と Rías はどちらも魚介中心です(ガリシア産甲殻類 vs 地中海の生+プランチャ、という違いはあります)。<strong>魚介が2晩続くのを避けたい</strong>なら、10/2 は <strong>Suculent(1★・Rambla del Raval 43・現代カタルーニャ)</strong> などに振り替えられますが、<strong>噴水からは地下鉄移動が必要</strong>になります。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ §5 ============ -->
+  <section class="block" id="s5">
+    <h2><span class="num">§5</span>見送った店と理由(検証の記録)</h2>
+    <p>出発10日前という条件下で、<strong>「営業日 → 予算 → 実際の空席」の順に落とした</strong>記録です。同じ検討を繰り返さないために残します。</p>
+
+    <h3>5-1. 🌟 Arpège(★★★、84 rue de Varenne)— 予算・空席の両方で不成立</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>検証項目</th><th>結果</th></tr></thead>
+        <tbody>
+          <tr><td>営業日</td><td>月〜金・昼夜(公式サイトで確認)</td></tr>
+          <tr><td><strong>昼のコース</strong></td><td><strong>€260/人</strong>(公式 PDF に <em>260€ Prix net, service compris</em>)→ <strong>2人 ¥88,400</strong></td></tr>
+          <tr><td><strong>夜のコース</strong></td><td><strong>€380/人</strong>(公式 PDF)→ <strong>2人 ¥129,200</strong></td></tr>
+          <tr><td>アラカルト</td><td>1皿 €60〜120。3皿でも €200〜300/人</td></tr>
+          <tr><td><strong>9/28(月) 夜の空席</strong></td><td class="ng">❌ 19:30 / 19:45 / 20:00 / 20:30 / 21:00 / 21:30 / 21:45 / 22:00 が<strong>全て "Waitlist"</strong> = 実質満席</td></tr>
+          <tr><td>9/28(月) 昼の空席</td><td>⭕ 12:00〜14:00 に空きあり(ただしルーヴルツアー 13:50 集合と衝突)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note note--danger">
+      <span class="note__label">旅程への影響</span>
+      <p><code>results.md</code> §4-0 / §4-1 / §6 に残っている「<strong>案B = Arpège ディナー ¥166,600</strong>」は、<strong>予算方針とも空席状況とも合致しません</strong>。長く懸案だった「案A か案B か」の択一は、<strong>両方とも不採用</strong>という形で決着します。</p>
+    </div>
+
+    <h3>5-2. Madame Brasserie(エッフェル塔1階)— 予算内だと眺望ゼロ</h3>
+    <p>公式予約システムで <strong>9/27(日)21:00・2名</strong> を実際に入力した結果:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>席種</th><th>指定されるメニュー</th><th>1人</th><th>2人合計</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Cœur Brasserie(内側・窓なし)</strong></td><td>Gustave with drinks</td><td>€129.80</td><td><strong>€259.60 = ¥44,132</strong> ← 予算内はこれだけ</td></tr>
+          <tr><td>Seine River Side(セーヌ側)</td><td>Grande Dame</td><td>€206.80</td><td class="ng">€413.60 = ¥70,312 ❌</td></tr>
+          <tr><td>Window table(窓際)</td><td>Grande Dame</td><td>€261.80</td><td class="ng">€523.60 = ¥89,012 ❌</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>20:00 の枠は売り切れ、21:00 は空きあり</strong>でした。Gustave メニューはシャンパン1杯・上級ワインペアリング・コーヒー・1階昇降券込みなので<strong>内容自体は妥当</strong>ですが、<strong>眺望のない席に ¥44,132 を払う</strong>ことになります。同日にクルーズと頂上シャンパンがあることも踏まえ、<strong>Les Ombres(€98/人・塔が正面)に差し替え</strong>ました。</p>
+    <div class="note note--warn">
+      <span class="note__label">計上の誤り</span>
+      <p><code>results.md</code> §4-1 の「Madame Brasserie <strong>¥28,000</strong>」という計上は<strong>実勢の約6割</strong>で、過少です。</p>
+    </div>
+
+    <h3>5-3. Le Grand Véfour — 星を喪失しており、かつ時間リスクが高い</h3>
+    <ul>
+      <li><strong>2021年にミシュランの星を全て喪失</strong>(ギィ・マルタンがガストロノミーからビストロ路線へ転換)。現在は<strong>パリ・ソシエテ傘下</strong>でシェフはブリュノ・ドゥセ</li>
+      <li>9/28(月)の昼枠は 12:00〜14:00 で空きがあり、<strong>Menu Déjeuner €115/人</strong></li>
+      <li>しかし <strong>12:00 開店 → 13:50 集合という95分レース</strong>で、<strong>遅延の代償が ¥37,738 のルーヴルツアー消失</strong></li>
+      <li>→ <strong>「美しい部屋に高い金を払う」構図が Madame Brasserie と同じ</strong>だったため不採用。<strong>Drouant(€48・徒歩10分・定食形式)</strong>に差し替え</li>
+    </ul>
+
+    <h3>5-4. その他の不採用店</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>店</th><th>理由</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Tomy &amp; Co</strong>(1★・7区)</td><td><strong>9/28 夜が "Not available for 2"</strong>(昼 12:00〜13:15 のみ空き)</td></tr>
+          <tr><td><strong>Girafe</strong>(トロカデロ・塔の正面)</td><td><strong>9/27 21:00 が満席</strong>(19:00 / 22:00 / 22:15 のみ)。19:00 は頂上と衝突、22:00 は遅すぎる</td></tr>
+          <tr><td><strong>Quinsou</strong>(1★・6区)</td><td>日曜・月曜 休業</td></tr>
+          <tr><td><strong>Ze Kitchen Galerie</strong>(1★・6区)</td><td>月曜営業だが、<strong>レモングラス・ガランガル等の東南アジア系ハーブが看板</strong> = <strong>パクチーのリスクが構造的に高い</strong></td></tr>
+          <tr><td><strong>La Poule au Pot</strong>(1★・1区)</td><td>日曜・月曜 休業</td></tr>
+          <tr><td><strong>Tour d'Argent</strong>(1★・5区)</td><td>日曜・月曜 休業</td></tr>
+          <tr><td><strong>Gaya par Pierre Gagnaire</strong>(1★・7区)</td><td>日曜・月曜 休業</td></tr>
+          <tr><td><strong>Les Climats</strong>(1★・7区)</td><td><strong>2023年末に閉店</strong>(公式サイトで確認)</td></tr>
+          <tr><td><strong>Le Soufflé</strong>(1区)</td><td><strong>月曜休業</strong>の情報があり、9/28 に賭けられない</td></tr>
+          <tr><td><strong>Oria</strong>(1★・バルセロナ)</td><td><strong>2025年10月から改装休業中</strong>。<strong>2026年版でミシュランの星も抹消</strong>。再開は2026年春・別名義の予定</td></tr>
+          <tr><td><strong>Mont Bar</strong>(★★・バルセロナ)</td><td><strong>10/3(土)昼は 13:15 / 13:30 / 14:00 に空きあり</strong>だが、公式規約が「<strong>1〜4名は €190 または €240 のコースのみ・72時間前以降は全額課金</strong>」→ <strong>2人 ¥64,600〜81,600 で予算超過</strong></td></tr>
+          <tr><td><strong>Lomo Alto</strong>(バルセロナ・熟成肉)</td><td><strong>10/3 が満席</strong>(予約システムで "complete")</td></tr>
+          <tr><td><strong>Fonda España</strong>(バルセロナ)</td><td>ドメネク・イ・モンタネール設計の食堂で魅力的だが、<strong>ホテルが OD Hotels に変わり予約系統を確認できず</strong>、確実性に欠ける</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ §6 ============ -->
+  <section class="block" id="s6">
+    <h2><span class="num">§6</span>予約の優先順位と実務</h2>
+
+    <h3>6-1. 押さえる順番</h3>
+    <ol class="order">
+      <li class="order--hot"><strong>🥂 エッフェル塔 頂上 19:30(9/27)</strong> — <strong>レストランではなくこれが最優先</strong>。Les Ombres 21:30 はこの枠が前提。日没 19:35</li>
+      <li class="order--hot"><strong>Les Ombres 9/27 21:30</strong> — <strong>残り3枠</strong>。塔が取れ次第すぐ</li>
+      <li class="order--hot"><strong>7 Portes 10/4 12:45</strong> — <strong>残り4枠</strong></li>
+      <li><strong>Restaurant Auguste 9/28 19:30</strong> — パリで唯一残る月曜夜の星付き枠</li>
+      <li><strong>Estimar 10/3 20:30</strong> — 土曜夜は動きが速い</li>
+      <li>Allard / Drouant / Compartir / Rías de Galicia — 現状は余裕あり</li>
+    </ol>
+
+    <h3>6-2. 予約時に必ず伝えること</h3>
+    <h4>食事制限(パクチー・レバー)</h4>
+    <p><code>results.md</code> §10-4 / §11 の3言語文例がそのまま使えます。要点のみ再掲:</p>
+    <ul>
+      <li>🇫🇷 <em>Nous ne mangeons pas de <strong>coriandre</strong> ni d'<strong>abats (foie, rognons, ris)</strong>. Merci de votre compréhension.</em></li>
+      <li>🇪🇸 <em>No comemos <strong>cilantro</strong> ni <strong>casquería (hígado, riñones, mollejas)</strong>. Muchas gracias.</em></li>
+      <li>🇬🇧 <em>We cannot eat <strong>coriander/cilantro</strong> or <strong>offal (liver, kidney, sweetbreads)</strong>.</em></li>
+    </ul>
+    <h4>ハネムーンである旨</h4>
+    <ul>
+      <li>🇫🇷 <em>Nous sommes en <strong>voyage de noces</strong>.</em></li>
+      <li>🇪🇸 <em>Estamos en nuestra <strong>luna de miel</strong>.</em></li>
+    </ul>
+    <p>席やデセールの配慮が期待できます。予約フォームの備考欄に入れてください。</p>
+
+    <h3>6-3. 回避リスト</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>国</th><th>避ける料理</th></tr></thead>
+        <tbody>
+          <tr><td>🇫🇷 フランス</td><td>Foie gras / Pâté / Terrine / Andouillette / Foie de veau / Tripes / Boudin noir</td></tr>
+          <tr><td>🇪🇸 スペイン</td><td>Cocido / Callos / Foie / Higaditos / Morcilla 単体 / Mollejas</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ §7 ============ -->
+  <section class="block" id="s7">
+    <h2><span class="num">§7</span>🔴 旅程側で直すべき3点</h2>
+    <p>レストランの選定とは独立に、<strong><code>results.md</code> 側に存在する問題</strong>です。</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>内容</th><th>対応</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>1</strong></td>
+            <td><strong>9/27 Day 2 に移動時間が計上されていない</strong> — 「オルセー 13:30 終了 → 13:30 ランチ → 15:00 サント・シャペル」は、オルセー→6区(徒歩18分)もランチ→シテ島(徒歩9分)も無視されている</td>
+            <td><strong>オルセーを 13:10 に切り上げ、Allard 13:30 着席</strong>。以降 15:30 サント・シャペル / 16:20 ノートルダム / 17:00 メトロ / 17:30 クルーズ</td>
+          </tr>
+          <tr>
+            <td><strong>2</strong></td>
+            <td><strong>9/28 の午前が詰まりすぎ</strong> — モンマルトル 12:15 切り上げでは 12:00 のランチに間に合わない</td>
+            <td><strong>モンマルトルを 11:20 に切り上げ</strong>(サクレ・クールのドーム登頂 €8 は割愛)。ドームを残すならランチを 12:30 に</td>
+          </tr>
+          <tr>
+            <td><strong>3</strong></td>
+            <td><strong>エッフェル塔頂上(19:30)とノートルダム本堂が未予約</strong></td>
+            <td><strong>レストランより先にこの2つを押さえる</strong>。Les Ombres 21:30 は塔 19:30 が前提。ノートルダムは公式アプリで2日前予約</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ §8 ============ -->
+  <section class="block" id="s8">
+    <h2><span class="num">§8</span>予算サマリ</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>日</th><th>枠</th><th>店</th><th>2人概算</th></tr></thead>
+        <tbody>
+          <tr><td>9/27(日)</td><td>昼</td><td>Allard</td><td>¥28,900〜37,400</td></tr>
+          <tr><td>9/27(日)</td><td>夜</td><td>Les Ombres</td><td>¥33,300〜42,500</td></tr>
+          <tr><td>9/28(月)</td><td>昼</td><td>Drouant</td><td>¥16,300〜22,000</td></tr>
+          <tr><td>9/28(月)</td><td>夜</td><td>Restaurant Auguste(1★)</td><td>¥32,600〜40,800</td></tr>
+          <tr><td>10/1(木)</td><td>昼</td><td>Compartir Barcelona</td><td>¥27,200〜34,000</td></tr>
+          <tr><td>10/2(金)</td><td>夜</td><td>Rías de Galicia</td><td>¥27,200〜44,200</td></tr>
+          <tr><td>10/3(土)</td><td>夜</td><td>Estimar</td><td>¥34,000〜51,000</td></tr>
+          <tr><td>10/4(日)</td><td>昼</td><td>7 Portes</td><td>¥15,600〜22,400</td></tr>
+          <tr><td colspan="3"><strong>8食 合計</strong></td><td><strong>約 ¥238,000〜292,000</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>いずれの1食も予算上限(2人 ¥50,000)の範囲内</strong>です。</p>
+    <div class="note note--quote">
+      <span class="note__label">results.md との差分</span>
+      <p>現行計上は <strong>案B(Arpège ディナー採用時)¥354,700</strong> / <strong>案A(Bateaux 採用時)¥232,300</strong>。本ページの8店に、<strong>9/26 の到着夜・9/29 の MSM ディナー・9/30 の車内軽食・10/2 の昼・10/3 の昼・朝食</strong>を加えると <strong>概ね ¥290,000〜345,000</strong> になります。</p>
+    </div>
+  </section>
+
+  <!-- ============ §9 ============ -->
+  <section class="block" id="s9">
+    <h2><span class="num">§9</span>出典</h2>
+    <h3>パリ</h3>
+    <ul class="sources">
+      <li><a href="https://alain-passard.com/">Arpège 公式(営業日・メニュー PDF)</a> — 昼 €260 / 夜 €380 の一次情報</li>
+      <li><a href="https://www.restaurant-allard.fr/en/">Restaurant Allard(Alain Ducasse)公式</a> — 年中無休・Zenchef 予約</li>
+      <li><a href="https://www.drouant.com/en/">Drouant 公式</a> / <a href="https://widget.thefork.com/en/97b251ca-16b8-47f4-b3b0-4211a55ca165">TheFork 予約ウィジェット</a> — Menu Déjeuner €48</li>
+      <li><a href="https://restaurantauguste.fr/">Restaurant Auguste 公式</a> / <a href="https://guide.michelin.com/us/en/ile-de-france/paris/restaurant/restaurant-auguste">MICHELIN Guide</a></li>
+      <li><a href="https://www.lesombres-restaurant.com/en/">Les Ombres 公式</a> / <a href="https://www.opentable.com/r/les-ombres-reservations-paris">OpenTable</a> — 3皿 €98 / 4皿 €118</li>
+      <li><a href="https://booking.madamebrasserie.com/en">Madame Brasserie 予約ページ</a> — 席種別の料金差の一次情報</li>
+      <li><a href="https://tomygousset.com/tomy-and-co/reserver/">Tomy &amp; Co 予約</a> / <a href="https://www.sevenrooms.com/reservations/girafeparis">Girafe 予約(SevenRooms)</a></li>
+      <li><a href="https://www.sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/240628-michelin-starred-restaurant-le-grand-vefour-renews-as-a-bistro-our-test-and-pictures">Sortiraparis: Le Grand Véfour が星を失いビストロへ転換</a></li>
+      <li><a href="https://www.lesclimats.fr/">Les Climats 公式(2023年末の閉店告知)</a></li>
+    </ul>
+    <h3>バルセロナ</h3>
+    <ul class="sources">
+      <li><a href="https://www.compartirbarcelona.com/">Compartir Barcelona 公式</a> / <a href="https://guide.michelin.com/us/en/catalunya/barcelona/restaurant/compartir-barcelona">MICHELIN Guide</a></li>
+      <li><a href="https://restaurante-estimar.com/">Estimar 公式</a> / <a href="https://guide.michelin.com/us/en/catalunya/barcelona/restaurant/estimar">MICHELIN Guide</a></li>
+      <li><a href="https://7portes.com/en/7-portes-restaurant/restaurant/">7 Portes 公式</a> / <a href="https://www.opentable.com/r/7-portes-barcelona-2">OpenTable</a></li>
+      <li><a href="https://www.covermanager.com/reservation/module_restaurant/rias-de-galicia/english">Rías de Galicia 予約(CoverManager)</a></li>
+      <li><a href="https://montbar.com/book-table/">Mont Bar 予約規約(€190/€240 前払いコース)</a></li>
+      <li><a href="https://www.infobae.com/espana/2025/10/16/martin-berasategui-cierra-temporalmente-su-restaurante-oria-en-barcelona-y-perdera-otra-estrella-michelin/">Infobae: Oria の休業とミシュラン星の抹消(2025-10-16)</a></li>
+      <li><a href="https://restaurantcansole.com/en/reservation/">Can Solé 公式</a></li>
+    </ul>
+  </section>
+
+  <!-- ============ §10 ============ -->
+  <section class="block" id="s10">
+    <h2><span class="num">§10</span>改訂履歴</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>版</th><th>日付</th><th>内容</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>v1.1</strong></td>
+            <td>2026-09-16</td>
+            <td><strong>敵対的レビューを受けて3店を差し替え</strong>。① Le Grand Véfour(2021年に星喪失・時間リスク)→ <strong>Drouant</strong> ② Madame Brasserie(予算内は窓なし席・エッフェル4重)→ <strong>Les Ombres</strong> ③ Compartir を 13:45 → <strong>14:30</strong>(着陸からの実所要で不成立)④ Rías de Galicia を噴水の前(19:30)→ <strong>後(21:30)</strong>。検討中に <strong>Oria の休業・星抹消</strong>、<strong>Mont Bar の前払いコース制</strong>、<strong>Lomo Alto の 10/3 満席</strong>も判明</td>
+          </tr>
+          <tr>
+            <td>v1.0</td>
+            <td>2026-09-16</td>
+            <td>初版。8店を選定し全店の空席を実地確認。<strong>Arpège は予算(昼€260/夜€380)と 9/28 夜の全枠 Waitlist により不採用</strong>と決着</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__rule"></div>
+    <p>Honeymoon 2026 · レストラン選定(パリ / バルセロナ)</p>
+    <p style="margin-top: 4px;">v1.1 · 2026-09-16 調査 · €1 = ¥170 · Private document · Not indexed</p>
+    <p style="margin-top: 8px;"><a href="./index.html">← Honeymoon 2026 トップへ</a> · <a href="./results.html">9日間旅程</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
