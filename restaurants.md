@@ -16,21 +16,21 @@
 
 ### パリ
 
-| | 日時 | 店 | エリア | 2人概算 | 空席確認(2026-09-16) |
-|---|---|---|---|---|---|
-| **ランチ①** | **9/27(日) 13:30** | **Allard**(アラン・デュカス) | 6区 41 rue Saint-André des Arts | ¥28,900〜37,400 | ✅ 12:00 / 12:30 / 13:00 / 13:15 / **13:30** |
-| **ランチ②** | **9/28(月) 12:00** | **Drouant** | 2区 place Gaillon | **€48/人** → ¥16,300＋ワイン | ✅ **12:00** / 12:30 / 13:00 / 13:30 / 14:00 / 14:30 |
-| **ディナー①** | **9/28(月) 19:30** | **Restaurant Auguste(ミシュラン1★)** | 7区 54 rue de Bourgogne | **€96/人** → ¥32,600＋ワイン | ✅ 19:30〜21:45 全枠 |
-| **ディナー②** | **9/27(日) 21:30** | **Les Ombres** | 7区 27 quai Branly(美術館屋上) | **€98/人** → ¥33,300＋ワイン | ✅ **21:30**(残り3枠) |
+| | 日時 | 店(→ メニュー) | エリア | 🗺️ | 2人概算 | 空席確認(2026-09-16) |
+|---|---|---|---|---|---|---|
+| **ランチ①** | **9/27(日) 13:30** | **[Allard](https://www.restaurant-allard.fr/en/menu/)**(アラン・デュカス) | 6区 41 rue Saint-André des Arts | [📍](https://www.google.com/maps/search/?api=1&query=Restaurant%20Allard%2C%2041%20Rue%20Saint-Andre%20des%20Arts%2C%2075006%20Paris) | ¥28,900〜37,400 | ✅ 12:00 / 12:30 / 13:00 / 13:15 / **13:30** |
+| **ランチ②** | **9/28(月) 12:00** | **[Drouant](https://www.drouant.com/en/our-menus)** | 2区 place Gaillon | [📍](https://www.google.com/maps/search/?api=1&query=Drouant%2C%2016-18%20Place%20Gaillon%2C%2075002%20Paris) | **€48/人** → ¥16,300＋ワイン | ✅ **12:00** / 12:30 / 13:00 / 13:30 / 14:00 / 14:30 |
+| **ディナー①** | **9/28(月) 19:30** | **[Restaurant Auguste](https://www.restaurantauguste.fr/carte-et-menus/)(ミシュラン1★)** | 7区 54 rue de Bourgogne | [📍](https://www.google.com/maps/search/?api=1&query=Restaurant%20Auguste%2C%2054%20Rue%20de%20Bourgogne%2C%2075007%20Paris) | **€96/人** → ¥32,600＋ワイン | ✅ 19:30〜21:45 全枠 |
+| **ディナー②** | **9/27(日) 21:30** | **[Les Ombres](https://www.lesombres-restaurant.com/en/menus/)** | 7区 27 quai Branly(美術館屋上) | [📍](https://www.google.com/maps/search/?api=1&query=Les%20Ombres%2C%2027%20Quai%20Branly%2C%2075007%20Paris) | **€98/人** → ¥33,300＋ワイン | ✅ **21:30**(残り3枠) |
 
 ### バルセロナ
 
-| | 日時 | 店 | エリア | 2人概算 | 空席確認(2026-09-16) |
-|---|---|---|---|---|---|
-| **ランチ①** | **10/1(木) 14:30** | **Compartir Barcelona** | エイシャンプラ C. València 225 | 約€80/人 → ¥27,200〜34,000 | ✅ 13:45 / 14:00 / **14:30** / 14:45 / 15:00 |
-| **ランチ②** | **10/4(日) 12:45** | **7 Portes**(1836年創業) | Pg. d'Isabel II 14 | ¥15,600〜22,400 | ✅ **12:45** / 13:00 / 13:15 / 13:30(残り4枠) |
-| **ディナー①** | **10/3(土) 20:30** | **Estimar**(ラファ・サフラ) | ボルン C. Sant Antoni dels Sombrerers 3 | ¥34,000〜51,000 | ✅ 20:30〜22:30 全枠 |
-| **ディナー②** | **10/2(金) 21:30** | **Rías de Galicia** | ポブレ・セック C. Lleida 7 | ¥27,200〜44,200 | ✅ 19:30〜22:15 全枠 |
+| | 日時 | 店(→ メニュー) | エリア | 🗺️ | 2人概算 | 空席確認(2026-09-16) |
+|---|---|---|---|---|---|---|
+| **ランチ①** | **10/1(木) 14:30** | **[Compartir Barcelona](https://www.thefork.com/restaurant/compartir-barcelona-r843794/menu)** | エイシャンプラ C. València 225 | [📍](https://www.google.com/maps/search/?api=1&query=Compartir%20Barcelona%2C%20Carrer%20de%20Valencia%20225%2C%2008007%20Barcelona) | 約€80〜100/人 → ¥27,200〜34,000 | ✅ 13:45 / 14:00 / **14:30** / 14:45 / 15:00 |
+| **ランチ②** | **10/4(日) 12:45** | **[7 Portes](https://7portes.com/en/restaurant-7-portes-menu/)**(1836年創業) | Pg. d'Isabel II 14 | [📍](https://www.google.com/maps/search/?api=1&query=7%20Portes%2C%20Passeig%20d%27Isabel%20II%2014%2C%2008003%20Barcelona) | ¥15,600〜22,400 | ✅ **12:45** / 13:00 / 13:15 / 13:30(残り4枠) |
+| **ディナー①** | **10/3(土) 20:30** | **[Estimar](https://restaurante-estimar.com/barcelona/carta/)**(ラファ・サフラ) | ボルン C. Sant Antoni dels Sombrerers 3 | [📍](https://www.google.com/maps/search/?api=1&query=Estimar%2C%20Carrer%20de%20Sant%20Antoni%20dels%20Sombrerers%203%2C%2008003%20Barcelona) | ¥34,000〜51,000 | ✅ 20:30〜22:30 全枠 |
+| **ディナー②** | **10/2(金) 21:30** | **[RíasKRU](https://riaskru.com/en/menu-riaskru/)**(旧 Rías de Galicia) | ポブレ・セック C. Lleida 7 | [📍](https://www.google.com/maps/search/?api=1&query=RiasKRU%2C%20Carrer%20de%20Lleida%207%2C%2008004%20Barcelona) | ¥27,200〜44,200 | ✅ 19:30〜22:15 全枠 |
 
 > ⚠️ **空席状況は 2026-09-16 時点のスナップショット**です。出発まで10日しかないため、**§6 の優先順位に従って即座に押さえてください**。
 
@@ -74,11 +74,12 @@
 
 ## §3. パリ 4店 — 詳細と時刻設計
 
-### 3-1. 🍽 ランチ① — Allard(9/27 日 13:30)
+### 3-1. 🍽 ランチ① — [Allard](https://www.restaurant-allard.fr/en/menu/)(9/27 日 13:30)
 
 | 項目 | 内容 |
 |---|---|
 | 住所 | **41 rue Saint-André des Arts, 75006**(M4/M10 Odéon 徒歩4分) |
+| 🗺️ 地図 | **[Google Maps で開く](https://www.google.com/maps/search/?api=1&query=Restaurant%20Allard%2C%2041%20Rue%20Saint-Andre%20des%20Arts%2C%2075006%20Paris)** |
 | 位置づけ | **1932年創業の名店をアラン・デュカスが再生**。ブルゴーニュ系の古典(エスカルゴ、鴨のオリーブ煮、île flottante) |
 | 営業 | **月〜日・年中無休**(昼 12:00-14:00 / 夜 19:00-22:00)= **日曜に開いている数少ない実力店** |
 | 予約 | **Zenchef**(公式サイトの "Booking" から) |
@@ -105,11 +106,12 @@
 
 ---
 
-### 3-2. 🍽 ランチ② — Drouant(9/28 月 12:00)
+### 3-2. 🍽 ランチ② — [Drouant](https://www.drouant.com/en/our-menus)(9/28 月 12:00)
 
 | 項目 | 内容 |
 |---|---|
 | 住所 | **16-18 place Gaillon, 75002**(M3 Quatre-Septembre / M7·M14 Pyramides) |
+| 🗺️ 地図 | **[Google Maps で開く](https://www.google.com/maps/search/?api=1&query=Drouant%2C%2016-18%20Place%20Gaillon%2C%2075002%20Paris)** |
 | 位置づけ | **1880年創業。1914年から現在まで「ゴンクール賞」の選考委員が昼食を取る店**。ルールマン設計の階段を持つ歴史的サロン |
 | 営業 | **年中無休**(朝食 08:00〜 / 昼 12:00-14:30 / 夜 19:00-22:30) |
 | 予約 | **TheFork**(公式サイトの "RESERVE" から) |
@@ -138,11 +140,12 @@ Drouant は **朝食を 08:00 から出しているビジネス客の店**であ
 
 ---
 
-### 3-3. 🌟 ディナー① — Restaurant Auguste(ミシュラン1★)(9/28 月 19:30)
+### 3-3. 🌟 ディナー① — [Restaurant Auguste](https://www.restaurantauguste.fr/carte-et-menus/)(ミシュラン1★)(9/28 月 19:30)
 
 | 項目 | 内容 |
 |---|---|
 | 住所 | **54 rue de Bourgogne, 75007**(M12 Assemblée Nationale / Solférino 徒歩5分) |
+| 🗺️ 地図 | **[Google Maps で開く](https://www.google.com/maps/search/?api=1&query=Restaurant%20Auguste%2C%2054%20Rue%20de%20Bourgogne%2C%2075007%20Paris)** |
 | シェフ | **ガエル・オリユー(Gaël Orieux)** — 持続可能な漁業を掲げる魚介主体の1★ |
 | 営業 | **月〜金**(土日休業) |
 | 予約 | **TheFork**(公式サイトのウィジェット) |
@@ -174,11 +177,12 @@ Drouant は **朝食を 08:00 から出しているビジネス客の店**であ
 
 ---
 
-### 3-4. 🌃 ディナー② — Les Ombres(9/27 日 21:30)
+### 3-4. 🌃 ディナー② — [Les Ombres](https://www.lesombres-restaurant.com/en/menus/)(9/27 日 21:30)
 
 | 項目 | 内容 |
 |---|---|
 | 住所 | **27 quai Branly, 75007**(**ケ・ブランリ美術館の屋上**) |
+| 🗺️ 地図 | **[Google Maps で開く](https://www.google.com/maps/search/?api=1&query=Les%20Ombres%2C%2027%20Quai%20Branly%2C%2075007%20Paris)** |
 | 位置づけ | **ジャン・ヌーヴェル設計の総ガラス張り**。地中海植物のパノラマテラス。**エッフェル塔が正面** |
 | 営業 | **年中無休** |
 | 予約 | **OpenTable**(公式サイトから) |
@@ -212,16 +216,17 @@ Drouant は **朝食を 08:00 から出しているビジネス客の店**であ
 
 ## §4. バルセロナ 4店 — 詳細と時刻設計
 
-### 4-1. 🍽 ランチ① — Compartir Barcelona(10/1 木 14:30)
+### 4-1. 🍽 ランチ① — [Compartir Barcelona](https://www.thefork.com/restaurant/compartir-barcelona-r843794/menu)(10/1 木 14:30)
 
 | 項目 | 内容 |
 |---|---|
 | 住所 | **Carrer de València 225, 08007**(L2/L3/L4 Passeig de Gràcia 徒歩6分) |
+| 🗺️ 地図 | **[Google Maps で開く](https://www.google.com/maps/search/?api=1&query=Compartir%20Barcelona%2C%20Carrer%20de%20Valencia%20225%2C%2008007%20Barcelona)** |
 | 位置づけ | **「世界のベストレストラン」1位 Disfrutar の3人**(Oriol Castro / Eduard Xatruch / Mateu Casañas)**による姉妹店**。創造性はそのままに価格は Disfrutar の約1/3 |
 | 営業 | **火〜土**(**日・月 休業**) |
 | 予約 | **CoverManager**(公式サイトの "RESERVA ONLINE") |
 | 空席 | ✅ 昼 13:45 / 14:00 / **14:30** / 14:45 / 15:00、夜 19:30〜22:00 |
-| 2人概算 | テイスティング約 €80/人 → **¥27,200〜34,000**(2人向けセット €275 = ¥46,750 もあり) |
+| 2人概算 | 約 **€80〜100/人** → **¥27,200〜34,000**(TheFork の平均予算は €100/人。TheFork 限定のコース €140/人 = 2人 ¥47,600 もあり) |
 
 **🔴 13:45 ではなく 14:30 にする理由** — 着陸 12:05 から逆算すると、**受託荷物2個の受取(20〜30分)+ Aerobús(35分)+ 徒歩(12分)+ ホテルで荷物預け + 地下鉄(15分)** で、**現実の到着は14:00過ぎ**です。13:45 の予約は成立しません。14:30 なら約60分のバッファがあり、遅延時も 14:45・15:00 が空いています。
 
@@ -243,11 +248,12 @@ Drouant は **朝食を 08:00 から出しているビジネス客の店**であ
 
 ---
 
-### 4-2. 🍽 ランチ② — 7 Portes(10/4 日 12:45)
+### 4-2. 🍽 ランチ② — [7 Portes](https://7portes.com/en/restaurant-7-portes-menu/)(10/4 日 12:45)
 
 | 項目 | 内容 |
 |---|---|
 | 住所 | **Passeig d'Isabel II 14, 08003**(**Hotel Gótico から徒歩8分**) |
+| 🗺️ 地図 | **[Google Maps で開く](https://www.google.com/maps/search/?api=1&query=7%20Portes%2C%20Passeig%20d%27Isabel%20II%2014%2C%2008003%20Barcelona)** |
 | 位置づけ | **1836年創業。年中無休で365日営業**。名物は「パレリャーダ」の米料理とカネロニ |
 | 営業 | **毎日 13:00-23:00 通し** |
 | 予約 | **OpenTable** / reserves@7portes.com / +34 93 319 30 33 |
@@ -275,11 +281,12 @@ Drouant は **朝食を 08:00 から出しているビジネス客の店**であ
 
 ---
 
-### 4-3. 🦞 ディナー① — Estimar(10/3 土 20:30)— 旅の締めくくり
+### 4-3. 🦞 ディナー① — [Estimar](https://restaurante-estimar.com/barcelona/carta/)(10/3 土 20:30)— 旅の締めくくり
 
 | 項目 | 内容 |
 |---|---|
 | 住所 | **Carrer de Sant Antoni dels Sombrerers 3, 08003**(**Hotel Gótico から徒歩5分**・サンタ・マリア・ダル・マル聖堂の裏) |
+| 🗺️ 地図 | **[Google Maps で開く](https://www.google.com/maps/search/?api=1&query=Estimar%2C%20Carrer%20de%20Sant%20Antoni%20dels%20Sombrerers%203%2C%2008003%20Barcelona)** |
 | シェフ | **ラファ・サフラ(Rafa Zafra)**。フェラン・アドリアいわく「**21世紀のマリスケリア**」 |
 | 営業 | **日曜 休業・月曜 昼のみ休業** |
 | 予約 | **TheFork**(公式サイトの「Reservas」) |
@@ -311,20 +318,24 @@ Estimar は**時価アラカルト**です。カラビネロスやパラモス�
 
 ---
 
-### 4-4. 🦐 ディナー② — Rías de Galicia(10/2 金 21:30)
+### 4-4. 🦐 ディナー② — [RíasKRU](https://riaskru.com/en/menu-riaskru/)(旧 Rías de Galicia)(10/2 金 21:30)
 
 | 項目 | 内容 |
 |---|---|
 | 住所 | **Carrer de Lleida 7, 08004**(ポブレ・セック・**魔法の噴水から徒歩5分**) |
-| 位置づけ | **ガリシア産甲殻類の名店**(ペルセベス、セントーリャ、生牡蠣) |
-| 営業 | 昼・夜とも営業 |
-| 予約 | **CoverManager** |
+| 🗺️ 地図 | **[Google Maps で開く](https://www.google.com/maps/search/?api=1&query=RiasKRU%2C%20Carrer%20de%20Lleida%207%2C%2008004%20Barcelona)** |
+| 位置づけ | **ガリシア産甲殻類の名店**(ペルセベス、セントーリャ、生牡蠣)。**2026年時点で Espai KRU と統合し「RíasKRU」に改称**(所在地・電話・予約系統は同一) |
+| 営業 | **火〜日 13:30-15:30 / 火〜土 19:30-22:30**(月曜休) |
+| 予約 | **CoverManager**(公式サイトの Reservation。スラッグは旧名 `rias-de-galicia` のまま) |
 | 空席 | ✅ 昼 13:30〜15:15、**夜 19:30 / 19:45 / 20:00 / 20:15 / 20:30 / 20:45 / 21:00 / 21:15 / 21:30 / 21:45 / 22:00 / 22:15 全枠** |
 | 2人概算 | €80〜130/人 → **¥27,200〜44,200** |
 
 **🔴 噴水の「前」ではなく「後」に置く理由** — 19:30 に入れると、**21:00 のショーに間に合わせるため80分で切り上げる**必要があり、しかも**開店直後の空のダイニング**で €100/人 級の食事を急いで食べることになります。
 
 **スペインでは 21:30 の着席は完全に標準時刻**です。噴水の後に回すことで、急ぐ理由が消えます。
+
+> **⚠️ 店名が変わっています。** 公式サイト(riasdegalicia.com)は現在 **riaskru.com** に転送され、**「Rías de Galícia と Espai KRU が統合した」**と明記されています。**住所(Lleida 7)・電話・CoverManager の予約枠は同一**なので、確認した空席はこの店のものです。**予約サイト上の表示名が `Rías de Galicia` のままでも正しい**です。
+> **公式の夜の営業は 22:30 まで**ですが、CoverManager は 22:15 着席まで受け付けています。21:30 で問題はないものの、**「噴水の 21:00 の回を観てから伺う」と予約時に伝えておく**と確実です。
 
 **⏱ 時刻設計(10/2)**
 
@@ -338,9 +349,9 @@ Estimar は**時価アラカルト**です。カラビネロスやパラモス�
 | 20:15 | メトロ L3 Espanya へ |
 | **21:00** | 💧 **モンジュイック魔法の噴水ショー(約20分)** |
 | 21:20 | MNAC からの夜景 → **徒歩5分** |
-| **21:30** | **Rías de Galicia 着席** |
+| **21:30** | **RíasKRU 着席** |
 
-> **🔄 変化をつけたい場合**: Estimar と Rías はどちらも魚介中心です(ガリシア産甲殻類 vs 地中海の生+プランチャ、という違いはあります)。**魚介が2晩続くのを避けたい**なら、10/2 は **Suculent(1★・Rambla del Raval 43・現代カタルーニャ)** などに振り替えられますが、**噴水からは地下鉄移動が必要**になります。
+> **🔄 変化をつけたい場合**: Estimar と RíasKRU はどちらも魚介中心です(ガリシア産甲殻類 vs 地中海の生+プランチャ、という違いはあります)。**魚介が2晩続くのを避けたい**なら、10/2 は **Suculent(1★・Rambla del Raval 43・現代カタルーニャ)** などに振り替えられますが、**噴水からは地下鉄移動が必要**になります。
 
 ---
 
@@ -413,7 +424,7 @@ Estimar は**時価アラカルト**です。カラビネロスやパラモス�
 | **3** | **7 Portes 10/4 12:45** | **残り4枠** |
 | **4** | **Auguste 9/28 19:30** | パリで唯一残る月曜夜の星付き枠 |
 | **5** | **Estimar 10/3 20:30** | 土曜夜は動きが速い |
-| 6 | Allard / Drouant / Compartir / Rías de Galicia | 現状は余裕あり |
+| 6 | Allard / Drouant / Compartir / RíasKRU | 現状は余裕あり |
 
 ### 6-2. 予約時に必ず伝えること
 
@@ -462,7 +473,7 @@ Estimar は**時価アラカルト**です。カラビネロスやパラモス�
 | 9/28(月) 昼 | Drouant | ¥16,300〜22,000 |
 | 9/28(月) 夜 | Restaurant Auguste(1★) | ¥32,600〜40,800 |
 | 10/1(木) 昼 | Compartir Barcelona | ¥27,200〜34,000 |
-| 10/2(金) 夜 | Rías de Galicia | ¥27,200〜44,200 |
+| 10/2(金) 夜 | RíasKRU(旧 Rías de Galicia) | ¥27,200〜44,200 |
 | 10/3(土) 夜 | Estimar | ¥34,000〜51,000 |
 | 10/4(日) 昼 | 7 Portes | ¥15,600〜22,400 |
 | **8食 合計** | | **約 ¥238,000〜292,000** |
@@ -486,11 +497,11 @@ Estimar は**時価アラカルト**です。カラビネロスやパラモス�
 ### パリ
 
 - [Arpège 公式(営業日・メニュー PDF)](https://alain-passard.com/) — 昼 €260 / 夜 €380 の一次情報
-- [Restaurant Allard(Alain Ducasse)公式](https://www.restaurant-allard.fr/en/) — 年中無休・Zenchef 予約
-- [Drouant 公式](https://www.drouant.com/en/) / [TheFork 予約ウィジェット](https://widget.thefork.com/en/97b251ca-16b8-47f4-b3b0-4211a55ca165) — Menu Déjeuner €48
-- [Restaurant Auguste 公式](https://restaurantauguste.fr/) — Menu Instant Michelin €96 / signature €120
+- [Restaurant Allard(Alain Ducasse)公式](https://www.restaurant-allard.fr/en/) / **[メニュー](https://www.restaurant-allard.fr/en/menu/)** — 年中無休・Zenchef 予約
+- [Drouant 公式](https://www.drouant.com/en/) / **[メニュー](https://www.drouant.com/en/our-menus)** / [TheFork 予約ウィジェット](https://widget.thefork.com/en/97b251ca-16b8-47f4-b3b0-4211a55ca165) — Menu Déjeuner €48
+- [Restaurant Auguste 公式](https://restaurantauguste.fr/) / **[カルト・メニュー](https://www.restaurantauguste.fr/carte-et-menus/)** — Menu Instant Michelin €96 / signature €120・月〜金 12:00-14:00 / 19:30-22:00
 - [Auguste – MICHELIN Guide](https://guide.michelin.com/us/en/ile-de-france/paris/restaurant/restaurant-auguste)
-- [Les Ombres 公式](https://www.lesombres-restaurant.com/en/) / [OpenTable: Les Ombres](https://www.opentable.com/r/les-ombres-reservations-paris) — 3皿 €98 / 4皿 €118
+- [Les Ombres 公式](https://www.lesombres-restaurant.com/en/) / **[メニュー](https://www.lesombres-restaurant.com/en/menus/)** / [OpenTable](https://www.opentable.com/r/les-ombres-reservations-paris) — 3皿 €98 / 4皿 €118
 - [Madame Brasserie 予約ページ](https://booking.madamebrasserie.com/en) — 席種別の料金差の一次情報
 - [Tomy & Co 予約](https://tomygousset.com/tomy-and-co/reserver/)
 - [Girafe 予約(SevenRooms)](https://www.sevenrooms.com/reservations/girafeparis)
@@ -499,10 +510,10 @@ Estimar は**時価アラカルト**です。カラビネロスやパラモス�
 
 ### バルセロナ
 
-- [Compartir Barcelona 公式](https://www.compartirbarcelona.com/) / [MICHELIN Guide](https://guide.michelin.com/us/en/catalunya/barcelona/restaurant/compartir-barcelona)
-- [Estimar 公式](https://restaurante-estimar.com/) / [MICHELIN Guide: Estimar](https://guide.michelin.com/us/en/catalunya/barcelona/restaurant/estimar)
-- [7 Portes 公式](https://7portes.com/en/7-portes-restaurant/restaurant/) / [OpenTable: 7 Portes](https://www.opentable.com/r/7-portes-barcelona-2)
-- [Rías de Galicia 予約(CoverManager)](https://www.covermanager.com/reservation/module_restaurant/rias-de-galicia/english)
+- [Compartir Barcelona 公式](https://www.compartirbarcelona.com/) / **[メニュー(TheFork)](https://www.thefork.com/restaurant/compartir-barcelona-r843794/menu)** / [MICHELIN Guide](https://guide.michelin.com/us/en/catalunya/barcelona/restaurant/compartir-barcelona) — ※公式サイトはカルタ未掲載のため TheFork を参照
+- [Estimar 公式](https://restaurante-estimar.com/) / **[カルタ(バルセロナ)](https://restaurante-estimar.com/barcelona/carta/)** / [MICHELIN Guide](https://guide.michelin.com/us/en/catalunya/barcelona/restaurant/estimar)
+- [7 Portes 公式](https://7portes.com/en/7-portes-restaurant/restaurant/) / **[メニュー](https://7portes.com/en/restaurant-7-portes-menu/)** / [OpenTable](https://www.opentable.com/r/7-portes-barcelona-2)
+- **[RíasKRU(旧 Rías de Galicia)公式](https://riaskru.com/en/)** / [メニュー](https://riaskru.com/en/menu-riaskru/) / [予約(CoverManager)](https://www.covermanager.com/reservation/module_restaurant/rias-de-galicia/english) — Espai KRU との統合・営業時間の一次情報
 - [Mont Bar 予約規約(€190/€240 前払いコース)](https://montbar.com/book-table/)
 - [Infobae: Oria の休業とミシュラン星の抹消(2025-10-16)](https://www.infobae.com/espana/2025/10/16/martin-berasategui-cierra-temporalmente-su-restaurante-oria-en-barcelona-y-perdera-otra-estrella-michelin/)
 - [Can Solé 公式](https://restaurantcansole.com/en/reservation/)
@@ -513,5 +524,6 @@ Estimar は**時価アラカルト**です。カラビネロスやパラモス�
 
 | 版 | 日付 | 内容 |
 |---|---|---|
+| **v1.2** | 2026-09-16 | **全8店の店名をメニューページへのリンクに変更し、各セクションに Google Maps の地点リンクを追加**。あわせて **Rías de Galicia が Espai KRU と統合し「RíasKRU」に改称**していたことが判明(住所・電話・CoverManager の予約枠は同一のため、確認済みの空席は有効)。営業時間も公式で確定(火〜日 13:30-15:30 / 火〜土 19:30-22:30)。Auguste の夜営業(19:30-22:00)と Compartir の平均予算(€100/人)も公式・TheFork で補正 |
 | **v1.1** | 2026-09-16 | **敵対的レビューを受けて3店を差し替え**。① Le Grand Véfour(2021年に星喪失・時間リスク)→ **Drouant** ② Madame Brasserie(予算内は窓なし席・エッフェル4重)→ **Les Ombres** ③ Compartir を 13:45 → **14:30**(着陸からの実所要で不成立)④ Rías de Galicia を噴水の前(19:30)→ **後(21:30)**。検討中に **Oria の休業・星抹消**、**Mont Bar の前払いコース制**、**Lomo Alto の 10/3 満席**も判明 |
 | v1.0 | 2026-09-16 | 初版。8店を選定し全店の空席を実地確認。**Arpège は予算(昼€260/夜€380)と 9/28 夜の全枠 Waitlist により不採用**と決着 |

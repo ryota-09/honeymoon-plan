@@ -151,6 +151,9 @@
   th, td { padding: .6rem .8rem; text-align: left; border: 1px solid var(--color-border); vertical-align: top; }
   th { background: var(--color-resto-light); font-weight: 600; color: var(--color-resto-dark); white-space: nowrap; }
   tbody tr:nth-child(even) { background: #FCFCFB; }
+  .table-wrap--wide table { min-width: 760px; }
+  .table-wrap--wide td:first-child, .table-wrap--wide th:first-child,
+  .table-wrap--wide td:nth-child(2), .table-wrap--wide th:nth-child(2) { white-space: nowrap; }
   td.ok { color: var(--color-positive); font-weight: 600; }
   td.ng { color: var(--color-danger); font-weight: 600; }
 
@@ -193,6 +196,12 @@
   .pick__name { font-family: var(--font-serif); font-size: 1.55rem; font-weight: 600; line-height: 1.25; margin-bottom: .15rem; }
   .pick__name small { font-family: var(--font-sans); font-size: .62em; font-weight: 500; color: var(--color-text-muted); margin-left: .5em; }
   .pick__addr { font-size: .84rem; color: var(--color-text-muted); margin-bottom: .75rem; }
+  .maplink { display: inline-block; font-size: .78rem; font-weight: 600; white-space: nowrap;
+    background: var(--color-resto-light); border: 1px solid #C3D3C7; border-radius: 20px;
+    padding: 1px 9px; color: var(--color-resto-dark); text-decoration: none; }
+  .maplink:hover { background: var(--color-resto); color: #fff; text-decoration: none; }
+  .pick__name a { color: inherit; text-decoration: none; border-bottom: 2px solid var(--pick-color, var(--color-resto)); }
+  .pick__name a:hover { color: var(--pick-color, var(--color-resto)); }
   .pick__facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .6rem; margin-bottom: .85rem; }
   .pick__fact { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: .5rem .7rem; }
   .pick__fact dt { font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--color-text-subtle); margin-bottom: .15rem; }
@@ -308,27 +317,27 @@
     <h2><span class="num">§1</span>確定候補 8店 — 一覧</h2>
 
     <h3>パリ(9/26 IN → 9/29 OUT / 9/30 深夜着)</h3>
-    <div class="table-wrap">
+    <div class="table-wrap table-wrap--wide">
       <table>
-        <thead><tr><th>枠</th><th>日時</th><th>店</th><th>エリア</th><th>2人概算</th><th>空席確認</th></tr></thead>
+        <thead><tr><th>枠</th><th>日時</th><th>店(→ メニュー)</th><th>エリア</th><th>地図</th><th>2人概算</th><th>空席確認</th></tr></thead>
         <tbody>
-          <tr><td><strong>ランチ①</strong></td><td><strong>9/27(日) 13:30</strong></td><td><strong>Allard</strong>(A.デュカス)</td><td>6区 rue Saint-André des Arts</td><td>¥28,900〜37,400</td><td class="ok">✅ 12:00〜13:30</td></tr>
-          <tr><td><strong>ランチ②</strong></td><td><strong>9/28(月) 12:00</strong></td><td><strong>Drouant</strong></td><td>2区 place Gaillon</td><td>€48/人 → ¥16,300〜</td><td class="ok">✅ 12:00〜14:30</td></tr>
-          <tr><td><strong>ディナー①</strong></td><td><strong>9/28(月) 19:30</strong></td><td><strong>Restaurant Auguste</strong> <small>1★</small></td><td>7区 rue de Bourgogne</td><td>€96/人 → ¥32,600〜</td><td class="ok">✅ 19:30〜21:45 全枠</td></tr>
-          <tr><td><strong>ディナー②</strong></td><td><strong>9/27(日) 21:30</strong></td><td><strong>Les Ombres</strong></td><td>7区 ケ・ブランリ美術館 屋上</td><td>€98/人 → ¥33,300〜</td><td class="ok">✅ 21:30(残り3枠)</td></tr>
+          <tr><td><strong>ランチ①</strong></td><td><strong>9/27(日) 13:30</strong></td><td><strong><a href="https://www.restaurant-allard.fr/en/menu/" target="_blank" rel="noopener">Allard</a></strong>(A.デュカス)</td><td>6区 rue Saint-André des Arts</td><td><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurant%20Allard%2C%2041%20Rue%20Saint-Andre%20des%20Arts%2C%2075006%20Paris" target="_blank" rel="noopener">📍 地図</a></td><td>¥28,900〜37,400</td><td class="ok">✅ 12:00〜13:30</td></tr>
+          <tr><td><strong>ランチ②</strong></td><td><strong>9/28(月) 12:00</strong></td><td><strong><a href="https://www.drouant.com/en/our-menus" target="_blank" rel="noopener">Drouant</a></strong></td><td>2区 place Gaillon</td><td><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Drouant%2C%2016-18%20Place%20Gaillon%2C%2075002%20Paris" target="_blank" rel="noopener">📍 地図</a></td><td>€48/人 → ¥16,300〜</td><td class="ok">✅ 12:00〜14:30</td></tr>
+          <tr><td><strong>ディナー①</strong></td><td><strong>9/28(月) 19:30</strong></td><td><strong><a href="https://www.restaurantauguste.fr/carte-et-menus/" target="_blank" rel="noopener">Restaurant Auguste</a></strong> <small>1★</small></td><td>7区 rue de Bourgogne</td><td><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurant%20Auguste%2C%2054%20Rue%20de%20Bourgogne%2C%2075007%20Paris" target="_blank" rel="noopener">📍 地図</a></td><td>€96/人 → ¥32,600〜</td><td class="ok">✅ 19:30〜21:45 全枠</td></tr>
+          <tr><td><strong>ディナー②</strong></td><td><strong>9/27(日) 21:30</strong></td><td><strong><a href="https://www.lesombres-restaurant.com/en/menus/" target="_blank" rel="noopener">Les Ombres</a></strong></td><td>7区 ケ・ブランリ美術館 屋上</td><td><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Les%20Ombres%2C%2027%20Quai%20Branly%2C%2075007%20Paris" target="_blank" rel="noopener">📍 地図</a></td><td>€98/人 → ¥33,300〜</td><td class="ok">✅ 21:30(残り3枠)</td></tr>
         </tbody>
       </table>
     </div>
 
     <h3>バルセロナ(10/1 IN → 10/4 OUT)</h3>
-    <div class="table-wrap">
+    <div class="table-wrap table-wrap--wide">
       <table>
-        <thead><tr><th>枠</th><th>日時</th><th>店</th><th>エリア</th><th>2人概算</th><th>空席確認</th></tr></thead>
+        <thead><tr><th>枠</th><th>日時</th><th>店(→ メニュー)</th><th>エリア</th><th>地図</th><th>2人概算</th><th>空席確認</th></tr></thead>
         <tbody>
-          <tr><td><strong>ランチ①</strong></td><td><strong>10/1(木) 14:30</strong></td><td><strong>Compartir Barcelona</strong></td><td>エイシャンプラ C. València 225</td><td>¥27,200〜34,000</td><td class="ok">✅ 13:45〜15:00</td></tr>
-          <tr><td><strong>ランチ②</strong></td><td><strong>10/4(日) 12:45</strong></td><td><strong>7 Portes</strong>(1836年創業)</td><td>Pg. d'Isabel II(徒歩8分)</td><td>¥15,600〜22,400</td><td class="ok">✅ 12:45〜13:30(残り4枠)</td></tr>
-          <tr><td><strong>ディナー①</strong></td><td><strong>10/3(土) 20:30</strong></td><td><strong>Estimar</strong>(R.サフラ)</td><td>ボルン(徒歩5分)</td><td>¥34,000〜51,000</td><td class="ok">✅ 20:30〜22:30 全枠</td></tr>
-          <tr><td><strong>ディナー②</strong></td><td><strong>10/2(金) 21:30</strong></td><td><strong>Rías de Galicia</strong></td><td>ポブレ・セック(噴水 徒歩5分)</td><td>¥27,200〜44,200</td><td class="ok">✅ 19:30〜22:15 全枠</td></tr>
+          <tr><td><strong>ランチ①</strong></td><td><strong>10/1(木) 14:30</strong></td><td><strong><a href="https://www.thefork.com/restaurant/compartir-barcelona-r843794/menu" target="_blank" rel="noopener">Compartir Barcelona</a></strong></td><td>エイシャンプラ C. València 225</td><td><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Compartir%20Barcelona%2C%20Carrer%20de%20Valencia%20225%2C%2008007%20Barcelona" target="_blank" rel="noopener">📍 地図</a></td><td>¥27,200〜34,000</td><td class="ok">✅ 13:45〜15:00</td></tr>
+          <tr><td><strong>ランチ②</strong></td><td><strong>10/4(日) 12:45</strong></td><td><strong><a href="https://7portes.com/en/restaurant-7-portes-menu/" target="_blank" rel="noopener">7 Portes</a></strong>(1836年創業)</td><td>Pg. d'Isabel II(徒歩8分)</td><td><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=7%20Portes%2C%20Passeig%20d%27Isabel%20II%2014%2C%2008003%20Barcelona" target="_blank" rel="noopener">📍 地図</a></td><td>¥15,600〜22,400</td><td class="ok">✅ 12:45〜13:30(残り4枠)</td></tr>
+          <tr><td><strong>ディナー①</strong></td><td><strong>10/3(土) 20:30</strong></td><td><strong><a href="https://restaurante-estimar.com/barcelona/carta/" target="_blank" rel="noopener">Estimar</a></strong>(R.サフラ)</td><td>ボルン(徒歩5分)</td><td><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Estimar%2C%20Carrer%20de%20Sant%20Antoni%20dels%20Sombrerers%203%2C%2008003%20Barcelona" target="_blank" rel="noopener">📍 地図</a></td><td>¥34,000〜51,000</td><td class="ok">✅ 20:30〜22:30 全枠</td></tr>
+          <tr><td><strong>ディナー②</strong></td><td><strong>10/2(金) 21:30</strong></td><td><strong><a href="https://riaskru.com/en/menu-riaskru/" target="_blank" rel="noopener">RíasKRU</a></strong><br><small>旧 Rías de Galicia</small></td><td>ポブレ・セック(噴水 徒歩5分)</td><td><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=RiasKRU%2C%20Carrer%20de%20Lleida%207%2C%2008004%20Barcelona" target="_blank" rel="noopener">📍 地図</a></td><td>¥27,200〜44,200</td><td class="ok">✅ 19:30〜22:15 全枠</td></tr>
         </tbody>
       </table>
     </div>
@@ -398,8 +407,8 @@
         <span class="pick__slot">Lunch 1</span>
         <span class="pick__when">9/27(日) 13:30</span>
       </div>
-      <div class="pick__name">Allard <small>アラン・デュカス</small></div>
-      <div class="pick__addr">41 rue Saint-André des Arts, 75006(M4/M10 Odéon 徒歩4分)</div>
+      <div class="pick__name"><a href="https://www.restaurant-allard.fr/en/menu/" target="_blank" rel="noopener">Allard</a> <small>アラン・デュカス</small></div>
+      <div class="pick__addr">41 rue Saint-André des Arts, 75006(M4/M10 Odéon 徒歩4分) <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurant%20Allard%2C%2041%20Rue%20Saint-Andre%20des%20Arts%2C%2075006%20Paris" target="_blank" rel="noopener">📍 Google Maps で開く</a></div>
       <div class="pick__facts">
         <dl class="pick__fact"><dt>営業</dt><dd>年中無休(12:00-14:00)</dd></dl>
         <dl class="pick__fact"><dt>予約</dt><dd>Zenchef(公式)</dd></dl>
@@ -434,8 +443,8 @@
         <span class="pick__slot">Lunch 2</span>
         <span class="pick__when">9/28(月) 12:00</span>
       </div>
-      <div class="pick__name">Drouant <small>ゴンクール賞の舞台</small></div>
-      <div class="pick__addr">16-18 place Gaillon, 75002(M7/M14 Pyramides ・集合地点まで徒歩10分)</div>
+      <div class="pick__name"><a href="https://www.drouant.com/en/our-menus" target="_blank" rel="noopener">Drouant</a> <small>ゴンクール賞の舞台</small></div>
+      <div class="pick__addr">16-18 place Gaillon, 75002(M7/M14 Pyramides ・集合地点まで徒歩10分) <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Drouant%2C%2016-18%20Place%20Gaillon%2C%2075002%20Paris" target="_blank" rel="noopener">📍 Google Maps で開く</a></div>
       <div class="pick__facts">
         <dl class="pick__fact"><dt>営業</dt><dd>年中無休(08:00 朝食〜)</dd></dl>
         <dl class="pick__fact"><dt>予約</dt><dd>TheFork(公式)</dd></dl>
@@ -468,10 +477,10 @@
         <span class="pick__slot">Dinner 1</span>
         <span class="pick__when">9/28(月) 19:30</span>
       </div>
-      <div class="pick__name">Restaurant Auguste <small>ミシュラン1★ / Gaël Orieux</small></div>
-      <div class="pick__addr">54 rue de Bourgogne, 75007(M12 Assemblée Nationale / Solférino 徒歩5分)</div>
+      <div class="pick__name"><a href="https://www.restaurantauguste.fr/carte-et-menus/" target="_blank" rel="noopener">Restaurant Auguste</a> <small>ミシュラン1★ / Gaël Orieux</small></div>
+      <div class="pick__addr">54 rue de Bourgogne, 75007(M12 Assemblée Nationale / Solférino 徒歩5分) <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurant%20Auguste%2C%2054%20Rue%20de%20Bourgogne%2C%2075007%20Paris" target="_blank" rel="noopener">📍 Google Maps で開く</a></div>
       <div class="pick__facts">
-        <dl class="pick__fact"><dt>営業</dt><dd>月〜金(土日休)</dd></dl>
+        <dl class="pick__fact"><dt>営業</dt><dd>月〜金 12:00-14:00<br>19:30-22:00(土日休)</dd></dl>
         <dl class="pick__fact"><dt>予約</dt><dd>TheFork(公式)</dd></dl>
         <dl class="pick__fact"><dt>メニュー</dt><dd>Instant Michelin €96/人</dd></dl>
         <dl class="pick__fact"><dt>2人概算</dt><dd>¥32,600〜40,800</dd></dl>
@@ -500,8 +509,8 @@
         <span class="pick__slot">Dinner 2</span>
         <span class="pick__when">9/27(日) 21:30</span>
       </div>
-      <div class="pick__name">Les Ombres <small>ケ・ブランリ美術館 屋上</small></div>
-      <div class="pick__addr">27 quai Branly, 75007(<strong>エッフェル塔の北脚から河岸沿いに徒歩6分・平坦</strong>)</div>
+      <div class="pick__name"><a href="https://www.lesombres-restaurant.com/en/menus/" target="_blank" rel="noopener">Les Ombres</a> <small>ケ・ブランリ美術館 屋上</small></div>
+      <div class="pick__addr">27 quai Branly, 75007(<strong>エッフェル塔の北脚から河岸沿いに徒歩6分・平坦</strong>) <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Les%20Ombres%2C%2027%20Quai%20Branly%2C%2075007%20Paris" target="_blank" rel="noopener">📍 Google Maps で開く</a></div>
       <div class="pick__facts">
         <dl class="pick__fact"><dt>営業</dt><dd>年中無休</dd></dl>
         <dl class="pick__fact"><dt>予約</dt><dd>OpenTable(公式)</dd></dl>
@@ -544,12 +553,12 @@
         <span class="pick__slot">Lunch 1</span>
         <span class="pick__when">10/1(木) 14:30</span>
       </div>
-      <div class="pick__name">Compartir Barcelona <small>Disfrutar の3人による姉妹店</small></div>
-      <div class="pick__addr">Carrer de València 225, 08007(L2/L3/L4 Passeig de Gràcia 徒歩6分)</div>
+      <div class="pick__name"><a href="https://www.thefork.com/restaurant/compartir-barcelona-r843794/menu" target="_blank" rel="noopener">Compartir Barcelona</a> <small>Disfrutar の3人による姉妹店</small></div>
+      <div class="pick__addr">Carrer de València 225, 08007(L2/L3/L4 Passeig de Gràcia 徒歩6分) <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Compartir%20Barcelona%2C%20Carrer%20de%20Valencia%20225%2C%2008007%20Barcelona" target="_blank" rel="noopener">📍 Google Maps で開く</a></div>
       <div class="pick__facts">
         <dl class="pick__fact"><dt>営業</dt><dd>火〜土(日・月 休)</dd></dl>
         <dl class="pick__fact"><dt>予約</dt><dd>CoverManager(公式)</dd></dl>
-        <dl class="pick__fact"><dt>メニュー</dt><dd>テイスティング 約€80/人</dd></dl>
+        <dl class="pick__fact"><dt>メニュー</dt><dd>約 €80〜100/人<br><small>TheFork 限定コース €140/人 もあり</small></dd></dl>
         <dl class="pick__fact"><dt>2人概算</dt><dd>¥27,200〜34,000</dd></dl>
       </div>
       <div class="pick__avail"><b>✅ 空席:</b> 昼 13:45 / 14:00 / <b>14:30</b> / 14:45 / 15:00 ・ 夜 19:30〜22:00</div>
@@ -579,8 +588,8 @@
         <span class="pick__slot">Lunch 2</span>
         <span class="pick__when">10/4(日) 12:45</span>
       </div>
-      <div class="pick__name">7 Portes <small>1836年創業・365日営業</small></div>
-      <div class="pick__addr">Passeig d'Isabel II 14, 08003(<strong>Hotel Gótico から徒歩8分</strong>)</div>
+      <div class="pick__name"><a href="https://7portes.com/en/restaurant-7-portes-menu/" target="_blank" rel="noopener">7 Portes</a> <small>1836年創業・365日営業</small></div>
+      <div class="pick__addr">Passeig d'Isabel II 14, 08003(<strong>Hotel Gótico から徒歩8分</strong>) <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=7%20Portes%2C%20Passeig%20d%27Isabel%20II%2014%2C%2008003%20Barcelona" target="_blank" rel="noopener">📍 Google Maps で開く</a></div>
       <div class="pick__facts">
         <dl class="pick__fact"><dt>営業</dt><dd>毎日 13:00-23:00 通し</dd></dl>
         <dl class="pick__fact"><dt>予約</dt><dd>OpenTable / +34 93 319 30 33</dd></dl>
@@ -609,8 +618,8 @@
         <span class="pick__slot">Dinner 1 · 締めくくり</span>
         <span class="pick__when">10/3(土) 20:30</span>
       </div>
-      <div class="pick__name">Estimar <small>ラファ・サフラ</small></div>
-      <div class="pick__addr">C. de Sant Antoni dels Sombrerers 3, 08003(<strong>Hotel Gótico から徒歩5分</strong>)</div>
+      <div class="pick__name"><a href="https://restaurante-estimar.com/barcelona/carta/" target="_blank" rel="noopener">Estimar</a> <small>ラファ・サフラ</small></div>
+      <div class="pick__addr">C. de Sant Antoni dels Sombrerers 3, 08003(<strong>Hotel Gótico から徒歩5分</strong>) <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Estimar%2C%20Carrer%20de%20Sant%20Antoni%20dels%20Sombrerers%203%2C%2008003%20Barcelona" target="_blank" rel="noopener">📍 Google Maps で開く</a></div>
       <div class="pick__facts">
         <dl class="pick__fact"><dt>営業</dt><dd>日曜休・月曜は昼のみ休</dd></dl>
         <dl class="pick__fact"><dt>予約</dt><dd>TheFork(公式)</dd></dl>
@@ -636,10 +645,10 @@
         <span class="pick__slot">Dinner 2</span>
         <span class="pick__when">10/2(金) 21:30</span>
       </div>
-      <div class="pick__name">Rías de Galicia <small>ガリシア産甲殻類</small></div>
-      <div class="pick__addr">Carrer de Lleida 7, 08004(<strong>魔法の噴水から徒歩5分</strong>)</div>
+      <div class="pick__name"><a href="https://riaskru.com/en/menu-riaskru/" target="_blank" rel="noopener">RíasKRU</a> <small>旧 Rías de Galicia · ガリシア産甲殻類</small></div>
+      <div class="pick__addr">Carrer de Lleida 7, 08004(<strong>魔法の噴水から徒歩5分</strong>) <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=RiasKRU%2C%20Carrer%20de%20Lleida%207%2C%2008004%20Barcelona" target="_blank" rel="noopener">📍 Google Maps で開く</a></div>
       <div class="pick__facts">
-        <dl class="pick__fact"><dt>営業</dt><dd>昼・夜とも営業</dd></dl>
+        <dl class="pick__fact"><dt>営業</dt><dd>火〜日 13:30-15:30<br>火〜土 19:30-22:30</dd></dl>
         <dl class="pick__fact"><dt>予約</dt><dd>CoverManager</dd></dl>
         <dl class="pick__fact"><dt>2人概算</dt><dd>¥27,200〜44,200</dd></dl>
       </div>
@@ -647,6 +656,11 @@
       <div class="note note--quote">
         <span class="note__label">噴水の「前」ではなく「後」に置く理由</span>
         <p>19:30 に入れると、<strong>21:00 のショーに間に合わせるため80分で切り上げる</strong>必要があり、しかも<strong>開店直後の空のダイニング</strong>で €100/人 級の食事を急いで食べることになります。<strong>スペインでは 21:30 の着席は完全に標準時刻</strong>です。噴水の後に回すことで、急ぐ理由が消えます。</p>
+      </div>
+      <div class="note note--warn">
+        <span class="note__label">店名が変わっています</span>
+        <p>公式サイト(riasdegalicia.com)は現在 <strong>riaskru.com</strong> に転送され、<strong>「Rías de Galícia と Espai KRU が統合した」</strong>と明記されています。<strong>住所(Lleida 7)・電話・CoverManager の予約枠は同一</strong>なので、確認した空席はこの店のものです。<strong>予約サイト上の表示名が <code>Rías de Galicia</code> のままでも正しい</strong>です。<br>
+        <strong>公式の夜の営業は 22:30 まで</strong>ですが、CoverManager は 22:15 着席まで受け付けています。21:30 で問題はないものの、<strong>「噴水の 21:00 の回を観てから伺う」と予約時に伝えておく</strong>と確実です。</p>
       </div>
       <h4>⏱ 10/2 の時刻設計</h4>
       <div class="flow">
@@ -656,11 +670,11 @@
         <div class="flow__row"><span class="flow__time">16:00</span><span>グエル公園</span></div>
         <div class="flow__row"><span class="flow__time">21:00</span><span>💧 <strong>モンジュイック魔法の噴水ショー(約20分)</strong></span></div>
         <div class="flow__row"><span class="flow__time">21:20</span><span>MNAC からの夜景 → <strong>徒歩5分</strong></span></div>
-        <div class="flow__row flow__row--hot"><span class="flow__time">21:30</span><span><strong>Rías de Galicia 着席</strong></span></div>
+        <div class="flow__row flow__row--hot"><span class="flow__time">21:30</span><span><strong>RíasKRU 着席</strong></span></div>
       </div>
       <div class="note note--tip">
         <span class="note__label">変化をつけたい場合</span>
-        <p>Estimar と Rías はどちらも魚介中心です(ガリシア産甲殻類 vs 地中海の生+プランチャ、という違いはあります)。<strong>魚介が2晩続くのを避けたい</strong>なら、10/2 は <strong>Suculent(1★・Rambla del Raval 43・現代カタルーニャ)</strong> などに振り替えられますが、<strong>噴水からは地下鉄移動が必要</strong>になります。</p>
+        <p>Estimar と RíasKRU はどちらも魚介中心です(ガリシア産甲殻類 vs 地中海の生+プランチャ、という違いはあります)。<strong>魚介が2晩続くのを避けたい</strong>なら、10/2 は <strong>Suculent(1★・Rambla del Raval 43・現代カタルーニャ)</strong> などに振り替えられますが、<strong>噴水からは地下鉄移動が必要</strong>になります。</p>
       </div>
     </div>
   </section>
@@ -749,7 +763,7 @@
       <li class="order--hot"><strong>7 Portes 10/4 12:45</strong> — <strong>残り4枠</strong></li>
       <li><strong>Restaurant Auguste 9/28 19:30</strong> — パリで唯一残る月曜夜の星付き枠</li>
       <li><strong>Estimar 10/3 20:30</strong> — 土曜夜は動きが速い</li>
-      <li>Allard / Drouant / Compartir / Rías de Galicia — 現状は余裕あり</li>
+      <li>Allard / Drouant / Compartir / RíasKRU — 現状は余裕あり</li>
     </ol>
 
     <h3>6-2. 予約時に必ず伝えること</h3>
@@ -819,7 +833,7 @@
           <tr><td>9/28(月)</td><td>昼</td><td>Drouant</td><td>¥16,300〜22,000</td></tr>
           <tr><td>9/28(月)</td><td>夜</td><td>Restaurant Auguste(1★)</td><td>¥32,600〜40,800</td></tr>
           <tr><td>10/1(木)</td><td>昼</td><td>Compartir Barcelona</td><td>¥27,200〜34,000</td></tr>
-          <tr><td>10/2(金)</td><td>夜</td><td>Rías de Galicia</td><td>¥27,200〜44,200</td></tr>
+          <tr><td>10/2(金)</td><td>夜</td><td>RíasKRU(旧 Rías de Galicia)</td><td>¥27,200〜44,200</td></tr>
           <tr><td>10/3(土)</td><td>夜</td><td>Estimar</td><td>¥34,000〜51,000</td></tr>
           <tr><td>10/4(日)</td><td>昼</td><td>7 Portes</td><td>¥15,600〜22,400</td></tr>
           <tr><td colspan="3"><strong>8食 合計</strong></td><td><strong>約 ¥238,000〜292,000</strong></td></tr>
@@ -839,10 +853,10 @@
     <h3>パリ</h3>
     <ul class="sources">
       <li><a href="https://alain-passard.com/">Arpège 公式(営業日・メニュー PDF)</a> — 昼 €260 / 夜 €380 の一次情報</li>
-      <li><a href="https://www.restaurant-allard.fr/en/">Restaurant Allard(Alain Ducasse)公式</a> — 年中無休・Zenchef 予約</li>
-      <li><a href="https://www.drouant.com/en/">Drouant 公式</a> / <a href="https://widget.thefork.com/en/97b251ca-16b8-47f4-b3b0-4211a55ca165">TheFork 予約ウィジェット</a> — Menu Déjeuner €48</li>
-      <li><a href="https://restaurantauguste.fr/">Restaurant Auguste 公式</a> / <a href="https://guide.michelin.com/us/en/ile-de-france/paris/restaurant/restaurant-auguste">MICHELIN Guide</a></li>
-      <li><a href="https://www.lesombres-restaurant.com/en/">Les Ombres 公式</a> / <a href="https://www.opentable.com/r/les-ombres-reservations-paris">OpenTable</a> — 3皿 €98 / 4皿 €118</li>
+      <li><a href="https://www.restaurant-allard.fr/en/">Restaurant Allard(Alain Ducasse)公式</a> / <strong><a href="https://www.restaurant-allard.fr/en/menu/">メニュー</a></strong> — 年中無休・Zenchef 予約</li>
+      <li><a href="https://www.drouant.com/en/">Drouant 公式</a> / <strong><a href="https://www.drouant.com/en/our-menus">メニュー</a></strong> / <a href="https://widget.thefork.com/en/97b251ca-16b8-47f4-b3b0-4211a55ca165">TheFork 予約ウィジェット</a> — Menu Déjeuner €48</li>
+      <li><a href="https://restaurantauguste.fr/">Restaurant Auguste 公式</a> / <strong><a href="https://www.restaurantauguste.fr/carte-et-menus/">カルト・メニュー</a></strong> / <a href="https://guide.michelin.com/us/en/ile-de-france/paris/restaurant/restaurant-auguste">MICHELIN Guide</a> — 月〜金 12:00-14:00 / 19:30-22:00</li>
+      <li><a href="https://www.lesombres-restaurant.com/en/">Les Ombres 公式</a> / <strong><a href="https://www.lesombres-restaurant.com/en/menus/">メニュー</a></strong> / <a href="https://www.opentable.com/r/les-ombres-reservations-paris">OpenTable</a> — 3皿 €98 / 4皿 €118</li>
       <li><a href="https://booking.madamebrasserie.com/en">Madame Brasserie 予約ページ</a> — 席種別の料金差の一次情報</li>
       <li><a href="https://tomygousset.com/tomy-and-co/reserver/">Tomy &amp; Co 予約</a> / <a href="https://www.sevenrooms.com/reservations/girafeparis">Girafe 予約(SevenRooms)</a></li>
       <li><a href="https://www.sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/240628-michelin-starred-restaurant-le-grand-vefour-renews-as-a-bistro-our-test-and-pictures">Sortiraparis: Le Grand Véfour が星を失いビストロへ転換</a></li>
@@ -850,10 +864,10 @@
     </ul>
     <h3>バルセロナ</h3>
     <ul class="sources">
-      <li><a href="https://www.compartirbarcelona.com/">Compartir Barcelona 公式</a> / <a href="https://guide.michelin.com/us/en/catalunya/barcelona/restaurant/compartir-barcelona">MICHELIN Guide</a></li>
-      <li><a href="https://restaurante-estimar.com/">Estimar 公式</a> / <a href="https://guide.michelin.com/us/en/catalunya/barcelona/restaurant/estimar">MICHELIN Guide</a></li>
-      <li><a href="https://7portes.com/en/7-portes-restaurant/restaurant/">7 Portes 公式</a> / <a href="https://www.opentable.com/r/7-portes-barcelona-2">OpenTable</a></li>
-      <li><a href="https://www.covermanager.com/reservation/module_restaurant/rias-de-galicia/english">Rías de Galicia 予約(CoverManager)</a></li>
+      <li><a href="https://www.compartirbarcelona.com/">Compartir Barcelona 公式</a> / <strong><a href="https://www.thefork.com/restaurant/compartir-barcelona-r843794/menu">メニュー(TheFork)</a></strong> / <a href="https://guide.michelin.com/us/en/catalunya/barcelona/restaurant/compartir-barcelona">MICHELIN Guide</a> — ※公式サイトはカルタ未掲載のため TheFork を参照</li>
+      <li><a href="https://restaurante-estimar.com/">Estimar 公式</a> / <strong><a href="https://restaurante-estimar.com/barcelona/carta/">カルタ(バルセロナ)</a></strong> / <a href="https://guide.michelin.com/us/en/catalunya/barcelona/restaurant/estimar">MICHELIN Guide</a></li>
+      <li><a href="https://7portes.com/en/7-portes-restaurant/restaurant/">7 Portes 公式</a> / <strong><a href="https://7portes.com/en/restaurant-7-portes-menu/">メニュー</a></strong> / <a href="https://www.opentable.com/r/7-portes-barcelona-2">OpenTable</a></li>
+      <li><strong><a href="https://riaskru.com/en/">RíasKRU(旧 Rías de Galicia)公式</a></strong> / <a href="https://riaskru.com/en/menu-riaskru/">メニュー</a> / <a href="https://www.covermanager.com/reservation/module_restaurant/rias-de-galicia/english">予約(CoverManager)</a> — Espai KRU との統合・営業時間の一次情報</li>
       <li><a href="https://montbar.com/book-table/">Mont Bar 予約規約(€190/€240 前払いコース)</a></li>
       <li><a href="https://www.infobae.com/espana/2025/10/16/martin-berasategui-cierra-temporalmente-su-restaurante-oria-en-barcelona-y-perdera-otra-estrella-michelin/">Infobae: Oria の休業とミシュラン星の抹消(2025-10-16)</a></li>
       <li><a href="https://restaurantcansole.com/en/reservation/">Can Solé 公式</a></li>
@@ -867,6 +881,11 @@
       <table>
         <thead><tr><th>版</th><th>日付</th><th>内容</th></tr></thead>
         <tbody>
+          <tr>
+            <td><strong>v1.2</strong></td>
+            <td>2026-09-16</td>
+            <td><strong>全8店の店名をメニューページへのリンクに変更し、各セクションに Google Maps の地点リンクを追加</strong>。あわせて <strong>Rías de Galicia が Espai KRU と統合し「RíasKRU」に改称</strong>していたことが判明(住所・電話・CoverManager の予約枠は同一のため、確認済みの空席は有効)。営業時間も公式で確定(火〜日 13:30-15:30 / 火〜土 19:30-22:30)。Auguste の夜営業(19:30-22:00)と Compartir の平均予算(€100/人)も公式・TheFork で補正</td>
+          </tr>
           <tr>
             <td><strong>v1.1</strong></td>
             <td>2026-09-16</td>
@@ -888,7 +907,7 @@
   <div class="container">
     <div class="footer__rule"></div>
     <p>Honeymoon 2026 · レストラン選定(パリ / バルセロナ)</p>
-    <p style="margin-top: 4px;">v1.1 · 2026-09-16 調査 · €1 = ¥170 · Private document · Not indexed</p>
+    <p style="margin-top: 4px;">v1.2 · 2026-09-16 調査 · €1 = ¥170 · Private document · Not indexed</p>
     <p style="margin-top: 8px;"><a href="./index.html">← Honeymoon 2026 トップへ</a> · <a href="./results.html">9日間旅程</a></p>
   </div>
 </footer>
