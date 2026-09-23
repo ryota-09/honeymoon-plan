@@ -21,7 +21,7 @@ Spain & France 9-day journey research digest.
 ├── hotels.md / .html           # ホテル調査(確定2軒 + 候補)
 ├── msm-tour.md / .html         # MSM ツアー(VELTRA・予約確定)
 ├── ees.md / .html              # EES(出入域システム)完全ガイド
-├── restaurants.md / .html      # レストラン選定(パリ/バルセロナ・全8店 空席確認済み)
+├── restaurants.md / .html      # レストラン選定(パリ/MSM/バルセロナ・全12店)
 ├── private/                    # 🔒 予約番号・暗証番号(gitignore 済み・非公開)
 │   ├── bookings.local.md       #    予約控え一覧
 │   └── tickets/                #    e チケット・入場券 PDF の原本
