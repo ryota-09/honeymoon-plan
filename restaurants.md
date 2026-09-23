@@ -1,4 +1,4 @@
-# 🍴 レストラン選定 v2.1 — Honeymoon 2026(パリ / バルセロナ)
+# 🍴 レストラン選定 v2.2 — Honeymoon 2026(パリ / バルセロナ)
 
 > **調査日**: 2026-09-23(出発まで3日)/ **為替**: €1 = ¥170
 > **条件(v2)**:
@@ -9,11 +9,13 @@
 >
 > **確認方法**: 予約を受ける店は **2026年の実日付・2名** で各店の予約システム(TheFork / SevenRooms / Zenchef / CoverManager)に入力し、**時間帯ごとの空席まで確認**
 
+> **✅ 予約済み(2026-09-23)**: **Aux Prés 9/28(月)19:15・2名**(19:30 は満席だったため 15分早めた)/ **Compartir Barcelona 10/3(土)13:00・2名**。どちらもパクチー・レバー不可を予約時に伝達済み。キャンセル規定は §7 を参照。
+
 > **結論(先に5行)**
-> 1. **9/28(月)の夜は Aux Prés(シリル・リニャック)19:30 ◎**。**ホテルの真向かい(8m)**で、翌朝 05:45 起床の前夜でも移動ゼロ。19:00〜19:30 の早い枠が空いているのは3店中ここだけ
+> 1. **9/28(月)の夜は Aux Prés(シリル・リニャック)19:15 ✅ 予約済み**。**ホテルの真向かい(8m)**で、翌朝 05:45 起床の前夜でも移動ゼロ。19:00〜19:30 の早い枠が空いているのは3店中ここだけ
 > 2. **9/27(日)の夜は、頂上 19:30 の後なので必ず遅い夕食になります**。**La Fontaine de Mars 22:00 ◎**(エッフェル塔から徒歩8分の老舗ビストロ)か **Semilla 21:45 ○**(ホテルから徒歩6分)
 > 3. **10/2(金)の夜はバルで軽く**。**ブライ通りのピンチョスはしご ◎**(噴水から徒歩15分・予約不要・2人 ¥8,000〜12,000)か、**ホテルから徒歩4分のバスク酒場 Euskal Etxea ○**(22:00 予約可)
-> 4. **10/3(土)の昼は Compartir 13:15 ◎**(世界1位 Disfrutar の3人の店・カサ・ミラから徒歩6分)か **Xavier Pellicer 13:15 ○**(ミシュラン推奨の野菜料理・カサ・ミラから徒歩2分)
+> 4. **10/3(土)の昼は Compartir 13:00 ✅ 予約済み**(世界1位 Disfrutar の3人の店・カサ・ミラから徒歩6分)か **Xavier Pellicer 13:15 ○**(ミシュラン推奨の野菜料理・カサ・ミラから徒歩2分)
 > 5. **予算 ¥35,000 で v1 の候補の多くが外れました**(Auguste・Les Ombres・Estimar・RíasKRU など)。調査中に **閉店3店**(Mano Rota・Bodega 1900・Palo Cortao)、**満席2店**(Paco Meralgo・Bar Cañete)も判明 → §6
 
 ---
@@ -24,7 +26,7 @@
 
 | 夜 | 日時 | 店(→ メニュー) | エリア | 🗺️ | 2人概算(飲み物込み) | 空席確認(2026-09-23) |
 |---|---|---|---|---|---|---|
-| **9/28(月)** ◎ | **19:30** | **[Aux Prés](https://restaurantauxpres.com/en/menu/)**(シリル・リニャック) | 6区 27 rue du Dragon(**ホテルの真向かい**) | [📍](https://www.google.com/maps/search/?api=1&query=Aux%20Pres%20Cyril%20Lignac%2C%2027%20Rue%20du%20Dragon%2C%2075006%20Paris) | ¥27,000〜34,000 | ✅ **19:00 / 19:15 / 19:30**、21:30〜22:15 |
+| **9/28(月)** ✅ | **19:15(予約済み)** | **[Aux Prés](https://restaurantauxpres.com/en/menu/)**(シリル・リニャック) | 6区 27 rue du Dragon(**ホテルの真向かい**) | [📍](https://www.google.com/maps/search/?api=1&query=Aux%20Pres%20Cyril%20Lignac%2C%2027%20Rue%20du%20Dragon%2C%2075006%20Paris) | ¥27,000〜34,000 | ✅ **19:00 / 19:15 / 19:30**、21:30〜22:15 |
 | **9/27(日)** ◎ | **22:00** | **[La Fontaine de Mars](https://www.fontaine-de-mars.com/wp-content/uploads/2026/07/MENU-ANGLAIS-FDM-AVRIL-2026.pdf)**(南西フランスの老舗ビストロ) | 7区 129 rue Saint-Dominique(**エッフェル塔から590m**) | [📍](https://www.google.com/maps/search/?api=1&query=La%20Fontaine%20de%20Mars%2C%20129%20Rue%20Saint-Dominique%2C%2075007%20Paris) | ¥22,000〜30,000 | ⚠️ **22:00 / 22:15 / 22:30 のみ**(19:00〜21:45 は満席) |
 | **9/27(日)** ○ | **21:45** | **[Semilla](https://www.semillaparis.com/)**(ミシュランガイド掲載のモダン・ビストロ) | 6区 54 rue de Seine(**ホテルから500m**) | [📍](https://www.google.com/maps/search/?api=1&query=Semilla%2C%2054%20Rue%20de%20Seine%2C%2075006%20Paris) | ¥24,000〜31,000 | ⚠️ **21:45 / 22:00 のみ**(21:00・21:30 はキャンセル待ち) |
 
@@ -39,7 +41,7 @@
 
 | | 日時 | 店(→ メニュー) | エリア | 🗺️ | 2人概算(飲み物込み) | 空席確認(2026-09-23) |
 |---|---|---|---|---|---|---|
-| ◎ | **10/3(土) 13:15** | **[Compartir Barcelona](https://www.thefork.com/restaurant/compartir-barcelona-r843794/menu)**(Disfrutar の3人の店) | エイシャンプラ(**カサ・ミラから470m**) | [📍](https://www.google.com/maps/search/?api=1&query=Compartir%20Barcelona%2C%20Carrer%20de%20Valencia%20225%2C%2008007%20Barcelona) | ¥22,000〜29,000 | ✅ **13:00〜15:00 全枠** |
+| ✅ | **10/3(土) 13:00(予約済み)** | **[Compartir Barcelona](https://www.thefork.com/restaurant/compartir-barcelona-r843794/menu)**(Disfrutar の3人の店) | エイシャンプラ(**カサ・ミラから470m**) | [📍](https://www.google.com/maps/search/?api=1&query=Compartir%20Barcelona%2C%20Carrer%20de%20Valencia%20225%2C%2008007%20Barcelona) | ¥22,000〜29,000 | ✅ **13:00〜15:00 全枠** |
 | ○ | **10/3(土) 13:15** | **[Xavier Pellicer](https://www.xavierpellicer.com/en/carta)**(ミシュラン推奨・野菜が主役) | エイシャンプラ(**カサ・ミラから155m**) | [📍](https://www.google.com/maps/search/?api=1&query=Xavier%20Pellicer%2C%20Carrer%20de%20Provenca%20310%2C%2008037%20Barcelona) | ¥24,000〜29,000(昼のアラカルト)/ コースは ¥32,000〜36,000 | ✅ **13:00〜14:45 全枠** |
 
 > ⚠️ **空席状況は 2026-09-23 時点のスナップショット**です。特に **9/27 の2店は「遅い時間の数枠だけ」**なので、**§7 の順に今すぐ押さえてください**。
@@ -75,7 +77,7 @@
 
 ## §3. パリ — ディナー3候補
 
-### 3-1. ◎ 9/28(月)19:30 — [Aux Prés](https://restaurantauxpres.com/en/menu/)(シリル・リニャック)
+### 3-1. ✅ 9/28(月)19:15 予約済み — [Aux Prés](https://restaurantauxpres.com/en/menu/)(シリル・リニャック)
 
 | 項目 | 内容 |
 |---|---|
@@ -98,7 +100,7 @@
 |---|---|
 | 17:00 | ルーヴル解散 |
 | 17:25 | ホテル着・休憩・着替え |
-| **19:30** | **Aux Prés 着席**(通りを渡るだけ) |
+| **19:15** | **Aux Prés 着席**(通りを渡るだけ)|
 | 21:15 | 退店 → 部屋へ |
 | 21:20〜22:15 | E チケット6点・サブバッグ・大荷物の仕分け・翌朝のタクシー手配 |
 | **22:30** | 就寝(→ 05:45 起床) |
@@ -225,7 +227,7 @@
 
 ## §5. バルセロナ — 10/3(土)ランチ2候補
 
-### 5-1. ◎ 10/3(土)13:15 — [Compartir Barcelona](https://www.thefork.com/restaurant/compartir-barcelona-r843794/menu)
+### 5-1. ✅ 10/3(土)13:00 予約済み — [Compartir Barcelona](https://www.thefork.com/restaurant/compartir-barcelona-r843794/menu)
 
 | 項目 | 内容 |
 |---|---|
@@ -267,7 +269,8 @@
 |---|---|
 | 09:30 | カサ・バトリョ |
 | 11:30 | カサ・ミラ(〜13:00) |
-| **13:15** | **Compartir(徒歩6分)または Xavier Pellicer(徒歩2分)着席** |
+| 12:50 | カサ・ミラを出る |
+| **13:00** | **Compartir 着席(予約済み・徒歩6分)** |
 | 14:45 | 退店 → メトロ Passeig de Gràcia → Jaume I(約10分) |
 | 15:15 | バルセロナ大聖堂・ゴシック地区 |
 | 16:15 | ピカソ美術館(土曜は20時まで) |
@@ -325,10 +328,10 @@
 
 | 順 | 対象 | 理由 |
 |---|---|---|
-| **1** | **Aux Prés 9/28 19:30** | 早い枠は **19:00 / 19:15 / 19:30 の3つだけ** |
+| ✅ | **Aux Prés 9/28 19:15** | **予約済み**。無料取消は **9/28 13:15 まで**(以降・不来店は €150)。**15分以上の遅刻で席の保証なし** |
 | **2** | **9/27 の夜**(Fontaine de Mars 22:00 か Semilla 21:45) | **どちらも遅い時間の2〜3枠しか残っていない** |
 | **3** | **10/2 の夜**(座りたいなら Euskal Etxea 22:00 を予約) | ブライ通りは予約不要 |
-| **4** | **10/3 の昼**(Compartir か Xavier Pellicer 13:15) | 現状は余裕あり |
+| ✅ | **Compartir 10/3 13:00** | **予約済み**。**10/3 01:00 以降の取消・不来店は1人 €40** |
 
 > **前提**:9/27 の夕食の時刻は **エッフェル塔の頂上 19:30** を前提にしています。**頂上の時刻が変わったら、夕食の時刻も合わせて変えてください**。
 
@@ -409,6 +412,7 @@
 
 | 版 | 日付 | 内容 |
 |---|---|---|
+| **v2.2** | 2026-09-23 | **Aux Prés 9/28 19:15 と Compartir 10/3 13:00 を予約**(Aux Prés の 19:30 は満席) |
 | **v2.1** | 2026-09-23 | **10/2 の夜を「スペインのバル・ピンチョスで軽く」に変更**。ブライ通りのはしご(La Tasqueta de Blai → Koska)◎ と、ホテルから徒歩4分のバスクの酒場 Euskal Etxea ○(予約可・22:00 空き)に差し替え、予備に Irati。Xemei・Martínez は見送りへ |
 | **v2.0** | 2026-09-23 | **条件変更に合わせて全面改訂**。パリはディナー3候補(9/28 Aux Prés ◎ / 9/27 La Fontaine de Mars ◎・Semilla ○)、バルセロナは 10/2 ディナー2候補(Xemei ◎ / Martínez ○)と 10/3 ランチ2候補(Compartir ◎ / Xavier Pellicer ○)。**予算を「2人・飲み物込み ¥35,000」**に変更したため、Auguste・Les Ombres・Estimar・RíasKRU などを見送り。MSM は対象外に。調査中に Mano Rota・Bodega 1900・Palo Cortao の閉店、Paco Meralgo・Bar Cañete の満席、**fontainedemars.com の乗っ取り**を確認 |
 | v1.3 | 2026-09-23 | モン・サン・ミシェルを追加(ランチ2・ディナー2候補) |
