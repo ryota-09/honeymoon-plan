@@ -1,24 +1,24 @@
-# 🍴 レストラン選定 v2 — Honeymoon 2026(パリ / バルセロナ)
+# 🍴 レストラン選定 v2.1 — Honeymoon 2026(パリ / バルセロナ)
 
 > **調査日**: 2026-09-23(出発まで3日)/ **為替**: €1 = ¥170
 > **条件(v2)**:
 > - **パリ**: ディナー **3候補**(日付はこちらで最適化)。ランチはなし
-> - **バルセロナ**: **10/2(金)ディナー 2候補** / **10/3(土)ランチ 2候補**
+> - **バルセロナ**: **10/2(金)ディナー 2候補(スペインのバル・ピンチョスで軽く)** / **10/3(土)ランチ 2候補**
 > - **モン・サン・ミシェル**: 対象外
 > - **予算**: **1食あたり 2人・飲み物込みで ¥35,000 まで**(≒ €205)
 >
-> **確認方法**: 全7店を **2026年の実日付・2名** で各店の予約システム(TheFork / SevenRooms / Zenchef / CoverManager)に入力し、**時間帯ごとの空席まで確認**
+> **確認方法**: 予約を受ける店は **2026年の実日付・2名** で各店の予約システム(TheFork / SevenRooms / Zenchef / CoverManager)に入力し、**時間帯ごとの空席まで確認**
 
 > **結論(先に5行)**
 > 1. **9/28(月)の夜は Aux Prés(シリル・リニャック)19:30 ◎**。**ホテルの真向かい(8m)**で、翌朝 05:45 起床の前夜でも移動ゼロ。19:00〜19:30 の早い枠が空いているのは3店中ここだけ
 > 2. **9/27(日)の夜は、頂上 19:30 の後なので必ず遅い夕食になります**。**La Fontaine de Mars 22:00 ◎**(エッフェル塔から徒歩8分の老舗ビストロ)か **Semilla 21:45 ○**(ホテルから徒歩6分)
-> 3. **10/2(金)の夜は Xemei 21:30 ◎**(魔法の噴水から徒歩10分のヴェネツィア料理)か **Martínez 21:45 ○**(モンジュイックの丘の上で夜景とパエリア)
+> 3. **10/2(金)の夜はバルで軽く**。**ブライ通りのピンチョスはしご ◎**(噴水から徒歩15分・予約不要・2人 ¥8,000〜12,000)か、**ホテルから徒歩4分のバスク酒場 Euskal Etxea ○**(22:00 予約可)
 > 4. **10/3(土)の昼は Compartir 13:15 ◎**(世界1位 Disfrutar の3人の店・カサ・ミラから徒歩6分)か **Xavier Pellicer 13:15 ○**(ミシュラン推奨の野菜料理・カサ・ミラから徒歩2分)
 > 5. **予算 ¥35,000 で v1 の候補の多くが外れました**(Auguste・Les Ombres・Estimar・RíasKRU など)。調査中に **閉店3店**(Mano Rota・Bodega 1900・Palo Cortao)、**満席2店**(Paco Meralgo・Bar Cañete)も判明 → §6
 
 ---
 
-## §1. 候補一覧(7店)
+## §1. 候補一覧
 
 ### パリ — ディナー3候補
 
@@ -28,12 +28,12 @@
 | **9/27(日)** ◎ | **22:00** | **[La Fontaine de Mars](https://www.fontaine-de-mars.com/wp-content/uploads/2026/07/MENU-ANGLAIS-FDM-AVRIL-2026.pdf)**(南西フランスの老舗ビストロ) | 7区 129 rue Saint-Dominique(**エッフェル塔から590m**) | [📍](https://www.google.com/maps/search/?api=1&query=La%20Fontaine%20de%20Mars%2C%20129%20Rue%20Saint-Dominique%2C%2075007%20Paris) | ¥22,000〜30,000 | ⚠️ **22:00 / 22:15 / 22:30 のみ**(19:00〜21:45 は満席) |
 | **9/27(日)** ○ | **21:45** | **[Semilla](https://www.semillaparis.com/)**(ミシュランガイド掲載のモダン・ビストロ) | 6区 54 rue de Seine(**ホテルから500m**) | [📍](https://www.google.com/maps/search/?api=1&query=Semilla%2C%2054%20Rue%20de%20Seine%2C%2075006%20Paris) | ¥24,000〜31,000 | ⚠️ **21:45 / 22:00 のみ**(21:00・21:30 はキャンセル待ち) |
 
-### バルセロナ — 10/2(金)ディナー2候補
+### バルセロナ — 10/2(金)ディナー2候補(バル・ピンチョスで軽く)
 
 | | 日時 | 店(→ メニュー) | エリア | 🗺️ | 2人概算(飲み物込み) | 空席確認(2026-09-23) |
 |---|---|---|---|---|---|---|
-| ◎ | **10/2(金) 21:30** | **[Xemei](https://www.xemei.es/menu)**(ヴェネツィア料理・コロンボ兄弟) | ポブレ・セック(**魔法の噴水から750m**) | [📍](https://www.google.com/maps/search/?api=1&query=Xemei%2C%20Passeig%20de%20l%27Exposicio%2085%2C%2008004%20Barcelona) | ¥17,000〜26,000 | ✅ **20:00〜22:30 全枠** |
-| ○ | **10/2(金) 21:45** | **[Martínez](https://martinezbarcelona.com/web/wp-content/uploads/2026/05/CARTA-FINAL-MARTINEZ.pdf)**(米料理と炭火焼き・360°の夜景) | モンジュイックの丘(**噴水から1.7km・タクシー7分**) | [📍](https://www.google.com/maps/search/?api=1&query=Martinez%20Barcelona%2C%20Carretera%20de%20Miramar%2038%2C%2008038%20Barcelona) | ¥20,000〜30,000 | ✅ **21:00〜22:30 全枠**(テラス) |
+| ◎ | **10/2(金) 21:40〜** | **[ブライ通りのはしご](https://www.latasquetadeblai.com/en/carta)**:**La Tasqueta de Blai** → **Koska** | ポブレ・セック(**噴水から1.2km・徒歩15分**) | [📍](https://www.google.com/maps/search/?api=1&query=La%20Tasqueta%20de%20Blai%2C%20Carrer%20de%20Blai%2017%2C%2008004%20Barcelona) | ¥8,000〜12,000 | 🚶 **予約不要**(立ち飲み・カウンター中心。金曜は深夜まで営業) |
+| ○ | **10/2(金) 22:00** | **[Euskal Etxea Taberna](https://links.sagardi.com/qr/EEBCN/EEBCN_MENU_ENG.pdf)**(バスクの酒場) | ボルン(**ホテルから340m・徒歩4分**) | [📍](https://www.google.com/maps/search/?api=1&query=Euskal%20Etxea%20Taberna%2C%20Placeta%20de%20Montcada%201%2C%2008003%20Barcelona) | カウンターのピンチョスで ¥8,000〜13,000 | ✅ **テーブル予約 20:00〜23:00 全枠** |
 
 ### バルセロナ — 10/3(土)ランチ2候補
 
@@ -66,7 +66,7 @@
 |---|---|---|
 | **9/27(日)** | 17:30 クルーズ → **19:30 エッフェル塔頂上**(日没 19:35)→ 20:45頃に降りる | **21:30 以降**・日曜営業 |
 | **9/28(月)** | 17:00 ルーヴル解散 → ホテル | **早い時間・ホテルの近く**(翌朝 **05:45 起床・06:15 チェックアウト**・07:32 MSM 行き) |
-| **10/2(金)** | サント・パウ → サグラダ → グエル → **21:00 魔法の噴水**(約20分) | **21:30 前後・噴水の近く**(旅程で最も歩く日) |
+| **10/2(金)** | サント・パウ → サグラダ → グエル → **21:00 魔法の噴水**(約20分) | **21:30 以降・軽く・スペインのバル**(旅程で最も歩く日) |
 | **10/3(土)** | 09:30 カサ・バトリョ → 11:30 カサ・ミラ(〜13:00)→ 午後 大聖堂・ピカソ美術館 | **13:15 前後・カサ・ミラの近く** |
 
 > **パリは「日付はお任せ」とのことだったので、9/28 に1店(ホテル前)、9/27 に2店(どちらか1つ)**を割り当てました。**9/28 は早く寝る必要があるため、早い枠が空いている店が1つしかなかった**のが理由です。
@@ -165,50 +165,61 @@
 
 ---
 
-## §4. バルセロナ — 10/2(金)ディナー2候補
+## §4. バルセロナ — 10/2(金)ディナー2候補(バル・ピンチョスで軽く)
 
-### 4-1. ◎ 10/2(金)21:30 — [Xemei](https://www.xemei.es/menu)
+> **考え方**:10/2 は**旅程で最も歩く日**です(サント・パウ → サグラダ+塔 → グエル公園 → 噴水)。夜は**座り込むレストランではなく、スペインのバルでピンチョス(小さなパンにのせたつまみ)を数本と一杯**で軽く終えるのが合っています。スペインでは**バルを2〜3軒はしごする**のが普通の夜の過ごし方です。
+
+### 4-1. ◎ 10/2(金)21:40〜 — ブライ通りのピンチョスはしご([La Tasqueta de Blai](https://www.latasquetadeblai.com/en/carta) → Koska)
 
 | 項目 | 内容 |
 |---|---|
-| 住所 | **Passeig de l'Exposició 85, 08004 Barcelona**(ポブレ・セック・**魔法の噴水から実測750m・徒歩10分**) |
-| 🗺️ 地図 | **[Google Maps で開く](https://www.google.com/maps/search/?api=1&query=Xemei%2C%20Passeig%20de%20l%27Exposicio%2085%2C%2008004%20Barcelona)** |
-| 位置づけ | ヴェネツィア出身の**双子のコロンボ兄弟**の店。**バルセロナのイタリア料理の代表格**。小さく色とりどりの店内とテラス |
-| 営業 | **毎日** 昼 14:00-16:00 / **夜 20:30-24:00** |
-| 予約 | **CoverManager**(公式サイトの「Reservas」) |
-| 空席 | ✅ **10/2: 20:00〜22:30 全枠**(21:30 含む) |
-| メニュー | 前菜:ヴェネツィアの魚の盛り合わせ(バッカラ・マンテカート、サルデ・イン・サオール ほか)、ブッラータ、ヴィテッロ・トンナート / パスタ:**イカ墨のスパゲッティ**、ムール貝とアサリ、**カチョ・エ・ペペ**、オッソブーコのラグー / メイン:子山羊のロースト、アーティチョーク詰めのイカ、本日の魚 / デザート:ティラミス、パンナコッタ |
-| 価格 | 平均 **1人 €40前後**(料理のみ・公式に価格表記なし) |
-| 2人概算 | **¥17,000〜26,000** |
+| 場所 | **Carrer de Blai(ブライ通り)**、ポブレ・セック。**魔法の噴水から実測1.2km・徒歩15分**(またはメトロ L3 Espanya → Poble Sec 1駅) |
+| 🗺️ 地図 | **[La Tasqueta de Blai(Carrer de Blai 15-17)](https://www.google.com/maps/search/?api=1&query=La%20Tasqueta%20de%20Blai%2C%20Carrer%20de%20Blai%2017%2C%2008004%20Barcelona)** / **[Koska Taverna(Carrer de Blai 8)](https://www.google.com/maps/search/?api=1&query=Koska%20Taverna%2C%20Carrer%20de%20Blai%208%2C%2008004%20Barcelona)** — 2軒は実測61m |
+| 位置づけ | **地元の人が集まる、バルセロナで一番有名なピンチョス通り**。歩行者専用の通りに数十軒のバルが並ぶ |
+| 1軒目 | **La Tasqueta de Blai** — **作りたてのピンチョス50種以上**がカウンターに並び、好きなものを取って**最後に楊枝の本数で会計**。1本 €1.90〜。**金曜は 12:00〜翌1:00** |
+| 2軒目 | **Koska Taverna** — **注文を受けてから焼くトルティーヤ(スペイン風オムレツ)**が評判で、ブライ通りで最も評価が高い店。**金曜 18:00〜24:00** |
+| 予約 | **予約不要**(ピンチョス・バルは立ち飲み・カウンターが基本で、ネット予約の仕組みがない) |
+| 2人概算 | ピンチョス10〜14本+トルティーヤ+ビール・ワイン・ベルモット数杯で **¥8,000〜12,000** |
 
-**❌ 避ける(レバー・内臓)**:🔴 **Hígado de Ternera a la Venexiana**(仔牛レバーのヴェネツィア風 — ヴェネツィアの名物料理で、メニューに載っています)/ **Lengua de Ternera**(仔牛の舌)
+**❌ 避ける**:**The Foie One**(鴨のフォアグラ)/ **Sardina & Guacamole**(ワカモレ=パクチー入りのことが多い)/ **morcilla(モルシージャ=血のソーセージ)**のピンチョス
 
-**なぜ推奨か** — 10/2 は **旅程で最も歩く日**です(サント・パウ → サグラダ+塔 → グエル公園 → 噴水)。**噴水から平坦な道を歩いて10分**で着き、タクシーも要りません。**スペインで 21:30 は普通の夕食時間**で、夜は24時まで開いています。予算にも最も余裕があります。
+**頼み方のコツ**:カウンターから皿に取り、**楊枝は捨てずに皿に残す**(会計で数える)。温かいピンチョスは店員が皿を持って回ってくるので、声をかけて取る。
 
-**⏱ 10/2 の夜**:21:00 魔法の噴水(約20分)→ 21:20 レイナ・マリア・クリスティナ通りを歩いて → **21:30 Xemei 着席** → 23:15 メトロ L3 Poble Sec → Liceu(3駅)か タクシーでホテルへ(約2km)
+**⏱ 10/2 の夜**
+
+| 時刻 | 行動 |
+|---|---|
+| 21:00 | 💧 魔法の噴水(約20分) |
+| 21:20 | 徒歩15分でブライ通りへ(メトロなら L3 Espanya → Poble Sec 1駅) |
+| **21:40** | **La Tasqueta de Blai**(ピンチョスを数本と一杯) |
+| 22:30 | **Koska** へ(61m)— トルティーヤで締める |
+| 23:15 | メトロ L3 Paral·lel → Liceu か タクシーでホテルへ(約2km) |
+
+> **弱点**:**予約できないので、金曜夜は混んでいて立ち飲みになる可能性があります**。座って食べたいなら ②(Euskal Etxea)が確実です。
+> **参考**:同じポブレ・セックの有名店 **Quimet & Quimet**(缶詰を使ったモンタディートの名店)は **金曜 22:30 閉店・土日休み・予約不可**で、噴水の後では時間が足りないため外しました。
 
 ---
 
-### 4-2. ○ 10/2(金)21:45 — [Martínez](https://martinezbarcelona.com/web/wp-content/uploads/2026/05/CARTA-FINAL-MARTINEZ.pdf)
+### 4-2. ○ 10/2(金)22:00 — [Euskal Etxea Taberna](https://links.sagardi.com/qr/EEBCN/EEBCN_MENU_ENG.pdf)
 
 | 項目 | 内容 |
 |---|---|
-| 住所 | **Carretera de Miramar 38, 08038 Barcelona**(モンジュイックの丘・**噴水から実測1.7km、タクシー約7分**) |
-| 🗺️ 地図 | **[Google Maps で開く](https://www.google.com/maps/search/?api=1&query=Martinez%20Barcelona%2C%20Carretera%20de%20Miramar%2038%2C%2008038%20Barcelona)** |
-| 位置づけ | **米料理(アロス)と炭火焼き**の店。丘の上から **バルセロナの街と港を 360° 見渡すテラス** |
-| 営業 | 金・土 13:00-翌1:00(**厨房は 23:00 まで**) |
-| 予約 | **CoverManager**(公式サイト)。**キャンセル・変更は6時間前まで。無断キャンセルは1人 €20 を請求** |
-| 空席 | ✅ **10/2: 21:00 / 21:15 / 21:30 / 21:45 / 22:00 / 22:15 / 22:30**(テラス) |
-| メニュー例 | 米料理(2人前から・1人あたり):**Arroz Señorito €28**(殻をむいた魚介のパエリア)/ **イカ墨の米 €30** / **Martínez 流バレンシア風(鶏と兎)€25** / 前菜:ハモン・イベリコのコロッケ €3.75/個、アンチョビ €5.50/枚、ムール貝のブラバソース €17.40、ガンバス・アル・アヒージョ €26 / デザート €6.50〜11(クレマ・カタラナ €6.50) |
-| 2人概算 | 前菜2皿+米料理+デザート+ワインで **¥20,000〜30,000**(別途タクシー往復 €20〜25) |
+| 住所 | **Placeta de Montcada 1-3, 08003 Barcelona**(ボルン・**ホテルから実測340m・徒歩4分**、ピカソ美術館の通りの入口) |
+| 🗺️ 地図 | **[Google Maps で開く](https://www.google.com/maps/search/?api=1&query=Euskal%20Etxea%20Taberna%2C%20Placeta%20de%20Montcada%201%2C%2008003%20Barcelona)** |
+| 位置づけ | バスク文化センター「Euskal Etxea」に併設された**バスクの酒場(タベルナ)**。入口側が**ピンチョスのカウンター**、奥が食堂。バスクの微発泡白ワイン **チャコリ** とシードルが名物 |
+| 営業 | 金曜 12:00〜24:00 |
+| 予約 | **CoverManager**(公式サイトの「RESERVA」)で**奥の食堂のテーブル**を予約できる。**入口のカウンターは予約不要** |
+| 空席 | ✅ **10/2: 20:00〜23:00 全枠**(22:00 含む) |
+| 価格 | カウンターのピンチョスは**1本 €2〜3 前後**(楊枝の本数で会計)。食堂の軽い皿:チャコリで蒸したムール貝 €12 / ゲタリアのアンチョビ €16〜18 / 自家製コロッケ €15 / 小イカのフライ €14 / タラのオムレツ €12 |
+| 2人概算 | **カウンターのピンチョスなら ¥8,000〜13,000**、食堂で軽く3〜4皿なら ¥12,000〜17,000 |
 
-**❌ 避ける**:**Láminas de morro y oreja**(豚の鼻と耳)/ **Tabla de embutidos**(モルシージャ=血のソーセージ入り)/ **Vieiras acevichadas**(セビーチェ風=パクチーの可能性)
+**❌ 避ける**:**Morcilla**(血のソーセージ)/ **Pâté de campagne** / **Tripes**(牛の胃の煮込み)
 
-**なぜ候補か** — **夜景を見ながらパエリア**という、バルセロナらしい体験を予算内で取れる唯一の候補です。v1 で入っていたパエリア(7 Portes)が今回の条件から外れたので、**米料理を食べる機会はここ**になります。
+**なぜ候補か** — **ホテルから歩いて4分**なので、**旅程で最も歩いた日の最後に、帰り道を気にせず飲める**のが最大の利点です。**テーブルを予約できる**ので、金曜夜でも座れることが確定します。バスクのピンチョスはスペインのピンチョス文化の本家です。
 
-**弱点**:① **噴水からタクシーが必要**(丘の上り坂)② **厨房は 23:00 まで**なので、着いたらすぐ注文 ③ **無断キャンセル €20/人** ④ テラスは夜風が冷えるので上着を
+**⏱ 10/2 の夜**:21:00 魔法の噴水 → 21:25 メトロ L3 Espanya → Liceu(約10分)か タクシー(約15分)→ **22:00 Euskal Etxea**(カウンターかテーブル)→ 23:30 徒歩4分でホテル
 
-**⏱ 10/2 の夜**:21:00 魔法の噴水 → 21:25 スペイン広場でタクシー(約7分)→ **21:45 Martínez 着席**(米料理は炊き上がりまで約20分なので先に頼む)→ 23:30 タクシーでホテルへ(約10分)
+> **予備**:同じグループの **[Irati Taverna Basca](https://links.sagardi.com/qr/IRATI/IRATI_MENU_ENG.pdf)**(ゴシック地区 Carrer del Cardenal Casanyes 17、**ホテルから実測420m**、[📍 地図](https://www.google.com/maps/search/?api=1&query=Irati%20Taverna%20Basca%2C%20Carrer%20del%20Cardenal%20Casanyes%2017%2C%2008002%20Barcelona))も同じ形式のバスクの酒場です。10/2 は **21:00 / 21:30** のテーブルが空いています(9/23 確認)。
 
 ---
 
@@ -303,6 +314,8 @@
 | Allard / Drouant(パリの昼) | パリのランチが対象外に |
 | 7 Portes(10/4 昼) | 10/4 が対象外に |
 | MSM の4店(Auberge Saint-Pierre / Les Terrasses de la Baie / La Mère Poulard / Le Relais Saint-Michel) | MSM が対象外に |
+| **Xemei**(ヴェネツィア料理)/ **Martínez**(米料理と炭火焼き) | v2.0 の 10/2 夜の候補。**「スペインのバル・ピンチョスで軽く」**に条件が変わったため外した(どちらも 10/2 の夜は空席あり) |
+| Quimet & Quimet(ポブレ・セック) | 金曜 22:30 閉店・予約不可で、噴水の後では時間が足りない |
 
 ---
 
@@ -314,7 +327,7 @@
 |---|---|---|
 | **1** | **Aux Prés 9/28 19:30** | 早い枠は **19:00 / 19:15 / 19:30 の3つだけ** |
 | **2** | **9/27 の夜**(Fontaine de Mars 22:00 か Semilla 21:45) | **どちらも遅い時間の2〜3枠しか残っていない** |
-| **3** | **10/2 の夜**(Xemei 21:30 か Martínez 21:45) | 金曜夜。Martínez は無断キャンセル €20/人 |
+| **3** | **10/2 の夜**(座りたいなら Euskal Etxea 22:00 を予約) | ブライ通りは予約不要 |
 | **4** | **10/3 の昼**(Compartir か Xavier Pellicer 13:15) | 現状は余裕あり |
 
 > **前提**:9/27 の夕食の時刻は **エッフェル塔の頂上 19:30** を前提にしています。**頂上の時刻が変わったら、夕食の時刻も合わせて変えてください**。
@@ -337,8 +350,8 @@
 | Aux Prés | Crispy spiced prawns(コリアンダー)/ Madras curry crab(要確認) |
 | La Fontaine de Mars | フォアグラ入りテリーヌ / ブーダン・ノワール / アンドゥイエット |
 | Semilla | セビーチェ(要確認) |
-| **Xemei** | 🔴 **Hígado de Ternera a la Venexiana(仔牛レバー)** / Lengua de Ternera(舌) |
-| Martínez | 豚の鼻と耳 / モルシージャ入りの盛り合わせ / 帆立のセビーチェ風 |
+| ブライ通り(La Tasqueta de Blai) | The Foie One(フォアグラ)/ ワカモレ入り / モルシージャのピンチョス |
+| Euskal Etxea | Morcilla / Pâté de campagne / Tripes(牛の胃) |
 | Compartir | カルタ非公開のため着席時に伝える |
 | Xavier Pellicer | Tandoori Pork Rib(要確認) |
 
@@ -346,10 +359,10 @@
 
 ## §8. 服装
 
-**7店とも服装の規定を公式には明記していません。** 予約サイトの表記は **Xemei・Martínez が「Smart Casual」**(OpenTable)。Compartir は、現地の専門家によれば「短パン・ビーチサンダル・タンクトップは不可、ジーンズやTシャツは可」。**きれいめの普段着で問題ありません。**
+**7店とも服装の規定を公式には明記していません。** Compartir は、現地の専門家によれば「短パン・ビーチサンダル・タンクトップは不可、ジーンズやTシャツは可」。**きれいめの普段着で問題ありません。**
 
 - **9/27** はホテルに戻らない日なので、**一日歩けて夜も浮かない靴**(白のレザースニーカーなど)を。頂上は 10℃以下なので上着も
-- **10/2 の Martínez** はテラス席で夜風が冷えるので、羽織るものを
+- **10/2 のバル**は立ち飲みが中心なので、**一日歩いた靴のままで問題ありません**
 
 ---
 
@@ -359,9 +372,9 @@
 |---|---|---|
 | 9/27(日)夜 | ◎ La Fontaine de Mars / ○ Semilla | ¥22,000〜30,000 / ¥24,000〜31,000 |
 | 9/28(月)夜 | ◎ Aux Prés | ¥27,000〜34,000 |
-| 10/2(金)夜 | ◎ Xemei / ○ Martínez | ¥17,000〜26,000 / ¥20,000〜30,000(+タクシー) |
+| 10/2(金)夜 | ◎ ブライ通りのはしご / ○ Euskal Etxea | ¥8,000〜12,000 / ¥8,000〜17,000 |
 | 10/3(土)昼 | ◎ Compartir / ○ Xavier Pellicer | ¥22,000〜29,000 / ¥24,000〜29,000(アラカルト) |
-| **◎ だけで4食** | | **約 ¥88,000〜119,000** |
+| **◎ だけで4食** | | **約 ¥79,000〜105,000** |
 
 **すべての候補が1食 ¥35,000 以内**に収まります(Xavier Pellicer のコースのみ、グラスワインを頼むと ¥35,000 前後)。
 
@@ -376,8 +389,12 @@
 - [Allard 2026年9月のカルト PDF](https://www.restaurant-allard.fr/wp-content/uploads/2026/09/2026_09_14-ALLARD-CARTE-FOOD-EN.pdf) — 予算判定に使用
 
 ### バルセロナ
-- [Xemei 公式 — メニュー](https://www.xemei.es/menu) / [予約](https://www.xemei.es/reservas) / [OpenTable(服装・価格帯)](https://www.opentable.com/r/restaurante-xemei-barcelona)
-- [Martínez 公式 — 予約](https://martinezbarcelona.com/en/reservation/) / **[2026年カルタ PDF](https://martinezbarcelona.com/web/wp-content/uploads/2026/05/CARTA-FINAL-MARTINEZ.pdf)** / [OpenTable](https://www.opentable.com/r/restaurante-martinez-barcelona)
+- [La Tasqueta de Blai 公式 — メニュー](https://www.latasquetadeblai.com/en/carta) / [営業時間](https://www.latasquetadeblai.com/en/contact)
+- [Koska Taverna(Barcelona Metropolitan)](https://www.barcelona-metropolitan.com/locations/koska-taverna/) / [Yelp(住所・営業時間)](https://www.yelp.com/biz/koska-taverna-barcelona)
+- [Euskal Etxea Taberna 公式](https://euskaletxeataberna.com/) / **[メニュー PDF(英語)](https://links.sagardi.com/qr/EEBCN/EEBCN_MENU_ENG.pdf)** / [予約](https://euskaletxeataberna.com/es/reservas.html)
+- [Irati Taverna Basca 公式](https://www.iratitavernabasca.com/) / [メニュー PDF(英語)](https://links.sagardi.com/qr/IRATI/IRATI_MENU_ENG.pdf)
+- [Quimet & Quimet(Tripadvisor)](https://www.tripadvisor.com/Restaurant_Review-g187497-d717377-Reviews-Quimet_Quimet-Barcelona_Catalonia.html) — 営業時間の確認
+- [Xemei 公式](https://www.xemei.es/menu) / [Martínez 公式](https://martinezbarcelona.com/en/reservation/) — v2.0 の候補
 - [Compartir Barcelona 公式](https://www.compartirbarcelona.com/) / [メニュー(TheFork)](https://www.thefork.com/restaurant/compartir-barcelona-r843794/menu) / [El Español:平均会計 €40〜70](https://www.elespanol.com/cocinillas/actualidad-gastronomica/20240606/come-compartir-version-low-cost-disfrutar-mejor-restaurante-mundo-platos/860913947_0.html)
 - [Xavier Pellicer 公式 — カルタ](https://www.xavierpellicer.com/en/carta) / [営業時間・予約](https://www.xavierpellicer.com/en/contacto)
 - [RíasKRU — コース価格](https://riaskru.com/en/menu-riaskru/) — 予算判定に使用
@@ -392,6 +409,7 @@
 
 | 版 | 日付 | 内容 |
 |---|---|---|
+| **v2.1** | 2026-09-23 | **10/2 の夜を「スペインのバル・ピンチョスで軽く」に変更**。ブライ通りのはしご(La Tasqueta de Blai → Koska)◎ と、ホテルから徒歩4分のバスクの酒場 Euskal Etxea ○(予約可・22:00 空き)に差し替え、予備に Irati。Xemei・Martínez は見送りへ |
 | **v2.0** | 2026-09-23 | **条件変更に合わせて全面改訂**。パリはディナー3候補(9/28 Aux Prés ◎ / 9/27 La Fontaine de Mars ◎・Semilla ○)、バルセロナは 10/2 ディナー2候補(Xemei ◎ / Martínez ○)と 10/3 ランチ2候補(Compartir ◎ / Xavier Pellicer ○)。**予算を「2人・飲み物込み ¥35,000」**に変更したため、Auguste・Les Ombres・Estimar・RíasKRU などを見送り。MSM は対象外に。調査中に Mano Rota・Bodega 1900・Palo Cortao の閉店、Paco Meralgo・Bar Cañete の満席、**fontainedemars.com の乗っ取り**を確認 |
 | v1.3 | 2026-09-23 | モン・サン・ミシェルを追加(ランチ2・ディナー2候補) |
 | v1.2 | 2026-09-16 | 店名をメニューページへのリンクに、各セクションに Google Maps を追加。RíasKRU への改称を反映 |
